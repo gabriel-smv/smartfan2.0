@@ -1,0 +1,39 @@
+body {
+  color: $black-01;
+  // font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1 {
+  width: 100%;
+  font-family: $font-02;
+  @include font(3.2rem, 400, 1.4em);
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $primary-02;
+  margin-bottom: .8rem;
+}
+
+h2 {
+  font-family: $font-02;
+  @include font(2.4rem, 400, 1.4em);
+  text-transform: uppercase;
+  color: $black-01;
+}
+
+h3 {
+  font-family: $font-02;
+  @include font(1.8rem, 400, 1.4em);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  @include font(1.6rem, 400, 1.6em);
+  color: $black-01;
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+}

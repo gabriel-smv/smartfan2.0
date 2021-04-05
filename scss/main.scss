@@ -6,3 +6,14 @@
 @import "node_modules/bootstrap/scss/_close.scss";
 @import "node_modules/bootstrap/scss/_modal.scss";
 @import "node_modules/bootstrap/scss/_transitions";
+
+//My Styles
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/fonts";
+@import "base/helpers";
+@import "base/typography";
+
+@import "vendors/normalize";
