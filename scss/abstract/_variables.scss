@@ -3,21 +3,33 @@ $font-01: "Nunito Sans",
 sans-serif;
 $font-02: 'Anton';
 
+
+
 // _____color
+$black-01: #000000;
+$black-02: #00122B;
+
 $white-01: #ffffff;
-$white-02: #f5f5f5;
-$gray-01: #d3d3d3;
-$gray-02: #707070;
-$black-01: #212121;
-$black-02: #000000;
-$primary-01: #1a7dd7;
-// $primary-02: #03275a;
-$primary-02: #001C4D;
-$secondary-01: #f34605;
+$white-02:#F8F8F8;
+
+$gray-01: #F0F4F6;
+$gray-02: #ACC2D3;
+$gray-03: #586B86;
+$gray-04: #737A83;
+
+$primary-01: #021D43;
+$primary-02: #263F62;
+$primary-dark: #00122B;
+
+$secondary-01: #F78946;
 $secondary-02: #f37402;
+
+
 
 // _____transition
 $transition-01: all .3s ease-in-out;
+
+
 
 /// Container's maximum width
 /// @type Length

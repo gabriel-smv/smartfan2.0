@@ -6,9 +6,6 @@ html {
   box-sizing: border-box;
   min-height: 100%;
   height: auto;
-  // @include mq (0, 768px){
-  //   font-size: 40%;
-  // }
 }
 
 body {
@@ -20,10 +17,6 @@ body {
   font-family: $font-01;
   background-color: $white-01;
   overflow-x: hidden;
-}
-
-body.menu-opened {
-  overflow: hidden;
 }
 
 section {
