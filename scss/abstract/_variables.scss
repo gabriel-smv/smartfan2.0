@@ -1,8 +1,6 @@
 // _____font
-$font-01: "Nunito Sans",
+$font-01: 'Noto Sans JP',
 sans-serif;
-$font-02: 'Anton';
-
 
 
 // _____color
@@ -33,7 +31,7 @@ $transition-01: all .3s ease-in-out;
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1840px !default;
+$max-width: 1724px !default;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
