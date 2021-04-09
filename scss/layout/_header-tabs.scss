@@ -1,0 +1,122 @@
+header {
+    .tabs-clubes {
+        --n-tabs: 3;
+    }
+
+    .tabs {
+        width: 100%;
+
+        input {
+            display: none;
+        }
+
+        &-content {
+
+            padding-top: 2.4rem;
+
+            .tab1,
+            .tab2,
+            .tab3,
+            .tab4 {
+                display: none;
+            }
+        }
+
+        &-nav {
+            @include flex(row, space-between, center, center);
+
+            .nav-item {
+                width: calc(100% / var(--n-tabs));
+                border-right: 1px solid $primary-02;
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                .tabs-btn {
+                    width: 100%;
+                    display: inline-block;
+                    @include font(1.4rem, 700, 1.2em);
+                    color: $gray-02;
+                    background-color: rgba(255, 255, 255, .25);
+                    padding: 1.6rem .8rem;
+                    text-align: center;
+                    transition: $transition-01;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, .15);
+                    }
+                }
+            }
+        }
+
+        #tab1:checked~section .tab1,
+        #tab2:checked~section .tab2,
+        #tab3:checked~section .tab3 {
+            display: block;
+            animation: entrar-tab-content .3s ease-in;
+        }
+
+        #tab1:checked~.tabs-nav .tab1 .tabs-btn,
+        #tab2:checked~.tabs-nav .tab2 .tabs-btn,
+        #tab3:checked~.tabs-nav .tab3 .tabs-btn {
+            background-color: rgba(255, 255, 255, .15);
+            color: $white-01;
+        }
+
+        .clubes-list {
+            @include flex(row, flex-start, center, center);
+            flex-wrap: wrap;
+
+            .clubes-item {
+                transition: $transition-01;
+
+                a {
+                    padding: 1.6rem;
+                    @include flex(row, flex-start, center, center);
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                img {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    object-fit: contain;
+                    object-position: center;
+                    z-index: 0
+                }
+
+                span {
+                    @include font(1.4rem, 500, 1.2em);
+                    color: $gray-02;
+                    margin-left: 1.6rem;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, .15);
+
+                }
+            }
+        }
+
+        .content-empty {
+            @include flex(column, center, center, center);
+
+            i {
+                margin-bottom: .8rem;
+
+                span {
+                    font-size: 6.4rem;
+                    color: $gray-02;
+                }
+            }
+
+            p {
+                color: $gray-02;
+            }
+        }
+    }
+}

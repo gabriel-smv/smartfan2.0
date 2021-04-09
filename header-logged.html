@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- HEADER / USUÁRIO LOGADO -->
     <header>
         <div class="container">
             <div class="row">
@@ -219,9 +220,22 @@
                     </li>
 
                     <li class="btn-item">
-                        <a href="#" class="btn btn-header">
-                            <i><span class="icon-login"></span></i> Login
+                        <a href="#" class="btn btn-header btn-fan">
+                            <i><span class="icon-fan-outline"></span></i>
                         </a>
+                    </li>
+
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-toggle="dropdown"
+                            role="button" aria-expanded="false">
+
+                            <img src="images/user-placeholder.png" alt=""> <span>Usuário</span> <i><span
+                                    class="icon-dropdown"></span></i>
+                        </a>
+
+                        <div class="user-dropdown">
+
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -229,65 +243,13 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="row" style="margin-top:4rem;">
-                <a href="#" class="btn btn-primary" style="margin: 0 .8rem;">Button Primary</a>
 
-                <a href="#" class="btn btn-secondary" style="margin: 0 .8rem;">Button Secondary</a>
-
-                <a href="#" class="btn btn-primary" style="margin: 0 .8rem;"><i><span class="icon-locked"></span></i>
-                    Button Primary</a>
-
-                <a href="#" class="btn btn-secondary" style="margin: 0 .8rem;"><i><span class="icon-locked"></span></i>
-                    Button Secondary</a>
-            </div>
-
-            <div class="row" style="margin-top:4rem;">
-                <a href="#" class="btn btn-primary no-round" style="margin: 0 .8rem;">No-Round Primary</a>
-
-                <a href="#" class="btn btn-secondary no-round" style="margin: 0 .8rem;">No-Round Secondary</a>
-
-                <a href="#" class="btn btn-primary no-round" style="margin: 0 .8rem;"><i><span
-                            class="icon-locked"></span></i>
-                    No-Round Primary</a>
-
-                <a href="#" class="btn btn-secondary no-round" style="margin: 0 .8rem;"><i><span
-                            class="icon-locked"></span></i>
-                    No-Round Secondary</a>
-
-            </div>
-
-            <div class="row" style="margin-top:4rem;">
-                <a href="#" class="btn btn-primary no-round" style="margin: 0 .8rem; --color-btn:#20B46B;">Stylized
-                    Primary</a>
-
-                <a href="#" class="btn btn-secondary no-round" style="margin: 0 .8rem; --color-btn:#20B46B;">Stylized
-                    Secondary</a>
-
-                <a href="#" class="btn btn-primary no-round" style="margin: 0 .8rem; --color-btn:#20B46B;"><i><span
-                            class="icon-locked"></span></i>
-                    Stylized Primary</a>
-
-                <a href="#" class="btn btn-secondary no-round" style="margin: 0 .8rem; --color-btn:#20B46B;"><i><span
-                            class="icon-locked"></span></i>
-                    Stylized Secondary</a>
-
-            </div>
-
-            <div class="row" style="margin-top:4rem;">
-                <a href="#" class="btn-link" style="margin: 0 .8rem;">Stylized
-                    Primary</a>
-
-                <a href="#" class="btn-link" style="margin: 0 .8rem;">Stylized
-                    Secondary</a>
-
-            </div>
-        </div>
     </main>
 
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
+
 
     <!-- Prevent closing from click inside dropdown -->
     <script>
