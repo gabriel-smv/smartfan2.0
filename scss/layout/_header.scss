@@ -1,4 +1,5 @@
 @import 'layout/header-tabs';
+@import 'layout/header-user-dropdown';
 
 header {
     --header-height: 9.6rem;
@@ -118,6 +119,7 @@ header {
             i {
                 @include absolute(auto, .8rem, auto, auto);
                 margin: 0;
+                transition: $transition-01;
 
                 span {
                     font-size: 1.6rem;
@@ -126,8 +128,10 @@ header {
             }
 
             &:hover {
-                background-color: rgba(255, 255, 255, .25);
+                background-color: rgba(255, 255, 255, .3);
             }
         }
     }
+
+
 }

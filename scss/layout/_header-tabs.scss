@@ -75,10 +75,6 @@ header {
                 a {
                     padding: 1.6rem;
                     @include flex(row, flex-start, center, center);
-
-                    &::after {
-                        display: none;
-                    }
                 }
 
                 img {

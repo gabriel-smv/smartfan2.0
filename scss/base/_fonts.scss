@@ -29,6 +29,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-add:before {
+    content: "\e91e";
+}
+
 .icon-add-club:before {
     content: "\e900"
 }
@@ -183,6 +187,10 @@
 
 .icon-twitter:before {
     content: "\e92c";
+}
+
+.icon-user:before {
+    content: "\e91d";
 }
 
 .icon-voleibol:before {
