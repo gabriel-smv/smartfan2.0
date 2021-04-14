@@ -1,8 +1,9 @@
 .swiper-fan {
-    width: 80%;
 
     .swiper-slide {
         @include flex(column, center, flex-start, flex-start);
+
+        cursor: grab;
 
         h3 {
             @include font(3.2rem, 400, 1.2em);
@@ -18,7 +19,7 @@
 
     .swiper-pagination {
         @include flex(row, center, center, center);
-        margin-top: 1.6rem;
+        margin-top: 2.4rem;
 
         .swiper-pagination-bullet {
             width: 1.2rem;

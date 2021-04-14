@@ -9390,6 +9390,15 @@ a span:focus {
   text-decoration: none;
 }
 
+.main-content {
+  border-top-left-radius: 9.6rem;
+  border-top-right-radius: 9.6rem;
+  background-color: #FFFFFF;
+  margin-top: -10.4rem;
+  min-height: 40rem;
+  height: auto;
+}
+
 @media (max-width: 992px) {
   .no-mobile {
     display: none !important;
@@ -9864,16 +9873,13 @@ p strong {
   }
 }
 
-.swiper-fan {
-  width: 80%;
-}
-
 .swiper-fan .swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
+  cursor: grab;
 }
 
 .swiper-fan .swiper-slide h3 {
@@ -9895,7 +9901,7 @@ p strong {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 1.6rem;
+  margin-top: 2.4rem;
 }
 
 .swiper-fan .swiper-pagination .swiper-pagination-bullet {
@@ -9913,9 +9919,9 @@ p strong {
 }
 
 .banner-fan {
-  --bg-color: #000000;
+  --bg-color: #263F62;
   width: 100%;
-  padding: 3.2rem 0 8rem;
+  padding: 3.2rem 0 12rem;
   background: var(--bg-color);
   position: relative;
 }
@@ -9929,17 +9935,18 @@ p strong {
 }
 
 .banner-fan .column-01 .img-profile-wrapper {
-  width: 16rem;
-  height: 16rem;
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding: .8rem;
+  margin-bottom: -7.2rem;
+  z-index: 9999;
 }
 
 .banner-fan .column-01 .img-profile-wrapper a {
-  width: 100%;
-  height: 100%;
+  width: 18rem;
+  height: 18rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: .8rem;
   display: inline-block;
+  position: relative;
 }
 
 .banner-fan .column-01 .img-profile-wrapper a i {
@@ -9966,6 +9973,25 @@ p strong {
   object-position: center;
   object-fit: contain;
   border-radius: 50%;
+}
+
+.banner-fan .column-01 .img-profile-wrapper a .icone-clube-adepto {
+  --bg-icon: #F78946;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  border: none;
+  padding: .4rem;
+  background-color: var(--bg-icon);
+}
+
+.banner-fan .column-01 .img-profile-wrapper a .icone-clube-adepto span {
+  font-size: 2.4rem;
+  color: #ffffff;
 }
 
 .banner-fan .column-02 {
@@ -10005,6 +10031,97 @@ p strong {
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.banner-fan.logged-no-club {
+  background-image: url("../../images/banner-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-fan.logged-no-club .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-left: 3.2rem;
+}
+
+.banner-fan.logged-no-club .content-wrapper h3 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+
+.banner-fan.logged-no-club .content-wrapper .btn {
+  --color-btn: #FFFFFF;
+  --color-hover: #737A83;
+}
+
+.banner-fan.banner-socio {
+  background-image: url("../../images/banner-sporting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-fan.banner-socio .column-01 {
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.banner-fan.banner-socio .infos-profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.banner-fan.banner-socio .infos-profile-dados h3,
+.banner-fan.banner-socio .infos-profile-dados p {
+  color: #ffffff;
+}
+
+.banner-fan.banner-socio .infos-profile-dados h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2em;
+}
+
+.banner-fan.banner-socio .infos-profile-dados p {
+  margin-bottom: 0;
+}
+
+.banner-fan.banner-socio .infos-profile-notification i span {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin-top: .8rem;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-list li p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-left: 1.6rem;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link:before {
+  background: #ffffff;
 }
 
 header .tabs-clubes {

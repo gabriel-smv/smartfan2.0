@@ -1,10 +1,10 @@
 @import 'layout/banner-fan-swiper';
 
 .banner-fan {
-    --bg-color: #000000;
+    --bg-color: #263F62;
 
     width: 100%;
-    padding: 3.2rem 0 8rem;
+    padding: 3.2rem 0 12rem;
 
     background: var(--bg-color);
 
@@ -14,16 +14,19 @@
         @include flex(row, flex-start, center, center);
 
         .img-profile-wrapper {
-            width: 16rem;
-            height: 16rem;
-            background-color: $white-01;
-            border-radius: 50%;
-            padding: .8rem;
+
+            margin-bottom: -7.2rem;
+
+            z-index: 9999;
 
             a {
-                width: 100%;
-                height: 100%;
+                width: 18rem;
+                height: 18rem;
+                background-color: $white-01;
+                border-radius: 50%;
+                padding: .8rem;
                 display: inline-block;
+                position: relative;
 
                 i {
                     width: 100%;
@@ -45,6 +48,23 @@
                     object-position: center;
                     object-fit: contain;
                     border-radius: 50%;
+                }
+
+                .icone-clube-adepto {
+                    --bg-icon: #F78946;
+
+                    width: 4rem;
+                    height: 4rem;
+                    @include absolute(auto, 0, 0, auto);
+                    border: none;
+                    padding: .4rem;
+
+                    background-color: var(--bg-icon);
+
+                    span {
+                        font-size: 2.4rem;
+                        color: $white-01;
+                    }
                 }
             }
         }
@@ -78,6 +98,92 @@
                 height: 100%;
                 object-fit: contain;
                 object-position: center;
+            }
+        }
+    }
+
+    &.logged-no-club {
+        background-image: url("../../images/banner-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .content-wrapper {
+            @include flex(column, center, flex-start, flex-start);
+            margin-left: 3.2rem;
+
+            h3 {
+                @include font(3.2rem, 400, 1.2em);
+                color: $white-01;
+                margin-bottom: 1.6rem;
+            }
+
+            .btn {
+                --color-btn: #FFFFFF;
+                --color-hover: #737A83;
+            }
+        }
+    }
+
+    &.banner-socio {
+        background-image: url("../../images/banner-sporting.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .column-01 {
+            align-items: flex-end;
+            align-content: flex-end;
+        }
+
+        .infos-profile {
+            &-wrapper {
+                @include flex(row, flex-start, flex-start, flex-start);
+            }
+
+            &-dados {
+
+                h3,
+                p {
+                    color: $white-01;
+                }
+
+                h3 {
+                    @include font(2rem, 900, 1.2em);
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-notification {
+                i {
+                    span {
+                        font-size: 3.2rem;
+                        color: $white-01;
+                    }
+                }
+
+                .notification-list {
+                    li {
+                        @include flex(row, flex-start, center, center);
+                        margin-top: .8rem;
+
+                        p {
+                            color: $white-01;
+                            margin-bottom: 0;
+                        }
+
+                        .btn-link {
+                            font-size: 1.2rem;
+                            color: $white-01;
+                            margin-left: 1.6rem;
+
+                            &:before {
+                                background: $white-01;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

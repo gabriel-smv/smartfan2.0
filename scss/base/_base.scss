@@ -48,6 +48,16 @@ a span:focus {
   // }
 }
 
+.main-content {
+  border-top-left-radius: 9.6rem;
+  border-top-right-radius: 9.6rem;
+  background-color: #FFFFFF;
+  margin-top: -10.4rem;
+
+  min-height: 40rem;
+  height: auto;
+}
+
 .no-mobile {
   @include md {
     display: none !important;
