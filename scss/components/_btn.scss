@@ -1,5 +1,6 @@
 .btn {
     --color-btn: #263F62;
+    --color-hover: #F0F4F6;
 
     cursor: pointer;
     padding: .8rem 2.4rem;
@@ -54,9 +55,9 @@
 
         &:hover,
         &:focus {
-            background-color: $gray-01;
+            background-color: var(--color-hover);
             color: var(--color-btn);
-            border-color: $gray-01;
+            border-color: var(--color-hover);
             transition: $transition-01;
             outline: none;
 
@@ -83,7 +84,7 @@
 
         &:hover,
         &:focus {
-            background-color: $gray-01;
+            background-color: var(--color-hover);
             color: var(--color-btn);
             transition: $transition-01;
             outline: none;
