@@ -1,4 +1,5 @@
 @import 'layout/header-tabs';
+@import 'layout/header-fan-dropdown';
 @import 'layout/header-user-dropdown';
 
 header {
@@ -89,6 +90,10 @@ header {
             width: 5rem;
             height: 5rem;
             border-radius: 50%;
+
+            &::after {
+                display: none;
+            }
 
             i {
                 margin: 0;

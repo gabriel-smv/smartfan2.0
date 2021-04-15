@@ -9449,6 +9449,18 @@ a span:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-folder:before {
+  content: "\e91f";
+}
+
+.icon-grupo:before {
+  content: "\e920";
+}
+
+.icon-ver-mais:before {
+  content: "\e921";
+}
+
 .icon-add:before {
   content: "\e91e";
 }
@@ -10259,6 +10271,307 @@ header .tabs .content-empty p {
   color: #ACC2D3;
 }
 
+.fan-dropdown {
+  min-width: 50rem;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: -8px;
+  left: auto;
+  transform: translateY(100%);
+  padding: 2.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 1.6rem;
+  box-shadow: 0px 5px 16px -3px rgba(64, 64, 64, 0.25);
+  z-index: 9999;
+  display: none;
+}
+
+.fan-dropdown .clube-coracao-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #737A83;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-img {
+  width: 10.4rem;
+  height: 10.4rem;
+  padding: 1.2rem;
+  margin-right: 1.6rem;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #F78946;
+  position: relative;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-img i {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #F78946;
+  padding: .4rem;
+  border-radius: 50%;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-img i span {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: left;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-name h2 {
+  margin-bottom: .8rem;
+}
+
+.fan-dropdown .clube-coracao-wrapper .clube-coracao-name h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+}
+
+.fan-dropdown-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.fan-dropdown-nav li {
+  width: 100%;
+}
+
+.fan-dropdown-nav li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 1.6rem .8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.fan-dropdown-nav li a i {
+  background: #F0F4F6;
+  padding: .4rem;
+  border-radius: 50%;
+}
+
+.fan-dropdown-nav li a i span {
+  color: #737A83;
+  font-size: 3.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.fan-dropdown-nav li a p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+  margin-bottom: 0;
+  margin-left: 1.6rem;
+}
+
+.fan-dropdown-nav li a:hover {
+  background: #F0F4F6;
+}
+
+.fan-dropdown-nav li a:hover i span {
+  color: #00122B;
+}
+
+.fan-dropdown .user-clubs {
+  width: 100%;
+}
+
+.fan-dropdown .user-clubs input {
+  display: none;
+}
+
+.fan-dropdown .user-clubs .btn-collapse-clubs {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.fan-dropdown .user-clubs .btn-collapse-clubs span {
+  color: #737A83;
+  transition: all 0.3s ease-in-out;
+}
+
+.fan-dropdown .user-clubs .btn-collapse-clubs:hover span {
+  color: #00122B;
+}
+
+.fan-dropdown .user-clubs .btn-collapse-clubs[aria-expanded="true"] {
+  transform: rotate(180deg);
+}
+
+.fan-dropdown .user-clubs .btn-collapse-clubs[aria-expanded="true"] span {
+  color: #00122B;
+}
+
+.fan-dropdown .user-clubs #collapse-clubs:checked ~ .user-clubs-content {
+  display: flex;
+  animation: entrar-tab-content .3s ease-in;
+}
+
+.fan-dropdown .user-clubs #collapse-clubs:checked ~ .btn-collapse-clubs {
+  transform: rotate(180deg);
+}
+
+.fan-dropdown .user-clubs-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: .8rem 0;
+  display: none;
+}
+
+.fan-dropdown .user-clubs-content h4 {
+  margin-bottom: .8rem;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.6rem;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li {
+  width: 20%;
+  padding: .4rem;
+  margin-bottom: .8rem;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a {
+  width: 6.2rem;
+  height: 6.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: .8rem;
+  margin: 0 auto;
+  border: 1px solid #00122B;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a span {
+  color: #737A83;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a i {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  background-color: #737A83;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: .4rem;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a i span {
+  font-size: 1.2rem;
+  color: #F8F8F8;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a:hover {
+  background-color: #ACC2D3;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li a:hover span {
+  color: #ffffff;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li.club-select a {
+  border: 2px solid #F78946;
+}
+
+.fan-dropdown .user-clubs-content .list-outros-clubes li.club-select a i {
+  background-color: #F78946;
+}
+
+.fan-dropdown.no-clube .clube-coracao-img {
+  padding: 0;
+  border: none;
+}
+
+.fan-dropdown.no-clube .clube-coracao-img img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.dropdown.open .btn-perfil {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown.open .btn-perfil i {
+  transform: rotate(180deg);
+}
+
+.dropdown.open .fan-dropdown {
+  display: flex;
+}
+
 .user-dropdown {
   min-width: 40rem;
   position: absolute;
@@ -10274,7 +10587,7 @@ header .tabs .content-empty p {
   align-items: center;
   align-content: center;
   text-align: center;
-  background-color: #F8F8F8;
+  background-color: #ffffff;
   border-radius: 1.6rem;
   box-shadow: 0px 5px 16px -3px rgba(64, 64, 64, 0.25);
   z-index: 9999;
@@ -10710,6 +11023,10 @@ header .btn-list .btn-fan {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
+}
+
+header .btn-list .btn-fan::after {
+  display: none;
 }
 
 header .btn-list .btn-fan i {

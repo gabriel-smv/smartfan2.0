@@ -29,6 +29,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-folder:before {
+    content: "\e91f";
+}
+
+.icon-grupo:before {
+    content: "\e920";
+}
+
+.icon-ver-mais:before {
+    content: "\e921";
+}
+
 .icon-add:before {
     content: "\e91e";
 }
