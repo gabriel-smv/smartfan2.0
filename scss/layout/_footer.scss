@@ -1,0 +1,152 @@
+footer {
+    width: 100%;
+    margin-top: auto;
+    background: $black-02;
+    position: relative;
+
+    .top-footer {
+        width: 100%;
+        padding: 1.6rem 0;
+        background: $primary-02;
+        position: relative;
+
+        .app-info {
+            @include flex(row, flex-start, center, center);
+
+            h4 {
+                @include font(1.4rem, 500, 1.2em);
+                color: $white-01;
+            }
+
+            h5 {
+                @include font(1.2rem, 400, 1.2em);
+                color: $gray-02;
+            }
+
+
+            .btn {
+                background-color: $white-01;
+                color: $primary-02;
+                margin-left: 3.2rem;
+                transition: $transition-01;
+
+                i {
+                    span {
+                        color: $primary-02;
+                    }
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: $white-01;
+
+                    i {
+                        span {
+                            color: $white-01;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-media-list {
+            @include flex(row, flex-end, center, center);
+
+            li {
+                margin-left: 1.6rem;
+
+                a {
+                    display: inline-block;
+
+                    span {
+                        font-size: 3.2rem;
+                        color: $gray-02;
+                        transition: $transition-01;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $gray-01;
+                        }
+                    }
+
+                }
+
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+    }
+
+    .logo-smv {
+        @include flex(row, center, center, center);
+        padding: 2.4rem 0;
+
+        a {
+            width: auto;
+            height: 3.2rem;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .infos-footer {
+        margin: .8rem 0 2.4rem;
+        padding: 1.6rem 0 2.4rem;
+
+        &-wrapper {
+            @include flex(row, flex-start, flex-start, flex-start);
+
+            h5 {
+                @include font(1.4rem, 400, 1.2em);
+                color: $white-01;
+                text-transform: uppercase;
+                margin-bottom: .8rem;
+            }
+
+            .list-links {
+                li {
+                    padding: .4rem 0;
+                }
+
+                a {
+                    @include font(1.4rem, 400, 1.2em);
+                    color: $gray-02;
+                    transition: $transition-01;
+
+                    &:hover {
+                        color: $gray-01;
+                    }
+                }
+            }
+
+            .list-payment {
+                @include flex(row, flex-end, center, center);
+                flex-wrap: wrap;
+                padding: 1.2rem 0;
+
+                li {
+                    margin-left: 2rem;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    img {
+                        height: 3.2rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .rodape {
+        @include flex(row, flex-start, center, center);
+    }
+}

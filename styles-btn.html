@@ -27,7 +27,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">Clubes</a>
 
-                        <div class="header-dropdown">
+                        <div class="nav-dropdown">
                             <div class="tabs tabs-clubes">
                                 <input checked="checked" type="radio" name="pct" id="tab1" />
                                 <input type="radio" name="pct" id="tab2" />
@@ -190,7 +190,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">Competições</a>
 
-                        <div class="header-dropdown">
+                        <div class="nav-dropdown">
 
                         </div>
                     </li>
@@ -199,7 +199,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">Federações</a>
 
-                        <div class="header-dropdown">
+                        <div class="nav-dropdown">
 
                         </div>
                     </li>
@@ -219,7 +219,7 @@
                     </li>
 
                     <li class="btn-item">
-                        <a href="header-logged.html" class="btn btn-header">
+                        <a href="area-fan.html" class="btn btn-header">
                             <i><span class="icon-login"></span></i> Login
                         </a>
                     </li>
@@ -288,15 +288,8 @@
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
+    <script src="includes/dropdown.js"></script>
 
-    <!-- Prevent closing from click inside dropdown -->
-    <script>
-        document.querySelectorAll('.header-dropdown').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        })
-    </script>
 </body>
 
 </html>

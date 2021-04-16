@@ -28,7 +28,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">Clubes</a>
 
-                        <div class="header-dropdown">
+                        <div class="nav-dropdown">
                             <div class="tabs tabs-clubes">
                                 <input checked="checked" type="radio" name="pct" id="tab1" />
                                 <input type="radio" name="pct" id="tab2" />
@@ -191,7 +191,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">Competições</a>
 
-                        <div class="header-dropdown">
+                        <div class="nav-dropdown">
 
                         </div>
                     </li>
@@ -200,7 +200,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                             aria-expanded="false">Federações</a>
 
-                        <div class="header-dropdown">
+                        <div class="nav-dropdown">
 
                         </div>
                     </li>
@@ -225,6 +225,7 @@
                             <i><span class="icon-fan-fill"></span></i>
                         </a>
 
+                        <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
                         <div class="fan-dropdown">
                             <div class="clube-coracao-wrapper">
                                 <div class="clube-coracao-img">
@@ -352,6 +353,7 @@
                             </div>
                         </div>
 
+                        <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
                         <div class="fan-dropdown no-clube" style="display: none;">
                             <div class="clube-coracao-wrapper">
                                 <div class="clube-coracao-img">
@@ -448,32 +450,8 @@
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
+    <script src="includes/dropdown.js"></script>
 
-
-    <!-- Prevent closing from click inside dropdown -->
-    <script>
-        document.querySelectorAll('.header-dropdown').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        })
-    </script>
-
-    <script>
-        document.querySelectorAll('.user-dropdown').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        })
-    </script>
-
-    <script>
-        document.querySelectorAll('.fan-dropdown').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        })
-    </script>
 </body>
 
 </html>

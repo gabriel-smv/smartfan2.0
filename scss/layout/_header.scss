@@ -59,7 +59,7 @@ header {
             }
         }
 
-        .header-dropdown {
+        .nav-dropdown {
             width: 100vw;
             @include absolute(var(--header-height), auto, auto, 0);
             z-index: 9999;
@@ -72,7 +72,7 @@ header {
             position: inherit;
 
             &.open {
-                .header-dropdown {
+                .nav-dropdown {
                     display: block;
                 }
             }

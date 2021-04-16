@@ -9948,7 +9948,7 @@ p strong {
 
 .banner-fan .column-01 .img-profile-wrapper {
   margin-bottom: -7.2rem;
-  z-index: 9999;
+  z-index: 1111;
 }
 
 .banner-fan .column-01 .img-profile-wrapper a {
@@ -10057,7 +10057,6 @@ p strong {
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
-  margin-left: 3.2rem;
 }
 
 .banner-fan.logged-no-club .content-wrapper h3 {
@@ -10092,6 +10091,10 @@ p strong {
   align-content: flex-start;
 }
 
+.banner-fan.banner-socio .infos-profile-dados {
+  padding-right: 1.6rem;
+}
+
 .banner-fan.banner-socio .infos-profile-dados h3,
 .banner-fan.banner-socio .infos-profile-dados p {
   color: #ffffff;
@@ -10107,9 +10110,34 @@ p strong {
   margin-bottom: 0;
 }
 
-.banner-fan.banner-socio .infos-profile-notification i span {
+.banner-fan.banner-socio .infos-profile-notification {
+  padding-left: 1.6rem;
+  border-left: 1px solid #ffffff;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-icon i {
+  display: inline-block;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-icon i span {
   font-size: 3.2rem;
   color: #ffffff;
+}
+
+.banner-fan.banner-socio .infos-profile-notification .notification-icon .notification-warning {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
 }
 
 .banner-fan.banner-socio .infos-profile-notification .notification-list li {
@@ -10134,6 +10162,179 @@ p strong {
 
 .banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link:before {
   background: #ffffff;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  background: #00122B;
+  position: relative;
+}
+
+footer .top-footer {
+  width: 100%;
+  padding: 1.6rem 0;
+  background: #263F62;
+  position: relative;
+}
+
+footer .top-footer .app-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+footer .top-footer .app-info h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+
+footer .top-footer .app-info h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ACC2D3;
+}
+
+footer .top-footer .app-info .btn {
+  background-color: #ffffff;
+  color: #263F62;
+  margin-left: 3.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .top-footer .app-info .btn i span {
+  color: #263F62;
+}
+
+footer .top-footer .app-info .btn:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+footer .top-footer .app-info .btn:hover i span {
+  color: #ffffff;
+}
+
+footer .top-footer .social-media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+footer .top-footer .social-media-list li {
+  margin-left: 1.6rem;
+}
+
+footer .top-footer .social-media-list li a {
+  display: inline-block;
+}
+
+footer .top-footer .social-media-list li a span {
+  font-size: 3.2rem;
+  color: #ACC2D3;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .top-footer .social-media-list li a:hover span {
+  color: #F0F4F6;
+}
+
+footer .top-footer .social-media-list li:first-child {
+  margin-left: 0;
+}
+
+footer .logo-smv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2.4rem 0;
+}
+
+footer .logo-smv a {
+  width: auto;
+  height: 3.2rem;
+}
+
+footer .logo-smv img {
+  height: 100%;
+}
+
+footer .infos-footer {
+  margin: .8rem 0 2.4rem;
+  padding: 1.6rem 0 2.4rem;
+}
+
+footer .infos-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+footer .infos-footer-wrapper h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+}
+
+footer .infos-footer-wrapper .list-links li {
+  padding: .4rem 0;
+}
+
+footer .infos-footer-wrapper .list-links a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ACC2D3;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .infos-footer-wrapper .list-links a:hover {
+  color: #F0F4F6;
+}
+
+footer .infos-footer-wrapper .list-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 1.2rem 0;
+}
+
+footer .infos-footer-wrapper .list-payment li {
+  margin-left: 2rem;
+}
+
+footer .infos-footer-wrapper .list-payment li:first-child {
+  margin-left: 0;
+}
+
+footer .infos-footer-wrapper .list-payment li img {
+  height: 3.2rem;
+  width: auto;
+}
+
+footer .rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
 header .tabs-clubes {
@@ -10986,7 +11187,7 @@ header .nav .nav-link:after {
   display: none;
 }
 
-header .nav .header-dropdown {
+header .nav .nav-dropdown {
   width: 100vw;
   position: absolute;
   top: var(--header-height);
@@ -11003,7 +11204,7 @@ header .nav .dropdown {
   position: inherit;
 }
 
-header .nav .dropdown.open .header-dropdown {
+header .nav .dropdown.open .nav-dropdown {
   display: block;
 }
 

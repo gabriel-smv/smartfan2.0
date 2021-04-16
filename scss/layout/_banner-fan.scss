@@ -17,7 +17,7 @@
 
             margin-bottom: -7.2rem;
 
-            z-index: 9999;
+            z-index: 1111;
 
             a {
                 width: 18rem;
@@ -109,7 +109,6 @@
 
         .content-wrapper {
             @include flex(column, center, flex-start, flex-start);
-            margin-left: 3.2rem;
 
             h3 {
                 @include font(3.2rem, 400, 1.2em);
@@ -140,6 +139,7 @@
             }
 
             &-dados {
+                padding-right: 1.6rem;
 
                 h3,
                 p {
@@ -156,10 +156,27 @@
             }
 
             &-notification {
-                i {
-                    span {
-                        font-size: 3.2rem;
-                        color: $white-01;
+                padding-left: 1.6rem;
+                border-left: 1px solid $white-01;
+
+                .notification-icon {
+                    position: relative;
+                    display: inline-block;
+
+                    i {
+                        display: inline-block;
+
+                        span {
+                            font-size: 3.2rem;
+                            color: $white-01;
+                        }
+                    }
+
+                    .notification-warning {
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        display: inline-block;
+                        @include absolute(0, 0, auto, auto);
                     }
                 }
 
