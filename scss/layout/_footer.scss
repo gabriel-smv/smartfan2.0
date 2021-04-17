@@ -79,19 +79,34 @@ footer {
             }
         }
 
+        @include sm {
+            .app-info {
+                justify-content: center;
+                padding: .8rem 0;
+                margin-top: .8rem;
+                order: 2;
+            }
+
+            .social-media-list {
+                justify-content: center;
+                padding: .8rem 0;
+                margin-bottom: 1.6rem;
+                order: 1;
+
+                li {
+                    margin: 0 1.6rem;
+                }
+            }
+        }
+
     }
 
     .logo-smv {
         @include flex(row, center, center, center);
         padding: 2.4rem 0;
 
-        a {
-            width: auto;
-            height: 3.2rem;
-        }
-
         img {
-            height: 100%;
+            height: 3.2rem;
         }
     }
 
@@ -99,8 +114,14 @@ footer {
         margin: .8rem 0 2.4rem;
         padding: 1.6rem 0 2.4rem;
 
+        @include sm {
+            margin-bottom: 0;
+            padding-bottom: .8rem;
+        }
+
         &-wrapper {
             @include flex(row, flex-start, flex-start, flex-start);
+            flex-wrap: wrap;
 
             h5 {
                 @include font(1.4rem, 400, 1.2em);
@@ -138,15 +159,130 @@ footer {
                     }
 
                     img {
-                        height: 3.2rem;
+                        height: 2.4rem;
                         width: auto;
                     }
                 }
+            }
+
+            @include md {
+
+                .list-links {
+                    li {
+                        // padding: .8rem 0;
+                        margin: .4rem 0;
+                    }
+                }
+
+                .list-payment {
+                    justify-content: flex-start;
+
+                    li {
+                        margin: 0;
+                        margin-left: 2.4rem;
+                    }
+                }
+            }
+
+            @include sm {
+                @include flex(column, center, center, center);
+
+                li {
+                    text-align: center;
+                    margin-bottom: 3.2rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                h5 {
+                    text-align: center;
+                }
+
+                .list-payment {
+                    justify-content: center;
+
+                    li {
+                        width: 50%;
+                        text-align: center;
+                        margin-bottom: 3.2rem;
+                        margin-left: 0;
+
+                        img {
+                            height: 3.2rem;
+                        }
+                    }
+                }
+
             }
         }
     }
 
     .rodape {
         @include flex(row, flex-start, center, center);
+
+
+        .row {
+            border-top: 1px solid $gray-04;
+            padding: 2.4rem 0 1.6rem;
+        }
+
+        .contato-smv {
+            @include flex(row, flex-start, center, center);
+
+            p,
+            a {
+                @include font(1.2rem, 400, 1.2em);
+            }
+
+            p {
+                color: $white-01;
+                margin-bottom: 0;
+            }
+
+            a {
+                margin-left: .4rem;
+                transition: $transition-01;
+
+                &:hover {
+                    color: $gray-02;
+                }
+            }
+        }
+
+        .powered-smv {
+            @include flex(row, flex-end, center, center);
+
+            span {
+                @include font(1.2rem, 400, 1.2em);
+                color: $white-01;
+            }
+
+            a {
+                height: 2.4rem;
+                width: auto;
+                display: inline-block;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            @include md {
+                a {
+                    height: 3.2rem;
+                }
+            }
+
+            @include sm {
+                justify-content: center;
+                margin-top: 3.2rem;
+
+                a {
+                    height: 4rem;
+                }
+            }
+        }
     }
 }
