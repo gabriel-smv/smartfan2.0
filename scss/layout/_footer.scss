@@ -149,9 +149,10 @@ footer {
             .list-payment {
                 @include flex(row, flex-end, center, center);
                 flex-wrap: wrap;
-                padding: 1.2rem 0;
+                padding: .8rem 0;
 
                 li {
+                    margin: .8rem 0;
                     margin-left: 2rem;
 
                     &:first-child {

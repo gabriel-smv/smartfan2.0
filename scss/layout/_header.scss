@@ -1,9 +1,11 @@
 @import 'layout/header-tabs';
 @import 'layout/header-fan-dropdown';
 @import 'layout/header-user-dropdown';
+@import 'layout/header-nav-mobile';
 
 header {
     --header-height: 9.6rem;
+    --header-mobile-height: 18rem;
 
     width: 100%;
     height: var(--header-height);
@@ -138,5 +140,11 @@ header {
         }
     }
 
+    @include md {
 
+        .container,
+        .row {
+            height: 100%;
+        }
+    }
 }

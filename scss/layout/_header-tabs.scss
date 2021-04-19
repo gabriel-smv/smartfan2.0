@@ -25,7 +25,7 @@ header {
         &-nav {
             @include flex(row, space-between, center, center);
 
-            .nav-item {
+            .tab-item {
                 width: calc(100% / var(--n-tabs));
                 border-right: 1px solid $primary-02;
 
@@ -53,14 +53,20 @@ header {
 
         #tab1:checked~section .tab1,
         #tab2:checked~section .tab2,
-        #tab3:checked~section .tab3 {
+        #tab3:checked~section .tab3,
+        #tab1-mobile:checked~section .tab1,
+        #tab2-mobile:checked~section .tab2,
+        #tab3-mobile:checked~section .tab3 {
             display: block;
             animation: entrar-tab-content .3s ease-in;
         }
 
         #tab1:checked~.tabs-nav .tab1 .tabs-btn,
         #tab2:checked~.tabs-nav .tab2 .tabs-btn,
-        #tab3:checked~.tabs-nav .tab3 .tabs-btn {
+        #tab3:checked~.tabs-nav .tab3 .tabs-btn,
+        #tab1-mobile:checked~.tabs-nav .tab1 .tabs-btn,
+        #tab2-mobile:checked~.tabs-nav .tab2 .tabs-btn,
+        #tab3-mobile:checked~.tabs-nav .tab3 .tabs-btn {
             background-color: rgba(255, 255, 255, .15);
             color: $white-01;
         }

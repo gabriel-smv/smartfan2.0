@@ -29,6 +29,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+    content: "\e92e";
+}
+
+.icon-menu:before {
+    content: "\e922";
+}
+
 .icon-folder:before {
     content: "\e91f";
 }
