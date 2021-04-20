@@ -18,7 +18,7 @@ header {
     }
 
     .nav-mobile {
-        height: var(--header-mobile-height);
+        height: var(--header-md-height);
         width: 100%;
         position: fixed;
         top: 0;
@@ -56,7 +56,61 @@ header {
             }
 
             .nav-dropdown {
-                top: calc(var(--header-mobile-height) - .8rem);
+                top: calc(var(--header-md-height) - .8rem);
+            }
+        }
+
+        @include sm {
+            .nav {
+                height: auto;
+                padding: 1.6rem 0;
+                justify-content: flex-start;
+                overflow-x: scroll;
+
+                .nav-link {
+                    padding: 2.4rem 3.2rem;
+                }
+            }
+
+            .logo {
+                justify-content: center;
+            }
+
+            .tabs-nav {
+                overflow-x: scroll;
+
+                .tab-item {
+                    width: 35%;
+                }
+            }
+
+            .tabs-content {
+                height: 32rem;
+                overflow-y: scroll;
+
+                .clubes-item {
+                    a {
+                        justify-content: center;
+
+                        img {
+                            height: 5.6rem;
+                            width: 5.6rem;
+                        }
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+
+            .btn-list {
+                justify-content: center;
+                margin-top: 2rem;
+
+                .btn-item {
+                    margin: 0 4px;
+                }
             }
         }
 

@@ -13,6 +13,22 @@
     z-index: 9999;
     display: none;
 
+    @include md {
+        transform: translate(25%, 100%);
+    }
+
+    @include sm {
+        min-width: auto;
+        width: 42rem;
+        transform: translate(18%, 100%);
+        padding: 2.4rem 1.6rem;
+    }
+
+    @include xxs {
+        min-width: auto;
+        width: 32rem;
+        transform: translate(24%, 100%);
+    }
 
     .clube-coracao-wrapper {
         width: 100%;
@@ -228,6 +244,12 @@
                             }
                         }
                     }
+                }
+            }
+
+            @include sm {
+                .list-outros-clubes {
+                    width: 100%;
                 }
             }
         }

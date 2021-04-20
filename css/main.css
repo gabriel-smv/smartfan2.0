@@ -10661,6 +10661,29 @@ header .tabs .content-empty p {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .fan-dropdown {
+    transform: translate(25%, 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .fan-dropdown {
+    min-width: auto;
+    width: 42rem;
+    transform: translate(18%, 100%);
+    padding: 2.4rem 1.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .fan-dropdown {
+    min-width: auto;
+    width: 32rem;
+    transform: translate(24%, 100%);
+  }
+}
+
 .fan-dropdown .clube-coracao-wrapper {
   width: 100%;
   display: flex;
@@ -10916,6 +10939,12 @@ header .tabs .content-empty p {
 
 .fan-dropdown .user-clubs-content .list-outros-clubes li.club-select a i {
   background-color: #F78946;
+}
+
+@media (max-width: 767px) {
+  .fan-dropdown .user-clubs-content .list-outros-clubes {
+    width: 100%;
+  }
 }
 
 .fan-dropdown.no-clube .clube-coracao-img {
@@ -11303,7 +11332,7 @@ header .menu-hamburguer .close-menu span {
 }
 
 header .nav-mobile {
-  height: var(--header-mobile-height);
+  height: var(--header-md-height);
   width: 100%;
   position: fixed;
   top: 0;
@@ -11346,12 +11375,53 @@ header .nav-mobile .nav .nav-link:hover {
 }
 
 header .nav-mobile .nav .nav-dropdown {
-  top: calc(var(--header-mobile-height) - .8rem);
+  top: calc(var(--header-md-height) - .8rem);
+}
+
+@media (max-width: 767px) {
+  header .nav-mobile .nav {
+    height: auto;
+    padding: 1.6rem 0;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+  header .nav-mobile .nav .nav-link {
+    padding: 2.4rem 3.2rem;
+  }
+  header .nav-mobile .logo {
+    justify-content: center;
+  }
+  header .nav-mobile .tabs-nav {
+    overflow-x: scroll;
+  }
+  header .nav-mobile .tabs-nav .tab-item {
+    width: 35%;
+  }
+  header .nav-mobile .tabs-content {
+    height: 32rem;
+    overflow-y: scroll;
+  }
+  header .nav-mobile .tabs-content .clubes-item a {
+    justify-content: center;
+  }
+  header .nav-mobile .tabs-content .clubes-item a img {
+    height: 5.6rem;
+    width: 5.6rem;
+  }
+  header .nav-mobile .tabs-content .clubes-item span {
+    display: none;
+  }
+  header .nav-mobile .btn-list {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  header .nav-mobile .btn-list .btn-item {
+    margin: 0 4px;
+  }
 }
 
 header {
   --header-height: 9.6rem;
-  --header-mobile-height: 18rem;
   width: 100%;
   height: var(--header-height);
   background: #021D43;
@@ -11436,6 +11506,7 @@ header .nav .nav-dropdown {
   z-index: 9999;
   background-color: #263F62;
   padding-bottom: 3.2rem;
+  box-shadow: 0px 15px 23px -10px rgba(33, 33, 33, 0.7);
   display: none;
 }
 
@@ -11522,6 +11593,24 @@ header .btn-list .btn-perfil:hover {
   header .container,
   header .row {
     height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  header .btn-list .btn-item {
+    margin-left: .8rem;
+  }
+  header .btn-list .btn-perfil {
+    width: 5rem;
+    height: 5rem;
+    padding: 4px;
+  }
+  header .btn-list .btn-perfil img {
+    position: relative;
+  }
+  header .btn-list .btn-perfil i,
+  header .btn-list .btn-perfil span {
+    display: none;
   }
 }
 
