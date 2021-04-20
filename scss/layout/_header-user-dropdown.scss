@@ -275,6 +275,22 @@
             }
         }
     }
+
+    @include xs {
+        transform: translate(2%, 100%);
+    }
+
+    @include xxs {
+        min-width: auto;
+        width: 32rem;
+        transform: translate(6%, 100%);
+
+        .user-nav {
+            li {
+                padding: 0 1.2rem;
+            }
+        }
+    }
 }
 
 .dropdown {

@@ -10754,6 +10754,19 @@ header .tabs .content-empty p {
   color: #737A83;
 }
 
+@media (max-width: 425px) {
+  .fan-dropdown .clube-coracao-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .fan-dropdown .clube-coracao-wrapper .clube-coracao-img {
+    margin-bottom: 1.2rem;
+  }
+}
+
 .fan-dropdown-nav {
   width: 100%;
   display: flex;
@@ -10804,6 +10817,15 @@ header .tabs .content-empty p {
 
 .fan-dropdown-nav li a:hover i span {
   color: #00122B;
+}
+
+@media (max-width: 575px) {
+  .fan-dropdown-nav li a i span {
+    font-size: 4rem;
+  }
+  .fan-dropdown-nav li a p {
+    font-size: 1.8rem;
+  }
 }
 
 .fan-dropdown .user-clubs {
@@ -10944,6 +10966,17 @@ header .tabs .content-empty p {
 @media (max-width: 767px) {
   .fan-dropdown .user-clubs-content .list-outros-clubes {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .fan-dropdown .user-clubs-content .list-outros-clubes li {
+    width: 25%;
   }
 }
 
@@ -11293,6 +11326,23 @@ header .tabs .content-empty p {
 
 .user-dropdown .user-logout a:hover {
   color: #737A83;
+}
+
+@media (max-width: 575px) {
+  .user-dropdown {
+    transform: translate(2%, 100%);
+  }
+}
+
+@media (max-width: 425px) {
+  .user-dropdown {
+    min-width: auto;
+    width: 32rem;
+    transform: translate(6%, 100%);
+  }
+  .user-dropdown .user-nav li {
+    padding: 0 1.2rem;
+  }
 }
 
 .dropdown.open .btn-perfil {

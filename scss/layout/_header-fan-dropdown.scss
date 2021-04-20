@@ -82,6 +82,14 @@
                 color: $gray-04;
             }
         }
+
+        @include xxs {
+            @include flex(column, center, center, center);
+
+            .clube-coracao-img {
+                margin-bottom: 1.2rem;
+            }
+        }
     }
 
     &-nav {
@@ -124,6 +132,22 @@
                         span {
                             color: $black-02;
                         }
+                    }
+                }
+            }
+        }
+
+        @include xs {
+            li {
+                a {
+                    i {
+                        span {
+                            font-size: 4rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.8rem;
                     }
                 }
             }
@@ -250,6 +274,15 @@
             @include sm {
                 .list-outros-clubes {
                     width: 100%;
+                    @include flex(row, flex-start, center, center);
+                }
+            }
+
+            @include xxs {
+                .list-outros-clubes {
+                    li {
+                        width: 25%;
+                    }
                 }
             }
         }
