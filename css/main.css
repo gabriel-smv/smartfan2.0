@@ -9395,6 +9395,7 @@ a span:focus {
   border-top-right-radius: 9.6rem;
   background-color: #FFFFFF;
   margin-top: -10.4rem;
+  padding-top: 4rem;
   min-height: 40rem;
   height: auto;
 }
@@ -10062,6 +10063,20 @@ p strong {
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+@media (max-width: 992px) {
+  .banner-fan .column-01 {
+    order: 2;
+  }
+  .banner-fan .column-01 .img-profile-wrapper a {
+    width: 16rem;
+    height: 16rem;
+  }
+  .banner-fan .column-02 {
+    order: 1;
+    margin-bottom: 3.2rem;
+  }
 }
 
 .banner-fan.logged-no-club {
@@ -11662,6 +11677,97 @@ header .btn-list .btn-perfil:hover {
   header .btn-list .btn-perfil span {
     display: none;
   }
+}
+
+.navbar {
+  width: 100%;
+  position: relative;
+  padding-right: .8rem;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  overflow-x: scroll;
+}
+
+.navbar-list::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-item {
+  width: 100%;
+  margin: 0 1.6rem;
+}
+
+.navbar-item a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.2em;
+  color: #00122B;
+  padding: 0.8rem 0.4rem 1.2rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  white-space: nowrap;
+}
+
+.navbar-item a:before {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #00122B;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-item a .disabled-icon {
+  display: none;
+}
+
+.navbar-item a i {
+  display: inline-block;
+  margin-right: .8rem;
+}
+
+.navbar-item a i span {
+  color: #737A83;
+}
+
+.navbar-item a:hover:before {
+  width: 100%;
+}
+
+.navbar-item a:hover span {
+  color: #737A83;
+}
+
+.navbar-item.active a:before {
+  width: 100%;
+}
+
+.navbar-item.disabled a {
+  color: #737A83;
+  pointer-events: none;
+}
+
+.navbar-item.disabled a i {
+  display: none;
+}
+
+.navbar-item.disabled a .disabled-icon {
+  display: block;
 }
 
 html {

@@ -102,6 +102,24 @@
         }
     }
 
+    @include md {
+        .column-01 {
+            order: 2;
+
+            .img-profile-wrapper {
+                a {
+                    width: 16rem;
+                    height: 16rem;
+                }
+            }
+        }
+
+        .column-02 {
+            order: 1;
+            margin-bottom: 3.2rem;
+        }
+    }
+
     &.logged-no-club {
         background-image: url("../../images/banner-img.jpg");
         background-repeat: no-repeat;
