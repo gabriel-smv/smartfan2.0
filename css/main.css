@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 .container,
 .container-fluid,
 .container-sm,
@@ -9360,7 +9360,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -9677,7 +9677,7 @@ body {
 
 h1 {
   width: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 3.2rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -9685,7 +9685,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 2.4rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -9693,7 +9693,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -9701,7 +9701,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.6rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -11691,15 +11691,11 @@ header .btn-list .btn-perfil:hover {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  overflow-x: scroll;
-}
-
-.navbar-list::-webkit-scrollbar {
-  display: none;
+  overflow-x: auto;
 }
 
 .navbar-item {
-  width: 100%;
+  width: auto;
   margin: 0 1.6rem;
 }
 

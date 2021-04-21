@@ -5,15 +5,11 @@
 
     &-list {
         @include flex(row, space-between, center, center);
-        overflow-x: scroll;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        overflow-x: auto;
     }
 
     &-item {
-        width: 100%;
+        width: auto;
         margin: 0 1.6rem;
 
         a {
