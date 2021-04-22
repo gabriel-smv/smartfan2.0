@@ -57,6 +57,16 @@ a span:focus {
 
   min-height: 40rem;
   height: auto;
+
+  @include md {
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+  }
+
+  @include sm {
+    border-top-left-radius: 5.6rem;
+    border-top-right-radius: 5.6rem;
+  }
 }
 
 .no-mobile {

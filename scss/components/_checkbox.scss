@@ -1,0 +1,45 @@
+.cbx {
+    display: none;
+}
+
+.cbx-label {
+    @include flex(row, flex-start, center, center);
+    @include font(1.4rem, 400, 1.2em);
+    cursor: pointer;
+
+    span {
+        margin: 0 .8rem;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    span.cbx-area-select {
+        width: 2rem;
+        height: 2rem;
+        background: $white-01;
+        border: 1px solid $black-02;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 1.4rem;
+            height: 1.4rem;
+            background: $secondary-01;
+            @include absolute(2px, auto, auto, 2px);
+            transform: scale(0, 0);
+            transform-origin: 1 1;
+            transition: $transition-01;
+        }
+    }
+}
+
+.cbx:checked~.cbx-label span.cbx-area-select:before {
+    transform: scale(1, 1);
+
+}

@@ -21,3 +21,27 @@
         transform: translateY(0);
     }
 }
+
+@keyframes open-filter-dropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(95%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(105%);
+    }
+}
+
+@keyframes open-navbar-mobile {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

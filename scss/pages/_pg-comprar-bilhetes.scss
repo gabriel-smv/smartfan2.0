@@ -1,0 +1,105 @@
+.pg-comprar-bilhetes {
+    width: 100%;
+    min-height: 32rem;
+    height: auto;
+    padding: 1.6rem 2.4rem;
+    background: $white-02;
+    border-top-left-radius: 2.4rem;
+    border-top-right-radius: 2.4rem;
+
+    .bilhetes-filters {
+        @include flex(row, space-between, center, center);
+        padding-bottom: 1.6rem;
+        border-bottom: 1px solid $gray-04;
+
+        &-list {
+            @include flex(row, flex-start, center, center);
+
+            li {
+                @include font(1.4rem, 400, 1.2em);
+                color: $black-02;
+                padding: 0.4rem 2.4rem;
+                border-right: 1px solid $gray-04;
+                position: relative;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                    border: none;
+                }
+            }
+
+            .dropdown {
+                a {
+                    color: $black-02;
+                    @include flex(row, flex-start, center, center);
+
+                    i {
+                        margin-left: .8rem;
+                        transition: $transition-01;
+
+                        span {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $black-02;
+                        }
+                    }
+                }
+
+                .filter-list-dropdown {
+                    background-color: $white-01;
+                    border-radius: 1.6rem;
+                    padding: 1.6rem;
+                    @include absolute(auto, 0, 0, auto);
+                    @include flex(column, flex-start, flex-start, flex-start);
+                    transform: translateY(105%);
+                    box-shadow: 6px 2px 24px 0px rgba(115, 122, 131, 0.3);
+                    transition: $transition-01;
+
+                    display: none;
+
+                    li {
+                        width: 100%;
+                        padding: .8rem;
+                        border: none;
+                    }
+
+                    .cbx-label {
+                        span {
+                            white-space: nowrap;
+                            color: $gray-04;
+                        }
+
+                        span.cbx-area-select {
+                            border-color: $gray-04;
+                        }
+                    }
+                }
+
+                &.open {
+                    a {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .filter-list-dropdown {
+                        display: flex;
+                        animation: open-filter-dropdown .3s ease-out;
+                    }
+                }
+            }
+        }
+    }
+}

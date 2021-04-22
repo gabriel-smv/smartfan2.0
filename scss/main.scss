@@ -20,11 +20,14 @@
 @import "base/typography";
 
 @import "components/btn";
+@import "components/checkbox";
 @import "components/keyframes";
 
 @import "layout/banner-fan";
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navbar";
+
+@import "pages/pg-comprar-bilhetes";
 
 @import "vendors/normalize";
