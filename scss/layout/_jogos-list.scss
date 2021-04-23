@@ -1,0 +1,61 @@
+.jogos {
+    &-list {
+        width: 100%;
+        position: relative;
+    }
+
+
+    &-item {
+        width: 100%;
+        padding: .8rem;
+        background: $white-01;
+        @include flex(row, space-between, center, center);
+    }
+
+    &-modalidade {
+        @include flex(column, center, center, center);
+        padding: .4rem 1.6rem;
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+            margin-bottom: .4rem;
+        }
+
+        span {
+            color: $gray-04;
+            @include font(1.2rem, 500, 1.2em);
+        }
+    }
+
+    &-clubes {
+        @include flex(row, center, center, center);
+
+        .clube {
+            @include flex(column, center, center, center);
+
+            img {
+                width: 4.8rem;
+                height: 4.8rem;
+                object-fit: contain;
+                object-position: center;
+                margin-bottom: .4rem;
+            }
+
+            span {
+                color: $black-02;
+                @include font(1.4rem, 500, 1.2em);
+            }
+        }
+    }
+
+    &-info {
+        @include flex(column, center, center, center);
+    }
+
+
+    &-btn {
+        @include flex(row, flex-end, center, center);
+    }
+
+}

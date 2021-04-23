@@ -3,6 +3,8 @@
     min-height: 32rem;
     height: auto;
     padding: 1.6rem 2.4rem;
+    @include flex(row, flex-start, flex-start, flex-start);
+    flex-wrap: wrap;
     background: $white-02;
     border-top-left-radius: 2.4rem;
     border-top-right-radius: 2.4rem;
@@ -67,6 +69,8 @@
                     box-shadow: 6px 2px 24px 0px rgba(115, 122, 131, 0.3);
                     transition: $transition-01;
 
+                    z-index: 888;
+
                     display: none;
 
                     li {
@@ -79,10 +83,17 @@
                         span {
                             white-space: nowrap;
                             color: $gray-04;
+                            transition: $transition-01;
                         }
 
                         span.cbx-area-select {
                             border-color: $gray-04;
+                        }
+
+                        &:hover {
+                            span {
+                                color: $black-02;
+                            }
                         }
                     }
                 }
@@ -100,6 +111,48 @@
                     }
                 }
             }
+        }
+    }
+
+    .classificar-pesquisa {
+        @include flex(row, space-between, center, center);
+        padding: 1.6rem 0;
+
+        .bilhetes-filters-list {
+            &:last-child {
+                justify-content: flex-end;
+            }
+
+            .item-selected {
+                margin-left: .4rem;
+            }
+
+            .guardar-pesquisa {
+                label {
+                    align-items: center;
+                }
+
+                i {
+                    background: rgba(255, 255, 255, 0);
+                    padding: .4rem;
+                    border-radius: 50%;
+                    transition: $transition-01;
+
+                    span {
+                        font-size: 1.6rem;
+                        color: $black-02;
+                        transition: $transition-01;
+                    }
+                }
+            }
+        }
+
+        .cbx:checked~.cbx-label i {
+            background: $secondary-01;
+        }
+
+        .cbx:checked~.cbx-label i span {
+            color: $white-01;
         }
     }
 }

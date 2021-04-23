@@ -9747,6 +9747,7 @@ p strong {
   border-radius: 3.2rem;
   border: 1px solid var(--color-btn);
   color: var(--color-btn);
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.3em;
@@ -9994,6 +9995,23 @@ p strong {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.ads-wrapper {
+  position: relative;
+}
+
+.ads-wrapper a {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.ads-wrapper a img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .swiper-fan .swiper-slide {
@@ -11770,6 +11788,91 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+.jogos-list {
+  width: 100%;
+  position: relative;
+}
+
+.jogos-item {
+  width: 100%;
+  padding: .8rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.jogos-modalidade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: .4rem 1.6rem;
+}
+
+.jogos-modalidade img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: .4rem;
+}
+
+.jogos-modalidade span {
+  color: #737A83;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.jogos-clubes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.jogos-clubes .clube {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.jogos-clubes .clube img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: .4rem;
+}
+
+.jogos-clubes .clube span {
+  color: #00122B;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.jogos-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.jogos-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
 .navbar {
   width: 100%;
   position: relative;
@@ -11947,6 +12050,12 @@ header .btn-list .btn-perfil:hover {
   min-height: 32rem;
   height: auto;
   padding: 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
   background: #F8F8F8;
   border-top-left-radius: 2.4rem;
   border-top-right-radius: 2.4rem;
@@ -12032,6 +12141,7 @@ header .btn-list .btn-perfil:hover {
   transform: translateY(105%);
   box-shadow: 6px 2px 24px 0px rgba(115, 122, 131, 0.3);
   transition: all 0.3s ease-in-out;
+  z-index: 888;
   display: none;
 }
 
@@ -12044,10 +12154,15 @@ header .btn-list .btn-perfil:hover {
 .pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown .cbx-label span {
   white-space: nowrap;
   color: #737A83;
+  transition: all 0.3s ease-in-out;
 }
 
 .pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown .cbx-label span.cbx-area-select {
   border-color: #737A83;
+}
+
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown .cbx-label:hover span {
+  color: #00122B;
 }
 
 .pg-comprar-bilhetes .bilhetes-filters-list .dropdown.open a i {
@@ -12057,6 +12172,48 @@ header .btn-list .btn-perfil:hover {
 .pg-comprar-bilhetes .bilhetes-filters-list .dropdown.open .filter-list-dropdown {
   display: flex;
   animation: open-filter-dropdown .3s ease-out;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1.6rem 0;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list:last-child {
+  justify-content: flex-end;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .item-selected {
+  margin-left: .4rem;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .guardar-pesquisa label {
+  align-items: center;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .guardar-pesquisa i {
+  background: rgba(255, 255, 255, 0);
+  padding: .4rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .guardar-pesquisa i span {
+  font-size: 1.6rem;
+  color: #00122B;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .cbx:checked ~ .cbx-label i {
+  background: #F78946;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .cbx:checked ~ .cbx-label i span {
+  color: #ffffff;
 }
 
 html {
