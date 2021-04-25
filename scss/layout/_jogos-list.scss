@@ -4,7 +4,6 @@
         position: relative;
     }
 
-
     &-item {
         width: 100%;
         padding: .8rem;
@@ -52,7 +51,6 @@
     &-info {
         @include flex(column, center, center, center);
     }
-
 
     &-btn {
         @include flex(row, flex-end, center, center);

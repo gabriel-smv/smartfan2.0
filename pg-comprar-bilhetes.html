@@ -513,8 +513,8 @@
                 <div class="row">
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
-                            <li class="navbar-item">
-                                <a href="pg-comprar-bilhetes.html">
+                            <li class="navbar-item active">
+                                <a href="#">
                                     <i><span class="icon-ticket-outline"></span></i>
                                     Compra de Bilhetes
                                 </a>
@@ -579,7 +579,7 @@
 
                             <ul class="navbar-mobile-dropdown">
                                 <li class="navbar-item active">
-                                    <a href="pg-comprar-bilhetes.html">
+                                    <a href="#">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         Compra de Bilhetes
                                     </a>
@@ -634,6 +634,225 @@
                             </ul>
                         </div>
                     </nav>
+
+                    <section class="pg-comprar-bilhetes">
+                        <section class="bilhetes-filters col-12">
+                            <ul class="bilhetes-filters-list">
+                                <li>
+                                    <input type="checkbox" class="cbx" name="calendario-jogo" id="calendario-jogo">
+                                    <label for="calendario-jogo" class="cbx-label">
+                                        <span>Calendário de jogos</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" class="cbx" name="futebol" id="futebol">
+                                    <label for="futebol" class="cbx-label">
+                                        <span>Futebol</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Modalidades <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <ul class="filter-list-dropdown">
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="todas-modalidades"
+                                                id="todas-modalidades">
+                                            <label for="todas-modalidades" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Todas</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="futsal" id="futsal">
+                                            <label for="futsal" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Futsal</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="andebol" id="andebol">
+                                            <label for="andebol" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Andebol</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="basquetebol" id="basquetebol">
+                                            <label for="basquetebol" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Basquetebol</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="hoquei" id="hoquei">
+                                            <label for="hoquei" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Hoquei em patins</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="voleibol" id="voleibol">
+                                            <label for="voleibol" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Voleibol</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Competições <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <ul class="filter-list-dropdown">
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="todas-ligas" id="todas-ligas">
+                                            <label for="todas-ligas" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Todas</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="primeira-liga" id="primeira-liga">
+                                            <label for="primeira-liga" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Primeira Liga</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="segunda-liga" id="segunda-liga">
+                                            <label for="segunda-liga" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Segunda Liga</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary no-round">
+                                <i><span class="icon-search"></span></i> Procurar
+                            </a>
+                        </section>
+
+                        <section class="classificar-pesquisa col-12">
+                            <ul class="bilhetes-filters-list col-6">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Mais critérios de pesquisa <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <ul class="filter-list-dropdown">
+
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="bilhetes-filters-list col-6">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Ordenar por: <span class="item-selected">Data mais recente</span>
+                                        <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <ul class="filter-list-dropdown">
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="mais-recente" id="mais-recente">
+                                            <label for="mais-recente" class="cbx-label">
+                                                <span>Data mais recente</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="mais-antiga" id="mais-antiga">
+                                            <label for="mais-antiga" class="cbx-label">
+                                                <span>Data mais antiga</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="modalidade" id="modalidade">
+                                            <label for="modalidade" class="cbx-label">
+                                                <span>Modalidade</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="competicao" id="competicao">
+                                            <label for="competicao" class="cbx-label">
+                                                <span>Competição</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="guardar-pesquisa">
+                                    <input type="checkbox" class="cbx" name="guardar-pesquisa" id="guardar-pesquisa">
+                                    <label for="guardar-pesquisa" class="cbx-label">
+                                        <i><span class="icon-star"></span></i> <span>Guardar pesquisa</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="content-wrapper col-12">
+                            <div class="row">
+                                <div class="jogos col-lg-8">
+                                    <ul class="jogos-list">
+                                        <li class="jogos-item">
+                                            <div class="jogos-modalidade col-lg-2">
+                                                <img src="images/svg/basquetebol.svg" alt="">
+                                                <span>Basquetebol</span>
+                                            </div>
+
+                                            <div class="jogos-clubes col-lg-3">
+                                                <div class="clube">
+                                                    <img src="images/boavista-fc.png" alt="">
+                                                    <span>Boavista FC</span>
+                                                </div>
+
+                                                <span>VS</span>
+
+                                                <div class="clube">
+                                                    <img src="images/boavista-fc.png" alt="">
+                                                    <span>Boavista FC</span>
+                                                </div>
+                                            </div>
+
+                                            <ul class="jogos-info col-lg-2">
+                                                <li>Liga NOS</li>
+                                                <li><span>10/mar</span>, <span>18h45</span></li>
+                                                <li>Estádio José de Alvalade</li>
+                                            </ul>
+
+                                            <div class="jogos-btn col-lg-5">
+                                                <a href="#" class="btn btn-secondary no-round">
+                                                    <i><span class="icon-express"></span></i> Compra express
+                                                </a>
+
+                                                <a href="#" class="btn btn-primary no-round">
+                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ads-wrapper col-lg-4">
+                                    <a href="#" target="_blank">
+                                        <img src="images/ads-img.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
                 </div>
             </div>
         </section>
