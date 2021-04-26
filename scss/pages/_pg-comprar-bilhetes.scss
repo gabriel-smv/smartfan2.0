@@ -9,6 +9,10 @@
     border-top-left-radius: 2.4rem;
     border-top-right-radius: 2.4rem;
 
+    @include md {
+        margin-top: .8rem;
+    }
+
     .bilhetes-filters {
         @include flex(row, space-between, center, center);
         padding-bottom: 1.6rem;
@@ -112,10 +116,46 @@
                 }
             }
         }
+
+        @include md {
+            @include flex(row, center, center, center);
+            flex-wrap: wrap;
+
+            .btn {
+                margin: 2.4rem 1.6rem 0;
+            }
+        }
+
+        @include sm {
+            &-list {
+                flex-wrap: wrap;
+
+                li {
+                    width: 50%;
+                    margin-bottom: .8rem;
+                    border: none;
+
+                    .cbx-label {
+                        justify-content: center;
+                    }
+                }
+
+                .dropdown {
+                    a {
+                        justify-content: center;
+                    }
+
+                    .cbx-label {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
     }
 
     .classificar-pesquisa {
         @include flex(row, space-between, center, center);
+        flex-wrap: wrap;
         padding: 1.6rem 0;
 
         .bilhetes-filters-list {
@@ -153,6 +193,18 @@
 
         .cbx:checked~.cbx-label i span {
             color: $white-01;
+        }
+
+        @include sm {
+            .bilhetes-filters-list {
+                @include flex(column, center, center, center);
+                padding-left: 0;
+
+                .guardar-pesquisa {
+                    @include flex(row, center, center, center);
+                    padding-left: 0;
+                }
+            }
         }
     }
 }

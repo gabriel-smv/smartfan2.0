@@ -11795,13 +11795,17 @@ header .btn-list .btn-perfil:hover {
 
 .jogos-item {
   width: 100%;
-  padding: .8rem;
+  padding: 1.6rem .8rem;
+  margin-bottom: 2.4rem;
+  border: 1px solid #F0F4F6;
   background: #ffffff;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .jogos-modalidade {
@@ -11826,12 +11830,26 @@ header .btn-list .btn-perfil:hover {
   line-height: 1.2em;
 }
 
+@media (max-width: 767px) {
+  .jogos-modalidade {
+    order: 1;
+    padding: 0 1.6rem;
+  }
+  .jogos-modalidade img {
+    margin-bottom: 0;
+  }
+  .jogos-modalidade span {
+    display: none;
+  }
+}
+
 .jogos-clubes {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
+  border-left: 1px solid #737A83;
 }
 
 .jogos-clubes .clube {
@@ -11853,8 +11871,25 @@ header .btn-list .btn-perfil:hover {
 .jogos-clubes .clube span {
   color: #00122B;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2em;
+  text-align: center;
+}
+
+.jogos-clubes span {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  color: #021D43;
+  margin: 0 .8rem;
+}
+
+@media (max-width: 767px) {
+  .jogos-clubes {
+    order: 3;
+    border: none;
+    margin: 2.4rem 0;
+  }
 }
 
 .jogos-info {
@@ -11863,6 +11898,34 @@ header .btn-list .btn-perfil:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  text-align: center;
+}
+
+.jogos-info li {
+  margin: .4rem 0;
+}
+
+.jogos-info li:first-child {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #00122B;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .jogos-info {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .jogos-btn {
@@ -11871,6 +11934,52 @@ header .btn-list .btn-perfil:hover {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+}
+
+.jogos-btn .btn {
+  margin-left: 1.6rem;
+}
+
+.jogos-btn .btn:first-child {
+  margin-left: 0;
+}
+
+.jogos-btn p {
+  max-width: 50%;
+  text-align: center;
+  color: #737A83;
+}
+
+.jogos-btn p span {
+  font-size: 1.8rem;
+  color: #00122B;
+}
+
+@media (max-width: 1150px) {
+  .jogos-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+  }
+  .jogos-btn .btn {
+    margin: .8rem 0;
+  }
+  .jogos-btn p {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .jogos-btn {
+    order: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .navbar {
@@ -12061,6 +12170,12 @@ header .btn-list .btn-perfil:hover {
   border-top-right-radius: 2.4rem;
 }
 
+@media (max-width: 992px) {
+  .pg-comprar-bilhetes {
+    margin-top: .8rem;
+  }
+}
+
 .pg-comprar-bilhetes .bilhetes-filters {
   display: flex;
   flex-direction: row;
@@ -12174,12 +12289,47 @@ header .btn-list .btn-perfil:hover {
   animation: open-filter-dropdown .3s ease-out;
 }
 
+@media (max-width: 992px) {
+  .pg-comprar-bilhetes .bilhetes-filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters .btn {
+    margin: 2.4rem 1.6rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .pg-comprar-bilhetes .bilhetes-filters-list {
+    flex-wrap: wrap;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list li {
+    width: 50%;
+    margin-bottom: .8rem;
+    border: none;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list li .cbx-label {
+    justify-content: center;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list .dropdown a {
+    justify-content: center;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list .dropdown .cbx-label {
+    justify-content: flex-start;
+  }
+}
+
 .pg-comprar-bilhetes .classificar-pesquisa {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
   padding: 1.6rem 0;
 }
 
@@ -12214,6 +12364,25 @@ header .btn-list .btn-perfil:hover {
 
 .pg-comprar-bilhetes .classificar-pesquisa .cbx:checked ~ .cbx-label i span {
   color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 0;
+  }
+  .pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .guardar-pesquisa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-left: 0;
+  }
 }
 
 html {
