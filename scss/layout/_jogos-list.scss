@@ -142,4 +142,20 @@
         }
     }
 
+    @include xs {
+        &-modalidade {
+            width: 100%;
+            margin-bottom: .8rem;
+        }
+
+        &-info {
+            width: 100%;
+            @include flex(column, center, center, center);
+        }
+
+        &-btn {
+            @include flex(column, center, center, center);
+        }
+    }
+
 }

@@ -127,6 +127,7 @@
         }
 
         @include sm {
+
             &-list {
                 flex-wrap: wrap;
 
@@ -151,6 +152,46 @@
                 }
             }
         }
+
+        @include xs {
+            @include flex(column, center, center, center);
+
+            &-list {
+                width: 100%;
+
+                li {
+                    padding: 0;
+                    margin: 1.2rem 0;
+                }
+            }
+
+            .btn {
+                margin-top: 1.6rem;
+            }
+        }
+
+        @include xxs {
+
+            &-list {
+                @include flex(column, center, flex-start, flex-start);
+
+                li {
+                    width: 100%;
+                }
+
+                .dropdown {
+
+                    .filter-list-dropdown {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+
+            .btn {
+                margin-top: 1.6rem;
+            }
+        }
     }
 
     .classificar-pesquisa {
@@ -165,6 +206,13 @@
 
             .item-selected {
                 margin-left: .4rem;
+            }
+
+            .dropdown {
+                .filter-list-dropdown {
+                    right: 0;
+                    left: auto;
+                }
             }
 
             .guardar-pesquisa {
@@ -197,8 +245,13 @@
 
         @include sm {
             .bilhetes-filters-list {
-                @include flex(column, center, center, center);
+                @include flex(column, center, flex-end, flex-end);
                 padding-left: 0;
+
+                li {
+                    width: auto;
+                    padding: 0;
+                }
 
                 .guardar-pesquisa {
                     @include flex(row, center, center, center);

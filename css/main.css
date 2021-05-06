@@ -11982,6 +11982,28 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .jogos-modalidade {
+    width: 100%;
+    margin-bottom: .8rem;
+  }
+  .jogos-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .jogos-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
 .navbar {
   width: 100%;
   position: relative;
@@ -12323,6 +12345,46 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .pg-comprar-bilhetes .bilhetes-filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list {
+    width: 100%;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list li {
+    padding: 0;
+    margin: 1.2rem 0;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters .btn {
+    margin-top: 1.6rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .pg-comprar-bilhetes .bilhetes-filters-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list li {
+    width: 100%;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown {
+    right: 0;
+    left: auto;
+  }
+  .pg-comprar-bilhetes .bilhetes-filters .btn {
+    margin-top: 1.6rem;
+  }
+}
+
 .pg-comprar-bilhetes .classificar-pesquisa {
   display: flex;
   flex-direction: row;
@@ -12339,6 +12401,11 @@ header .btn-list .btn-perfil:hover {
 
 .pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .item-selected {
   margin-left: .4rem;
+}
+
+.pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .dropdown .filter-list-dropdown {
+  right: 0;
+  left: auto;
 }
 
 .pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .guardar-pesquisa label {
@@ -12371,9 +12438,13 @@ header .btn-list .btn-perfil:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
     padding-left: 0;
+  }
+  .pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list li {
+    width: auto;
+    padding: 0;
   }
   .pg-comprar-bilhetes .classificar-pesquisa .bilhetes-filters-list .guardar-pesquisa {
     display: flex;
