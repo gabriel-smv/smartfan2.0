@@ -9414,6 +9414,28 @@ a span:focus {
   }
 }
 
+.pg-padrao {
+  width: 100%;
+  min-height: 32rem;
+  height: auto;
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  background: #F8F8F8;
+  border-top-left-radius: 2.4rem;
+  border-top-right-radius: 2.4rem;
+}
+
+@media (max-width: 992px) {
+  .pg-padrao {
+    margin-top: .8rem;
+  }
+}
+
 @media (max-width: 992px) {
   .no-mobile {
     display: none !important;
@@ -12079,7 +12101,6 @@ header .btn-list .btn-perfil:hover {
 
 .navbar-item.disabled a {
   color: #737A83;
-  pointer-events: none;
 }
 
 .navbar-item.disabled a i {
@@ -12088,6 +12109,10 @@ header .btn-list .btn-perfil:hover {
 
 .navbar-item.disabled a .disabled-icon {
   display: block;
+}
+
+.navbar-item.disabled a::before {
+  background-color: #737A83;
 }
 
 .navbar .navbar-mobile {
@@ -12174,28 +12199,6 @@ header .btn-list .btn-perfil:hover {
 .navbar .navbar-mobile.open .navbar-mobile-dropdown {
   display: flex;
   animation: open-navbar-mobile .3s ease-out;
-}
-
-.pg-comprar-bilhetes {
-  width: 100%;
-  min-height: 32rem;
-  height: auto;
-  padding: 1.6rem 2.4rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  background: #F8F8F8;
-  border-top-left-radius: 2.4rem;
-  border-top-right-radius: 2.4rem;
-}
-
-@media (max-width: 992px) {
-  .pg-comprar-bilhetes {
-    margin-top: .8rem;
-  }
 }
 
 .pg-comprar-bilhetes .bilhetes-filters {

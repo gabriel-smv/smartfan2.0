@@ -64,7 +64,6 @@
         &.disabled {
             a {
                 color: $gray-04;
-                pointer-events: none;
 
                 i {
                     display: none;
@@ -72,6 +71,10 @@
 
                 .disabled-icon {
                     display: block;
+                }
+
+                &::before {
+                    background-color: $gray-04;
                 }
             }
         }
