@@ -29,6 +29,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-next:before {
+    content: "\e931";
+}
+
+.icon-prev:before {
+    content: "\e932";
+}
+
 .icon-registo-atividades-outline:before {
     content: "\e92f";
 }
