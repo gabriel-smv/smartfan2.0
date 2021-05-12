@@ -10217,6 +10217,24 @@ p strong {
   --color-hover: #737A83;
 }
 
+@media (max-width: 575px) {
+  .swiper-fan .swiper-slide {
+    align-items: flex-end;
+  }
+  .swiper-fan .swiper-slide h3 {
+    text-align: right;
+  }
+}
+
+@media (max-width: 425px) {
+  .swiper-fan .swiper-slide {
+    align-items: center;
+  }
+  .swiper-fan .swiper-slide h3 {
+    text-align: center;
+  }
+}
+
 .swiper-fan .swiper-pagination {
   display: flex;
   flex-direction: row;
@@ -10258,7 +10276,7 @@ p strong {
 }
 
 .banner-fan .column-01 .img-profile-wrapper {
-  margin-bottom: -7.2rem;
+  margin-bottom: -5.6rem;
   z-index: 1111;
 }
 
@@ -10384,6 +10402,29 @@ p strong {
   }
 }
 
+@media (max-width: 575px) {
+  .banner-fan .column-01 .img-profile-wrapper {
+    margin-bottom: 0;
+  }
+  .banner-fan .column-02 .infos-club {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-fan .column-01 {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .banner-fan .column-01 .img-profile-wrapper {
+    text-align: center;
+  }
+}
+
 .banner-fan.logged-no-club {
   background-image: url("../../images/banner-img.jpg");
   background-repeat: no-repeat;
@@ -10422,9 +10463,13 @@ p strong {
 }
 
 @media (max-width: 425px) {
-  .banner-fan.logged-no-club .img-profile-wrapper a {
-    width: 8.8rem;
-    height: 8.8rem;
+  .banner-fan.logged-no-club .content-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2.4rem;
+  }
+  .banner-fan.logged-no-club .content-wrapper h3 {
+    text-align: center;
   }
 }
 
@@ -10445,6 +10490,7 @@ p strong {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .banner-fan.banner-socio .infos-profile-dados {
@@ -10518,6 +10564,36 @@ p strong {
 
 .banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link:before {
   background: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .banner-fan.banner-socio .infos-profile-dados {
+    margin-top: 1.6rem;
+    padding-right: 0;
+  }
+  .banner-fan.banner-socio .infos-profile-notification {
+    margin-top: 2.4rem;
+    padding-left: 0;
+    border: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-fan.banner-socio .infos-profile-notification .notification-list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-bottom: 2.4rem;
+  }
+  .banner-fan.banner-socio .infos-profile-notification .notification-list li:last-child {
+    margin-bottom: 0;
+  }
+  .banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link {
+    margin-top: .8rem;
+    margin-left: 0;
+  }
 }
 
 .banner-fan.other-club .column-01 {

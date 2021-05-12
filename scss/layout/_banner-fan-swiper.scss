@@ -15,6 +15,22 @@
             --color-btn: #FFFFFF;
             --color-hover: #737A83;
         }
+
+        @include xs {
+            align-items: flex-end;
+
+            h3 {
+                text-align: right;
+            }
+        }
+
+        @include xxs {
+            align-items: center;
+
+            h3 {
+                text-align: center;
+            }
+        }
     }
 
     .swiper-pagination {
