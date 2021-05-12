@@ -12,6 +12,7 @@
 
     .column-01 {
         @include flex(row, flex-start, center, center);
+        flex-wrap: wrap;
 
         .img-profile-wrapper {
 
@@ -68,6 +69,7 @@
                 }
             }
         }
+
     }
 
     .column-02 {
@@ -102,6 +104,17 @@
         }
     }
 
+    @include mlg {
+        .column-01 {
+            .img-profile-wrapper {
+                a {
+                    width: 15rem;
+                    height: 15rem;
+                }
+            }
+        }
+    }
+
     @include md {
         .column-01 {
             order: 2;
@@ -117,6 +130,17 @@
         .column-02 {
             order: 1;
             margin-bottom: 3.2rem;
+        }
+    }
+
+    @include sm {
+        .column-01 {
+            .img-profile-wrapper {
+                a {
+                    width: 12rem;
+                    height: 12rem;
+                }
+            }
         }
     }
 
@@ -137,6 +161,28 @@
             .btn {
                 --color-btn: #FFFFFF;
                 --color-hover: #737A83;
+            }
+        }
+
+        @include xs {
+
+            .content-wrapper {
+                justify-content: flex-start;
+                align-items: flex-end;
+                // padding-left: 8rem;
+
+                h3 {
+                    text-align: right;
+                }
+            }
+        }
+
+        @include xxs {
+            .img-profile-wrapper {
+                a {
+                    width: 8.8rem;
+                    height: 8.8rem;
+                }
             }
         }
     }
@@ -219,6 +265,19 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &.other-club {
+        .column-01 {
+            flex-wrap: wrap;
+
+
+            p {
+                width: 100%;
+                @include font(2.4rem, 300, 1em);
+                color: $white-01;
             }
         }
     }

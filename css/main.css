@@ -10254,6 +10254,7 @@ p strong {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .banner-fan .column-01 .img-profile-wrapper {
@@ -10355,6 +10356,13 @@ p strong {
   object-position: center;
 }
 
+@media (max-width: 1150px) {
+  .banner-fan .column-01 .img-profile-wrapper a {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
 @media (max-width: 992px) {
   .banner-fan .column-01 {
     order: 2;
@@ -10366,6 +10374,13 @@ p strong {
   .banner-fan .column-02 {
     order: 1;
     margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-fan .column-01 .img-profile-wrapper a {
+    width: 12rem;
+    height: 12rem;
   }
 }
 
@@ -10394,6 +10409,23 @@ p strong {
 .banner-fan.logged-no-club .content-wrapper .btn {
   --color-btn: #FFFFFF;
   --color-hover: #737A83;
+}
+
+@media (max-width: 575px) {
+  .banner-fan.logged-no-club .content-wrapper {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .banner-fan.logged-no-club .content-wrapper h3 {
+    text-align: right;
+  }
+}
+
+@media (max-width: 425px) {
+  .banner-fan.logged-no-club .img-profile-wrapper a {
+    width: 8.8rem;
+    height: 8.8rem;
+  }
 }
 
 .banner-fan.banner-socio {
@@ -10486,6 +10518,41 @@ p strong {
 
 .banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link:before {
   background: #ffffff;
+}
+
+.banner-fan.other-club .column-01 {
+  flex-wrap: wrap;
+}
+
+.banner-fan.other-club .column-01 p {
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+.cards-fan {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.cards-fan li {
+  height: 37rem;
+  padding: .8rem;
+}
+
+.cards-fan-item {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 1.6rem;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 footer {
@@ -12616,6 +12683,10 @@ header .btn-list .btn-perfil:hover {
     align-content: center;
     padding-left: 0;
   }
+}
+
+.pg-area-fan {
+  padding: 1.6rem;
 }
 
 html {
