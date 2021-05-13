@@ -1,0 +1,51 @@
+.content-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 16rem;
+    background: $white-01;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    padding-bottom: 12rem;
+    @include flex(column, flex-start, center, center);
+
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+
+    .btn-voltar-cards {
+        color: $gray-04;
+        @include flex(row, flex-start, center, center);
+        @include absolute(1.6rem, auto, auto, 1.6rem);
+        @include font(1.4rem, 400, 1.2em);
+
+
+        i {
+            margin-right: .8rem;
+
+            span {
+                color: $black-02;
+                transition: $transition-01;
+            }
+        }
+
+        &:hover {
+            i {
+                span {
+                    color: $gray-04;
+                }
+            }
+        }
+    }
+
+    h2,
+    h5 {
+        text-align: center;
+    }
+
+    @include sm {
+        padding-top: 4.8rem;
+    }
+
+    @include xxs {
+        padding-top: 5.6rem;
+    }
+}

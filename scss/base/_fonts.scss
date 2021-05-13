@@ -29,6 +29,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-back-cards:before {
+    content: "\e933";
+}
+
 .icon-next:before {
     content: "\e931";
 }

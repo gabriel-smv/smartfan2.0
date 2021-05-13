@@ -1,0 +1,54 @@
+form {
+    width: 100%;
+    @include flex(row, flex-start, flex-start, flex-start);
+    flex-wrap: wrap;
+    position: relative;
+
+    .container-input {
+        padding: 1.6rem;
+        @include flex(column, flex-start, flex-start, flex-start);
+
+        @include xs {
+            padding: 1.6rem 0
+        }
+    }
+
+    label {
+        @include font(1.4rem, 400, 1.2em);
+        color: $black-02;
+        margin-bottom: .8rem;
+    }
+
+    input {
+        width: 100%;
+        min-height: 4rem;
+        font-family: $font-01;
+        @include font(1.4rem, 400, 1.2em);
+        padding: .8rem 1.2rem;
+        border: 1px solid rgba(115, 122, 131, .5);
+        border-radius: .6rem;
+        color: $gray-04;
+
+        &:active,
+        &:focus {
+            outline: none;
+            border: 2px solid #A6CBF3;
+        }
+
+        &:disabled {
+            background-color: $gray-01;
+            border-color: $gray-01;
+            pointer-events: none;
+        }
+    }
+
+    .container-btn {
+        width: 100%;
+        @include flex(row, center, center, center);
+        margin-top: 3.2rem;
+
+        @include xs {
+            @include flex(column, flex-start, center, center);
+        }
+    }
+}
