@@ -736,15 +736,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item active">
-                                <a href="#">
-                                    <i class="disabled-icon"><span class="icon-locked"></span></i>
-                                    <i><span class="icon-fan-outline"></span></i>
-                                    Área de Fan
-                                </a>
-                            </li>
-
-                            <li class="navbar-item disabled">
+                            <li class="navbar-item">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-agenda"></span></i>
@@ -752,7 +744,8 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
+
+                            <li class="navbar-item active">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-meus-clubes"></span></i>
@@ -760,7 +753,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
+                            <li class="navbar-item">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-quotas"></span></i>
@@ -768,7 +761,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
+                            <li class="navbar-item">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-lugar-cativo"></span></i>
@@ -801,15 +794,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item active disabled">
-                                    <a href="#">
-                                        <i class="disabled-icon"><span class="icon-locked"></span></i>
-                                        <i><span class="icon-fan-outline"></span></i>
-                                        Área de Fan
-                                    </a>
-                                </li>
-
-                                <li class="navbar-item disabled">
+                                <li class="navbar-item">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-agenda"></span></i>
@@ -817,7 +802,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
+                                <li class="navbar-item active">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-meus-clubes"></span></i>
@@ -825,7 +810,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
+                                <li class="navbar-item">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-quotas"></span></i>
@@ -833,7 +818,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
+                                <li class="navbar-item">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-lugar-cativo"></span></i>
@@ -844,246 +829,85 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-area-fan">
-                        <ul class="cards-fan">
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-bilhetes">
-                                    <div class="cards-header">
-                                        <i><span class="icon-ticket-outline"></span></i>
-                                        <h2>Comprar bilhetes</h2>
-                                    </div>
+                    <section class="pg-padrao pg-grupos">
+                        <div class="content-wrapper">
+                            <a href="pg-area-socio.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Voltar
+                            </a>
 
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
+                            <h2>Criação de grupo</h2>
+                            <h5>
+                                Nesta área podes adicionar sócios, dado a possibilidade de gerires o pagamento de
+                                quotas, a compra de lugares cativos e pagamento de bilhetes dos teus amigos e
+                                familiares.
+                            </h5>
 
-                                            <div class="swiper-wrapper">
+                            <div class="grupo-list-empty" style="display: none;">
+                                <img src="images/svg/folder.svg" alt="">
+                                <p>Não tens grupo criado</p>
+                            </div>
 
-                                                <div class="swiper-slide">
-                                                    <a href="#" class="btn-link">Comprar para este jogo</a>
+                            <ul class="grupo-list">
+                                <li>
+                                    <img src="images/svg/grupo-item.svg" alt="">
+                                    <a class="dropdown-link" data-toggle="collapse" href="#grupo-details" role="button"
+                                        aria-expanded="false" aria-controls="grupo-details">
+                                        <span>Smartmove</span> <i><span class="icon-arrow-down"></span></i>
+                                    </a>
 
-                                                    <div class="jogo-item">
-                                                        <ul class="jogo-item-clubes">
-                                                            <li>
-                                                                <a href="#"><img src="images/boavista-fc.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><img src="images/sporting-cp.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <ul class="jogo-item-infos">
-                                                            <li class="jogo-item-infos-modalidade">
-                                                                <i><span class="icon-futebol"></span></i> Futebol
-                                                            </li>
-
-                                                            <li class="jogo-item-infos-clubes">
-                                                                <span><strong>Boavista FC</strong></span> vs
-                                                                <span><strong>Sporting CP</strong></span>
-                                                            </li>
-
-                                                            <li class="jogo-item-infos-data">
-                                                                <span>Dom</span>, <span>13/mar 2021</span>,
-                                                                <span>18h00</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-comprar-bilhetes.html" class="btn btn-secondary no-round">Outros
-                                            jogos</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-loja">
-                                    <div class="cards-header">
-                                        <i><span class="icon-store"></span></i>
-                                        <h2>Loja</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <ul class="produto-infos">
-                                                            <li>Hoody SPORTING Branca Retro</li>
-                                                            <li class="produto-infos-preco">44,91 €</li>
-                                                        </ul>
-                                                        <div class="produto-img">
-                                                            <img src="images/placeholder-loja.png" alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar na
-                                            loja</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- ADEPTO/FAN SEM CLUBE DO CORAÇÃO -->
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-clube-coracao">
-                                    <div class="cards-header">
-                                        <i><span class="icon-heart"></span></i>
-                                        <h2>Melhora a tua experiência</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Segue o teu clube do coração</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Clube do
-                                            coração</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- ADEPTO/FAN COM CLUBE DO CORAÇÃO -->
-                            <li class="cards-fan-wrapper col-lg-4" style="display: none;">
-                                <div class="cards-fan-item item-clube-coracao">
-                                    <div class="cards-header">
-                                        <i><span class="icon-meus-clubes"></span></i>
-                                        <h2>Apoia o teu clube</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Se já és sócio <a href="#" class="btn-link">associa o teu cartão</a> à tua
-                                            conta smartfan e tem acesso a uma área exclusiva para sócios e vários
-                                            serviços.</p>
-                                        <p>Se ainda não és sócio, torna-te sócio.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Faz-te sócio</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-fan-outline"></span></i>
-                                        <h2>Dados de Conta</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <img src="images/user-placeholder.png" alt="" class="img-user">
-
-                                        <ul class="dados-user">
-                                            <li class="dados-user-name">Neymar Ninja JR</li>
-                                            <li>ID SMARTFAN nº: <span>983654.543</span></li>
-                                            <li><span>neymarjr@gmail.com</span></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Ver dados de perfil</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <!-- GRUPO INATIVO -->
-                                <div class="cards-fan-item item-grupo" style="display: none;">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Criação de Grupo</h2>
-                                        <span class="grupo-state inativo">Inativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Adiciona contas smartfan e gere o pagamento de bilhetes dos teus amigos e
-                                            familiares.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-grupos.html" class="btn btn-secondary no-round">Gerir grupo(s)</a>
-                                    </div>
-                                </div>
-
-                                <!-- GRUPO ATIVO -->
-                                <div class="cards-fan-item item-grupo">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Criação de Grupo</h2>
-                                        <span class="grupo-state ativo">Ativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <ul class="grupos-list">
-                                            <li>
-                                                <a href="pg-grupos.html">
-                                                    <img src="images/svg/grupo-item.svg" alt="">
-                                                    <span>Amigos do peito</span>
+                                    <div class="collapse grupo-details" id="grupo-details">
+                                        <!-- <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-link" id="socios-tab" data-toggle="tab" href="#socios"
+                                                    role="tab" aria-controls="socios" aria-selected="true">
+                                                    <i><span class="icon-grupo"></span></i> Sócios
                                                 </a>
-                                            </li>
 
-                                            <li>
-                                                <a href="pg-grupos.html">
-                                                    <img src="images/svg/grupo-item.svg" alt="">
-                                                    <span>Família</span>
+                                                <a class="nav-link" id="perfil-tab" data-toggle="tab" href="#perfil"
+                                                    role="tab" aria-controls="perfil" aria-selected="false">
+                                                    <i><span class="icon-config"></span></i> Perfil
                                                 </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                            </div>
+                                        </nav>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-grupos.html" class="btn btn-secondary no-round">Gerir grupo(s)</a>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="socios" role="tabpanel"
+                                                aria-labelledby="socios-tab">SOCIOS</div>
+
+                                            <div class="tab-pane fade" id="perfil" role="tabpanel"
+                                                aria-labelledby="perfil-tab">PERFIL</div>
+                                        </div> -->
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="container-btn">
+                                <a class="btn btn-secondary no-round" data-toggle="modal" href="#modal-grupo">
+                                    Criar grupo
+                                </a>
+                            </div>
+
+                            <div class="modal fade" id="modal-grupo" tabindex="-1" aria-labelledby="modal-grupoLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modal-grupoLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-alertas">
-                                    <div class="cards-header">
-                                        <i><span class="icon-mensagem"></span></i>
-                                        <h2>Alertas / Notificações</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="notification-wrapper">
-                                            <input type="checkbox" name="notification" id="notification">
-                                            <label for="notification">
-                                                Pretendo subscrever notificações <div class="switch"></div>
-                                            </label>
-                                        </div>
-
-                                        <div class="alertas-wrapper">
-                                            <p>Os meus alertas (<span>0</span>)</p>
-                                            <a href="#"><i><span class="icon-config"></span></i></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Ver/gerir alertas</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -1234,8 +1058,6 @@
     <script src="includes/bootstrap.min.js"></script>
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
-    <script src="includes/swiper-bundle.min.js"></script>
-    <script src="includes/swipers.js"></script>
 
 </body>
 

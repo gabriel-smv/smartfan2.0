@@ -1,0 +1,82 @@
+@import "layout/pg-grupos-modal";
+
+.pg-grupos {
+    h5 {
+        width: 50%;
+    }
+
+    .grupo-list-empty {
+        @include flex(column, flex-start, center, center);
+
+        img {
+            width: 13.6rem;
+            height: 13.6rem;
+        }
+    }
+
+    .grupo-list {
+        @include flex(row, center, center, center);
+        flex-wrap: wrap;
+
+        li {
+            @include flex(column, flex-start, center, center);
+
+            img {
+                width: 13.6rem;
+                height: 13.6rem;
+            }
+        }
+
+        .dropdown-link {
+            @include flex(row, center, center, center);
+            @include font(1.4rem, 400, 1.2em);
+            color: $black-02;
+
+            i {
+                display: inline-block;
+                margin-left: 1.6rem;
+
+                span {
+                    color: $gray-04;
+                    transition: $transition-01;
+                }
+            }
+
+            &:hover {
+                span {
+                    color: $black-02;
+                }
+
+                i {
+                    span {
+                        color: $black-02;
+                    }
+                }
+            }
+        }
+
+        .collapse:not(.show) {
+            display: block;
+        }
+
+        .collapse:not(.in) {
+            display: none;
+        }
+    }
+
+    .grupo-details {
+        .nav-link {
+            color: $gray-04;
+
+            i {
+                span {
+                    color: $gray-04;
+                }
+            }
+        }
+    }
+
+    .container-btn {
+        margin-top: 3.2rem;
+    }
+}
