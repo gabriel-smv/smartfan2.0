@@ -3,7 +3,7 @@
     @include flex(row, flex-start, center, center);
     flex-wrap: wrap;
 
-    li {
+    &-wrapper {
         height: 35rem;
         padding: .8rem;
     }
@@ -102,8 +102,6 @@
 
         .swiper-slide {
             height: 100%;
-            @include flex(column, center, flex-start, flex-start);
-            padding-left: 1.6rem;
         }
 
         .swiper-button-prev,
@@ -121,9 +119,16 @@
     }
 
     .item-bilhetes {
+        .swiper-slide {
+            @include flex(column, center, flex-start, flex-start);
+
+            .btn-link {
+                @include absolute(0, auto, auto, 5.6rem);
+            }
+        }
+
         .jogo-item {
             @include flex(row, flex-start, center, center);
-            margin-top: 2.4rem;
 
             li {
                 height: auto;
@@ -189,6 +194,203 @@
                 &-data {
                     @include font(1.4rem, 400, 1.2em);
 
+                }
+            }
+        }
+    }
+
+    .item-loja {
+
+        .swiper-slide {
+            a {
+                width: 100%;
+                height: 100%;
+                @include flex(row, flex-start, center, center);
+            }
+
+            background: $white-01;
+        }
+
+        .produto-infos {
+            width: 50%;
+            @include font(1.8rem, 700, 1.2em);
+            color: $gray-04;
+
+            &-preco {
+                @include font(2rem, 900, 1.2em);
+                margin-top: .4rem;
+            }
+
+        }
+
+        .produto-img {
+            width: 35%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .item-grupo {
+        .cards-header {
+            position: relative;
+
+            .grupo-state {
+                padding: .8rem 2.4rem;
+                @include font(1.4rem, 500, 1.2em);
+                @include absolute (50%, 0, auto, auto);
+                transform: translateY(-50%);
+
+                &.ativo {
+                    background: #20B46B;
+                    color: $white-01;
+                }
+
+                &.inativo {
+                    background: $gray-04;
+                    color: $white-01;
+                }
+            }
+        }
+
+        .cards-content {
+            @include flex(row, center, center, center);
+
+            p {
+                font-weight: 400;
+                width: 70%;
+                text-align: center;
+            }
+
+            .grupos-list {
+                width: 100%;
+                overflow: hidden;
+                @include flex(row, center, center, center);
+
+                li {
+                    margin: 0 .8rem;
+
+                    a {
+                        display: inline-block;
+                        position: relative;
+                        width: 16rem;
+                        height: 16rem;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+
+                    span {
+                        @include font(1.6rem, 400, 1.2em);
+                        color: $gray-04;
+                        @include absolute(50%, auto, auto, 50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        width: 100%;
+                        padding: 0 .8rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .item-alertas {
+        .cards-content {
+            @include flex(column, center, flex-start, flex-start);
+            padding-right: 4rem;
+        }
+
+        .notification-wrapper {
+            width: 100%;
+            margin: .8rem 0;
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            label {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+                @include font(1.6rem, 400, 1.4em);
+                color: $gray-04;
+                transition: $transition-01;
+                cursor: pointer;
+
+                .switch {
+                    width: 6.4rem;
+                    height: 3.2rem;
+                    border-radius: 50px;
+                    border: 1px solid $gray-04;
+                    position: relative;
+                    transition: $transition-01;
+
+                    &:before {
+                        content: '';
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        background: $gray-04;
+                        border-radius: 50%;
+                        @include absolute(50%, auto, auto, .4rem);
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+
+            input[type="checkbox"]:checked~label {
+                color: $black-02;
+            }
+
+            input[type="checkbox"]:checked~label .switch {
+                border-color: $black-02;
+            }
+
+            input[type="checkbox"]:checked~label .switch:before {
+                background: $black-02;
+                left: auto;
+                right: .4rem;
+            }
+        }
+
+        .alertas-wrapper {
+            width: 100%;
+            margin: .8rem 0;
+            @include flex(row, space-between, center, center);
+
+            p {
+                @include font(1.6rem, 400, 1.4em);
+                color: $gray-04;
+
+                span {
+                    color: $black-01;
+                }
+            }
+
+            i {
+                display: inline-block;
+
+                span {
+                    font-size: 3.2rem;
+                    color: $gray-04;
+                    opacity: .5;
+                    transition: $transition-01;
+                }
+            }
+
+            a {
+                &:hover {
+                    span {
+                        opacity: 1;
+                    }
                 }
             }
         }

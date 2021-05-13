@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180.117" height="146.532" viewBox="0 0 180.117 146.532">
+  <g id="Grupo_535" data-name="Grupo 535" transform="translate(-154.942 -931.5)">
+    <g id="Grupo_405" data-name="Grupo 405" transform="translate(25.724 -55.499)">
+      <g id="Grupo_187" data-name="Grupo 187" transform="translate(171.391 1027.499)">
+        <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M37.828,42.556A21.278,21.278,0,1,0,16.55,21.278,21.283,21.283,0,0,0,37.828,42.556Zm18.914,4.728H48.6a25.722,25.722,0,0,1-21.544,0H18.914A18.912,18.912,0,0,0,0,66.2v2.364a7.094,7.094,0,0,0,7.093,7.093h61.47a7.094,7.094,0,0,0,7.093-7.093V66.2A18.912,18.912,0,0,0,56.741,47.284Z" transform="translate(20.116 0)" fill="none" stroke="rgba(115,122,131,0.15)" stroke-width="2"/>
+        <path id="Icon_awesome-user-alt-2" data-name="Icon awesome-user-alt" d="M37.828,42.556A21.278,21.278,0,1,0,16.55,21.278,21.283,21.283,0,0,0,37.828,42.556Zm18.914,4.728H48.6a25.722,25.722,0,0,1-21.544,0H18.914A18.912,18.912,0,0,0,0,66.2v2.364a7.094,7.094,0,0,0,7.093,7.093h61.47a7.094,7.094,0,0,0,7.093-7.093V66.2A18.912,18.912,0,0,0,56.741,47.284Z" transform="translate(0 9.079)" fill="#fff" stroke="rgba(115,122,131,0.15)" stroke-width="2"/>
+      </g>
+    </g>
+    <path id="Icon_metro-folder-plus" data-name="Icon metro-folder-plus" d="M103.324,28.174,80.934,5.784H2.571V151.316H181.687V28.174H103.324Z" transform="translate(152.871 926.216)" fill="none" stroke="#737a83" stroke-width="1"/>
+  </g>
+</svg>

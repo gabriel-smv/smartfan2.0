@@ -846,7 +846,7 @@
 
                     <section class="pg-padrao pg-area-fan">
                         <ul class="cards-fan">
-                            <li class="col-lg-4">
+                            <li class="cards-fan-wrapper col-lg-4">
                                 <div class="cards-fan-item item-bilhetes">
                                     <div class="cards-header">
                                         <i><span class="icon-ticket-outline"></span></i>
@@ -893,7 +893,6 @@
 
                                             </div>
 
-                                            <div class="swiper-button-prev"><span class="icon-prev"></span></div>
                                             <div class="swiper-button-next"><span class="icon-next"></span></div>
 
                                         </div>
@@ -906,15 +905,35 @@
                                 </div>
                             </li>
 
-                            <li class="col-lg-4">
-                                <div class="cards-fan-item">
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-loja">
                                     <div class="cards-header">
                                         <i><span class="icon-store"></span></i>
                                         <h2>Loja</h2>
                                     </div>
 
                                     <div class="cards-content">
+                                        <div class="swiper-container swiper-area-fan">
 
+                                            <div class="swiper-wrapper">
+
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <ul class="produto-infos">
+                                                            <li>Hoody SPORTING Branca Retro</li>
+                                                            <li class="produto-infos-preco">44,91 €</li>
+                                                        </ul>
+                                                        <div class="produto-img">
+                                                            <img src="images/placeholder-loja.png" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
+
+                                        </div>
                                     </div>
 
                                     <div class="cards-btn">
@@ -925,7 +944,7 @@
                             </li>
 
                             <!-- ADEPTO/FAN SEM CLUBE DO CORAÇÃO -->
-                            <li class="col-lg-4">
+                            <li class="cards-fan-wrapper col-lg-4">
                                 <div class="cards-fan-item item-clube-coracao">
                                     <div class="cards-header">
                                         <i><span class="icon-heart"></span></i>
@@ -944,7 +963,7 @@
                             </li>
 
                             <!-- ADEPTO/FAN COM CLUBE DO CORAÇÃO -->
-                            <li class="col-lg-4" style="display: none;">
+                            <li class="cards-fan-wrapper col-lg-4" style="display: none;">
                                 <div class="cards-fan-item item-clube-coracao">
                                     <div class="cards-header">
                                         <i><span class="icon-meus-clubes"></span></i>
@@ -964,7 +983,7 @@
                                 </div>
                             </li>
 
-                            <li class="col-lg-4">
+                            <li class="cards-fan-wrapper col-lg-4">
                                 <div class="cards-fan-item item-dados-conta">
                                     <div class="cards-header">
                                         <i><span class="icon-fan-outline"></span></i>
@@ -987,15 +1006,49 @@
                                 </div>
                             </li>
 
-                            <li class="col-lg-4">
-                                <div class="cards-fan-item">
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <!-- GRUPO INATIVO -->
+                                <div class="cards-fan-item item-grupo" style="display: none;">
                                     <div class="cards-header">
                                         <i><span class="icon-grupo"></span></i>
                                         <h2>Criação de Grupo</h2>
+                                        <span class="grupo-state inativo">Inativo</span>
                                     </div>
 
                                     <div class="cards-content">
+                                        <p>Adiciona contas smartfan e gere o pagamento de bilhetes dos teus amigos e
+                                            familiares.</p>
+                                    </div>
 
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Gerir grupo(s)</a>
+                                    </div>
+                                </div>
+
+                                <!-- GRUPO ATIVO -->
+                                <div class="cards-fan-item item-grupo">
+                                    <div class="cards-header">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <h2>Criação de Grupo</h2>
+                                        <span class="grupo-state ativo">Ativo</span>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <ul class="grupos-list">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/svg/grupo-item.svg" alt="">
+                                                    <span>Amigos do peito</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/svg/grupo-item.svg" alt="">
+                                                    <span>Família</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
 
                                     <div class="cards-btn">
@@ -1004,15 +1057,25 @@
                                 </div>
                             </li>
 
-                            <li class="col-lg-4">
-                                <div class="cards-fan-item">
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-alertas">
                                     <div class="cards-header">
                                         <i><span class="icon-mensagem"></span></i>
                                         <h2>Alertas / Notificações</h2>
                                     </div>
 
                                     <div class="cards-content">
+                                        <div class="notification-wrapper">
+                                            <input type="checkbox" name="notification" id="notification">
+                                            <label for="notification">
+                                                Pretendo subscrever notificações <div class="switch"></div>
+                                            </label>
+                                        </div>
 
+                                        <div class="alertas-wrapper">
+                                            <p>Os meus alertas (<span>0</span>)</p>
+                                            <a href="#"><i><span class="icon-config"></span></i></a>
+                                        </div>
                                     </div>
 
                                     <div class="cards-btn">
