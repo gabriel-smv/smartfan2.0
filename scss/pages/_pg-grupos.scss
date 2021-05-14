@@ -29,8 +29,7 @@
             }
         }
 
-        .dropdown-toggle,
-        .dropdown-link {
+        .dropdown-toggle {
             @include flex(row, center, center, center);
             @include font(1.4rem, 400, 1.2em);
             color: $black-02;
@@ -64,20 +63,13 @@
 
         .grupo-dropdown {
             @include absolute(95%, auto, auto, auto);
-            display: none;
-            min-width: 10rem;
-            padding: 0.5rem 0;
+            min-width: 45rem;
+            padding: 0;
             background-color: #fff;
-            border: 1px solid $black-02;
-            border-radius: 0.4rem;
+            border: 1px solid $gray-04;
+            border-radius: 0.6rem;
 
             z-index: 99;
-        }
-
-        .grupo-dropdown {
-            &.in {
-                display: block;
-            }
         }
 
     }

@@ -1,19 +1,9 @@
 .pg-grupos {
     .modal {
         z-index: 9999;
-        background: rgba(0, 0, 0, .7);
-
-        &.fade:not(.in) {
-            opacity: 0;
-            transition: $transition-01;
-        }
-
-        &.fade:not(.show) {
-            opacity: 1;
-        }
+        background: rgba(0, 0, 0, .6);
 
         .modal-dialog {
-            transform: none;
             margin-top: 12rem;
         }
     }

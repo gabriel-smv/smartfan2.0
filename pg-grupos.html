@@ -661,7 +661,7 @@
         </div>
     </header>
 
-    <main>
+    <main style="--color-club:#20B46B;">
         <section class="banner-fan banner-socio" style="--bg-color:#000000">
             <div class="container">
                 <div class="row">
@@ -850,82 +850,105 @@
                             <ul class="grupo-list">
                                 <li class="dropdown">
                                     <img src="images/svg/grupo-item.svg" alt="">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                                         <span>Smartmove</span> <i><span class="icon-arrow-down"></span></i>
                                     </a>
 
-                                    <div class="dropdown-menu grupo-dropdown">
-
-                                        <ul class="tabs-nav">
-                                            <li class="tab-item tab-socios">
-                                                <input checked="checked" type="radio" name="grupo-smv"
-                                                    id="tab-socios" />
-                                                <label for="tab-socios" class="tabs-btn">
-                                                    <i><span class="icon-grupo"></span></i> Sócios
-                                                </label>
-                                                <section class="tabs-content">
-                                                    <div class="tabs-content-clubes tab-socios">
-                                                        SÓCIOS
-                                                    </div>
-                                                </section>
-                                            </li>
-
-                                            <li class="tab-item tab-perfil">
-                                                <input type="radio" name="grupo-smv" id="tab-perfil" />
-                                                <label for="tab-perfil" class="tabs-btn">
-                                                    <i><span class="icon-config"></span></i> Perfil
-                                                </label>
-                                                <section class="tabs-content">
-                                                    <div class="tabs-content-clubes tab-perfil">
-                                                        PERFIL
-                                                    </div>
-                                                </section>
-                                            </li>
-                                        </ul>
-
-                                        <!-- <section class="tabs-content">
-
-                                            <div class="tabs-content-clubes tab-socios">
-                                                SÓCIOS
-                                            </div>
-
-                                            <div class="tabs-content-clubes tab-perfil">
-                                                PERFIL
-                                            </div>
-                                        </section> -->
-                                    </div>
-                                </li>
-
-                                <li class="dropdown">
-                                    <img src="images/svg/grupo-item.svg" alt="">
-                                    <a class="dropdown-link" data-bs-toggle="collapse" href="#collapseExample"
-                                        aria-expanded="false" aria-controls="collapseExample">
-                                        <span>Smartmove</span> <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <div class="grupo-dropdown" id="collapseExample">
-
+                                    <div class="grupo-dropdown dropdown-menu">
                                         <!-- Nav tabs -->
                                         <ul class="nav nav-tabs" id="myTab">
                                             <li class="nav-item">
-                                                <button class="nav-link active" id="home-tab" data-toggle="tab"
-                                                    data-target="#home" type="button" role="tab" aria-controls="home"
-                                                    aria-selected="true">Home</button>
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo1-socio" type="button" role="tab"
+                                                    aria-controls="grupo1-socio" aria-selected="true">
+                                                    <i><span class="icon-grupo"></span></i> Sócios
+                                                </button>
                                             </li>
+
                                             <li class="nav-item">
-                                                <button class="nav-link" id="profile-tab" data-toggle="tab"
-                                                    data-target="#profile" type="button" role="tab"
-                                                    aria-controls="profile" aria-selected="false">Profile</button>
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo1-perfil" type="button" role="tab"
+                                                    aria-controls="grupo1-perfil" aria-selected="false">
+                                                    <i><span class="icon-config"></span></i> Perfil
+                                                </button>
                                             </li>
                                         </ul>
 
                                         <!-- Tab panes -->
                                         <div class="tab-content">
-                                            <div class="tab-pane active" id="home" role="tabpanel"
-                                                aria-labelledby="home-tab">1
+                                            <div class="tab-pane fade show active" id="grupo1-socio" role="tabpanel">
+                                                <ul class="socios-grupo">
+                                                    <li>
+                                                        Sócio nº <span>2345434.8</span>,
+                                                        <span>antonio.precatado@smartmove.pt</span>
+                                                    </li>
+                                                    <li>
+                                                        Sócio nº <span> 2743234.2</span>,
+                                                        <span>rui.precatado@smartmove.pt</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="container-btn">
+                                                    <a href="#" class="btn-edit">
+                                                        <i><span class="icon-add"></span></i> Editar grupo
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="tab-pane" id="profile" role="tabpanel"
-                                                aria-labelledby="profile-tab">2
+
+                                            <div class="tab-pane fade" id="grupo1-perfil" role="tabpanel">
+                                                2
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="dropdown">
+                                    <img src="images/svg/grupo-item.svg" alt="">
+                                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                                        <span>Amigos do peito</span> <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <div class="grupo-dropdown dropdown-menu">
+
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo2-socio" type="button" role="tab"
+                                                    aria-controls="grupo2-socio" aria-selected="true">
+                                                    <i><span class="icon-grupo"></span></i> Sócios
+                                                </button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo2-perfil" type="button" role="tab"
+                                                    aria-controls="grupo2-perfil" aria-selected="false">
+                                                    <i><span class="icon-config"></span></i> Perfil
+                                                </button>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="grupo2-socio" role="tabpanel">
+                                                <ul class="socios-grupo">
+                                                    <li>
+                                                        Sócio nº <span>2345434.8</span>,
+                                                        <span>antonio.precatado@smartmove.pt</span>
+                                                    </li>
+                                                    <li>
+                                                        Sócio nº <span> 2743234.2</span>,
+                                                        <span>rui.precatado@smartmove.pt</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="container-btn">
+                                                    <a href="#" class="btn-edit">
+                                                        <i><span class="icon-add"></span></i> Editar grupo
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="grupo2-perfil" role="tabpanel">
+                                                2
                                             </div>
                                         </div>
                                     </div>
@@ -959,7 +982,7 @@
                             </section> -->
 
                             <div class="container-btn">
-                                <a class="btn btn-secondary no-round" data-toggle="modal" href="#modal-grupo">
+                                <a class="btn btn-secondary no-round" data-bs-toggle="modal" href="#modal-grupo">
                                     Criar grupo
                                 </a>
                             </div>

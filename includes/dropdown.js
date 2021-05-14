@@ -5,9 +5,3 @@ document.querySelectorAll('.dropdown-menu').forEach(function (element) {
         e.stopPropagation();
     });
 })
-
-document.querySelectorAll('.grupo-dropdown').forEach(function (element) {
-    element.addEventListener('click', function (e) {
-        e.stopPropagation();
-    });
-})
