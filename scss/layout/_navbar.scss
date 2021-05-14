@@ -139,6 +139,10 @@
                 margin: .8rem 1.6rem;
                 margin-left: 0;
             }
+
+            &.show {
+                display: flex;
+            }
         }
 
         &.open {

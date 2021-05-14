@@ -9520,6 +9520,12 @@ a span:focus {
   }
 }
 
+@media (max-width: 425px) {
+  .pg-padrao {
+    padding: .8rem .8rem 1.6rem;
+  }
+}
+
 @media (max-width: 992px) {
   .no-mobile {
     display: none !important;
@@ -13204,6 +13210,10 @@ header .btn-list .btn-perfil:hover {
   margin-left: 0;
 }
 
+.navbar .navbar-mobile-dropdown.show {
+  display: flex;
+}
+
 .navbar .navbar-mobile.open .navbar-mobile-dropdown {
   display: flex;
   animation: open-navbar-mobile .3s ease-out;
@@ -13246,7 +13256,7 @@ header .btn-list .btn-perfil:hover {
   border: none;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown a {
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown-toggle {
   color: #00122B;
   display: flex;
   flex-direction: row;
@@ -13255,71 +13265,64 @@ header .btn-list .btn-perfil:hover {
   align-content: center;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown a i {
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown-toggle i {
   margin-left: .8rem;
   transition: all 0.3s ease-in-out;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown a i span {
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown-toggle i span {
   font-size: 1.6rem;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown a:after {
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown-toggle:after {
   display: none;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown a:hover span {
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown-toggle:hover span {
   color: #00122B;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown {
+.pg-comprar-bilhetes .bilhetes-filters-list .dropdown-toggle.show i {
+  transform: rotate(180deg);
+}
+
+.pg-comprar-bilhetes .bilhetes-filters-list .filter-list-dropdown {
   background-color: #ffffff;
   border-radius: 1.6rem;
   padding: 1.6rem;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  transform: translateY(105%);
+  border: none;
   box-shadow: 6px 2px 24px 0px rgba(115, 122, 131, 0.3);
-  transition: all 0.3s ease-in-out;
-  z-index: 888;
+  z-index: 8;
   display: none;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown li {
+.pg-comprar-bilhetes .bilhetes-filters-list .filter-list-dropdown li {
   width: 100%;
   padding: .8rem;
   border: none;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown .cbx-label span {
+.pg-comprar-bilhetes .bilhetes-filters-list .filter-list-dropdown .cbx-label span {
   white-space: nowrap;
   color: #737A83;
   transition: all 0.3s ease-in-out;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown .cbx-label span.cbx-area-select {
+.pg-comprar-bilhetes .bilhetes-filters-list .filter-list-dropdown .cbx-label span.cbx-area-select {
   border-color: #737A83;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown .cbx-label:hover span {
+.pg-comprar-bilhetes .bilhetes-filters-list .filter-list-dropdown .cbx-label:hover span {
   color: #00122B;
 }
 
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown.open a i {
-  transform: rotate(180deg);
-}
-
-.pg-comprar-bilhetes .bilhetes-filters-list .dropdown.open .filter-list-dropdown {
+.pg-comprar-bilhetes .bilhetes-filters-list .filter-list-dropdown.show {
   display: flex;
-  animation: open-filter-dropdown .3s ease-out;
 }
 
 @media (max-width: 992px) {
@@ -13381,11 +13384,11 @@ header .btn-list .btn-perfil:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items: center;
+    align-content: center;
   }
   .pg-comprar-bilhetes .bilhetes-filters-list li {
-    width: 100%;
+    width: auto;
   }
   .pg-comprar-bilhetes .bilhetes-filters-list .dropdown .filter-list-dropdown {
     right: 0;

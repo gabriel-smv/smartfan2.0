@@ -24,22 +24,63 @@
                 }
             }
 
-            .dropdown {
-                a {
-                    color: $black-02;
-                    @include flex(row, flex-start, center, center);
+            .dropdown-toggle {
+                color: $black-02;
+                @include flex(row, flex-start, center, center);
 
+                i {
+                    margin-left: .8rem;
+                    transition: $transition-01;
+
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:hover {
+                    span {
+                        color: $black-02;
+                    }
+                }
+
+                &.show {
                     i {
-                        margin-left: .8rem;
-                        transition: $transition-01;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
 
-                        span {
-                            font-size: 1.6rem;
-                        }
+            .filter-list-dropdown {
+                background-color: $white-01;
+                border-radius: 1.6rem;
+                padding: 1.6rem;
+                @include flex(column, flex-start, flex-start, flex-start);
+                border: none;
+                box-shadow: 6px 2px 24px 0px rgba(115, 122, 131, 0.3);
+
+                z-index: 8;
+
+                display: none;
+
+                li {
+                    width: 100%;
+                    padding: .8rem;
+                    border: none;
+                }
+
+                .cbx-label {
+                    span {
+                        white-space: nowrap;
+                        color: $gray-04;
+                        transition: $transition-01;
                     }
 
-                    &:after {
-                        display: none;
+                    span.cbx-area-select {
+                        border-color: $gray-04;
                     }
 
                     &:hover {
@@ -49,56 +90,8 @@
                     }
                 }
 
-                .filter-list-dropdown {
-                    background-color: $white-01;
-                    border-radius: 1.6rem;
-                    padding: 1.6rem;
-                    @include absolute(auto, 0, 0, auto);
-                    @include flex(column, flex-start, flex-start, flex-start);
-                    transform: translateY(105%);
-                    box-shadow: 6px 2px 24px 0px rgba(115, 122, 131, 0.3);
-                    transition: $transition-01;
-
-                    z-index: 888;
-
-                    display: none;
-
-                    li {
-                        width: 100%;
-                        padding: .8rem;
-                        border: none;
-                    }
-
-                    .cbx-label {
-                        span {
-                            white-space: nowrap;
-                            color: $gray-04;
-                            transition: $transition-01;
-                        }
-
-                        span.cbx-area-select {
-                            border-color: $gray-04;
-                        }
-
-                        &:hover {
-                            span {
-                                color: $black-02;
-                            }
-                        }
-                    }
-                }
-
-                &.open {
-                    a {
-                        i {
-                            transform: rotate(180deg);
-                        }
-                    }
-
-                    .filter-list-dropdown {
-                        display: flex;
-                        animation: open-filter-dropdown .3s ease-out;
-                    }
+                &.show {
+                    display: flex;
                 }
             }
         }
@@ -159,10 +152,10 @@
         @include xxs {
 
             &-list {
-                @include flex(column, center, flex-start, flex-start);
+                @include flex(column, center, center, center);
 
                 li {
-                    width: 100%;
+                    width: auto;
                 }
 
                 .dropdown {

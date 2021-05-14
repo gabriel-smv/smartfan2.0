@@ -83,6 +83,10 @@ a span:focus {
   @include md {
     margin-top: .8rem;
   }
+
+  @include xxs {
+    padding: .8rem .8rem 1.6rem;
+  }
 }
 
 .no-mobile {
