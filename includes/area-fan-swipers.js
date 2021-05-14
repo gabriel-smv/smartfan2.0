@@ -1,3 +1,4 @@
+
 const swiper = new Swiper('.swiper-area-fan', {
     slidesPerView: 1,
     spaceBetween: 0,

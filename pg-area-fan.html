@@ -49,10 +49,10 @@
 
                                 <ul class="nav col-12">
                                     <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                            role="button" aria-expanded="false">Clubes</a>
+                                        <a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" role="button" aria-expanded="false">Clubes</a>
 
-                                        <div class="nav-dropdown">
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <div class="tabs tabs-clubes">
                                                 <input checked="checked" type="radio" name="pct-mobile"
                                                     id="tab1-mobile" />
@@ -216,7 +216,7 @@
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
                                             role="button" aria-expanded="false">Competições</a>
 
-                                        <div class="nav-dropdown">
+                                        <div class="dropdown-menu">
 
                                         </div>
                                     </li>
@@ -225,7 +225,7 @@
                                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
                                             role="button" aria-expanded="false">Federações</a>
 
-                                        <div class="nav-dropdown">
+                                        <div class="dropdown-menu">
 
                                         </div>
                                     </li>
@@ -244,10 +244,10 @@
 
                 <ul class="nav no-mobile col-lg-5 col-12">
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                            aria-expanded="false">Clubes</a>
+                        <a href="#" class="dropdown-toggle nav-link" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">Clubes</a>
 
-                        <div class="nav-dropdown">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <div class="tabs tabs-clubes">
                                 <input checked="checked" type="radio" name="pct" id="tab1" />
                                 <input type="radio" name="pct" id="tab2" />
@@ -407,19 +407,19 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
                             aria-expanded="false">Competições</a>
 
-                        <div class="nav-dropdown">
+                        <div class="dropdown-menu">
 
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
                             aria-expanded="false">Federações</a>
 
-                        <div class="nav-dropdown">
+                        <div class="dropdown-menu">
 
                         </div>
                     </li>
@@ -439,13 +439,13 @@
                     </li>
 
                     <li class="btn-item dropdown">
-                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-toggle="dropdown" role="button"
-                            aria-expanded="false">
+                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
                             <i><span class="icon-fan-fill"></span></i>
                         </a>
 
                         <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
-                        <div class="fan-dropdown">
+                        <div class="fan-dropdown dropdown-menu">
                             <div class="clube-coracao-wrapper">
                                 <div class="clube-coracao-img">
                                     <img src="images/sporting-cp.png" alt="">
@@ -461,14 +461,14 @@
 
                             <ul class="fan-dropdown-nav">
                                 <li>
-                                    <a href="#">
+                                    <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         <p>Compra de Bilhetes</p>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="pg-area-fan.html">
                                         <i><span class="icon-fan-outline"></span></i>
                                         <p>Área de Fan</p>
                                     </a>
@@ -573,7 +573,7 @@
                         </div>
 
                         <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
-                        <div class="fan-dropdown no-clube" style="display: none;">
+                        <div class="fan-dropdown no-clube dropdown-menu" style="display: none;">
                             <div class="clube-coracao-wrapper">
                                 <div class="clube-coracao-img">
                                     <img src="images/banner-img.jpg" alt="">
@@ -591,14 +591,14 @@
 
                             <ul class="fan-dropdown-nav">
                                 <li>
-                                    <a href="#">
+                                    <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         <p>Compra de Bilhetes</p>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">
+                                    <a href="pg-area-fan.html">
                                         <i><span class="icon-fan-outline"></span></i>
                                         <p>Área de Fan</p>
                                     </a>
@@ -608,13 +608,13 @@
                     </li>
 
                     <li class="btn-item dropdown">
-                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-toggle="dropdown"
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
                             role="button" aria-expanded="false">
                             <img src="images/user-placeholder.png" alt="">
                             <span>Usuário</span> <i><span class="icon-dropdown"></span></i>
                         </a>
 
-                        <div class="user-dropdown">
+                        <div class="user-dropdown dropdown-menu">
                             <div class="user-img">
                                 <img src="images/user-placeholder.png" alt="">
                             </div>
@@ -1231,11 +1231,30 @@
 
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
-    <script src="includes/bootstrap.min.js"></script>
+    <script src="includes/bootstrap.bundle.min.js"></script>
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
+
     <script src="includes/swiper-bundle.min.js"></script>
-    <script src="includes/swipers.js"></script>
+    <script src="includes/area-fan-swipers.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-fan', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            }
+
+        });
+    </script>
 
 </body>
 

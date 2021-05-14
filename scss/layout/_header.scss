@@ -60,7 +60,7 @@ header {
             }
         }
 
-        .nav-dropdown {
+        .dropdown-menu {
             width: 100vw;
             @include absolute(var(--header-height), auto, auto, 0);
             z-index: 9999;
@@ -68,16 +68,16 @@ header {
             padding-bottom: 3.2rem;
             box-shadow: 0px 15px 23px -10px rgba(33, 33, 33, 0.7);
             display: none;
+
+            &.show {
+                display: block;
+            }
         }
 
         .dropdown {
             position: inherit;
 
-            &.open {
-                .nav-dropdown {
-                    display: block;
-                }
-            }
+
         }
     }
 

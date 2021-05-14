@@ -174,7 +174,7 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        .content-wrapper {
+        .banner-content {
             @include flex(column, center, flex-start, flex-start);
 
             h3 {

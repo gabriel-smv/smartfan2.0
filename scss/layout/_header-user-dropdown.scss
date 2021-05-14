@@ -1,6 +1,6 @@
 .user-dropdown {
     min-width: 40rem;
-    @include absolute(auto, 0, -8px, auto);
+    // @include absolute(auto, 0, -8px, auto);
     transform: translateY(100%);
 
     padding: 2.4rem 3.2rem;
@@ -16,6 +16,7 @@
     .user-img {
         width: 12rem;
         height: 12rem;
+        margin: auto;
 
         img {
             width: 100%;
