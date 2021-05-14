@@ -1,4 +1,5 @@
 @import "layout/pg-grupos-modal";
+@import "layout/pg-grupos-dropdown";
 
 .pg-grupos {
     h5 {
@@ -20,6 +21,7 @@
 
         li {
             @include flex(column, flex-start, center, center);
+            padding: 1.6rem;
 
             img {
                 width: 13.6rem;
@@ -27,6 +29,7 @@
             }
         }
 
+        .dropdown-toggle,
         .dropdown-link {
             @include flex(row, center, center, center);
             @include font(1.4rem, 400, 1.2em);
@@ -42,6 +45,10 @@
                 }
             }
 
+            &::after {
+                display: none;
+            }
+
             &:hover {
                 span {
                     color: $black-02;
@@ -55,25 +62,24 @@
             }
         }
 
-        .collapse:not(.show) {
-            display: block;
-        }
-
-        .collapse:not(.in) {
+        .grupo-dropdown {
+            @include absolute(95%, auto, auto, auto);
             display: none;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            background-color: #fff;
+            border: 1px solid $black-02;
+            border-radius: 0.4rem;
+
+            z-index: 99;
         }
-    }
 
-    .grupo-details {
-        .nav-link {
-            color: $gray-04;
-
-            i {
-                span {
-                    color: $gray-04;
-                }
+        .grupo-dropdown {
+            &.in {
+                display: block;
             }
         }
+
     }
 
     .container-btn {

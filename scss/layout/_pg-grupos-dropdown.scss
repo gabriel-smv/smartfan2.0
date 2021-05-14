@@ -1,0 +1,35 @@
+.pg-grupos {
+
+    .tabs-nav,
+    .nav-tabs {
+        @include flex(row, center, center, center);
+
+        li {
+            padding: .8rem 2.4rem;
+        }
+
+        label,
+        .nav-link {
+            @include flex(row, center, center, center);
+            @include font(1.6rem, 400, 1.2em);
+            color: $gray-04;
+            cursor: pointer;
+
+        }
+    }
+
+    .tabs-content {
+
+        .tab-socios,
+        .tab-perfil {
+            display: none;
+        }
+    }
+
+    #tab-socios:checked~section .tab-socios,
+    #tab-perfil:checked~section .tab-perfil {
+        display: block;
+        animation: entrar-tab-content .3s ease-in;
+    }
+
+}

@@ -848,38 +848,115 @@
                             </div>
 
                             <ul class="grupo-list">
-                                <li>
+                                <li class="dropdown">
                                     <img src="images/svg/grupo-item.svg" alt="">
-                                    <a class="dropdown-link" data-toggle="collapse" href="#grupo-details" role="button"
-                                        aria-expanded="false" aria-controls="grupo-details">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                                         <span>Smartmove</span> <i><span class="icon-arrow-down"></span></i>
                                     </a>
 
-                                    <div class="collapse grupo-details" id="grupo-details">
-                                        <!-- <nav>
-                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a class="nav-link" id="socios-tab" data-toggle="tab" href="#socios"
-                                                    role="tab" aria-controls="socios" aria-selected="true">
+                                    <div class="dropdown-menu grupo-dropdown">
+
+                                        <ul class="tabs-nav">
+                                            <li class="tab-item tab-socios">
+                                                <input checked="checked" type="radio" name="grupo-smv"
+                                                    id="tab-socios" />
+                                                <label for="tab-socios" class="tabs-btn">
                                                     <i><span class="icon-grupo"></span></i> Sócios
-                                                </a>
+                                                </label>
+                                                <section class="tabs-content">
+                                                    <div class="tabs-content-clubes tab-socios">
+                                                        SÓCIOS
+                                                    </div>
+                                                </section>
+                                            </li>
 
-                                                <a class="nav-link" id="perfil-tab" data-toggle="tab" href="#perfil"
-                                                    role="tab" aria-controls="perfil" aria-selected="false">
+                                            <li class="tab-item tab-perfil">
+                                                <input type="radio" name="grupo-smv" id="tab-perfil" />
+                                                <label for="tab-perfil" class="tabs-btn">
                                                     <i><span class="icon-config"></span></i> Perfil
-                                                </a>
+                                                </label>
+                                                <section class="tabs-content">
+                                                    <div class="tabs-content-clubes tab-perfil">
+                                                        PERFIL
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+
+                                        <!-- <section class="tabs-content">
+
+                                            <div class="tabs-content-clubes tab-socios">
+                                                SÓCIOS
                                             </div>
-                                        </nav>
 
-                                        <div class="tab-content" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="socios" role="tabpanel"
-                                                aria-labelledby="socios-tab">SOCIOS</div>
+                                            <div class="tabs-content-clubes tab-perfil">
+                                                PERFIL
+                                            </div>
+                                        </section> -->
+                                    </div>
+                                </li>
 
-                                            <div class="tab-pane fade" id="perfil" role="tabpanel"
-                                                aria-labelledby="perfil-tab">PERFIL</div>
-                                        </div> -->
+                                <li class="dropdown">
+                                    <img src="images/svg/grupo-item.svg" alt="">
+                                    <a class="dropdown-link" data-toggle="collapse" href="#collapseExample"
+                                        aria-expanded="false" aria-controls="collapseExample">
+                                        <span>Smartmove</span> <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <div class="grupo-dropdown" id="collapseExample">
+
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" id="home-tab" data-toggle="tab"
+                                                    data-target="#home" type="button" role="tab" aria-controls="home"
+                                                    aria-selected="true">Home</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" id="profile-tab" data-toggle="tab"
+                                                    data-target="#profile" type="button" role="tab"
+                                                    aria-controls="profile" aria-selected="false">Profile</button>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">1
+                                            </div>
+                                            <div class="tab-pane" id="profile" role="tabpanel"
+                                                aria-labelledby="profile-tab">2
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
+
+
+                            <!-- <ul class="nav-tabs">
+                                <li class="tab-item tab-socios">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                        aria-controls="home" aria-selected="true">
+                                        <i><span class="icon-grupo"></span></i> Sócios
+                                    </a>
+                                </li>
+                                <li class="tab-item tab-perfil">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">
+                                        <i><span class="icon-config"></span></i> Perfil
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <section class="tab-content">
+                                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    SÓCIOS
+                                </div>
+
+                                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    PERFIL
+                                </div>
+                            </section> -->
 
                             <div class="container-btn">
                                 <a class="btn btn-secondary no-round" data-toggle="modal" href="#modal-grupo">
