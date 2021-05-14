@@ -10373,13 +10373,21 @@ form .container-btn {
   margin-top: 0;
 }
 
-.area-exclusiva.area-socio .area-exclusiva-vantagens ul {
-  justify-content: center;
-}
-
 @media (max-width: 767px) {
   .area-exclusiva-vantagens ul {
     justify-content: center;
+  }
+  .area-exclusiva-vantagens ul li {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .area-exclusiva-vantagens ul li {
+    width: 50%;
+    margin: 1.6rem 0;
+    padding: 0 .8rem;
   }
 }
 

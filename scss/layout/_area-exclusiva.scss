@@ -111,10 +111,6 @@
     &.area-socio {
         .area-exclusiva-vantagens {
             margin-top: 0;
-
-            ul {
-                justify-content: center;
-            }
         }
     }
 
@@ -122,6 +118,24 @@
         &-vantagens {
             ul {
                 justify-content: center;
+
+                li {
+                    width: 20%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @include xs {
+        &-vantagens {
+            ul {
+
+                li {
+                    width: 50%;
+                    margin: 1.6rem 0;
+                    padding: 0 .8rem;
+                }
             }
         }
     }
