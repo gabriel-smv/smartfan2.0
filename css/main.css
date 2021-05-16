@@ -13552,6 +13552,33 @@ header .btn-list .btn-perfil:hover {
   margin: 0 .4rem;
 }
 
+.pg-grupos .tab-content .perfil-grupo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 1.6rem 0;
+}
+
+.pg-grupos .tab-content .perfil-grupo li {
+  width: 50%;
+  color: #00122B;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  padding: .8rem;
+}
+
+.pg-grupos .tab-content .perfil-grupo li i {
+  display: inline-block;
+}
+
+.pg-grupos .tab-content .perfil-grupo li i span {
+  font-size: 4.8rem;
+}
+
 .pg-grupos .tab-content .container-btn {
   display: flex;
   flex-direction: row;
@@ -13648,6 +13675,7 @@ header .btn-list .btn-perfil:hover {
 .pg-grupos .grupo-list .dropdown-toggle i {
   display: inline-block;
   margin-left: 1.6rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .pg-grupos .grupo-list .dropdown-toggle i span {
@@ -13667,6 +13695,14 @@ header .btn-list .btn-perfil:hover {
   color: #00122B;
 }
 
+.pg-grupos .grupo-list .dropdown-toggle.show i {
+  transform: rotate(180deg);
+}
+
+.pg-grupos .grupo-list .dropdown-toggle.show i span {
+  color: #00122B;
+}
+
 .pg-grupos .grupo-list .grupo-dropdown {
   position: absolute;
   top: 95%;
@@ -13677,7 +13713,7 @@ header .btn-list .btn-perfil:hover {
   padding: 0;
   background-color: #fff;
   border: 1px solid #737A83;
-  border-radius: 0.6rem;
+  border-radius: 1.2rem;
   z-index: 99;
 }
 

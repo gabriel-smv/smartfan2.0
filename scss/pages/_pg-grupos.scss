@@ -37,6 +37,7 @@
             i {
                 display: inline-block;
                 margin-left: 1.6rem;
+                transition: $transition-01;
 
                 span {
                     color: $gray-04;
@@ -59,6 +60,16 @@
                     }
                 }
             }
+
+            &.show {
+                i {
+                    transform: rotate(180deg);
+
+                    span {
+                        color: $black-02;
+                    }
+                }
+            }
         }
 
         .grupo-dropdown {
@@ -67,7 +78,7 @@
             padding: 0;
             background-color: #fff;
             border: 1px solid $gray-04;
-            border-radius: 0.6rem;
+            border-radius: 1.2rem;
 
             z-index: 99;
         }
