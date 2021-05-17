@@ -662,41 +662,46 @@
     </header>
 
     <main style="--color-club:#20B46B;">
-        <section class="banner-fan banner-socio" style="--bg-color:#000000">
+        <section class="banner-fan" style="--bg-color:#005039;">
             <div class="container">
                 <div class="row">
                     <div class="column-01 col-lg-7 col-12">
                         <div class="img-profile-wrapper col-sm-3 col-12">
                             <a href="#">
-                                <i style="display: none;"><span class="icon-add-club"></span></i>
-                                <img src="images/user-placeholder.png" alt="">
-                                <i class="icone-clube-adepto"><span class="icon-like"></span></i>
+                                <i><span class="icon-add-club"></span></i>
+                                <img src="images/user-placeholder.png" alt="" style="display: none;">
                             </a>
                         </div>
 
-                        <div class="infos-profile-wrapper col-sm-9 col-12">
-                            <div class="infos-profile-dados col-sm-5 col-12">
-                                <h3>Neymar Ninja Jr</h3>
-                                <p>Sócio nº 165653.9</p>
-                                <p>Desde 2010</p>
+                        <div class="swiper-container swiper-fan col-sm-9 col-12">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <h3>Segue os leões</h3>
+                                    <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
+                                        <i><span class="icon-login"></span></i> Cria a tua conta
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <h3>Segue os leões</h3>
+                                    <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
+                                        <i><span class="icon-meus-clubes"></span></i> Faz-te sócio
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <h3>Segue os leões</h3>
+                                    <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
+                                        <i><span class="icon-like"></span></i> Adicionar clube
+                                    </a>
+                                </div>
+
                             </div>
 
-                            <div class="infos-profile-notification col-sm-7 col-12">
-                                <div class="notification-icon">
-                                    <i><span class="icon-mensagem"></span></i>
-                                    <i class="notification-warning"><img src="images/svg/notification.svg" alt=""></i>
-                                </div>
-                                <ul class="notification-list">
-                                    <li>
-                                        <p>Quota a aguardar pagamento MB</p>
-                                        <a href="#" class="btn-link">Ver detalhes</a>
-                                    </li>
-                                    <li>
-                                        <p>4 quotas em atraso</p>
-                                        <a href="#" class="btn-link">Ver detalhes</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div class="swiper-pagination"></div>
+
                         </div>
                     </div>
 
@@ -736,7 +741,15 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item active">
+                                <a href="#">
+                                    <i class="disabled-icon"><span class="icon-locked"></span></i>
+                                    <i><span class="icon-fan-outline"></span></i>
+                                    Área de Fan
+                                </a>
+                            </li>
+
+                            <li class="navbar-item disabled">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-agenda"></span></i>
@@ -744,8 +757,7 @@
                                 </a>
                             </li>
 
-
-                            <li class="navbar-item active">
+                            <li class="navbar-item disabled">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-meus-clubes"></span></i>
@@ -753,7 +765,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item disabled">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-quotas"></span></i>
@@ -761,7 +773,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item disabled">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-lugar-cativo"></span></i>
@@ -771,7 +783,7 @@
                         </ul>
 
                         <div class="navbar-mobile dropdown yes-mobile">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
                                 aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
@@ -779,7 +791,7 @@
                                 Compra de Bilhetes
                             </h2>
 
-                            <ul class="navbar-mobile-dropdown">
+                            <ul class="navbar-mobile-dropdown dropdown-menu">
                                 <li class="navbar-item">
                                     <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
@@ -794,7 +806,15 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
+                                <li class="navbar-item active disabled">
+                                    <a href="#">
+                                        <i class="disabled-icon"><span class="icon-locked"></span></i>
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        Área de Fan
+                                    </a>
+                                </li>
+
+                                <li class="navbar-item disabled">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-agenda"></span></i>
@@ -802,7 +822,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item active">
+                                <li class="navbar-item disabled">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-meus-clubes"></span></i>
@@ -810,7 +830,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
+                                <li class="navbar-item disabled">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-quotas"></span></i>
@@ -818,7 +838,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
+                                <li class="navbar-item disabled">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-lugar-cativo"></span></i>
@@ -831,7 +851,7 @@
 
                     <section class="pg-padrao pg-grupos">
                         <div class="content-wrapper">
-                            <a href="pg-area-socio.html" class="btn-voltar-cards">
+                            <a href="pg-area-fan.html" class="btn-voltar-cards">
                                 <i><span class="icon-back-cards"></span></i> Voltar
                             </a>
 
@@ -935,6 +955,7 @@
                                                     <i><span class="icon-grupo"></span></i> Sócios
                                                 </button>
                                             </li>
+
                                             <li class="nav-item">
                                                 <button class="nav-link" data-bs-toggle="tab"
                                                     data-bs-target="#grupo2-perfil" type="button" role="tab"
@@ -988,54 +1009,103 @@
                                 </li>
                             </ul>
 
-
-                            <!-- <ul class="nav-tabs">
-                                <li class="tab-item tab-socios">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                        aria-controls="home" aria-selected="true">
-                                        <i><span class="icon-grupo"></span></i> Sócios
-                                    </a>
-                                </li>
-                                <li class="tab-item tab-perfil">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                        aria-controls="profile" aria-selected="false">
-                                        <i><span class="icon-config"></span></i> Perfil
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <section class="tab-content">
-                                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    SÓCIOS
-                                </div>
-
-                                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    PERFIL
-                                </div>
-                            </section> -->
-
                             <div class="container-btn">
                                 <a class="btn btn-secondary no-round" data-bs-toggle="modal" href="#modal-grupo">
                                     Criar grupo
                                 </a>
                             </div>
 
-                            <div class="modal fade" id="modal-grupo" tabindex="-1" aria-labelledby="modal-grupoLabel"
-                                aria-hidden="true">
+                            <div class="modal fade" id="modal-grupo" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="modal-grupoLabel">Modal title</h5>
+                                            <h2>Criação de grupo</h2>
                                             <button type="button" class="btn-close" data-dismiss="modal"
-                                                aria-label="Close"></button>
+                                                aria-label="Close"><span class="icon-close"></span></button>
                                         </div>
+
                                         <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <form>
+                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <label for="nome-grupo">Qual é o nome do grupo?</label>
+                                                    <input type="text" name="nome-grupo" id="nome-grupo">
+                                                </div>
+
+                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <label for="atividade-grupo">Para que serve o grupo?</label>
+                                                    <a href="#" class="input-select dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span>Insere a(s) actividade(s)</span>
+                                                        <i><span class="icon-arrow-down"></span></i>
+                                                    </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li>
+                                                            <input type="checkbox" class="cbx" name="pagar-quotas"
+                                                                id="pagar-quotas">
+                                                            <label for="pagar-quotas" class="cbx-label">
+                                                                <span class="cbx-area-select"></span> <span>Pagamento de
+                                                                    quotas</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <input type="checkbox" class="cbx" name="comprar-bilhetes"
+                                                                id="comprar-bilhetes">
+                                                            <label for="comprar-bilhetes" class="cbx-label">
+                                                                <span class="cbx-area-select"></span>
+                                                                <span>Compra de bilhetes</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <input type="checkbox" class="cbx" name="lugar-cativo"
+                                                                id="lugar-cativo">
+                                                            <label for="lugar-cativo" class="cbx-label">
+                                                                <span class="cbx-area-select"></span>
+                                                                <span>Lugar cativo</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </form>
+
+                                            <ul class="grupo-membros">
+                                                <li>
+                                                    <p>
+                                                        <span>antonio.precatado@smartmove.pt</span>, Sócio nº
+                                                        <span>1234567.9</span>
+                                                    </p>
+
+                                                    <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                </li>
+                                            </ul>
+
+                                            <h3>Inserir sócios</h3>
+
+                                            <form class="form-inserir-membro">
+                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <label for="email-socio">E-mail do sócio</label>
+                                                    <input type="email" name="email-socio" id="email-socio">
+                                                </div>
+
+                                                <div class="container-input col-lg-5 col-md-5 col-sm-5 col-9">
+                                                    <label for="number-socio">Nº de sócio</label>
+                                                    <input type="text" name="number-socio" id="number-socio">
+                                                </div>
+
+                                                <div class="btn-add-member col-lg-1 col-md-1 col-sm-1 col-3">
+                                                    <a href="#"><i><span class="icon-add-member"></span></i></a>
+                                                </div>
+                                            </form>
+
+                                            <p class="grupo-aviso">
+                                                Será enviado a todos os sócio um e-mail. O grupo só será activado assim
+                                                que todos os sócios do grupo aceitem via e-mail todas as condições
+                                                inerentes ao grupo criado.
+                                            </p>
+
+                                            <a href="#" class="btn btn-secondary no-round">Save changes</a>
                                         </div>
                                     </div>
                                 </div>

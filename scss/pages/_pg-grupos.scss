@@ -21,6 +21,7 @@
 
         li {
             @include flex(column, flex-start, center, center);
+            flex-wrap: wrap;
             padding: 1.6rem;
 
             img {
@@ -73,7 +74,6 @@
         }
 
         .grupo-dropdown {
-            @include absolute(95%, auto, auto, auto);
             min-width: 45rem;
             padding: 0;
             background-color: #fff;
@@ -87,5 +87,33 @@
 
     .container-btn {
         margin-top: 3.2rem;
+    }
+
+    @include md {
+        h5 {
+            width: 100%;
+        }
+    }
+
+    @include xs {
+        .grupo-list {
+            flex-direction: column;
+
+
+            .grupo-dropdown {
+                min-width: auto;
+                width: 40rem;
+            }
+        }
+
+    }
+
+    @include xxs {
+        .grupo-list {
+            .grupo-dropdown {
+                min-width: auto;
+                width: 32rem;
+            }
+        }
     }
 }

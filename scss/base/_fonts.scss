@@ -29,6 +29,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-add-member:before {
+    content: "\e934";
+}
+
+.icon-trash:before {
+    content: "\e935";
+}
+
+.icon-grupo-perfil:before {
+    content: "\e936";
+}
+
 .icon-back-cards:before {
     content: "\e933";
 }

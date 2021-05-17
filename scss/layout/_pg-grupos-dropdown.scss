@@ -48,6 +48,7 @@
 
         .perfil-grupo {
             @include flex(row, space-around, center, center);
+            flex-wrap: wrap;
             padding: 1.6rem 0;
 
             li {
