@@ -9478,6 +9478,10 @@ a span:focus {
   text-decoration: none;
 }
 
+i {
+  display: inline-block;
+}
+
 .main-content {
   border-top-left-radius: 9.6rem;
   border-top-right-radius: 9.6rem;
@@ -13934,9 +13938,37 @@ header .btn-list .btn-perfil:hover {
   padding: 1.6rem;
 }
 
-.pg-grupos .grupo-list li img {
+.pg-grupos .grupo-list li .grupo-img {
+  position: relative;
+}
+
+.pg-grupos .grupo-list li .grupo-img img {
   width: 13.6rem;
   height: 13.6rem;
+}
+
+.pg-grupos .grupo-list li .grupo-img .delete-grupo {
+  display: inline-block;
+  position: absolute;
+  top: auto;
+  right: -10px;
+  bottom: 5px;
+  left: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-grupos .grupo-list li .grupo-img .delete-grupo i {
+  background-color: #021D43;
+  padding: .4rem;
+  border-radius: 50%;
+}
+
+.pg-grupos .grupo-list li .grupo-img .delete-grupo i span {
+  color: #ffffff;
+}
+
+.pg-grupos .grupo-list li .grupo-img .delete-grupo:hover {
+  transform: scale(0.9);
 }
 
 .pg-grupos .grupo-list .dropdown-toggle {
@@ -14016,6 +14048,10 @@ header .btn-list .btn-perfil:hover {
     min-width: auto;
     width: 32rem;
   }
+}
+
+.pg-perfil-socio h5 {
+  width: 80%;
 }
 
 html {

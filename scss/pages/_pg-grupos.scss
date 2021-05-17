@@ -24,9 +24,34 @@
             flex-wrap: wrap;
             padding: 1.6rem;
 
-            img {
-                width: 13.6rem;
-                height: 13.6rem;
+            .grupo-img {
+                position: relative;
+
+                img {
+                    width: 13.6rem;
+                    height: 13.6rem;
+                }
+
+                .delete-grupo {
+                    display: inline-block;
+                    @include absolute(auto, -10px, 5px, auto);
+                    transition: $transition-01;
+
+                    i {
+
+                        background-color: $primary-01;
+                        padding: .4rem;
+                        border-radius: 50%;
+
+                        span {
+                            color: $white-01;
+                        }
+                    }
+
+                    &:hover {
+                        transform: scale(.9);
+                    }
+                }
             }
         }
 
