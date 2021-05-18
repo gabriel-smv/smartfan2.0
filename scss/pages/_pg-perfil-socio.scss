@@ -2,4 +2,175 @@
     h5 {
         width: 80%;
     }
+
+    .infos-socio {
+        margin: 4rem 0;
+        padding: 0 1.6rem;
+
+        &-wrapper {
+            @include flex(row, center, center, center);
+            padding: 1.6rem;
+            background-color: $white-01;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+
+            @include mlg {
+                flex-direction: column;
+            }
+
+            @include md {
+                padding: 2.4rem;
+            }
+        }
+
+        &-img {
+            position: relative;
+            @include flex(row, flex-start, center, center);
+
+            img {
+                width: 12rem;
+                height: 12rem;
+                max-width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            i {
+                display: inline-block;
+                width: 4.8rem;
+                height: 4.8rem;
+                background: $white-01;
+                @include absolute(auto, auto, 0, 8rem);
+                border-radius: 50%;
+                padding: .4rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+
+            @include md {
+                justify-content: center;
+                margin-bottom: 2.4rem;
+
+                i {
+                    left: calc(50% + 2rem);
+                }
+            }
+
+        }
+
+        &-details {
+            h3 {
+                @include font(3rem, 900, 1.2em);
+                color: $gray-04;
+                margin-bottom: 1.6rem;
+            }
+
+            ul {
+                width: 100%;
+                @include flex(row, flex-start, center, center);
+
+                li {
+                    width: 20%;
+                    @include flex(column, flex-start, center, center);
+                    color: $gray-04;
+                    @include font(1.6rem, 400, 1.2em);
+                    border-left: 1px solid $gray-04;
+
+                    &:first-child {
+                        width: 15%;
+                        align-items: flex-start;
+                        border-left: none;
+
+                        h5 {
+                            text-align: left;
+                        }
+                    }
+
+                    &:last-child {
+                        width: 25%;
+                    }
+                }
+            }
+
+            @include mlg {
+                h3 {
+                    text-align: center;
+                }
+
+                ul {
+                    li {
+                        width: 25%;
+
+                        &:first-child {
+                            width: 20%;
+                        }
+
+                        &:last-child {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+
+            @include sm {
+                ul {
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 50%;
+                        margin: 1.2rem 0 0.8rem;
+
+                        &:first-child {
+                            width: 50%;
+                            align-items: center;
+
+                            h5 {
+                                text-align: center;
+                            }
+                        }
+
+                        &:last-child {
+                            width: 50%;
+                        }
+
+                        &:nth-child(odd) {
+                            border-left: none;
+                        }
+                    }
+                }
+            }
+
+            @include xs {
+                ul {
+                    li {
+                        width: 100%;
+                        border-left: none;
+
+                        &:first-child {
+                            width: 100%;
+                            margin-top: 0;
+                        }
+
+                        &:last-child {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .last-change {
+        width: 100%;
+        @include font(1.2rem, 300, 1.2em);
+        text-align: right;
+        color: $gray-04;
+        padding: 0 1.6rem;
+        margin-top: 2.4rem;
+    }
 }

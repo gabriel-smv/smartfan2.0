@@ -77,12 +77,15 @@
 
     .item-dados-conta {
         .cards-content {
-            align-items: center;
-            align-content: center;
+            margin-top: 2.4rem;
+
+            .img-user {
+                margin-right: 1.6rem;
+            }
         }
 
         .dados-user {
-            margin-left: 2.4rem;
+            margin-left: .8rem;
 
             li {
                 height: auto;
