@@ -29,6 +29,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-shopping-bag:before {
+    content: "\e938";
+}
+
 .icon-cartao-socio:before {
     content: "\e937";
 }

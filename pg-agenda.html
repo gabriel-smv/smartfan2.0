@@ -736,7 +736,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item active">
                                 <a href="pg-agenda.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-agenda"></span></i>
@@ -745,7 +745,7 @@
                             </li>
 
 
-                            <li class="navbar-item active">
+                            <li class="navbar-item">
                                 <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-meus-clubes"></span></i>
@@ -794,15 +794,15 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
-                                    <a href="#">
+                                <li class="navbar-item active">
+                                    <a href="pg-agenda.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-agenda"></span></i>
                                         Agenda
                                     </a>
                                 </li>
 
-                                <li class="navbar-item active">
+                                <li class="navbar-item">
                                     <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-meus-clubes"></span></i>
@@ -829,137 +829,205 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-perfil-socio">
-                        <div class="content-wrapper">
-                            <a href="pg-area-socio.html" class="btn-voltar-cards">
-                                <i><span class="icon-back-cards"></span></i> Voltar
+                    <section class="pg-padrao pg-agenda">
+
+                        <section class="events-filters col-12">
+
+                            <ul class="events-filters-list">
+                                <li>
+                                    <input type="checkbox" class="cbx" name="bilhetes" id="bilhetes">
+                                    <label for="bilhetes" class="cbx-label">
+                                        <span>Bilhetes</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" class="cbx" name="quotas" id="quotas">
+                                    <label for="quotas" class="cbx-label">
+                                        <span>Quotas</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" class="cbx" name="lugar-cativo" id="lugar-cativo">
+                                    <label for="lugar-cativo" class="cbx-label">
+                                        <span>Lugar cativo</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" class="cbx" name="loja" id="loja">
+                                    <label for="loja" class="cbx-label">
+                                        <span>Loja</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" class="cbx" name="eventos" id="eventos">
+                                    <label for="eventos" class="cbx-label">
+                                        <span>Eventos</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <a href="#" class="btn btn-primary no-round">
+                                <i><span class="icon-search"></span></i> Procurar
                             </a>
+                        </section>
 
-                            <h2>Perfil de sócio</h2>
-                            <h5>
-                                A alteração destes dados será refletida na tua ficha de sócio. Para outras alterações,
-                                contactar os serviços do clube.
-                            </h5>
+                        <section class="content col-12">
 
-                            <section class="infos-socio col-lg-8 col-12">
-                                <div class="infos-socio-wrapper">
-                                    <div class="infos-socio-img col-lg-3 col-12">
-                                        <img src="images/user-placeholder.png" alt="">
-                                        <i><img src="images/sporting-cp.png" alt=""></i>
-                                    </div>
+                            <div class="row">
 
-                                    <div class="infos-socio-details col-lg-9 col-12">
-                                        <h3>Neymar Ninja Jr</h3>
-                                        <ul>
-                                            <li>
-                                                <h5>Sócio nº</h5>
-                                                <span>165653.9</span>
-                                            </li>
+                                <div class="events col-lg-8 col-12">
 
-                                            <li>
-                                                <h5>Categoria</h5>
-                                                <span>PREMIUM</span>
-                                            </li>
+                                    <ul class="events-list">
 
-                                            <li>
-                                                <h5>Antiguidade</h5>
-                                                <span>Agosto 2010</span>
-                                            </li>
+                                        <li class="events-item">
+                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
+                                                <img src="images/svg/quotas.svg" alt="">
+                                                <span>Quotas</span>
+                                            </div>
 
-                                            <li>
-                                                <h5>Última quota paga</h5>
-                                                <span>DEZ 2020</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                            <div class="events-details col-lg-3 col-md-4 col-12">
+                                                <h5>Fevereiro</h5>
+                                                <h6>2021/2022</h6>
+                                            </div>
+
+                                            <ul class="events-info col-lg-2 col-md-2 col-11">
+                                                <li>Liga NOS</li>
+                                                <li><span>10/mar</span>, <span>18h45</span></li>
+                                                <li>Estádio José de Alvalade</li>
+                                            </ul>
+
+                                            <div class="events-btn col-lg-5 col-md-4 col-12">
+                                                <a href="#" class="btn btn-secondary no-round">
+                                                    <i><span class="icon-express"></span></i> Compra express
+                                                </a>
+
+                                                <a href="#" class="btn btn-primary no-round">
+                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="events-item">
+                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
+                                                <img src="images/svg/futebol.svg" alt="">
+                                                <span>Futebol</span>
+                                            </div>
+
+                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
+                                                <div class="clube">
+                                                    <img src="images/sporting-cp.png" alt="">
+                                                    <span>Sporting CP</span>
+                                                </div>
+
+                                                <span>VS</span>
+
+                                                <div class="clube">
+                                                    <img src="images/boavista-fc.png" alt="">
+                                                    <span>Boavista FC</span>
+                                                </div>
+                                            </div>
+
+                                            <ul class="events-info col-lg-2 col-md-2 col-11">
+                                                <li>Liga NOS</li>
+                                                <li><span>10/mar</span>, <span>18h45</span></li>
+                                                <li>Estádio José de Alvalade</li>
+                                            </ul>
+
+                                            <div class="events-btn col-lg-5 col-md-4 col-12">
+                                                <a href="#" class="btn btn-secondary no-round">
+                                                    <i><span class="icon-express"></span></i> Compra express
+                                                </a>
+
+                                                <a href="#" class="btn btn-primary no-round">
+                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="events-item">
+                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
+                                                <img src="images/svg/lugar-cativo.svg" alt="">
+                                                <span>Lugar cativo</span>
+                                            </div>
+
+                                            <div class="events-details col-lg-3 col-md-4 col-12">
+                                                <h5>Estádio José de Alvalade</h5>
+                                            </div>
+
+                                            <ul class="events-info col-lg-2 col-md-2 col-11">
+                                                <li>Bancada MEO</li>
+                                                <li><span>Zona Norte</span>, <span>B</span></li>
+                                                <li>Setor <span>20</span> lugar <span>3B</span></li>
+                                            </ul>
+
+                                            <div class="events-btn col-lg-5 col-md-4 col-12">
+                                                <div class="img-wrapper">
+                                                    <img src="images/placeholder-lugar-cativo.png" alt="">
+                                                </div>
+
+                                                <a href="#" class="btn btn-primary no-round">
+                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="events-item">
+                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
+                                                <img src="images/svg/store.svg" alt="">
+                                                <span>Loja</span>
+                                            </div>
+
+                                            <div class="events-details col-lg-3 col-md-4 col-12">
+                                                <h5>Hoody SPORTING</h5>
+                                                <h5>Branca Retro</h5>
+                                            </div>
+
+                                            <ul class="events-info col-lg-2 col-md-2 col-11">
+                                                <li>Preço Sócio</li>
+                                                <li><span>44,91€</span></li>
+                                            </ul>
+
+                                            <div class="events-btn col-lg-5 col-md-4 col-12">
+                                                <a href="#" class="btn btn-secondary no-round">
+                                                    <i><span class="icon-express"></span></i> Compra express
+                                                </a>
+
+                                                <a href="#" class="btn btn-primary no-round">
+                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="events-item">
+                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
+                                                <img src="images/svg/calendar-outline.svg" alt="">
+                                                <span>Eventos</span>
+                                            </div>
+
+                                            <div class="events-details col-lg-3 col-md-4 col-12">
+                                                <img src="images/placeholder-events-details.png" alt="">
+                                            </div>
+
+                                            <ul class="events-info col-lg-5 col-md-5 col-11">
+                                                <li>Assembleia Geral</li>
+                                                <li>Reunião magna será realizada no dia 23 de abril, no pavilhão João
+                                                    Rocha.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </section>
 
-                            <form class="col-lg-8  col-12">
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="name">Nome</label>
-                                    <input type="text" name="name" id="name" placeholder="Default input" disabled>
+                                <div class="ads-wrapper col-lg-4 col-12">
+                                    <a href="#" target="_blank">
+                                        <img src="images/ads-img.jpg" alt="">
+                                    </a>
                                 </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="lastname">Sobrenome</label>
-                                    <input type="text" name="lastname" id="lastname" placeholder="Default input"
-                                        disabled>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="birthday">Data de nascimento</label>
-                                    <input type="date" name="birthday" id="birthday" placeholder="Default input"
-                                        disabled>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="name">Sexo</label>
-                                    <input type="text" name="name" id="name" placeholder="Default input" disabled>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="nif">NIF</label>
-                                    <input type="text" name="nif" id="nif">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="pais">País</label>
-                                    <select name="pais" id="pais">
-                                        <option value="">Selecione</option>
-                                        <option value="br">Brasil</option>
-                                        <option value="pt">Portugal</option>
-                                        <option value="outro">Outro</option>
-                                    </select>
-                                </div>
-
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="endereco">Endereço</label>
-                                    <input type="text" name="endereco" id="endereco">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="cp">Código Postal</label>
-                                    <input type="text" name="cp" id="cp">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <!-- <label for="name"></label> -->
-                                    <input type="text" value="Localidade">
-                                </div>
-
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="localidade">Localidade</label>
-                                    <input type="text" name="localidade" id="localidade">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telemovel-pais">País telemóvel</label>
-                                    <input type="text" name="telemovel-pais" id="telemovel-pais">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telemovel">Telemóvel</label>
-                                    <input type="text" name="telemovel" id="telemovel">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telefone-pais">País telefone</label>
-                                    <input type="text" name="telefone-pais" id="telefone-pais">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telefone">Telefone</label>
-                                    <input type="text" name="telefone" id="telefone">
-                                </div>
-
-                                <p class="last-change">Ultima actualização: 12 de março 2021, 12:00</p>
-
-                                <div class="container-btn">
-                                    <a href="#" class="btn btn-secondary no-round">Confirmar dados</a>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </section>
                     </section>
                 </div>
             </div>
@@ -1111,6 +1179,25 @@
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
 
+    <script src="includes/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-fan', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            }
+
+        });
+    </script>
 </body>
 
 </html>
