@@ -23,8 +23,8 @@
             }
 
             &.active {
-                color: var(--color-club);
-                border-bottom: 3px solid var(--color-club);
+                color: var(--color-clube);
+                border-bottom: 3px solid var(--color-clube);
             }
         }
     }
@@ -74,7 +74,7 @@
             padding: 0 1.6rem;
 
             a {
-                color: var(--color-club);
+                color: var(--color-clube);
                 @include flex(row, flex-end, center, center);
 
                 i {
@@ -82,7 +82,7 @@
                     height: 2.4rem;
                     margin-right: .4rem;
                     @include flex(row, center, center, center);
-                    border: 1px solid var(--color-club);
+                    border: 1px solid var(--color-clube);
                     padding: .4rem;
                     border-radius: 50%;
 
@@ -93,7 +93,7 @@
 
                 &:hover {
                     span {
-                        color: var(--color-club);
+                        color: var(--color-clube);
                     }
                 }
             }

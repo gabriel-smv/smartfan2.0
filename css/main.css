@@ -9584,6 +9584,10 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cartao-socio:before {
+  content: "\e937";
+}
+
 .icon-add-member:before {
   content: "\e934";
 }
@@ -9894,9 +9898,12 @@ p strong {
   font-weight: 700;
 }
 
-.btn {
-  --color-btn: #263F62;
+main {
+  --color-clube: #263F62;
   --color-hover: #F0F4F6;
+}
+
+.btn {
   cursor: pointer;
   padding: .8rem 2.4rem;
   display: flex;
@@ -9905,8 +9912,8 @@ p strong {
   align-items: center;
   align-content: center;
   border-radius: 3.2rem;
-  border: 1px solid var(--color-btn);
-  color: var(--color-btn);
+  border: 1px solid var(--color-clube);
+  color: var(--color-clube);
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
@@ -9923,7 +9930,7 @@ p strong {
 .btn i span {
   display: block;
   font-size: 2.4rem;
-  color: var(--color-btn);
+  color: var(--color-clube);
   transition: all 0.3s ease-in-out;
 }
 
@@ -9942,8 +9949,8 @@ p strong {
 .btn-primary {
   width: auto;
   color: #ffffff;
-  border: 1px solid var(--color-btn);
-  background-color: var(--color-btn);
+  border: 1px solid var(--color-clube);
+  background-color: var(--color-clube);
   transition: all 0.3s ease-in-out;
 }
 
@@ -9954,41 +9961,41 @@ p strong {
 
 .btn-primary:hover, .btn-primary:focus {
   background-color: var(--color-hover);
-  color: var(--color-btn);
+  color: var(--color-clube);
   border-color: var(--color-hover);
   transition: all 0.3s ease-in-out;
   outline: none;
 }
 
 .btn-primary:hover i span, .btn-primary:focus i span {
-  color: var(--color-btn);
+  color: var(--color-clube);
 }
 
 .btn-secondary {
   width: auto;
-  color: var(--color-btn);
-  border: 1px solid var(--color-btn);
+  color: var(--color-clube);
+  border: 1px solid var(--color-clube);
   transition: all 0.3s ease-in-out;
 }
 
 .btn-secondary i span {
   display: block;
-  color: var(--color-btn);
+  color: var(--color-clube);
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
   background-color: var(--color-hover);
-  color: var(--color-btn);
+  color: var(--color-clube);
   transition: all 0.3s ease-in-out;
   outline: none;
 }
 
 .btn-secondary:hover i span, .btn-secondary:focus i span {
-  color: var(--color-btn);
+  color: var(--color-clube);
 }
 
 .btn-header {
-  --color-btn: #ACC2D3;
+  --color-clube: #ACC2D3;
   font-weight: 700;
 }
 
@@ -10001,9 +10008,9 @@ p strong {
 }
 
 .btn-link {
-  --color-btn: #263F62;
+  --color-clube: #263F62;
   width: auto;
-  color: var(--color-btn);
+  color: var(--color-clube);
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.2em;
@@ -10023,7 +10030,7 @@ p strong {
   content: '';
   width: 100%;
   height: 2px;
-  background: var(--color-btn);
+  background: var(--color-clube);
   position: absolute;
   top: auto;
   right: auto;
@@ -10035,7 +10042,7 @@ p strong {
 }
 
 .btn-link:hover {
-  color: var(--color-btn);
+  color: var(--color-clube);
   text-decoration: none;
 }
 
@@ -10045,7 +10052,7 @@ p strong {
 }
 
 .btn-link:focus {
-  color: var(--color-btn);
+  color: var(--color-clube);
   text-decoration: none;
 }
 
@@ -10978,6 +10985,7 @@ form .container-btn {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  position: relative;
 }
 
 .cards-fan .cards-header i {
@@ -11234,33 +11242,6 @@ form .container-btn {
   object-fit: contain;
 }
 
-.cards-fan .item-grupo .cards-header {
-  position: relative;
-}
-
-.cards-fan .item-grupo .cards-header .grupo-state {
-  padding: .8rem 2.4rem;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.2em;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  transform: translateY(-50%);
-}
-
-.cards-fan .item-grupo .cards-header .grupo-state.ativo {
-  background: #20B46B;
-  color: #ffffff;
-}
-
-.cards-fan .item-grupo .cards-header .grupo-state.inativo {
-  background: #737A83;
-  color: #ffffff;
-}
-
 .cards-fan .item-grupo .cards-content {
   display: flex;
   flex-direction: row;
@@ -11317,6 +11298,29 @@ form .container-btn {
   text-align: center;
   width: 100%;
   padding: 0 .8rem;
+}
+
+.cards-fan .label-state {
+  padding: .8rem 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2em;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+}
+
+.cards-fan .label-state.ativo {
+  background: var(--color-club);
+  color: #ffffff;
+}
+
+.cards-fan .label-state.inativo {
+  background: #737A83;
+  color: #ffffff;
 }
 
 .cards-fan .item-alertas .cards-content {
@@ -13815,8 +13819,8 @@ header .btn-list .btn-perfil:hover {
 }
 
 .pg-grupos .nav-tabs .nav-link.active {
-  color: var(--color-club);
-  border-bottom: 3px solid var(--color-club);
+  color: var(--color-clube);
+  border-bottom: 3px solid var(--color-clube);
 }
 
 .pg-grupos .tab-content .socios-grupo {
@@ -13879,7 +13883,7 @@ header .btn-list .btn-perfil:hover {
 }
 
 .pg-grupos .tab-content .container-btn a {
-  color: var(--color-club);
+  color: var(--color-clube);
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -13896,7 +13900,7 @@ header .btn-list .btn-perfil:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  border: 1px solid var(--color-club);
+  border: 1px solid var(--color-clube);
   padding: .4rem;
   border-radius: 50%;
 }
@@ -13906,7 +13910,7 @@ header .btn-list .btn-perfil:hover {
 }
 
 .pg-grupos .tab-content .container-btn a:hover span {
-  color: var(--color-club);
+  color: var(--color-clube);
 }
 
 .pg-grupos h5 {

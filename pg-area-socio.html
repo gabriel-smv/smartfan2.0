@@ -661,7 +661,7 @@
         </div>
     </header>
 
-    <main style="--color-club:#20B46B;">
+    <main style="--color-clube:#20B46B;">
         <section class="banner-fan banner-socio" style="--bg-color:#000000">
             <div class="container">
                 <div class="row">
@@ -856,6 +856,24 @@
                             </li>
 
                             <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-dados-conta">
+                                    <div class="cards-header">
+                                        <i><span class="icon-quotas"></span></i>
+                                        <h2>Quotas</h2>
+                                    </div>
+
+                                    <div class="cards-content">
+
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="pg-2-via-cartao.html" class="btn btn-secondary no-round">Pagar
+                                            quotas</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards-fan-wrapper col-lg-4">
                                 <div class="cards-fan-item item-bilhetes">
                                     <div class="cards-header">
                                         <i><span class="icon-ticket-outline"></span></i>
@@ -914,14 +932,13 @@
                                 </div>
                             </li>
 
-
                             <li class="cards-fan-wrapper col-lg-4">
                                 <!-- GRUPO INATIVO -->
                                 <div class="cards-fan-item item-grupo">
                                     <div class="cards-header">
                                         <i><span class="icon-grupo"></span></i>
                                         <h2>Criação de Grupo</h2>
-                                        <span class="grupo-state inativo">Inativo</span>
+                                        <span class="label-state inativo">Inativo</span>
                                     </div>
 
                                     <div class="cards-content">
@@ -940,7 +957,7 @@
                                     <div class="cards-header">
                                         <i><span class="icon-grupo"></span></i>
                                         <h2>Criação de Grupo</h2>
-                                        <span class="grupo-state ativo">Ativo</span>
+                                        <span class="label-state ativo">Ativo</span>
                                     </div>
 
                                     <div class="cards-content">
@@ -965,7 +982,7 @@
                             <li class="cards-fan-wrapper col-lg-4">
                                 <div class="cards-fan-item item-dados-conta">
                                     <div class="cards-header">
-                                        <i><span class="icon-meus-clubes"></span></i>
+                                        <i><span class="icon-cartao-socio"></span></i>
                                         <h2>Cartão de sócio</h2>
                                     </div>
 
@@ -977,48 +994,64 @@
                                     </div>
 
                                     <div class="cards-btn">
-                                        <a href="pg-perfil-socio.html" class="btn btn-secondary no-round">Ver dados de
-                                            perfil</a>
+                                        <a href="pg-2-via-cartao.html" class="btn btn-secondary no-round">Pedir 2ª via
+                                            do cartão</a>
                                     </div>
                                 </div>
                             </li>
 
-                            <!-- ADEPTO/FAN SEM CLUBE DO CORAÇÃO -->
-                            <li class="cards-fan-wrapper col-lg-4" style="display: none;">
-                                <div class="cards-fan-item item-clube-coracao">
-                                    <div class="cards-header">
-                                        <i><span class="icon-heart"></span></i>
-                                        <h2>Melhora a tua experiência</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Segue o teu clube do coração</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Clube do
-                                            coração</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- ADEPTO/FAN COM CLUBE DO CORAÇÃO -->
                             <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-clube-coracao">
+                                <!-- LUGAR CATIVO INATIVO -->
+                                <div class="cards-fan-item item-lugar-cativo">
                                     <div class="cards-header">
-                                        <i><span class="icon-meus-clubes"></span></i>
-                                        <h2>Apoia o teu clube</h2>
+                                        <i><span class="icon-lugar-cativo"></span></i>
+                                        <h2>Lugar cativo</h2>
+                                        <span class="label-state inativo">Inativo</span>
                                     </div>
 
                                     <div class="cards-content">
-                                        <p>Se já és sócio <a href="#" class="btn-link">associa o teu cartão</a> à tua
-                                            conta smartfan e tem acesso a uma área exclusiva para sócios e vários
-                                            serviços.</p>
-                                        <p>Se ainda não és sócio, torna-te sócio.</p>
+
                                     </div>
 
                                     <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Faz-te sócio</a>
+                                        <a href="#" class="btn btn-secondary no-round">Comprar lugar
+                                            cativo</a>
+                                    </div>
+                                </div>
+
+                                <!-- LUGAR CATIVO ATIVO -->
+                                <div class="cards-fan-item item-lugar-cativo" style="display: none;">
+                                    <div class="cards-header">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <h2>Lugar cativo</h2>
+                                        <span class="label-state ativo">Ativo</span>
+                                    </div>
+
+                                    <div class="cards-content">
+
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Comprar lugar
+                                            cativo</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-registo-atividades">
+                                    <div class="cards-header">
+                                        <i><span class="icon-registo-atividades-outline"></span></i>
+                                        <h2>Registo de actividade</h2>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <p>Guardamos, por ti, o que é importante.</p>
+                                        <p>Consulta aqui o teu histórico.</p>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Ver actividade</a>
                                     </div>
                                 </div>
                             </li>
