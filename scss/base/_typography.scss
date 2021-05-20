@@ -24,8 +24,9 @@ h3 {
 
 h4 {
   font-family: $font-01;
-  @include font(1.6rem, 900, 1.4em);
+  @include font(1.8rem, 700, 1.4em);
   color: $black-02;
+  margin-bottom: 0;
 }
 
 h5 {

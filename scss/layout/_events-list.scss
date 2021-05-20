@@ -28,7 +28,7 @@
 
         span {
             color: $gray-04;
-            @include font(1.2rem, 500, 1.2em);
+            @include font(1.4rem, 500, 1.2em);
         }
 
         @include sm {
@@ -81,7 +81,7 @@
 
     &-details {
         @include flex(column, center, flex-start, flex-start);
-        padding-left: 1.6rem;
+        padding-left: 3.2rem;
 
         img {
             width: 100%;

@@ -4,7 +4,7 @@
 
 .cbx-label {
     @include flex(row, flex-start, center, center);
-    @include font(1.4rem, 400, 1.2em);
+    @include font(1.6rem, 400, 1.2em);
     cursor: pointer;
 
     span {

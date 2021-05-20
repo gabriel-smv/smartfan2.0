@@ -749,13 +749,12 @@
                             </li>
 
                             <li class="navbar-item">
-                                <a href="pg-agenda.html">
+                                <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-agenda"></span></i>
                                     Agenda
                                 </a>
                             </li>
-
 
                             <li class="navbar-item active">
                                 <a href="#">
@@ -783,7 +782,7 @@
                         </ul>
 
                         <div class="navbar-mobile dropdown yes-mobile">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
                                 aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
@@ -791,7 +790,7 @@
                                 Compra de Bilhetes
                             </h2>
 
-                            <ul class="navbar-mobile-dropdown">
+                            <ul class="navbar-mobile-dropdown dropdown-menu">
                                 <li class="navbar-item">
                                     <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
@@ -807,7 +806,7 @@
                                 </li>
 
                                 <li class="navbar-item">
-                                    <a href="pg-agenda.html">
+                                    <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-agenda"></span></i>
                                         Agenda
@@ -841,316 +840,67 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-area-fan">
-                        <ul class="cards-fan">
+                    <section class="pg-padrao pg-alertas-notificacoes">
+                        <div class="content-wrapper">
+                            <a href="pg-area-socio.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Voltar
+                            </a>
 
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-meus-clubes"></span></i>
-                                        <h2>Perfil de Sócio</h2>
+                            <h2>Alertas / Notificações</h2>
+
+                            <section class="tabs-atividades col-lg-8 col-12">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab"
+                                            data-bs-target="#notificacoes" type="button" role="tab"
+                                            aria-selected="true">
+                                            <div class="area-select"></div>
+                                            <span>Notificações</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#alertas"
+                                            type="button" role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>Alertas</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#todos"
+                                            type="button" role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>Todos</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link btn btn-secondary" data-bs-toggle="tab"
+                                            data-bs-target="#todos" type="button" role="tab" aria-selected="false">
+                                            <i><span class="icon-config"></span></i>
+                                            <span>Configurações</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="notificacoes" role="tabpanel">
+                                        NOTIFICAÇÕES
                                     </div>
 
-                                    <div class="cards-content">
-                                        <img src="images/user-placeholder.png" alt="" class="img-user">
-
-                                        <ul class="dados-user">
-                                            <li class="dados-user-name">Neymar Ninja JR</li>
-                                            <li>Sócio nº: <span>983654.543</span></li>
-                                            <li><span>Categoria:</span> <span>PREMIUM</span></li>
-                                        </ul>
+                                    <div class="tab-pane" id="alertas" role="tabpanel">
+                                        ALERTAS
                                     </div>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-perfil-socio.html" class="btn btn-secondary no-round">Ver dados de
-                                            perfil</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-quotas"></span></i>
-                                        <h2>Quotas</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-2-via-cartao.html" class="btn btn-secondary no-round">Pagar
-                                            quotas</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-bilhetes">
-                                    <div class="cards-header">
-                                        <i><span class="icon-ticket-outline"></span></i>
-                                        <h2>Comprar bilhetes</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#" class="btn-link">Comprar para este jogo</a>
-
-                                                    <div class="jogo-item">
-                                                        <ul class="jogo-item-clubes">
-                                                            <li>
-                                                                <a href="#"><img src="images/boavista-fc.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><img src="images/sporting-cp.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <ul class="jogo-item-infos">
-                                                            <li class="jogo-item-infos-modalidade">
-                                                                <i><span class="icon-futebol"></span></i> Futebol
-                                                            </li>
-
-                                                            <li class="jogo-item-infos-clubes">
-                                                                <span><strong>Boavista FC</strong></span> vs
-                                                                <span><strong>Sporting CP</strong></span>
-                                                            </li>
-
-                                                            <li class="jogo-item-infos-data">
-                                                                <span>Dom</span>, <span>13/mar 2021</span>,
-                                                                <span>18h00</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-comprar-bilhetes.html" class="btn btn-secondary no-round">Outros
-                                            jogos</a>
+                                    <div class="tab-pane" id="todos" role="tabpanel">
+                                        TODOS
                                     </div>
                                 </div>
-                            </li>
+                            </section>
 
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <!-- GRUPO INATIVO -->
-                                <div class="cards-fan-item item-grupo">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Criação de Grupo</h2>
-                                        <span class="label-state inativo">Inativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Adiciona sócios e gere o pagamento de quotas, a compra de lugares cativos e
-                                            pagamento de bilhetes dos teus amigos e familiares.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-grupo-socio.html" class="btn btn-secondary no-round">Gerir
-                                            grupo(s)</a>
-                                    </div>
-                                </div>
-
-                                <!-- GRUPO ATIVO -->
-                                <div class="cards-fan-item item-grupo" style="display: none;">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Grupo de sócios</h2>
-                                        <span class="label-state ativo">Ativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <ul class="grupos-list">
-
-                                            <li>
-                                                <a href="pg-grupos.html">
-                                                    <img src="images/svg/grupo-item.svg" alt="">
-                                                    <span>Família</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-grupo-socio.html" class="btn btn-secondary no-round">Gerir
-                                            grupo(s)</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-cartao-socio"></span></i>
-                                        <h2>Cartão de sócio</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <ul class="dados-user">
-                                            <li>Nome: <span>Neymar Ninja Jr</span></li>
-                                            <li>Número: <span>PREMIUM</span></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-2-via-cartao.html" class="btn btn-secondary no-round">Pedir 2ª via
-                                            do cartão</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <!-- LUGAR CATIVO INATIVO -->
-                                <div class="cards-fan-item item-lugar-cativo" style="display: none;">
-                                    <div class="cards-header">
-                                        <i><span class="icon-lugar-cativo"></span></i>
-                                        <h2>Lugar cativo</h2>
-                                        <span class="label-state inativo">Inativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="lugar-cativo-infos">
-                                            <h5>Época 2021/2022</h5>
-                                            <h6>Compra o teu lugar cativo.</h6>
-                                        </div>
-
-                                        <div class="lugar-cativo-img">
-                                            <img src="images/placeholder-lugar-cativo.png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar lugar
-                                            cativo</a>
-                                    </div>
-                                </div>
-
-                                <!-- LUGAR CATIVO ATIVO -->
-                                <div class="cards-fan-item item-lugar-cativo">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Lugar cativo</h2>
-                                        <span class="label-state ativo">Ativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="lugar-cativo-infos">
-                                            <h5>Estádio José de Alvalade</h5>
-                                            <h6>Bancada MEO</h6>
-                                            <h6>Zona Norte B Setor 20 Lugar 3B</h6>
-                                        </div>
-
-                                        <div class="lugar-cativo-img">
-                                            <img src="images/placeholder-lugar-cativo.png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar lugar
-                                            cativo</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-registo-atividades">
-                                    <div class="cards-header">
-                                        <i><span class="icon-registo-atividades-outline"></span></i>
-                                        <h2>Registo de actividade</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Guardamos, por ti, o que é importante.</p>
-                                        <p>Consulta aqui o teu histórico.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-registo-atividades.html" class="btn btn-secondary no-round">Ver
-                                            actividade</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-loja">
-                                    <div class="cards-header">
-                                        <i><span class="icon-store"></span></i>
-                                        <h2>Loja</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <ul class="produto-infos">
-                                                            <li>Hoody SPORTING Branca Retro</li>
-                                                            <li class="produto-infos-preco">44,91 €</li>
-                                                        </ul>
-                                                        <div class="produto-img">
-                                                            <img src="images/placeholder-loja.png" alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar na
-                                            loja</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-alertas">
-                                    <div class="cards-header">
-                                        <i><span class="icon-mensagem"></span></i>
-                                        <h2>Alertas / Notificações</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="notification-wrapper">
-                                            <input type="checkbox" name="notification" id="notification">
-                                            <label for="notification">
-                                                Pretendo subscrever notificações <div class="switch"></div>
-                                            </label>
-                                        </div>
-
-                                        <div class="alertas-wrapper">
-                                            <p>Os meus alertas (<span>0</span>)</p>
-                                            <a href="#"><i><span class="icon-config"></span></i></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-alertas-notificacoes.html"
-                                            class="btn btn-secondary no-round">Ver/gerir alertas</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -1301,27 +1051,6 @@
     <script src="includes/bootstrap.bundle.min.js"></script>
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
-
-    <script src="includes/swiper-bundle.min.js"></script>
-    <script src="includes/area-fan-swipers.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper-fan', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            }
-
-        });
-    </script>
 
 </body>
 
