@@ -6,7 +6,7 @@ body {
 h1 {
   width: 100%;
   font-family: $font-01;
-  @include font(3.2rem, 900, 1.4em);
+  @include font(3rem, 900, 1.4em);
   color: $black-02;
 }
 

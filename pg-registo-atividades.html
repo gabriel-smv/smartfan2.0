@@ -836,26 +836,43 @@
 
                             <h2>Registo de actividade</h2>
 
-                            <section class="tabs-atividades col-lg-8">
+                            <section class="tabs-atividades col-lg-8 col-12">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" data-bs-toggle="tab"
                                             data-bs-target="#pagamentos" type="button" role="tab" aria-selected="true">
-                                            <div class="area-select"></div> Os meus pagamentos
+                                            <div class="area-select"></div>
+                                            <span>Os meus pagamentos</span>
+                                            <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false"><span class="icon-arrow-down"></span></a>
+
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                                <li><a class="dropdown-item" href="#">Loja</a></li>
+                                                <li><a class="dropdown-item" href="#">Quotas</a></li>
+                                                <li><a class="dropdown-item" href="#">Bilhetes</a></li>
+                                                <li><a class="dropdown-item" href="#">Lugar Cativo</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Grupo</a></li>
+                                            </ul>
                                         </button>
                                     </li>
 
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#actividade"
                                             type="button" role="tab" aria-selected="false">
-                                            <div class="area-select"></div> A minha actividade
+                                            <div class="area-select"></div>
+                                            <span>A minha actividade</span>
                                         </button>
                                     </li>
 
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bilhetes"
                                             type="button" role="tab" aria-selected="false">
-                                            <div class="area-select"></div> Os meus bilhetes
+                                            <div class="area-select"></div>
+                                            <span>Os meus bilhetes</span>
                                         </button>
                                     </li>
                                 </ul>
@@ -863,7 +880,158 @@
                                 <!-- Tab panes -->
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="pagamentos" role="tabpanel">
-                                        1
+                                        <ul class="pagamentos-list">
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-quotas"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Pagamento de quota <span>dez/2020</span></h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Paga em <span>4 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>5,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-ticket-outline"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra de bilhete futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Sporting CP</span> x <span>Rio Ave FC</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>6 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>20,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-quotas"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Pagamento de quota <span>jan/2021</span></h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Paga em <span>12 jan 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>5,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-ticket-outline"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra de bilhete futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>29 mar 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>20,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-store"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra na loja</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Camisola Sporting época 2020/2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>23 fev 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>30,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-lugar-cativo"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra lugar cativo futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Bancada poente</span>, <span>zona A</span>, <span>setor
+                                                        23</span> <span>lugar 20</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Paga em <span>4 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>5,00</span>€
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
 
                                     <div class="tab-pane" id="actividade" role="tabpanel">

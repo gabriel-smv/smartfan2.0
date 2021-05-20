@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 .container,
 .container-fluid,
 .container-sm,
@@ -9444,7 +9444,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   background-color: #ffffff;
   overflow-x: hidden;
 }
@@ -9855,15 +9855,15 @@ body {
 
 h1 {
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 3.2rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 1.4em;
   color: #00122B;
 }
 
 h2 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.4rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -9871,7 +9871,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -9879,7 +9879,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 900;
   line-height: 1.4em;
@@ -9887,7 +9887,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4em;
@@ -9922,8 +9922,8 @@ main {
   border-radius: 3.2rem;
   border: 1px solid var(--color-clube);
   color: var(--color-clube);
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.4rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.3em;
   text-align: center;
@@ -10166,7 +10166,7 @@ form input,
 form select {
   width: 100%;
   min-height: 4rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.2em;
@@ -10198,7 +10198,7 @@ form .input-select {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.2em;
@@ -12879,7 +12879,7 @@ header .tabs .content-empty p {
   align-items: center;
   align-content: center;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2em;
   color: #737A83;
 }
@@ -13503,7 +13503,7 @@ header .btn-list .btn-perfil:hover {
   justify-content: center;
   align-items: center;
   align-content: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 900;
   line-height: 1.2em;
   color: #00122B;
@@ -14367,17 +14367,45 @@ header .btn-list .btn-perfil:hover {
   border-bottom: none;
 }
 
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .nav-item {
+  width: 32%;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .nav-item span {
+  max-width: calc(100% - 3.2rem);
+  text-align: left;
+}
+
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .nav-tabs .nav-item {
+    width: 100%;
+    padding: .8rem 0;
+  }
+}
+
 .pg-registo-atividades .tabs-atividades .nav-tabs .nav-link {
   border: none;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
   color: #00122B;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
+  position: relative;
 }
 
 .pg-registo-atividades .tabs-atividades .nav-tabs .nav-link .area-select {
@@ -14408,6 +14436,66 @@ header .btn-list .btn-perfil:hover {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .nav-tabs .nav-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-toggle {
+  margin-left: 3.2rem;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-toggle span {
+  color: #737A83;
+  font-size: 1.6rem;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-toggle:after {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-toggle {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-menu {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-menu hr {
+  color: #ACC2D3;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-item {
+  color: #737A83;
+  padding: 1.2rem 1.6rem;
+  padding-right: 5.6rem;
+  background: #ffffff;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-item:hover, .pg-registo-atividades .tabs-atividades .nav-tabs .dropdown-item:active {
+  background-color: #F0F4F6;
+  opacity: 1;
+  z-index: 11;
+}
+
 .pg-registo-atividades .tabs-atividades .tab-pane ul {
   width: 100%;
   display: flex;
@@ -14425,12 +14513,155 @@ header .btn-list .btn-perfil:hover {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  font-size: 1.4rem;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
   color: #737A83;
   padding: 1.6rem 0;
   border-bottom: 1px solid #737A83;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  text-align: left;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane ul li a i {
+  margin-right: .8rem;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane ul li a i span {
+  font-size: 3.2rem;
+  color: #00122B;
+}
+
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description {
+  width: 30%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description i span {
+  font-size: 3.2rem;
+  color: #00122B;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description h5 {
+  text-align: left;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details {
+  margin-left: 1.2rem;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a {
+  font-size: 1.4rem;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a span {
+  position: relative;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a span::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #737A83;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a i {
+  margin-left: .4rem;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a i span {
+  font-size: 2.4rem;
+  color: #737A83;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a i span:after {
+  display: none;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a:hover span {
+  color: #00122B;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description-details a:hover span::after {
+  width: 0;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-item {
+  width: 30%;
+  text-align: left;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-date {
+  width: 20%;
+  text-align: center;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-valor {
+  width: 10%;
+  text-align: right;
+  color: #00122B;
+}
+
+@media (max-width: 767px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description {
+    width: 50%;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-item {
+    width: 50%;
+    text-align: right;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-date {
+    width: 50%;
+    margin-top: 2.4rem;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-valor {
+    width: 50%;
+    margin-top: 2.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description, .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-item, .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-date, .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-valor {
+    width: 100%;
+    text-align: center;
+    margin: 1.6rem 0;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .pagamentos-description {
+    justify-content: center;
+  }
 }
 
 .pg-registo-atividades .tabs-atividades .tab-pane .atividades-list .atividades-description {
@@ -14450,34 +14681,28 @@ header .btn-list .btn-perfil:hover {
   color: #00122B;
 }
 
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane .atividades-list .atividades-description {
+    margin-bottom: .8rem;
+  }
+}
+
 .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-list li {
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-list li {
+    margin: .8rem 0;
+  }
 }
 
 .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description {
   width: 20%;
 }
 
-.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2em;
-  color: #737A83;
-  text-align: left;
-}
-
-.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a i {
-  margin-right: .8rem;
-}
-
-.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a i span {
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description i span {
   font-size: 3.2rem;
-  color: #00122B;
 }
 
 .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-event {
@@ -14501,6 +14726,65 @@ header .btn-list .btn-perfil:hover {
   width: 10%;
   text-align: right;
   color: #00122B;
+}
+
+@media (max-width: 767px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-list li {
+    text-align: center;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description {
+    width: 100%;
+    order: 6;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a {
+    justify-content: center;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-event {
+    width: 60%;
+    margin: 1.6rem 0;
+    order: 4;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-modalidade {
+    width: 33%;
+    order: 1;
+    text-align: left;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-campeonato {
+    width: 33%;
+    order: 2;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-date {
+    width: 33%;
+    order: 3;
+    text-align: right;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-valor {
+    width: 25%;
+    order: 5;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description, .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-event, .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-date, .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-valor {
+    width: 100%;
+    text-align: center;
+    margin: .8rem 0;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-modalidade, .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-campeonato {
+    width: 50%;
+    padding-bottom: .8rem;
+  }
+  .pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-campeonato {
+    text-align: right;
+  }
 }
 
 html {

@@ -13,7 +13,7 @@
 
         a {
             @include flex(row, center, center, center);
-            @include font(1.6rem, 900, 1.2em);
+            @include font(1.8rem, 900, 1.2em);
             color: $black-02;
             padding: 0.8rem 0.4rem 1.2rem;
             transition: $transition-01;
