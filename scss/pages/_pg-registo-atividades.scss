@@ -1,0 +1,128 @@
+.pg-registo-atividades {
+    .tabs-atividades {
+        position: relative;
+        margin-top: 2.4rem;
+
+        .nav-tabs {
+            @include flex(row, space-around, center, center);
+            border-bottom: none;
+
+            .nav-link {
+                border: none;
+                @include font(1.6rem, 400, 1.2em);
+                color: $black-02;
+
+                @include flex(row, center, center, center);
+
+                .area-select {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border: 1px solid $gray-04;
+                    border-radius: 50%;
+                    margin-right: .8rem;
+                    position: relative;
+                }
+
+                &.active {
+                    color: var(--color-clube);
+
+                    .area-select {
+                        &:before {
+                            content: '';
+                            width: 80%;
+                            height: 80%;
+                            background-color: var(--color-clube);
+                            @include absolute (50%, auto, auto, 50%);
+                            transform: translate(-50%, -50%);
+                            border-radius: 50%;
+                            transition: $transition-01;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-pane {
+            ul {
+                width: 100%;
+                @include flex(column, flex-start, center, center);
+                padding: 2.4rem 0;
+
+                li {
+                    width: 100%;
+                    @include flex(row, space-between, center, center);
+                    @include font(1.4rem, 400, 1.2em);
+                    color: $gray-04;
+                    padding: 1.6rem 0;
+                    border-bottom: 1px solid $gray-04;
+                }
+            }
+
+            .atividades-list {
+                .atividades-description {
+                    @include flex(row, flex-start, center, center);
+
+                    i {
+                        margin-right: .8rem;
+
+                        span {
+                            font-size: 3.2rem;
+                            color: $black-02;
+                        }
+                    }
+                }
+            }
+
+            .bilhetes {
+                &-list {
+                    li {
+                        text-align: center;
+                    }
+                }
+
+                &-description {
+                    width: 20%;
+
+                    a {
+                        @include flex(row, flex-start, center, center);
+                        @include font(1.4rem, 400, 1.2em);
+                        color: $gray-04;
+                        text-align: left;
+
+                        i {
+                            margin-right: .8rem;
+
+                            span {
+                                font-size: 3.2rem;
+                                color: $black-02;
+                            }
+                        }
+                    }
+                }
+
+                &-event {
+                    width: 25%;
+                    text-align: left;
+                }
+
+                &-modalidade {
+                    width: 15%;
+                }
+
+                &-campeonato {
+                    width: 15%;
+                }
+
+                &-date {
+                    width: 15%;
+                }
+
+                &-valor {
+                    width: 10%;
+                    text-align: right;
+                    color: $black-02;
+                }
+            }
+        }
+    }
+}

@@ -9584,6 +9584,10 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pdf-file:before {
+  content: "\e939";
+}
+
 .icon-shopping-bag:before {
   content: "\e938";
 }
@@ -10818,7 +10822,7 @@ form .container-btn {
 }
 
 .banner-fan.banner-socio {
-  background-image: url("../../images/banner-sporting.jpg");
+  background-image: url("../images/banner-sporting.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -10998,8 +11002,14 @@ form .container-btn {
 }
 
 .cards-fan .cards-header i span {
-  font-size: 5.2rem;
+  font-size: 4.8rem;
   color: #737A83;
+}
+
+.cards-fan .cards-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2em;
 }
 
 .cards-fan .cards-content {
@@ -11014,8 +11024,8 @@ form .container-btn {
 }
 
 .cards-fan .cards-content p {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.4em;
   color: #737A83;
 }
@@ -11046,8 +11056,8 @@ form .container-btn {
 }
 
 .cards-fan .item-clube-coracao .cards-content a {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.4em;
   color: #263F62;
   padding-bottom: 1px;
@@ -11067,7 +11077,7 @@ form .container-btn {
 
 .cards-fan .item-dados-conta .dados-user li {
   height: auto;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
   color: #737A83;
@@ -11075,8 +11085,8 @@ form .container-btn {
 }
 
 .cards-fan .item-dados-conta .dados-user .dados-user-name {
-  font-size: 2.4rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 700;
   line-height: 1.2em;
 }
 
@@ -11224,14 +11234,14 @@ form .container-btn {
 .cards-fan .item-loja .produto-infos {
   width: 50%;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2em;
   color: #737A83;
 }
 
 .cards-fan .item-loja .produto-infos-preco {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.2em;
   margin-top: .4rem;
 }
@@ -11343,13 +11353,13 @@ form .container-btn {
 }
 
 .cards-fan .item-lugar-cativo .lugar-cativo-infos h5 {
-  font-size: 2.2rem;
-  font-weight: 900;
+  font-size: 1.8rem;
+  font-weight: 700;
   line-height: 1.2em;
 }
 
 .cards-fan .item-lugar-cativo .lugar-cativo-infos h6 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
 }
@@ -14341,6 +14351,156 @@ header .btn-list .btn-perfil:hover {
   color: #737A83;
   padding: 0 1.6rem;
   margin-top: 2.4rem;
+}
+
+.pg-registo-atividades .tabs-atividades {
+  position: relative;
+  margin-top: 2.4rem;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-bottom: none;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .nav-link {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .nav-link .area-select {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid #737A83;
+  border-radius: 50%;
+  margin-right: .8rem;
+  position: relative;
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .nav-link.active {
+  color: var(--color-clube);
+}
+
+.pg-registo-atividades .tabs-atividades .nav-tabs .nav-link.active .area-select:before {
+  content: '';
+  width: 80%;
+  height: 80%;
+  background-color: var(--color-clube);
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 2.4rem 0;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #737A83;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .atividades-list .atividades-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .atividades-list .atividades-description i {
+  margin-right: .8rem;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .atividades-list .atividades-description i span {
+  font-size: 3.2rem;
+  color: #00122B;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-list li {
+  text-align: center;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description {
+  width: 20%;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  text-align: left;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a i {
+  margin-right: .8rem;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-description a i span {
+  font-size: 3.2rem;
+  color: #00122B;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-event {
+  width: 25%;
+  text-align: left;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-modalidade {
+  width: 15%;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-campeonato {
+  width: 15%;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-date {
+  width: 15%;
+}
+
+.pg-registo-atividades .tabs-atividades .tab-pane .bilhetes-valor {
+  width: 10%;
+  text-align: right;
+  color: #00122B;
 }
 
 html {

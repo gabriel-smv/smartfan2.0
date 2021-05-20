@@ -29,6 +29,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pdf-file:before {
+    content: "\e939";
+}
+
 .icon-shopping-bag:before {
     content: "\e938";
 }
