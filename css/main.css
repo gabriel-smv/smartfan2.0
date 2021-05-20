@@ -9895,7 +9895,7 @@ h5 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6em;
   color: #000000;
@@ -12851,10 +12851,10 @@ header .tabs .content-empty p {
 
 .user-dropdown .user-infos h2 {
   color: #00122B;
+  margin-bottom: 0;
 }
 
 .user-dropdown .user-infos p {
-  font-weight: 300;
   color: #737A83;
   margin-bottom: 0;
 }
