@@ -100,4 +100,121 @@
         }
 
     }
+
+    .tabs-configuracoes {
+        margin-top: 1.6rem;
+        padding: 1.6rem 3.2rem;
+        box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+
+        .nav-tabs {
+            @include flex(row, flex-start, center, center);
+            padding: 1.6rem 0;
+
+            li {
+                width: auto;
+                border-bottom: none;
+
+                .nav-link {
+                    padding: 0;
+                    padding-bottom: .4rem;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0);
+                    margin-right: 1.6rem;
+
+
+                    span {
+                        max-width: 100%;
+                    }
+
+                    &.active {
+                        border-color: var(--color-clube);
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            padding-bottom: 2.4rem;
+        }
+
+        .meus-alertas-list {
+            padding: 0;
+
+            li {
+                padding: .4rem 0;
+            }
+
+            p {
+                color: $gray-04;
+            }
+
+            a {
+                i {
+                    span {
+                        font-size: 2.4rem;
+                        color: $gray-04;
+                        opacity: .5;
+                        transition: $transition-01;
+                    }
+                }
+
+                &:hover {
+                    i {
+                        span {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .criar-alerta-wrapper {
+            @include flex(row, flex-start, center, center);
+            flex-wrap: wrap;
+            @include font(1.6rem, 400, 1.2em);
+            color: $black-02;
+
+            .dropdown-toggle {
+                color: $black-02;
+                @include flex(row, flex-start, center, center);
+
+                i {
+                    margin-left: .8rem;
+                    transition: $transition-01;
+
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                &:after {
+                    display: none;
+                }
+
+                &:hover {
+                    span {
+                        color: $black-02;
+                    }
+                }
+
+                &.show {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                display: none;
+                z-index: 999;
+
+                &.show {
+                    display: block;
+                }
+            }
+        }
+
+        .criar-alerta-clube {
+            @include flex(column, center, center, center);
+        }
+    }
 }

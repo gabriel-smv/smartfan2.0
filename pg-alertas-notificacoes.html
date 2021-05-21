@@ -1120,7 +1120,148 @@
                                     </div>
 
                                     <div class="tab-pane" id="configuracoes" role="tabpanel">
-                                        CONFIGURAÇÕES
+
+                                        <div class="tabs-configuracoes">
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" data-bs-toggle="tab"
+                                                        data-bs-target="#meus-alertas" href="#" role="tab"
+                                                        aria-selected="true">
+                                                        <span>Os meus alertas <span>(3)</span></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" data-bs-toggle="tab"
+                                                        data-bs-target="#criar-alerta" href="#" role="tab"
+                                                        aria-selected="false">
+                                                        <span>Criar alertas</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="meus-alertas" role="tabpanel">
+                                                    <ul class="meus-alertas-list">
+                                                        <li>
+                                                            <p>
+                                                                <span>Bilhetes à venda do Sporting CP</span>,
+                                                                <span>futebol</span>, liga NOS
+                                                            </p>
+                                                            <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                        </li>
+
+                                                        <li>
+                                                            <p>
+                                                                <span>Bilhetes à venda do Sporting CP</span>,
+                                                                <span>andebol</span>, liga mãozinhas de coentrada
+                                                            </p>
+                                                            <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                        </li>
+
+                                                        <li>
+                                                            <p>
+                                                                <span>Bilhetes à venda do Sporting CP</span>,
+                                                                <span>futsal</span>, do pé para a mão
+                                                            </p>
+                                                            <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane" id="criar-alerta" role="tabpanel">
+                                                    <div class="criar-alerta-wrapper" style="display: none;">
+                                                        <div class="criar-alerta-clube col-lg-4">
+
+                                                        </div>
+
+                                                        <div class="col-lg-2">
+                                                            <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                                                id="alerta-futebol">
+                                                            <label for="alerta-futebol" class="cbx-label">
+                                                                <span class="cbx-area-select"></span>
+                                                                <span>Futebol</span>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="dropdown col-lg-2">
+                                                            <a href="#" class="dropdown-toggle"
+                                                                data-bs-toggle="dropdown" role="button"
+                                                                aria-expanded="false">
+                                                                Modalidades <i><span class="icon-arrow-down"></span></i>
+                                                            </a>
+
+                                                            <ul class="dropdown-menu">
+                                                                <li>
+                                                                    <input type="checkbox" class="cbx"
+                                                                        name="alerta-modalidade" id="todas-modalidades">
+                                                                    <label for="todas-modalidades" class="cbx-label">
+                                                                        <span class="cbx-area-select"></span>
+                                                                        <span>Todas</span>
+                                                                    </label>
+                                                                </li>
+
+                                                                <li>
+                                                                    <input type="checkbox" class="cbx"
+                                                                        name="alerta-modalidade" id="alerta-futsal">
+                                                                    <label for="alerta-futsal" class="cbx-label">
+                                                                        <span class="cbx-area-select"></span>
+                                                                        <span>Futsal</span>
+                                                                    </label>
+                                                                </li>
+
+                                                                <li>
+                                                                    <input type="checkbox" class="cbx"
+                                                                        name="alerta-modalidade" id="alerta-andebol">
+                                                                    <label for="alerta-andebol" class="cbx-label">
+                                                                        <span class="cbx-area-select"></span>
+                                                                        <span>Andebol</span>
+                                                                    </label>
+                                                                </li>
+
+                                                                <li>
+                                                                    <input type="checkbox" class="cbx"
+                                                                        name="alerta-modalidade"
+                                                                        id="alerta-basquetebol">
+                                                                    <label for="alerta-basquetebol" class="cbx-label">
+                                                                        <span class="cbx-area-select"></span>
+                                                                        <span>Basquetebol</span>
+                                                                    </label>
+                                                                </li>
+
+                                                                <li>
+                                                                    <input type="checkbox" class="cbx"
+                                                                        name="alerta-modalidade" id="alerta-hoquei">
+                                                                    <label for="alerta-hoquei" class="cbx-label">
+                                                                        <span class="cbx-area-select"></span>
+                                                                        <span>Hoquei
+                                                                            em patins</span>
+                                                                    </label>
+                                                                </li>
+
+                                                                <li>
+                                                                    <input type="checkbox" class="cbx"
+                                                                        name="alerta-modalidade" id="alerta-voleibol">
+                                                                    <label for="alerta-voleibol" class="cbx-label">
+                                                                        <span class="cbx-area-select"></span>
+                                                                        <span>Voleibol</span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="dropdown col-lg-2">
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="criar-alerta-clube">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <h4>Em breve, crie os teus alertas aqui.</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
