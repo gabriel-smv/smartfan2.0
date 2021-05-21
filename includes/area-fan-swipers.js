@@ -1,5 +1,5 @@
 
-const swiper = new Swiper('.swiper-area-fan', {
+const swiperFan = new Swiper('.swiper-area-fan', {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,

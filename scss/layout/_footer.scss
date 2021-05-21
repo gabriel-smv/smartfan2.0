@@ -14,12 +14,12 @@ footer {
             @include flex(row, flex-start, center, center);
 
             h4 {
-                @include font(1.4rem, 500, 1.2em);
+                @include font(1.6rem, 500, 1.2em);
                 color: $white-01;
             }
 
             h5 {
-                @include font(1.2rem, 400, 1.2em);
+                @include font(1.4rem, 400, 1.2em);
                 color: $gray-02;
             }
 
@@ -124,10 +124,18 @@ footer {
             flex-wrap: wrap;
 
             h5 {
-                @include font(1.4rem, 400, 1.2em);
+                @include font(1.6rem, 400, 1.2em);
                 color: $white-01;
                 text-transform: uppercase;
                 margin-bottom: .8rem;
+            }
+
+            li {
+                &:last-child {
+                    h5 {
+                        text-align: right;
+                    }
+                }
             }
 
             .list-links {
@@ -136,7 +144,7 @@ footer {
                 }
 
                 a {
-                    @include font(1.4rem, 400, 1.2em);
+                    @include font(1.6rem, 400, 1.2em);
                     color: $gray-02;
                     transition: $transition-01;
 
@@ -234,7 +242,7 @@ footer {
 
             p,
             a {
-                @include font(1.2rem, 400, 1.2em);
+                @include font(1.4rem, 400, 1.2em);
             }
 
             p {
@@ -256,7 +264,7 @@ footer {
             @include flex(row, flex-end, center, center);
 
             span {
-                @include font(1.2rem, 400, 1.2em);
+                @include font(1.4rem, 400, 1.2em);
                 color: $white-01;
             }
 
@@ -264,6 +272,7 @@ footer {
                 height: 2.4rem;
                 width: auto;
                 display: inline-block;
+                margin-left: .4rem;
 
                 img {
                     height: 100%;

@@ -39,7 +39,7 @@ header {
         .nav-link {
             height: 100%;
             color: $gray-02;
-            @include font(1.4rem, 500, 1.2em);
+            @include font(1.6rem, 500, 1.2em);
             background: rgba(255, 255, 255, 0);
             padding: 0 3.2rem;
             @include flex(row, center, center, center);

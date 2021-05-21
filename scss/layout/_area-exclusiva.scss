@@ -30,8 +30,8 @@
 
 
         h2 {
+            @include font(2.6rem, 400, 1.2em);
             text-align: center;
-            font-weight: 400;
             margin-bottom: 1.6rem;
             padding: 0 1.6rem;
         }
