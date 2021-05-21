@@ -13728,10 +13728,11 @@ header .btn-list .btn-perfil:hover {
 
 .pg-alertas-notificacoes .tab-pane .alertas-item {
   border-bottom: none;
+  padding: .4rem 0;
 }
 
 .pg-alertas-notificacoes .tab-pane .item-wrapper {
-  min-height: 10rem;
+  min-height: 12rem;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -13744,6 +13745,10 @@ header .btn-list .btn-perfil:hover {
 .pg-alertas-notificacoes .tab-pane .item-type i span {
   font-size: 3.2rem;
   color: #737A83;
+}
+
+.pg-alertas-notificacoes .tab-pane .item-type span {
+  font-size: 1.6rem;
 }
 
 .pg-alertas-notificacoes .tab-pane .item-infos {
@@ -13767,7 +13772,7 @@ header .btn-list .btn-perfil:hover {
 
 .pg-alertas-notificacoes .tab-pane .item-infos-list li {
   border-bottom: none;
-  padding: .4rem 0;
+  padding: .8rem 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13795,10 +13800,31 @@ header .btn-list .btn-perfil:hover {
   color: var(--color-clube);
 }
 
+.pg-alertas-notificacoes .tab-pane .item-infos-footer a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #F78946;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-alertas-notificacoes .tab-pane .item-infos-footer a:hover {
+  color: #f37402;
+}
+
+.pg-alertas-notificacoes .tab-pane .item-delete i {
+  margin: 0;
+}
+
 .pg-alertas-notificacoes .tab-pane .item-delete i span {
   font-size: 4rem;
   color: #737A83;
   opacity: .5;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-alertas-notificacoes .tab-pane .item-delete a:hover span {
+  color: var(--color-clube);
 }
 
 .pg-area-fan {

@@ -1,14 +1,16 @@
 .pg-alertas-notificacoes {
     .tab-pane {
+
         .alertas-item {
             border-bottom: none;
+            padding: .4rem 0;
         }
 
 
         .item {
 
             &-wrapper {
-                min-height: 10rem;
+                min-height: 12rem;
                 background: $white-01;
                 @include flex(column, center, center, center);
 
@@ -21,6 +23,10 @@
                         font-size: 3.2rem;
                         color: $gray-04;
                     }
+                }
+
+                span {
+                    font-size: 1.6rem;
                 }
             }
 
@@ -39,7 +45,7 @@
 
                     li {
                         border-bottom: none;
-                        padding: .4rem 0;
+                        padding: .8rem 0;
                         @include flex(row, flex-start, center, center);
                     }
                 }
@@ -58,15 +64,36 @@
                     span.active {
                         color: var(--color-clube);
                     }
+
+                    a {
+                        @include font(1.4rem, 400, 1.2em);
+                        color: $secondary-01;
+                        transition: $transition-01;
+
+                        &:hover {
+                            color: $secondary-02;
+                        }
+                    }
                 }
             }
 
             &-delete {
                 i {
+                    margin: 0;
+
                     span {
                         font-size: 4rem;
                         color: $gray-04;
                         opacity: .5;
+                        transition: $transition-01;
+                    }
+                }
+
+                a {
+                    &:hover {
+                        span {
+                            color: var(--color-clube);
+                        }
                     }
                 }
             }
