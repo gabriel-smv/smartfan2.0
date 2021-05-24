@@ -245,6 +245,64 @@
         }
     }
 
+    .item-quotas {
+        .cards-content {
+            padding-top: 2.4rem;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .quotas-info {
+            width: 55%;
+            padding-top: 2.4rem;
+        }
+
+        .quotas-grafico {
+            width: 35%;
+            position: relative;
+
+            &-details {
+                width: 100%;
+                @include absolute(50%, auto, auto, 50%);
+                transform: translate(-50%, -50%);
+                padding: 3.2rem;
+
+                @include flex(column, center, center, center);
+
+                p {
+                    font-size: 2.4rem;
+                    text-align: center;
+                    color: var(--color-clube);
+                    margin-bottom: 0;
+                }
+
+                .quotas-number {
+                    color: $gray-04;
+                    @include font(2.4rem, 700, 1.2em);
+
+                    .quotas-pagas {
+                        color: var(--color-clube);
+                        font-size: 4rem;
+                    }
+                }
+            }
+
+        }
+
+        .btn-link {
+            @include absolute(0, auto, auto, 6.4rem);
+        }
+
+        h5 {
+            @include font(1.8rem, 700, 1.2em);
+        }
+
+        h6 {
+            @include font(1.6rem, 400, 1.2em);
+            color: $gray-04;
+        }
+    }
+
     .item-grupo {
 
         .cards-content {
