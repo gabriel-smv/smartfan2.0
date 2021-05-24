@@ -189,7 +189,7 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-andebol"></span></i>
-                                                                    <p>Em breve, o seu clube de Andebol aqui!</p>
+                                                                    <p>Em breve, o teu clube de Andebol aqui!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -202,7 +202,7 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-basquetebol"></span></i>
-                                                                    <p>Em breve, o seu clube de Basquetebol aqui!</p>
+                                                                    <p>Em breve, o teu clube de Basquetebol aqui!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -626,7 +626,7 @@
 
                             <ul class="user-nav">
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="pg-perfil-socio.html">
                                         <i><span class="icon-user"></span></i>
                                         <span>Conta</span>
                                     </a>
@@ -638,19 +638,19 @@
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         <span>Actividade</span>
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="pg-grupo-socio.html">
                                         <i><span class="icon-grupo"></span></i>
-                                        <span>Grupo de amigos</span>
+                                        <span>Criação de grupo</span>
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         <span>Alertas/Notificações</span>
                                     </a>
@@ -673,7 +673,7 @@
         </div>
     </header>
 
-    <main>
+    <main style="--color-clube:#04b46b;">
         <section class="banner-fan" style="--bg-color:#04B46B">
             <div class="container">
                 <div class="row">
@@ -861,250 +861,344 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-area-fan">
-                        <ul class="cards-fan">
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-bilhetes">
-                                    <div class="cards-header">
-                                        <i><span class="icon-ticket-outline"></span></i>
-                                        <h2>Comprar bilhetes</h2>
+                    <section class="pg-padrao pg-alertas-notificacoes">
+                        <div class="content-wrapper">
+                            <a href="pg-area-socio.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Voltar
+                            </a>
+
+                            <h2>Alertas / Notificações</h2>
+
+                            <section class="tabs tabs-alertas col-xl-8 col-12">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#notificacoes"
+                                            href="#" role="tab" aria-selected="true">
+                                            <div class="area-select"></div>
+                                            <span>Notificações</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#alertas" href="#"
+                                            role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>Alertas</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#todos" href="#"
+                                            role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>Todos</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <a class="btn btn-secondary" data-bs-toggle="tab"
+                                            data-bs-target="#configuracoes" href="#" role="tab" aria-selected="false">
+                                            <i><span class="icon-config"></span></i>
+                                            <span>Configurações</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="notificacoes" role="tabpanel">
+                                        <ul class="alertas-list">
+
+                                        </ul>
                                     </div>
 
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
+                                    <div class="tab-pane" id="alertas" role="tabpanel">
+                                        <ul class="alertas-list">
+                                            <li class="alertas-item">
+                                                <div class="item-type col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <span>Alerta</span>
+                                                    </div>
+                                                </div>
 
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#" class="btn-link">Comprar para este jogo</a>
-
-                                                    <div class="jogo-item">
-                                                        <ul class="jogo-item-clubes">
-                                                            <li>
-                                                                <a href="#"><img src="images/boavista-fc.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><img src="images/sporting-cp.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <ul class="jogo-item-infos">
-                                                            <li class="jogo-item-infos-modalidade">
-                                                                <i><span class="icon-futebol"></span></i> Futebol
+                                                <div class="item-infos col-sm-8 col-12">
+                                                    <div class="item-wrapper">
+                                                        <ul class="item-infos-list">
+                                                            <li class="item-infos-date">
+                                                                <span>Alerta criado por <span>Paulo Frutuoso</span> em
+                                                                    <span>3
+                                                                        mar 2021</span></span>
                                                             </li>
 
-                                                            <li class="jogo-item-infos-clubes">
-                                                                <span><strong>Boavista FC</strong></span> vs
-                                                                <span><strong>Sporting CP</strong></span>
+                                                            <li class="item-infos-details">
+                                                                <span>Bilhetes à venda do <span>Sporting CP</span> x
+                                                                    <span>Boavista FC</span></span>
                                                             </li>
 
-                                                            <li class="jogo-item-infos-data">
-                                                                <span>Dom</span>, <span>13/mar 2021</span>,
-                                                                <span>18h00</span>
+                                                            <li class="item-infos-footer">
+                                                                <span class="active">Bilheteria
+                                                                    Aberta</span>/<span>Bilheteria
+                                                                    Fechada</span>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
 
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
+                                                <div class="item-delete col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <a href="#">
+                                                            <i><span class="icon-trash"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-comprar-bilhetes.html" class="btn btn-secondary no-round">Outros
-                                            jogos</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-loja">
-                                    <div class="cards-header">
-                                        <i><span class="icon-store"></span></i>
-                                        <h2>Loja</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <ul class="produto-infos">
-                                                            <li>Hoody SPORTING Branca Retro</li>
-                                                            <li class="produto-infos-preco">44,91 €</li>
-                                                        </ul>
-                                                        <div class="produto-img">
-                                                            <img src="images/placeholder-loja.png" alt="">
-                                                        </div>
-                                                    </a>
+                                    <div class="tab-pane" id="todos" role="tabpanel">
+                                        <ul class="alertas-list">
+                                            <li class="alertas-item">
+                                                <div class="item-type col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <span>Alerta</span>
+                                                    </div>
                                                 </div>
 
+                                                <div class="item-infos col-sm-8 col-12">
+                                                    <div class="item-wrapper">
+                                                        <ul class="item-infos-list">
+                                                            <li class="item-infos-date">
+                                                                <span>Alerta criado por <span>Paulo Frutuoso</span> em
+                                                                    <span>3
+                                                                        mar 2021</span></span>
+                                                            </li>
+
+                                                            <li class="item-infos-details">
+                                                                <span>Bilhetes à venda do <span>Sporting CP</span> x
+                                                                    <span>Boavista FC</span></span>
+                                                            </li>
+
+                                                            <li class="item-infos-footer">
+                                                                <span class="active">Bilheteria
+                                                                    Aberta</span>/<span>Bilheteria
+                                                                    Fechada</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-delete col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <a href="#">
+                                                            <i><span class="icon-trash"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-pane" id="configuracoes" role="tabpanel">
+
+                                        <div class="tabs-configuracoes">
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link active" data-bs-toggle="tab"
+                                                        data-bs-target="#meus-alertas" href="#" role="tab"
+                                                        aria-selected="true">
+                                                        <span>Os meus alertas <span>(3)</span></span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="nav-item" role="presentation">
+                                                    <a class="nav-link" data-bs-toggle="tab"
+                                                        data-bs-target="#criar-alerta" href="#" role="tab"
+                                                        aria-selected="false">
+                                                        <span>Criar alertas</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="meus-alertas" role="tabpanel">
+                                                    <ul class="meus-alertas-list">
+                                                        <li>
+                                                            <p>
+                                                                <span>Bilhetes à venda do Sporting CP</span>,
+                                                                <span>futebol</span>, liga NOS
+                                                            </p>
+                                                            <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                        </li>
+
+                                                        <li>
+                                                            <p>
+                                                                <span>Bilhetes à venda do Sporting CP</span>,
+                                                                <span>andebol</span>, liga mãozinhas de coentrada
+                                                            </p>
+                                                            <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                        </li>
+
+                                                        <li>
+                                                            <p>
+                                                                <span>Bilhetes à venda do Sporting CP</span>,
+                                                                <span>futsal</span>, do pé para a mão
+                                                            </p>
+                                                            <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="tab-pane" id="criar-alerta" role="tabpanel">
+                                                    <div class="criar-alerta-wrapper">
+                                                        <form>
+                                                            <div class="criar-alerta-clube col-lg-5 col-12">
+                                                                <div class="alerta-clube-img">
+                                                                    <img src="images/sporting-cp.png" alt="">
+                                                                </div>
+
+                                                                <div class="alerta-clube-infos">
+                                                                    <h4>Sporting Clube de Portugal</h4>
+                                                                    <h6>Bilhetes para venda</h6>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="item-futebol col-lg-2 col-sm-4 col-12">
+                                                                <input type="checkbox" class="cbx"
+                                                                    name="alerta-modalidade" id="alerta-futebol">
+                                                                <label for="alerta-futebol" class="cbx-label">
+                                                                    <span>Futebol</span>
+                                                                    <span class="cbx-area-select"></span>
+                                                                </label>
+                                                            </div>
+
+                                                            <div class="dropdown col-lg-3 col-sm-4 col-12">
+                                                                <a href="#" class="dropdown-toggle"
+                                                                    data-bs-toggle="dropdown" role="button"
+                                                                    aria-expanded="false">
+                                                                    Modalidades <i><span
+                                                                            class="icon-arrow-down"></span></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu">
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade"
+                                                                            id="todas-modalidades">
+                                                                        <label for="todas-modalidades"
+                                                                            class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Todas</span>
+                                                                        </label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade" id="alerta-futsal">
+                                                                        <label for="alerta-futsal" class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Futsal</span>
+                                                                        </label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade"
+                                                                            id="alerta-andebol">
+                                                                        <label for="alerta-andebol" class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Andebol</span>
+                                                                        </label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade"
+                                                                            id="alerta-basquetebol">
+                                                                        <label for="alerta-basquetebol"
+                                                                            class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Basquetebol</span>
+                                                                        </label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade" id="alerta-hoquei">
+                                                                        <label for="alerta-hoquei" class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Hoquei
+                                                                                em patins</span>
+                                                                        </label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade"
+                                                                            id="alerta-voleibol">
+                                                                        <label for="alerta-voleibol" class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Voleibol</span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="dropdown col-lg-2 col-sm-4 col-12">
+                                                                <a href="#" class="dropdown-toggle"
+                                                                    data-bs-toggle="dropdown" role="button"
+                                                                    aria-expanded="false">
+                                                                    Competição <i><span
+                                                                            class="icon-arrow-down"></span></i>
+                                                                </a>
+
+                                                                <ul class="dropdown-menu">
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade"
+                                                                            id="todas-competicoes">
+                                                                        <label for="todas-competicoes"
+                                                                            class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Todas</span>
+                                                                        </label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input type="checkbox" class="cbx"
+                                                                            name="alerta-modalidade"
+                                                                            id="alerta-liga-nos">
+                                                                        <label for="alerta-liga-nos" class="cbx-label">
+                                                                            <span class="cbx-area-select"></span>
+                                                                            <span>Liga NOS</span>
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="container-input col-12">
+                                                                <label for="nome-alerta">Nome do alerta</label>
+                                                                <input type="text" name="nome-alerta" id="nome-alerta">
+                                                                <a href="#" class="apagar-input">
+                                                                    <i><span class="icon-close"></span></i>
+                                                                </a>
+                                                            </div>
+
+                                                            <div class="container-btn">
+                                                                <a href="#" class="btn btn-secondary no-round">Criar
+                                                                    alerta</a>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
                                             </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
                                         </div>
                                     </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar na
-                                            loja</a>
-                                    </div>
                                 </div>
-                            </li>
+                            </section>
 
-                            <!-- ADEPTO/FAN SEM CLUBE DO CORAÇÃO -->
-                            <li class="cards-fan-wrapper col-lg-4" style="display: none;">
-                                <div class="cards-fan-item item-clube-coracao">
-                                    <div class="cards-header">
-                                        <i><span class="icon-heart"></span></i>
-                                        <h2>Melhora a tua experiência</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Segue o teu clube do coração</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Clube do
-                                            coração</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <!-- ADEPTO/FAN COM CLUBE DO CORAÇÃO -->
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-clube-coracao">
-                                    <div class="cards-header">
-                                        <i><span class="icon-meus-clubes"></span></i>
-                                        <h2>Apoia o teu clube</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Se já és sócio <a href="#" class="btn-link">associa o teu cartão</a> à tua
-                                            conta smartfan e tem acesso a uma área exclusiva para sócios e vários
-                                            serviços.</p>
-                                        <p>Se ainda não és sócio, torna-te sócio.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Faz-te sócio</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-user"></span></i>
-                                        <h2>Dados de Conta</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <img src="images/user-placeholder.png" alt="" class="img-user">
-
-                                        <ul class="dados-user">
-                                            <li class="dados-user-name">Neymar Ninja JR</li>
-                                            <li>ID SMARTFAN nº: <span>983654.543</span></li>
-                                            <li><span>neymarjr@gmail.com</span></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Ver dados de perfil</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <!-- GRUPO INATIVO -->
-                                <div class="cards-fan-item item-grupo">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Grupo de amigos</h2>
-                                        <span class="label-state inativo">Inativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Adiciona contas smartfan e gere o pagamento de bilhetes dos teus amigos e
-                                            familiares.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Gerir
-                                            grupo(s)</a>
-                                    </div>
-                                </div>
-
-                                <!-- GRUPO ATIVO -->
-                                <div class="cards-fan-item item-grupo" style="display: none;">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Grupo de amigos</h2>
-                                        <span class="label-state ativo">Ativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <ul class="grupos-list">
-                                            <li>
-                                                <a href="pg-grupos.html">
-                                                    <img src="images/svg/grupo-item.svg" alt="">
-                                                    <span>Amigos do peito</span>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="pg-grupos.html">
-                                                    <img src="images/svg/grupo-item.svg" alt="">
-                                                    <span>Família</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-grupo-fan.html" class="btn btn-secondary no-round">Gerir
-                                            grupo(s)</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-alertas">
-                                    <div class="cards-header">
-                                        <i><span class="icon-mensagem"></span></i>
-                                        <h2>Alertas / Notificações</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="notification-wrapper">
-                                            <input type="checkbox" name="notification" id="notification">
-                                            <label for="notification">
-                                                Pretendo subscrever notificações <div class="switch"></div>
-                                            </label>
-                                        </div>
-
-                                        <div class="alertas-wrapper">
-                                            <p>Os meus alertas (<span>0</span>)</p>
-                                            <a href="pg-alertas-notificacoes-fan.html"><i><span
-                                                        class="icon-config"></span></i></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-alertas-notificacoes-fan.html"
-                                            class="btn btn-secondary no-round">Ver/gerir alertas</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -1243,7 +1337,7 @@
 
                     <div class="powered-smv col-lg-6 col-md-6 col-12">
                         <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
-                                src="images/svg/smartmove-powered-white.svg" alt=""></a>
+                                src="images/svg/smartmove-logo-white.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -1255,27 +1349,6 @@
     <script src="includes/bootstrap.bundle.min.js"></script>
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
-
-    <script src="includes/swiper-bundle.min.js"></script>
-    <script src="includes/area-fan-swipers.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper-fan', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            }
-
-        });
-    </script>
 
 </body>
 

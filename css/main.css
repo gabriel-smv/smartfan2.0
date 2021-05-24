@@ -9450,7 +9450,7 @@ body {
 }
 
 main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 section {
@@ -10163,7 +10163,7 @@ form .container-input {
 }
 
 form label {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
   color: #00122B;
@@ -10175,7 +10175,7 @@ form select {
   width: 100%;
   min-height: 4rem;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
   padding: .8rem 1.2rem;
@@ -10783,7 +10783,7 @@ form .container-btn {
 }
 
 .banner-fan.logged-no-club {
-  background-image: url("../../images/banner-img.jpg");
+  background-image: url("../images/banner-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13726,9 +13726,36 @@ header .btn-list .btn-perfil:hover {
   align-content: center;
 }
 
+.pg-alertas-notificacoes {
+  padding-bottom: 5.6rem;
+}
+
+@media (max-width: 767px) {
+  .pg-alertas-notificacoes .tabs-alertas .nav-tabs {
+    justify-content: center;
+  }
+}
+
+.pg-alertas-notificacoes .tabs-alertas .nav-tabs .nav-item {
+  padding: .8rem;
+}
+
 .pg-alertas-notificacoes .tab-pane .alertas-item {
   border-bottom: none;
   padding: .4rem 0;
+}
+
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tab-pane .alertas-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+    margin-bottom: 2.4rem;
+  }
 }
 
 .pg-alertas-notificacoes .tab-pane .item-wrapper {
@@ -13827,6 +13854,41 @@ header .btn-list .btn-perfil:hover {
   color: var(--color-clube);
 }
 
+@media (max-width: 767px) {
+  .pg-alertas-notificacoes .tab-pane .item-wrapper {
+    min-height: 15rem;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-type span {
+    font-size: 1.4rem;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-infos {
+    padding: 0 .4rem;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-delete i span {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tab-pane .item-wrapper {
+    min-height: auto;
+    padding: 1.6rem .8rem;
+    box-shadow: none;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-type {
+    order: 1;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-type i span {
+    font-size: 2.4rem;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-infos {
+    order: 3;
+  }
+  .pg-alertas-notificacoes .tab-pane .item-delete {
+    order: 2;
+  }
+}
+
 .pg-alertas-notificacoes .tabs-configuracoes {
   margin-top: 1.6rem;
   padding: 1.6rem 3.2rem;
@@ -13875,6 +13937,7 @@ header .btn-list .btn-perfil:hover {
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .meus-alertas-list p {
+  width: 80%;
   color: #737A83;
 }
 
@@ -13889,17 +13952,78 @@ header .btn-list .btn-perfil:hover {
   opacity: 1;
 }
 
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .meus-alertas-list p {
+    width: 100%;
+    padding: 1.6rem 0 .8rem;
+  }
+  .pg-alertas-notificacoes .tabs-configuracoes .meus-alertas-list a {
+    margin-bottom: .8rem;
+  }
+}
+
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper form {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.2em;
-  color: #00122B;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .cbx-label {
+  margin-bottom: 0;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .cbx-label span.cbx-area-select::before {
+  background: var(--color-clube);
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown,
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .item-futebol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown::before,
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .item-futebol::before {
+  content: '';
+  height: 4rem;
+  width: 1px;
+  background-color: #737A83;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 992px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown,
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .item-futebol {
+    margin: 1.6rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown::before,
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .item-futebol::before {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .item-futebol::before {
+    display: none;
+  }
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown-toggle {
@@ -13934,19 +14058,99 @@ header .btn-list .btn-perfil:hover {
 
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown-menu {
   display: none;
+  width: auto;
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  border: none;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
   z-index: 999;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown-menu li {
+  border: none;
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown-menu.show {
   display: block;
 }
 
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown-menu li {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .container-input {
+  margin-top: .8rem;
+  position: relative;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .container-input .apagar-input {
+  position: absolute;
+  top: auto;
+  right: 2.4rem;
+  bottom: 2.2rem;
+  left: auto;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .container-input .apagar-input i {
+  display: inline-block;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .container-input .apagar-input span {
+  color: #737A83;
+}
+
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .container-input .apagar-input {
+    right: 0.4rem;
+  }
+}
+
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube .alerta-clube-img {
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-right: .8rem;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube .alerta-clube-img img {
+  height: 100%;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube .alerta-clube-infos h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+}
+
+.pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube .alerta-clube-infos h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+}
+
+@media (max-width: 992px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube {
+    justify-content: center;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-clube {
+    margin-bottom: 1.6rem;
+  }
 }
 
 .pg-area-fan {
@@ -14051,7 +14255,7 @@ header .btn-list .btn-perfil:hover {
 
 .pg-grupos .modal .grupo-membros li::before {
   content: '';
-  background-image: url("../../images/svg/grupo-modal.svg");
+  background-image: url("../images/svg/grupo-modal.svg");
   background-position: center;
   background-size: cover;
   height: 4rem;
