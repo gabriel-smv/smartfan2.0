@@ -9907,7 +9907,7 @@ p strong {
   font-weight: 700;
 }
 
-main {
+body {
   --color-clube: #263F62;
   --color-hover: #F0F4F6;
 }
@@ -10154,6 +10154,7 @@ form .container-input {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  position: relative;
 }
 
 @media (max-width: 575px) {
@@ -10245,6 +10246,28 @@ form .input-select:disabled {
   background-color: #F0F4F6;
   border-color: #F0F4F6;
   pointer-events: none;
+}
+
+form .apagar-input {
+  position: absolute;
+  top: auto;
+  right: 2.4rem;
+  bottom: 2.2rem;
+  left: auto;
+}
+
+form .apagar-input i {
+  display: inline-block;
+}
+
+form .apagar-input span {
+  color: #737A83;
+}
+
+@media (max-width: 575px) {
+  form .apagar-input {
+    right: 0.4rem;
+  }
 }
 
 form .container-btn {
@@ -10619,7 +10642,7 @@ form .container-btn {
 .banner-fan {
   --bg-color: #263F62;
   width: 100%;
-  padding: 3.2rem 0 12rem;
+  padding: calc(9.6rem + 3.2rem) 0 12rem;
   background: var(--bg-color);
   position: relative;
 }
@@ -10967,6 +10990,10 @@ form .container-btn {
   font-weight: 300;
   line-height: 1em;
   color: #ffffff;
+}
+
+.fc-famalicao .banner-fan.banner-socio {
+  background-image: url("../images/banner-fcfamalicao.png");
 }
 
 .cards-fan {
@@ -11846,7 +11873,7 @@ form .container-btn {
 .events-item {
   width: 100%;
   padding: 1.6rem .8rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: .8rem;
   border: 1px solid #F0F4F6;
   background: #ffffff;
   box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
@@ -13384,7 +13411,21 @@ header {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 9999;
+}
+
+header .container {
+  height: 100%;
+}
+
+header .row {
+  height: 100%;
+  justify-content: space-between;
 }
 
 header .logo {
@@ -13568,8 +13609,19 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+.socio header {
+  background: transparent;
+}
+
 .modal-alerta .modal-dialog {
-  max-width: 70%;
+  max-width: 50%;
+  border: none;
+}
+
+.modal-alerta .modal-content {
+  border-radius: 3.2rem;
+  padding: 1.6rem 2.4rem;
+  border: none;
 }
 
 .modal-alerta .modal-header {
@@ -13580,7 +13632,6 @@ header .btn-list .btn-perfil:hover {
   width: 100%;
   font-size: 2.4rem;
   text-align: center;
-  padding-top: 1.6rem;
 }
 
 .modal-alerta .modal-header .btn-close {
@@ -13601,6 +13652,265 @@ header .btn-list .btn-perfil:hover {
 .modal-alerta .modal-header .btn-close span {
   color: #ffffff;
   font-size: 3.2rem;
+}
+
+.modal-alerta .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.modal-alerta .alerta-jogo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.modal-alerta .alerta-jogo-clubes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+  margin-bottom: 1.6rem;
+}
+
+.modal-alerta .alerta-jogo-clubes .clube-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  padding: 0 2.4rem;
+}
+
+.modal-alerta .alerta-jogo-clubes .clube-item img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: .4rem;
+}
+
+.modal-alerta .alerta-jogo-clubes .clube-item .posicao-compeonato {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  bottom: auto;
+  left: auto;
+  background-color: #263F62;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  border-radius: 50%;
+}
+
+.modal-alerta .alerta-jogo h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.modal-alerta .alerta-jogo-infos {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  margin-top: .4rem;
+}
+
+.modal-alerta .outros-alertas {
+  width: 100%;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+}
+
+.modal-alerta .outros-alertas h3 {
+  text-align: center;
+  color: #737A83;
+  font-size: 2.2rem;
+  margin-bottom: .8rem;
+}
+
+.modal-alerta .outros-alertas form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-alerta .outros-alertas .criar-alerta-clube {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.modal-alerta .outros-alertas .criar-alerta-clube .alerta-clube-img {
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-right: .8rem;
+}
+
+.modal-alerta .outros-alertas .criar-alerta-clube .alerta-clube-img img {
+  height: 100%;
+}
+
+.modal-alerta .outros-alertas .criar-alerta-clube .alerta-clube-infos h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+}
+
+.modal-alerta .outros-alertas .criar-alerta-clube .alerta-clube-infos h6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+}
+
+@media (max-width: 992px) {
+  .modal-alerta .outros-alertas .criar-alerta-clube {
+    justify-content: center;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-alerta .outros-alertas .criar-alerta-clube {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.modal-alerta .outros-alertas .dropdown-toggle {
+  color: #00122B;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.modal-alerta .outros-alertas .dropdown-toggle i {
+  margin-left: .8rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-alerta .outros-alertas .dropdown-toggle i span {
+  font-size: 1.6rem;
+}
+
+.modal-alerta .outros-alertas .dropdown-toggle:after {
+  display: none;
+}
+
+.modal-alerta .outros-alertas .dropdown-toggle:hover span {
+  color: #00122B;
+}
+
+.modal-alerta .outros-alertas .dropdown-toggle.show i {
+  transform: rotate(180deg);
+}
+
+.modal-alerta .outros-alertas .dropdown-menu {
+  display: none;
+  width: auto;
+  padding: 1.6rem;
+  border-radius: 2.4rem;
+  border: none;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+  z-index: 999;
+}
+
+.modal-alerta .outros-alertas .dropdown-menu li {
+  border: none;
+  padding: .8rem 0;
+}
+
+.modal-alerta .outros-alertas .dropdown-menu li label {
+  color: #737A83;
+}
+
+.modal-alerta .outros-alertas .dropdown-menu li label span.cbx-area-select {
+  border-color: #737A83;
+}
+
+.modal-alerta .outros-alertas .dropdown-menu.show {
+  display: block;
+}
+
+@media (max-width: 575px) {
+  .modal-alerta .outros-alertas .dropdown-menu li {
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+.modal-alerta .outros-alertas .cbx-label {
+  margin-bottom: 0;
+}
+
+.modal-alerta .outros-alertas .dropdown,
+.modal-alerta .outros-alertas .item-futebol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.modal-alerta .outros-alertas .dropdown::before,
+.modal-alerta .outros-alertas .item-futebol::before {
+  content: '';
+  height: 4rem;
+  width: 1px;
+  background-color: #737A83;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 992px) {
+  .modal-alerta .outros-alertas .dropdown,
+  .modal-alerta .outros-alertas .item-futebol {
+    margin: 1.6rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-alerta .outros-alertas .dropdown::before,
+  .modal-alerta .outros-alertas .item-futebol::before {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-alerta .outros-alertas .item-futebol::before {
+    display: none;
+  }
 }
 
 .navbar {

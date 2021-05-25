@@ -4,7 +4,8 @@
     --bg-color: #263F62;
 
     width: 100%;
-    padding: 3.2rem 0 12rem;
+    padding: calc(9.6rem + 3.2rem) 0 12rem;
+
 
     background: var(--bg-color);
 
@@ -346,6 +347,14 @@
                 @include font(2.4rem, 300, 1em);
                 color: $white-01;
             }
+        }
+    }
+}
+
+.fc-famalicao {
+    .banner-fan {
+        &.banner-socio {
+            background-image: url("../images/banner-fcfamalicao.png");
         }
     }
 }

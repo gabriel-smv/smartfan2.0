@@ -7,6 +7,7 @@ form {
     .container-input {
         padding: 1.6rem;
         @include flex(column, flex-start, flex-start, flex-start);
+        position: relative;
 
         @include xs {
             padding: 1.6rem 0
@@ -88,6 +89,23 @@ form {
             background-color: $gray-01;
             border-color: $gray-01;
             pointer-events: none;
+        }
+    }
+
+    .apagar-input {
+        @include absolute(auto, 2.4rem, 2.2rem, auto);
+
+        i {
+            display: inline-block;
+        }
+
+        span {
+            color: $gray-04;
+
+        }
+
+        @include xs {
+            right: 0.4rem;
         }
     }
 

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- HEADER / USUÁRIO LOGADO -->
     <header>
         <div class="container">
             <div class="row">
@@ -90,6 +91,13 @@
                                                                         <a href="#">
                                                                             <img src="images/cd-nacional.png" alt="">
                                                                             <span>CD Nacional</span>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li class="clubes-item col-md-3 col-4">
+                                                                        <a href="#">
+                                                                            <img src="images/fc-porto.png" alt="">
+                                                                            <span>FC Famalicão</span>
                                                                         </a>
                                                                     </li>
 
@@ -289,6 +297,13 @@
 
                                                     <li class="clubes-item col-lg-2">
                                                         <a href="#">
+                                                            <img src="images/fc-famalicao.png" alt="">
+                                                            <span>FC Famalicão</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="clubes-item col-lg-2">
+                                                        <a href="#">
                                                             <img src="images/fc-porto.png" alt="">
                                                             <span>FC Porto</span>
                                                         </a>
@@ -437,10 +452,235 @@
                         </a>
                     </li>
 
-                    <li class="btn-item">
-                        <a href="pg-area-fan.html" class="btn btn-header">
-                            <i><span class="icon-login"></span></i> Login
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <i><span class="icon-fan-fill"></span></i>
                         </a>
+
+                        <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown dropdown-menu">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/fc-famalicao.png" alt="">
+
+                                    <i><span class="icon-heart"></span></i>
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+                                    <h3>Futebol Clube de Famalicão</h3>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="famalicao-pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="famalicao-pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-clubs">
+                                <input type="checkbox" name="collapse-bt" id="collapse-clubs" />
+                                <label for="collapse-clubs" class="btn-collapse-clubs">
+                                    <span class="icon-ver-mais"></span>
+                                </label>
+
+                                <div class="user-clubs-content">
+                                    <h4>Outros clubes</h4>
+                                    <ul class="list-outros-clubes">
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/sc-braga.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/vitoria-fc.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-config"></span></i> Gerir os meus clubes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown no-clube dropdown-menu" style="display: none;">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/banner-img.jpg" alt="">
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-heart"></span></i>
+                                        Clube do coração
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <img src="images/famalicao-user-placeholder.png" alt="">
+                            <span>Camilo</span> <i><span class="icon-dropdown"></span></i>
+                        </a>
+
+                        <div class="user-dropdown dropdown-menu">
+                            <div class="user-img">
+                                <img src="images/user-placeholder.png" alt="">
+                            </div>
+
+                            <div class="user-infos">
+                                <h2>Camilo Branco</h2>
+                                <p>cbranco@gmail.com</p>
+                            </div>
+
+                            <ul class="user-nav">
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-user"></span></i>
+                                        <span>Conta</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-heart"></span></i>
+                                        <span>Clubes</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-registo-atividades"></span></i>
+                                        <span>Actividade</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <span>Grupo de amigos</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-mensagem"></span></i>
+                                        <span>Alertas/Notificações</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-config"></span></i>
+                                        <span>Configurações</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-logout">
+                                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -448,14 +688,14 @@
     </header>
 
     <main>
-        <section class="banner-fan" style="--bg-color:#000000; --color-clube:#FFFFFF;">
+        <section class="banner-fan" style="--bg-color:#132740; --color-clube:#FFFFFF;">
             <div class="container">
                 <div class="row">
                     <div class="column-01 col-lg-7 col-12">
                         <div class="img-profile-wrapper col-sm-3 col-12">
                             <a href="#">
-                                <i><span class="icon-add-club"></span></i>
-                                <img src="images/user-placeholder.png" alt="" style="display: none;">
+                                <i style="display: none;"><span class="icon-add-club"></span></i>
+                                <img src="images/famalicao-user-placeholder.png" alt="">
                             </a>
                         </div>
 
@@ -464,26 +704,26 @@
                             <div class="swiper-wrapper">
 
                                 <div class="swiper-slide">
-                                    <h3>Segue o clube axadrezado</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
+                                    <h3>Apoia o teu clube do coração</h3>
+                                    <a href="famalicao-pg-area-socio.html" class="btn btn-secondary"
+                                        style="--color-hover: rgba(0,0,0,.3);">
+                                        <i><span class="icon-meus-clubes"></span></i> Faz-te sócio
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <h3>Segue o clube axadrezado</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
+                                    <h3>Apoia o teu clube do coração</h3>
+                                    <a href="famalicao-pg-area-socio.html" class="btn btn-secondary"
+                                        style="--color-hover: rgba(0,0,0,.3);">
+                                        <i><span class="icon-meus-clubes"></span></i> Faz-te sócio
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <h3>Segue o clube axadrezado</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
+                                    <h3>Apoia o teu clube do coração</h3>
+                                    <a href="famalicao-pg-area-socio.html" class="btn btn-secondary"
+                                        style="--color-hover: rgba(0,0,0,.3);">
+                                        <i><span class="icon-meus-clubes"></span></i> Faz-te sócio
                                     </a>
                                 </div>
 
@@ -496,14 +736,14 @@
 
                     <div class="column-02 col-lg-5 col-12">
                         <div class="infos-club">
-                            <h2>Boavista Futebol Clube</h2>
-                            <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
+                            <h2>Futebol Clube de Famalicão</h2>
+                            <a href="#" class="btn btn-secondary" style="--color-hover: rgba(0,0,0,.3);">
                                 <i><span class="icon-plataformas-digitais"></span></i> Plataformas digitais
                             </a>
                         </div>
 
                         <div class="img-club">
-                            <img src="images/boavista-fc.png" alt="">
+                            <img src="images/fc-famalicao.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -516,7 +756,7 @@
                 <div class="row">
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
-                            <li class="navbar-item active">
+                            <li class="navbar-item">
                                 <a href="pg-comprar-bilhetes.html">
                                     <i><span class="icon-ticket-outline"></span></i>
                                     Compra de Bilhetes
@@ -530,8 +770,8 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva-fan.html">
+                            <li class="navbar-item active">
+                                <a href="pg-area-fan.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-fan-outline"></span></i>
                                     Área de Fan
@@ -573,9 +813,7 @@
 
                         <div class="navbar-mobile dropdown yes-mobile">
                             <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                aria-expanded="false">
-                                <span class="icon-menu"></span>
-                            </a>
+                                aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
                                 <i><span class="icon-ticket-outline"></span></i>
@@ -583,7 +821,7 @@
                             </h2>
 
                             <ul class="navbar-mobile-dropdown dropdown-menu">
-                                <li class="navbar-item active">
+                                <li class="navbar-item">
                                     <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         Compra de Bilhetes
@@ -597,8 +835,8 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva-fan.html">
+                                <li class="navbar-item active">
+                                    <a href="pg-area-fan.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-fan-outline"></span></i>
                                         Área de Fan
@@ -640,422 +878,283 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-comprar-bilhetes">
+                    <section class="pg-padrao pg-area-fan">
+                        <ul class="cards-fan">
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-bilhetes">
+                                    <div class="cards-header">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <h2>Comprar bilhetes</h2>
+                                    </div>
 
-                        <section class="events-filters col-12">
+                                    <div class="cards-content">
+                                        <div class="swiper-container swiper-area-fan">
 
-                            <ul class="events-filters-list">
-                                <li>
-                                    <input type="checkbox" class="cbx" name="calendario-jogo" id="calendario-jogo">
-                                    <label for="calendario-jogo" class="cbx-label">
-                                        <span>Calendário de eventos</span> <span class="cbx-area-select"></span>
-                                    </label>
-                                </li>
+                                            <div class="swiper-wrapper">
 
-                                <li>
-                                    <input type="checkbox" class="cbx" name="futebol" id="futebol">
-                                    <label for="futebol" class="cbx-label">
-                                        <span>Futebol</span> <span class="cbx-area-select"></span>
-                                    </label>
-                                </li>
+                                                <div class="swiper-slide">
+                                                    <a href="#" class="btn-link">Comprar para este jogo</a>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Modalidades <i><span class="icon-arrow-down"></span></i>
-                                    </a>
+                                                    <div class="jogo-item">
+                                                        <ul class="jogo-item-clubes">
+                                                            <li>
+                                                                <a href="#"><img src="images/fc-famalicao.png"
+                                                                        alt=""></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><img src="images/sporting-cp.png"
+                                                                        alt=""></a>
+                                                            </li>
+                                                        </ul>
 
-                                    <ul class="filter-list-dropdown dropdown-menu">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="todas-modalidades"
-                                                id="todas-modalidades">
-                                            <label for="todas-modalidades" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Todas</span>
-                                            </label>
-                                        </li>
+                                                        <ul class="jogo-item-infos">
+                                                            <li class="jogo-item-infos-modalidade">
+                                                                <i><span class="icon-futebol"></span></i> Futebol
+                                                            </li>
 
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="futsal" id="futsal">
-                                            <label for="futsal" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Futsal</span>
-                                            </label>
-                                        </li>
+                                                            <li class="jogo-item-infos-clubes">
+                                                                <span><strong>FC Famalicão</strong></span> vs
+                                                                <span><strong>Sporting CP</strong></span>
+                                                            </li>
 
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="andebol" id="andebol">
-                                            <label for="andebol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Andebol</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="basquetebol" id="basquetebol">
-                                            <label for="basquetebol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Basquetebol</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="hoquei" id="hoquei">
-                                            <label for="hoquei" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Hoquei em patins</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="voleibol" id="voleibol">
-                                            <label for="voleibol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Voleibol</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Competições <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="todas-ligas" id="todas-ligas">
-                                            <label for="todas-ligas" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Todas</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="primeira-liga" id="primeira-liga">
-                                            <label for="primeira-liga" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Primeira Liga</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="segunda-liga" id="segunda-liga">
-                                            <label for="segunda-liga" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Segunda Liga</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary no-round">
-                                <i><span class="icon-search"></span></i> Procurar
-                            </a>
-                        </section>
-
-                        <section class="classificar-pesquisa col-12">
-
-                            <ul class="events-filters-list col-lg-6 col-md-4 col-12">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Mais critérios de pesquisa <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
-
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <ul class="events-filters-list col-lg-6 col-md-8 col-12">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Ordenar por: <span class="item-selected">Data mais recente</span>
-                                        <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="mais-recente" id="mais-recente">
-                                            <label for="mais-recente" class="cbx-label">
-                                                <span>Data mais recente</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="mais-antiga" id="mais-antiga">
-                                            <label for="mais-antiga" class="cbx-label">
-                                                <span>Data mais antiga</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="modalidade" id="modalidade">
-                                            <label for="modalidade" class="cbx-label">
-                                                <span>Modalidade</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="competicao" id="competicao">
-                                            <label for="competicao" class="cbx-label">
-                                                <span>Competição</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="guardar-pesquisa">
-                                    <input type="checkbox" class="cbx" name="guardar-pesquisa" id="guardar-pesquisa">
-                                    <label for="guardar-pesquisa" class="cbx-label">
-                                        <i><span class="icon-star"></span></i> <span>Guardar pesquisa</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <section class="content col-12">
-
-                            <div class="row">
-
-                                <div class="events col-lg-12 col-12">
-
-                                    <ul class="events-list">
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/basquetebol.svg" alt="">
-                                                <span>Basquetebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/boavista-fc.png" alt="">
-                                                    <span>Boavista FC</span>
+                                                            <li class="jogo-item-infos-data">
+                                                                <span>Dom</span>, <span>13/jul 2021</span>,
+                                                                <span>18h00</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
 
-                                                <span>VS</span>
+                                                <div class="swiper-slide">
+                                                    <a href="#" class="btn-link">Comprar para este jogo</a>
 
-                                                <div class="clube">
-                                                    <img src="images/sporting-cp.png" alt="">
-                                                    <span>Sporting CP</span>
-                                                </div>
-                                            </div>
+                                                    <div class="jogo-item">
+                                                        <ul class="jogo-item-clubes">
+                                                            <li>
+                                                                <a href="#"><img src="images/fc-famalicao.png"
+                                                                        alt=""></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><img src="images/fc-porto.png" alt=""></a>
+                                                            </li>
+                                                        </ul>
 
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
+                                                        <ul class="jogo-item-infos">
+                                                            <li class="jogo-item-infos-modalidade">
+                                                                <i><span class="icon-futebol"></span></i> Futebol
+                                                            </li>
 
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
+                                                            <li class="jogo-item-infos-clubes">
+                                                                <span><strong>FC Famalicão</strong></span> vs
+                                                                <span><strong>FC Porto</strong></span>
+                                                            </li>
 
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/voleibol.svg" alt="">
-                                                <span>Voleibol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/rioave-fc.png" alt="">
-                                                    <span>Rio Ave FC</span>
+                                                            <li class="jogo-item-infos-data">
+                                                                <span>Dom</span>, <span>18/jul 2021</span>,
+                                                                <span>16h00</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
 
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/vitoria-fc.png" alt="">
-                                                    <span>Vitória FC</span>
-                                                </div>
                                             </div>
 
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
+                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
 
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
+                                        </div>
+                                    </div>
 
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
+                                    <div class="cards-btn">
+                                        <a href="famalicao-pg-comprar-bilhetes.html"
+                                            class="btn btn-secondary no-round">Outros
+                                            jogos</a>
+                                    </div>
+                                </div>
+                            </li>
 
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/andebol.svg" alt="">
-                                                <span>Andebol</span>
-                                            </div>
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-loja">
+                                    <div class="cards-header">
+                                        <i><span class="icon-store"></span></i>
+                                        <h2>Loja</h2>
+                                    </div>
 
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/sc-braga.png" alt="">
-                                                    <span>SC Braga</span>
-                                                </div>
+                                    <div class="cards-content">
+                                        <div class="swiper-container swiper-area-fan">
 
-                                                <span>VS</span>
+                                            <div class="swiper-wrapper">
 
-                                                <div class="clube">
-                                                    <img src="images/boavista-fc.png" alt="">
-                                                    <span>Boavista FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/hoquei.svg" alt="">
-                                                <span>Hoquei</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/sporting-cp.png" alt="">
-                                                    <span>Sporting CP</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/boavista-fc.png" alt="">
-                                                    <span>Boavista FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futsal.svg" alt="">
-                                                <span>Futsal</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/fc-porto.png" alt="">
-                                                    <span>FC Porto</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/gilvicente-fc.png" alt="">
-                                                    <span>Gil Vicente FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <p>
-                                                    Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
-                                                        <span class="icon-information"></span>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <ul class="produto-infos">
+                                                            <li>Camisola AWAY</li>
+                                                            <li class="produto-infos-preco">59,00 €</li>
+                                                        </ul>
+                                                        <div class="produto-img">
+                                                            <img src="images/famalicao-placeholder-loja.png" alt="">
+                                                        </div>
                                                     </a>
-                                                </p>
-
-                                                <a href="#modalAlerta-smv" class="btn btn-secondary no-round"
-                                                    data-bs-toggle="modal">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futebol.svg" alt="">
-                                                <span>Futebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/sporting-cp.png" alt="">
-                                                    <span>Sporting CP</span>
                                                 </div>
 
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/vitoria-sc.png" alt="">
-                                                    <span>Vitória SC</span>
-                                                </div>
                                             </div>
 
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
+                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
 
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <p>
-                                                    Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
-                                                        <span class="icon-information"></span>
-                                                    </a>
-                                                </p>
+                                        </div>
+                                    </div>
 
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Comprar na
+                                            loja</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ADEPTO/FAN SEM CLUBE DO CORAÇÃO -->
+                            <li class="cards-fan-wrapper col-lg-4" style="display: none;">
+                                <div class="cards-fan-item item-clube-coracao">
+                                    <div class="cards-header">
+                                        <i><span class="icon-heart"></span></i>
+                                        <h2>Melhora a tua experiência</h2>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <p>Segue o teu clube do coração</p>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Clube do
+                                            coração</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- ADEPTO/FAN COM CLUBE DO CORAÇÃO -->
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-clube-coracao">
+                                    <div class="cards-header">
+                                        <i><span class="icon-meus-clubes"></span></i>
+                                        <h2>Apoia o teu clube</h2>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <p>Se já és sócio <a href="#" class="btn-link">associa o teu cartão</a> à tua
+                                            conta smartfan e tem acesso a uma área exclusiva para sócios e vários
+                                            serviços.</p>
+                                        <p>Se ainda não és sócio, torna-te sócio.</p>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Faz-te sócio</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-dados-conta">
+                                    <div class="cards-header">
+                                        <i><span class="icon-user"></span></i>
+                                        <h2>Dados de Conta</h2>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <img src="images/famalicao-user-placeholder.png" alt="" class="img-user">
+
+                                        <ul class="dados-user">
+                                            <li class="dados-user-name">Camilo Branco</li>
+                                            <li>ID SMARTFAN nº: <span>983654.543</span></li>
+                                            <li><span>cbranco@gmail.com</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Ver dados de perfil</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <!-- GRUPO INATIVO -->
+                                <div class="cards-fan-item item-grupo">
+                                    <div class="cards-header">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <h2>Grupo de amigos</h2>
+                                        <span class="label-state inativo">Inativo</span>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <p>Adiciona contas smartfan e gere o pagamento de bilhetes dos teus amigos e
+                                            familiares.</p>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="#" class="btn btn-secondary no-round">Gerir
+                                            grupo(s)</a>
+                                    </div>
                                 </div>
 
-                                <div class="ads-wrapper col-lg-4 col-12" style="display: none;">
-                                    <a href="#" target="_blank">
-                                        <img src="images/ads-img.jpg" alt="">
-                                    </a>
+                                <!-- GRUPO ATIVO -->
+                                <div class="cards-fan-item item-grupo" style="display: none;">
+                                    <div class="cards-header">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <h2>Grupo de amigos</h2>
+                                        <span class="label-state ativo">Ativo</span>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <ul class="grupos-list">
+                                            <li>
+                                                <a href="pg-grupos.html">
+                                                    <img src="images/svg/grupo-item.svg" alt="">
+                                                    <span>Amigos do peito</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="pg-grupos.html">
+                                                    <img src="images/svg/grupo-item.svg" alt="">
+                                                    <span>Família</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="pg-grupo-fan.html" class="btn btn-secondary no-round">Gerir
+                                            grupo(s)</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </li>
+
+                            <li class="cards-fan-wrapper col-lg-4">
+                                <div class="cards-fan-item item-alertas">
+                                    <div class="cards-header">
+                                        <i><span class="icon-mensagem"></span></i>
+                                        <h2>Alertas / Notificações</h2>
+                                    </div>
+
+                                    <div class="cards-content">
+                                        <div class="notification-wrapper">
+                                            <input type="checkbox" name="notification" id="notification">
+                                            <label for="notification">
+                                                Pretendo subscrever notificações <div class="switch"></div>
+                                            </label>
+                                        </div>
+
+                                        <div class="alertas-wrapper">
+                                            <p>Os meus alertas (<span>0</span>)</p>
+                                            <a href="pg-alertas-notificacoes-fan.html"><i><span
+                                                        class="icon-config"></span></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="cards-btn">
+                                        <a href="pg-alertas-notificacoes-fan.html"
+                                            class="btn btn-secondary no-round">Ver/gerir alertas</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </section>
                 </div>
             </div>
@@ -1201,58 +1300,6 @@
         </div>
     </footer>
 
-    <!-- Modal Alerta-->
-    <div class="modal-alerta modal fade" id="modalAlerta-smv" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Criar alerta</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span class="icon-close"></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="alerta-jogo">
-                        <div class="alerta-jogo-clubes">
-                            <div class="clube-item">
-                                <img src="images/fc-porto.png" alt="">
-                                <h5>FC Porto</h5>
-                                <i class="posicao-compeonato"><span>2º</span></i>
-                            </div>
-
-                            <span>VS</span>
-
-                            <div class="clube-item">
-                                <img src="images/gilvicente-fc.png" alt="">
-                                <h5>Gil Vicente FC</h5>
-                                <i class="posicao-compeonato"><span>10º</span></i>
-                            </div>
-                        </div>
-
-                        <h4>Liga NOS</h4>
-
-                        <p class="alerta-jogo-infos">
-                            <span>10/mar</span>, <span>18h45</span> -
-                            <span>Estádio José de Alvalade</span>
-                        </p>
-                    </div>
-
-                    <form>
-                        <div class="container-input col-12">
-                            <label for="nome-grupo">Nome do alerta</label>
-                            <input type="text" name="nome-grupo" id="nome-grupo"
-                                value="Jogo à venda Sporting Boavista, liga nos, 10 março, 18h45">
-                            <a href="#" class="apagar-input">
-                                <i><span class="icon-close"></span></i>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.bundle.min.js"></script>
@@ -1260,6 +1307,7 @@
     <script src="includes/dropdown.js"></script>
 
     <script src="includes/swiper-bundle.min.js"></script>
+    <script src="includes/area-fan-swipers.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper-fan', {
@@ -1278,6 +1326,7 @@
 
         });
     </script>
+
 </body>
 
 </html>

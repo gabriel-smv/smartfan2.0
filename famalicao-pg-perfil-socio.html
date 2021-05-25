@@ -12,7 +12,8 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 </head>
 
-<body>
+<body class="socio">
+    <!-- HEADER / USUÁRIO LOGADO -->
     <header>
         <div class="container">
             <div class="row">
@@ -437,60 +438,277 @@
                         </a>
                     </li>
 
-                    <li class="btn-item">
-                        <a href="pg-area-fan.html" class="btn btn-header">
-                            <i><span class="icon-login"></span></i> Login
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <i><span class="icon-fan-fill"></span></i>
                         </a>
+
+                        <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown dropdown-menu">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/fc-famalicao.png" alt="">
+
+                                    <i><span class="icon-heart"></span></i>
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+                                    <h3>Futebol Clube de Famalicão</h3>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="famalicao-pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="famalicao-pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-clubs">
+                                <input type="checkbox" name="collapse-bt" id="collapse-clubs" />
+                                <label for="collapse-clubs" class="btn-collapse-clubs">
+                                    <span class="icon-ver-mais"></span>
+                                </label>
+
+                                <div class="user-clubs-content">
+                                    <h4>Outros clubes</h4>
+                                    <ul class="list-outros-clubes">
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/sc-braga.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/vitoria-fc.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-config"></span></i> Gerir os meus clubes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown no-clube dropdown-menu" style="display: none;">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/banner-img.jpg" alt="">
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-heart"></span></i>
+                                        Clube do coração
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <img src="images/famalicao-user-placeholder.png" alt="">
+                            <span>Camilo</span> <i><span class="icon-dropdown"></span></i>
+                        </a>
+
+                        <div class="user-dropdown dropdown-menu">
+                            <div class="user-img">
+                                <img src="images/user-placeholder.png" alt="">
+                            </div>
+
+                            <div class="user-infos">
+                                <h2>Camilo Branco</h2>
+                                <p>cbranco@gmail.com</p>
+                            </div>
+
+                            <ul class="user-nav">
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-user"></span></i>
+                                        <span>Conta</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-heart"></span></i>
+                                        <span>Clubes</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-registo-atividades"></span></i>
+                                        <span>Actividade</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <span>Grupo de amigos</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-mensagem"></span></i>
+                                        <span>Alertas/Notificações</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-config"></span></i>
+                                        <span>Configurações</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-logout">
+                                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="banner-fan" style="--bg-color:#132740; --color-clube:#FFFFFF;">
+    <main style="--color-clube:#132740;" class="fc-famalicao">
+        <section class="banner-fan banner-socio" style="--bg-color:#000000">
             <div class="container">
                 <div class="row">
                     <div class="column-01 col-lg-7 col-12">
                         <div class="img-profile-wrapper col-sm-3 col-12">
                             <a href="#">
-                                <i><span class="icon-add-club"></span></i>
-                                <img src="images/user-placeholder.png" alt="" style="display: none;">
+                                <i style="display: none;"><span class="icon-add-club"></span></i>
+                                <img src="images/user-placeholder.png" alt="">
+                                <i class="icone-clube-adepto"><span class="icon-meus-clubes"></span></i>
                             </a>
                         </div>
 
-                        <div class="swiper-container swiper-fan col-sm-9 col-12">
-
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                    <h3>Segue o Famalicão</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <h3>Segue o Famalicão</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <h3>Segue o Famalicão</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
-                                    </a>
-                                </div>
-
+                        <div class="infos-profile-wrapper col-sm-9 col-12">
+                            <div class="infos-profile-dados col-sm-5 col-12">
+                                <h3>Camilo Branco</h3>
+                                <p>Sócio nº 165653.9</p>
+                                <p>Desde 2010</p>
                             </div>
 
-                            <div class="swiper-pagination"></div>
-
+                            <div class="infos-profile-notification col-sm-7 col-12">
+                                <div class="notification-icon">
+                                    <i><span class="icon-mensagem"></span></i>
+                                    <i class="notification-warning"><img src="images/svg/notification.svg" alt=""></i>
+                                </div>
+                                <ul class="notification-list">
+                                    <li>
+                                        <p>Quota a aguardar pagamento MB</p>
+                                        <a href="#" class="btn-link">Ver detalhes</a>
+                                    </li>
+                                    <li>
+                                        <p>4 quotas em atraso</p>
+                                        <a href="#" class="btn-link">Ver detalhes</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -516,7 +734,7 @@
                 <div class="row">
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
-                            <li class="navbar-item active">
+                            <li class="navbar-item">
                                 <a href="pg-comprar-bilhetes.html">
                                     <i><span class="icon-ticket-outline"></span></i>
                                     Compra de Bilhetes
@@ -530,40 +748,33 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva-fan.html">
-                                    <i class="disabled-icon"><span class="icon-locked"></span></i>
-                                    <i><span class="icon-fan-outline"></span></i>
-                                    Área de Fan
-                                </a>
-                            </li>
-
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+                            <li class="navbar-item">
+                                <a href="pg-agenda.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-agenda"></span></i>
                                     Agenda
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+
+                            <li class="navbar-item active">
+                                <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-meus-clubes"></span></i>
                                     Área de Sócio
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+                            <li class="navbar-item">
+                                <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-quotas"></span></i>
                                     Pagamento de Quotas
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+                            <li class="navbar-item">
+                                <a href="#">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-lugar-cativo"></span></i>
                                     Lugar cativo
@@ -572,18 +783,16 @@
                         </ul>
 
                         <div class="navbar-mobile dropdown yes-mobile">
-                            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                aria-expanded="false">
-                                <span class="icon-menu"></span>
-                            </a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
                                 <i><span class="icon-ticket-outline"></span></i>
                                 Compra de Bilhetes
                             </h2>
 
-                            <ul class="navbar-mobile-dropdown dropdown-menu">
-                                <li class="navbar-item active">
+                            <ul class="navbar-mobile-dropdown">
+                                <li class="navbar-item">
                                     <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         Compra de Bilhetes
@@ -597,40 +806,32 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva-fan.html">
-                                        <i class="disabled-icon"><span class="icon-locked"></span></i>
-                                        <i><span class="icon-fan-outline"></span></i>
-                                        Área de Fan
-                                    </a>
-                                </li>
-
-                                <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                <li class="navbar-item">
+                                    <a href="pg-agenda.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-agenda"></span></i>
                                         Agenda
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                <li class="navbar-item active">
+                                    <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-meus-clubes"></span></i>
                                         Área de Sócio
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                <li class="navbar-item">
+                                    <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-quotas"></span></i>
                                         Pagamento de Quotas
                                     </a>
                                 </li>
 
-                                <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                <li class="navbar-item">
+                                    <a href="#">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-lugar-cativo"></span></i>
                                         Lugar cativo
@@ -640,346 +841,137 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-comprar-bilhetes">
-
-                        <section class="events-filters col-12">
-
-                            <ul class="events-filters-list">
-                                <li>
-                                    <input type="checkbox" class="cbx" name="calendario-jogo" id="calendario-jogo">
-                                    <label for="calendario-jogo" class="cbx-label">
-                                        <span>Calendário de eventos</span> <span class="cbx-area-select"></span>
-                                    </label>
-                                </li>
-
-                                <li>
-                                    <input type="checkbox" class="cbx" name="futebol" id="futebol">
-                                    <label for="futebol" class="cbx-label">
-                                        <span>Futebol</span> <span class="cbx-area-select"></span>
-                                    </label>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Modalidades <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="todas-modalidades"
-                                                id="todas-modalidades">
-                                            <label for="todas-modalidades" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Todas</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="futsal" id="futsal">
-                                            <label for="futsal" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Futsal</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="andebol" id="andebol">
-                                            <label for="andebol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Andebol</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="basquetebol" id="basquetebol">
-                                            <label for="basquetebol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Basquetebol</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="hoquei" id="hoquei">
-                                            <label for="hoquei" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Hoquei em patins</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="voleibol" id="voleibol">
-                                            <label for="voleibol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Voleibol</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Competições <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="todas-ligas" id="todas-ligas">
-                                            <label for="todas-ligas" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Todas</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="primeira-liga" id="primeira-liga">
-                                            <label for="primeira-liga" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Primeira Liga</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="segunda-liga" id="segunda-liga">
-                                            <label for="segunda-liga" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Segunda Liga</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary no-round">
-                                <i><span class="icon-search"></span></i> Procurar
+                    <section class="pg-padrao pg-perfil-socio">
+                        <div class="content-wrapper">
+                            <a href="pg-area-socio.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Voltar
                             </a>
-                        </section>
 
-                        <section class="classificar-pesquisa col-12">
+                            <h2>Perfil de sócio</h2>
+                            <h5>
+                                A alteração destes dados será refletida na tua ficha de sócio. Para outras alterações,
+                                contactar os serviços do clube.
+                            </h5>
 
-                            <ul class="events-filters-list col-lg-6 col-md-4 col-12">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Mais critérios de pesquisa <i><span class="icon-arrow-down"></span></i>
-                                    </a>
+                            <section class="infos-socio col-lg-8 col-12">
+                                <div class="infos-socio-wrapper">
+                                    <div class="infos-socio-img col-lg-3 col-12">
+                                        <img src="images/user-placeholder.png" alt="">
+                                        <i><img src="images/fc-famalicao.png" alt=""></i>
+                                    </div>
 
-                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
+                                    <div class="infos-socio-details col-lg-9 col-12">
+                                        <h3>Camilo Branco</h3>
+                                        <ul>
+                                            <li>
+                                                <h5>Sócio nº</h5>
+                                                <span>165653.9</span>
+                                            </li>
 
-                                    </ul>
-                                </li>
-                            </ul>
+                                            <li>
+                                                <h5>Categoria</h5>
+                                                <span>PREMIUM</span>
+                                            </li>
 
-                            <ul class="events-filters-list col-lg-6 col-md-8 col-12">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Ordenar por: <span class="item-selected">Data mais recente</span>
-                                        <i><span class="icon-arrow-down"></span></i>
-                                    </a>
+                                            <li>
+                                                <h5>Antiguidade</h5>
+                                                <span>Agosto 2010</span>
+                                            </li>
 
-                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="mais-recente" id="mais-recente">
-                                            <label for="mais-recente" class="cbx-label">
-                                                <span>Data mais recente</span>
-                                            </label>
-                                        </li>
+                                            <li>
+                                                <h5>Última quota paga</h5>
+                                                <span>DEZ 2020</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
 
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="mais-antiga" id="mais-antiga">
-                                            <label for="mais-antiga" class="cbx-label">
-                                                <span>Data mais antiga</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="modalidade" id="modalidade">
-                                            <label for="modalidade" class="cbx-label">
-                                                <span>Modalidade</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="competicao" id="competicao">
-                                            <label for="competicao" class="cbx-label">
-                                                <span>Competição</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="guardar-pesquisa">
-                                    <input type="checkbox" class="cbx" name="guardar-pesquisa" id="guardar-pesquisa">
-                                    <label for="guardar-pesquisa" class="cbx-label">
-                                        <i><span class="icon-star"></span></i> <span>Guardar pesquisa</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <section class="content col-12">
-
-                            <div class="row">
-
-                                <div class="events col-lg-12 col-12">
-
-                                    <ul class="events-list">
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futebol.svg" alt="">
-                                                <span>Futebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/fc-famalicao.png" alt="">
-                                                    <span>FC Famalicão</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/sporting-cp.png" alt="">
-                                                    <span>Sporting CP</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio Municipal de Famalicão</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futebol.svg" alt="">
-                                                <span>Futebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/fc-porto.png" alt="">
-                                                    <span>FC Porto</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/fc-famalicao.png" alt="">
-                                                    <span>FC Famalicão</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>17/mar</span>, <span>16h00</span></li>
-                                                <li>Estádio do Dragão</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futebol.svg" alt="">
-                                                <span>Futebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/fc-famalicao.png" alt="">
-                                                    <span>FC Famalicão</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/vitoria-sc.png" alt="">
-                                                    <span>Vitória SC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>30/mar</span>, <span>19h30</span></li>
-                                                <li>Estádio Municipal de Famalicão</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <p>
-                                                    Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
-                                                        <span class="icon-information"></span>
-                                                    </a>
-                                                </p>
-
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futebol.svg" alt="">
-                                                <span>Futebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <img src="images/sc-braga.png" alt="">
-                                                    <span>FC Famalicão</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <img src="images/fc-famalicao.png" alt="">
-                                                    <span>FC Famalicão</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>04/abr</span>, <span>15h30</span></li>
-                                                <li>Estádio Municipal de Braga</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <p>
-                                                    Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
-                                                        <span class="icon-information"></span>
-                                                    </a>
-                                                </p>
-
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                            <form class="col-lg-8  col-12">
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="name">Nome</label>
+                                    <input type="text" name="name" id="name" placeholder="Default input" disabled>
                                 </div>
 
-                                <div class="ads-wrapper col-lg-4 col-12" style="display: none;">
-                                    <a href="#" target="_blank">
-                                        <img src="images/ads-img.jpg" alt="">
-                                    </a>
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="lastname">Sobrenome</label>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Default input"
+                                        disabled>
                                 </div>
-                            </div>
-                        </section>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="birthday">Data de nascimento</label>
+                                    <input type="date" name="birthday" id="birthday" placeholder="Default input"
+                                        disabled>
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="name">Sexo</label>
+                                    <input type="text" name="name" id="name" placeholder="Default input" disabled>
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="nif">NIF</label>
+                                    <input type="text" name="nif" id="nif">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="pais">País</label>
+                                    <select name="pais" id="pais">
+                                        <option value="">Selecione</option>
+                                        <option value="br">Brasil</option>
+                                        <option value="pt">Portugal</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+
+                                <div class="container-input col-lg-6 col-md-6 col-12">
+                                    <label for="endereco">Endereço</label>
+                                    <input type="text" name="endereco" id="endereco">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="cp">Código Postal</label>
+                                    <input type="text" name="cp" id="cp">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <!-- <label for="name"></label> -->
+                                    <input type="text" value="Localidade">
+                                </div>
+
+                                <div class="container-input col-lg-6 col-md-6 col-12">
+                                    <label for="localidade">Localidade</label>
+                                    <input type="text" name="localidade" id="localidade">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="telemovel-pais">País telemóvel</label>
+                                    <input type="text" name="telemovel-pais" id="telemovel-pais">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="telemovel">Telemóvel</label>
+                                    <input type="text" name="telemovel" id="telemovel">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="telefone-pais">País telefone</label>
+                                    <input type="text" name="telefone-pais" id="telefone-pais">
+                                </div>
+
+                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="text" name="telefone" id="telefone">
+                                </div>
+
+                                <p class="last-change">Ultima actualização: 12 de março 2021, 12:00</p>
+
+                                <div class="container-btn">
+                                    <a href="#" class="btn btn-secondary no-round">Confirmar dados</a>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                 </div>
             </div>
@@ -1118,7 +1110,7 @@
 
                     <div class="powered-smv col-lg-6 col-md-6 col-12">
                         <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
-                                src="images/svg/smartmove-powered-white.svg" alt=""></a>
+                                src="images/svg/smartmove-logo-white.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -1131,25 +1123,6 @@
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
 
-    <script src="includes/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper-fan', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            }
-
-        });
-    </script>
 </body>
 
 </html>
