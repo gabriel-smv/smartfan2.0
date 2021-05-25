@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartfan.tickets - Checkout</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <div class="page-container checkout-content">
+
+    <header class="header-checkout">
+      <div class="container">
+        <div class="row">
+          <ul class="logos-list col-lg-4 col-md-5 col-sm-12 col-xs-12">
+            <li>
+              <a href="index.html"><img src="images/svg/smartmove-logo-white.svg" alt=""></a>
+            </li>
+          </ul>
+
+
+          <nav class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+
+            <ul class="breadcrumb">
+
+              <li class="breadcrumb-item">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <span class="breadcrumb-item-text">Dados para pagamento</span>
+              </li>
+
+              <li class="breadcrumb-item active">
+                <i><span>2</span></i>
+                <span class="breadcrumb-item-text">Confirmação</span>
+              </li>
+
+            </ul>
+
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="success col-lg-7 col-md-10 col-sm-12">
+            <div>
+              <i><img src="images/svg/success-buy-icon.svg" alt=""></i>
+              <h3>A Sua compra foi realizada com sucesso!</h3>
+              <h4>Os teus bilhetes serão enviados para o e-mail registado</h4>
+
+              <div class="container-btn-detalhes">
+                <a href="famalicao-pg-comprar-bilhetes.html" class="btn btn-secondary"><span>Voltar ao início</span></a>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#detalhes-compra" role="button"
+                  aria-expanded="false" aria-controls="detalhes-compra"><span>Detalhes da compra</span></a>
+              </div>
+            </div>
+
+            <div>
+              <div class="payreturn__table" smv-type="paymentDataContainer" style="display: none;">
+                <img src="images/svg/multibanco.svg" alt="">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><strong smv-langtext="payretmbent">Entidade</strong></td>
+                      <td>90426</td>
+                    </tr>
+                    <tr>
+                      <td><strong smv-langtext="payretmbref">Referencia</strong></td>
+                      <td>094494091</td>
+                    </tr>
+                    <tr>
+                      <td><strong smv-langtext="payretmbvalor">Valor</strong></td>
+                      <td>10,00 <span smv-langtext="currencysymbol">€</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong smv-langtext="payretmbtimelimit">Data Limite</strong></td>
+                      <td>09-07-2020 08:25</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- MBWay -->
+              <div class="payreturn__table" smv-type="paymentDataContainer" style="display: none;">
+                <img src="images/svg/pay-mbway.svg" alt="">
+                <p smv-langtext="payretfrasembway" smv-langrepltext-mobile="967610852">Foi enviada notificação de
+                  pagamento para aplicação MBWay em equipamento com o nº de telemóvel +351 967610852</p>
+              </div>
+
+              <div class="container-detalhes collapse" id="detalhes-compra">
+                <div class="container-seu-carrinho">
+                  <table class="table table-seu-carrinho">
+                    <thead>
+                      <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Detalhes</th>
+                        <th scope="col">Valor</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td><span><strong>FC FAMALICÃO x SC BRAGA</strong></span> <span>Adepto</span></td>
+
+                        <td><span>Setor Sul</span> <span>Lugar 5</span></td>
+
+                        <td><span>30,00€</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <ul class="valor-compra">
+                    <!--
+                    <li class="valor-compra-subtotal ">
+                      <p><span smv-langtext="subtotal">Subtotal</span>:</p>
+                      <p><span></span>&#128;</p>
+                    </li>
+                    <li class="valor-compra-taxas ">
+                      <p><span smv-langtext="vat">VAT</span> % </p>
+                      <p><span></span>&#128;</p>
+                    </li> -->
+                    <li class="valor-compra-total ">
+                      <p><span smv-langtext="total">Total</span>:</p>
+                      <span>30,00 €</span>
+                    </li>
+                  </ul>
+
+                  <ul class="valor-compra">
+                    <li class="valor-compra-subtotal ">
+                      <p><span smv-langtext="lblnumenc">Order number</span>:</p>
+                      <p>4UB7M0GKRE6T</p>
+                    </li>
+
+                    <li class="valor-compra-subtotal ">
+                      <p><span smv-langtext="lblcontactdata">Dados de contacto</span>:</p>
+                      <p>Camilo Branco<br>cbranco@gmail.com</p>
+                    </li>
+
+                    <li class="valor-compra-subtotal ">
+                      <p><span smv-langtext="lblpaymethod">Método de Pagamento</span>:</p>
+                      <p smv-langtext="xpaynameMULTIBANCO">MULTIBANCO</p>
+                    </li>
+
+                    <li class="valor-compra-subtotal ">
+                      <p><span smv-langtext="lbltotal">Total</span>:</p>
+                      <p><strong>30,00 <span smv-langtext="currencysymbol">€</span></strong></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-wait" smv-type="widgetloading" smv-widget="" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <i class="icon-animate"><img src="images/svg/wait-icon.svg" alt=""></i>
+          <p>a carregar dados</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-error" smv-type="widgeterror" smv-widget="<?= $widget_name; ?>" style="display: none;">
+      <div class="container">
+        <div class="row">
+          <i><img src="images/svg/error-icon.svg" alt="Ícone de erro"></i>
+          <p>desculpe! ocorreu um problema ao carregar os dados</p>
+          <a href="javascript:retryWidget('')" class="btn btn-primary" smv-type="widgetreloadbutton"><span>Tentar
+              novamente</span></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="app-info col-lg-6 col-md-7 col-12">
+              <div class="app-info-text">
+                <h4>SMARTFAN sempre contigo.</h4>
+                <h5>Faz download da app.</h5>
+              </div>
+              <a href="" class="btn btn-primary no-round">
+                <i><span class="icon-android"></span></i>
+                Android
+              </a>
+            </div>
+
+            <ul class="social-media-list col-lg-6 col-md-5 col-12">
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-instagram"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-linkedin"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-smv">
+        <img src="images/svg/smartfan-logo-white.svg" alt="">
+      </div>
+
+      <div class="infos-footer">
+        <div class="container">
+          <div class="row">
+            <ul class="infos-footer-wrapper">
+              <li class="col-lg-3 col-md-4 col-12">
+                <h5>SMARTFAN</h5>
+                <ul class="list-links">
+                  <li>
+                    <a href="index.html">Homepage</a>
+                  </li>
+                  <li>
+                    <a href="#">Quem somos</a>
+                  </li>
+                  <li>
+                    <a href="#">Perguntas frequentes</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="col-lg-3 col-md-4 col-12">
+                <h5>SERVIÇOS</h5>
+                <ul class="list-links">
+                  <li>
+                    <a href="#">Bilheteira Geral</a>
+                  </li>
+                  <li>
+                    <a href="#">Mega store</a>
+                  </li>
+                  <li>
+                    <a href="#">Conta</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="col-lg-3 col-md-4 col-12">
+                <h5>PRIVACIDADE E TERMOS</h5>
+                <ul class="list-links">
+                  <li>
+                    <a href="#">Termos e condições</a>
+                  </li>
+                  <li>
+                    <a href="#">Política de privacidade</a>
+                  </li>
+                  <li>
+                    <a href="#">Condições de utilização de serviços</a>
+                  </li>
+                  <li>
+                    <a href="#">Política de cookies</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="col-lg-3 col-12">
+                <h5>PAGAMENTOS</h5>
+                <ul class="list-payment">
+                  <li>
+                    <img src="images/meowallet.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/visa.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/mastercard.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/multibanco.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/mbway.png" alt="">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape">
+        <div class="container">
+          <div class="row">
+            <div class="contato-smv col-lg-6 col-md-6 col-12">
+              <p>SMARTFAN.TICKETS - </p> <a href="mailto:contacto@smartfan.tickets">contacto@smartfan.tickets</a>
+            </div>
+
+            <div class="powered-smv col-lg-6 col-md-6 col-12">
+              <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
+                  src="images/svg/smartmove-logo-white.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery, Bootstrap JS -->
+    <script src="includes/jquery.min.js"></script>
+    <script src="includes/bootstrap.bundle.min.js"></script>
+    <script src="includes/menu.js"></script>
+    <script src="includes/dropdown.js"></script>
+    <script src="includes/swiper-bundle.min.js"></script>
+</body>
+
+</html>

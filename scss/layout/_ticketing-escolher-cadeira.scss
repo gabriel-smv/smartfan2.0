@@ -198,6 +198,29 @@
         }
     }
 
+    .container-btn {
+        background-color: #eeeeee;
+        padding: 1.5rem;
+        // margin-bottom: 3rem;
+        @include flex(row, space-between, center, center);
+
+        .btn {
+            padding: 1.6rem 3.2rem;
+        }
+
+        @include xs {
+            display: none;
+            position: sticky;
+            bottom: 0;
+            margin: 0;
+
+            .btn {
+                width: 80%;
+                margin: 8px 0;
+            }
+        }
+    }
+
 }
 
 .modal-setor {

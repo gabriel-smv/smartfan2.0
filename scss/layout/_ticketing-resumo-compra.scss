@@ -8,6 +8,9 @@
     }
 
     table {
+
+        @include font(1.6rem, 400, 1.2em);
+
         thead {
             margin-bottom: 1.2rem;
         }
@@ -15,11 +18,12 @@
         tbody {
             tr {
                 td {
-                    font-weight: 400;
+
+                    @include font(1.6rem, 400, 1.2em);
 
                     span {
                         strong {
-                            font-weight: 900;
+                            font-weight: 700;
                         }
                     }
 
@@ -40,19 +44,17 @@
         }
 
         th {
-            font-size: 1.2rem;
+            @include font(1.4rem, 400, 1.2em);
         }
 
         tfoot {
 
             td {
-                padding-top: 3.2rem;
-                font-weight: 900;
+
+                @include font(1.8rem, 700, 1.2em);
+                padding-top: 4rem;
                 padding-bottom: 0;
 
-                &:first-child {
-                    padding-left: 8rem;
-                }
             }
         }
 

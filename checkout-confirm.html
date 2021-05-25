@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartfan.tickets - Checkout</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <div class="page-container checkout-content">
+
+    <header class="header-checkout">
+      <div class="container">
+        <div class="row">
+          <ul class="logos-list col-lg-4 col-md-5 col-sm-12 col-xs-12">
+            <li>
+              <a href="index.html"><img src="images/svg/smartmove-logo-white.svg" alt=""></a>
+            </li>
+          </ul>
+
+
+          <nav class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+
+            <ul class="breadcrumb">
+
+              <li class="breadcrumb-item">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <span class="breadcrumb-item-text">Dados para pagamento</span>
+              </li>
+
+              <li class="breadcrumb-item active">
+                <i><span>2</span></i>
+                <span class="breadcrumb-item-text">Confirmação</span>
+              </li>
+
+            </ul>
+
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="checkout-confirm col-lg-10 col-12">
+            <!-- <div class="dados-pagamento-title">
+              <h2>O seu carrinho</h2>
+              <a href="#" class="btn-link">esvaziar carrinho</a>
+            </div> -->
+            <h2>Confirme a sua encomenda e os seus dados</h2>
+
+            <div class="container-seu-carrinho">
+              <table class="table table-seu-carrinho">
+                <thead>
+                  <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Detalhes</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td><span><strong>FC FAMILICÃO x SC BRAGA</strong></span> <span>Adepto</span></td>
+
+                    <td><span>Setor Sul</span> <span>Lugar 5</span></td>
+
+                    <td><span>30,00€</span></td>
+                  </tr>
+                </tbody>
+
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td><span smv-langtext="total">Total</span></td>
+                    <td><span>30,00</span>€</td>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <!-- <ul class="valor-compra">
+                <li class="valor-compra-subtotal">
+                  <p>Subtotal:</p>
+                  <p><span>123,00</span>€</p>
+                </li>
+                <li class="valor-compra-taxas">
+                  <p>IVA 23%</p>
+                  <p><span>16,10</span>€</p>
+                </li>
+                <li class="valor-compra-total">
+                  <p>Total:</p>
+                  <p><span>139,10</span>€</p>
+                </li>
+              </ul> -->
+            </div>
+
+            <div class="pagamentos-confirm">
+              <div class="dados-pagamento-box col-lg-6 col-12">
+                <div class="dados-pagamento-title">
+                  <h2>Método de Pagamento</h2>
+                  <a href="#" class="btn-link">Alterar</a>
+                </div>
+
+                <div class="pagamentos-confirm-metodo">
+                  <ul>
+                    <li>
+                      <i><img src="images/svg/pay-credit.svg" alt=""></i>
+                    </li>
+                  </ul>
+                  <p>Cartão de Crédito</p>
+                </div>
+              </div>
+
+              <div class="dados-pagamento-box col-lg-6 col-12">
+                <div class="dados-pagamento-title">
+                  <h2>Dados de Contacto</h2>
+                  <a href="#" class="btn-link">Alterar</a>
+                </div>
+
+                <ul class="confirm-dados-contacto">
+                  <li><span><strong>Nome:</strong></span> <span>Camilo Branco</span></li>
+                  <li><span><strong>E-mail:</strong></span> <span>cbranco@smartmove.pt</span></li>
+                  <li><span><strong>País:</strong></span> <span>Portugal</span></li>
+                </ul>
+                <p class="dados-aviso">Os teus bilhetes serão enviados para o e-mail registado</p>
+              </div>
+
+              <div class="dados-pagamento-box col-12">
+                <div class="dados-pagamento-title">
+                  <h2>Dados de Faturação</h2>
+                  <a href="#" class="btn-link">Alterar</a>
+                </div>
+
+                <div class="confirm-dados-faturacao">
+                  <p>
+                    <span><strong>Contribuinte nº:</strong></span> <span>00000000</span>
+                  </p>
+
+                  <ul>
+                    <li><span><strong>Nome/Empresa:</strong></span> <span>Smartmove SA</span></li>
+                    <li><span><strong>Morada:</strong></span> <span>Avenida dos Defensores de Chaves, 15 6º ANDAR LETRA
+                        E</span></li>
+                    <li><span><strong>Código Postal:</strong></span> <span>1000-109</span> <span>Lisboa</span></li>
+                  </ul>
+
+                  <p>
+                    <span><strong>E-mail:</strong></span> <span>geral@smartmove.pt</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-btn">
+              <a href="checkout-dados-pagamento.html" class="btn btn-secondary">
+                <span>Recuar</span>
+              </a>
+              <a href="checkout-success.html" class="btn btn-primary">
+                <span>Pagar</span>
+              </a>
+            </div>
+
+            <div class="container-btn container-btn-mobile">
+              <a href="index.html " class="btn btn-secondary btn-outlined">
+                <span>Recuar</span>
+              </a>
+              <a href="checkout-dados-pagamento.html " class="btn btn-secondary">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <span>Pagar</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="app-info col-lg-6 col-md-7 col-12">
+              <div class="app-info-text">
+                <h4>SMARTFAN sempre contigo.</h4>
+                <h5>Faz download da app.</h5>
+              </div>
+              <a href="" class="btn btn-primary no-round">
+                <i><span class="icon-android"></span></i>
+                Android
+              </a>
+            </div>
+
+            <ul class="social-media-list col-lg-6 col-md-5 col-12">
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-instagram"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <span class="icon-linkedin"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo-smv">
+        <img src="images/svg/smartfan-logo-white.svg" alt="">
+      </div>
+
+      <div class="infos-footer">
+        <div class="container">
+          <div class="row">
+            <ul class="infos-footer-wrapper">
+              <li class="col-lg-3 col-md-4 col-12">
+                <h5>SMARTFAN</h5>
+                <ul class="list-links">
+                  <li>
+                    <a href="index.html">Homepage</a>
+                  </li>
+                  <li>
+                    <a href="#">Quem somos</a>
+                  </li>
+                  <li>
+                    <a href="#">Perguntas frequentes</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="col-lg-3 col-md-4 col-12">
+                <h5>SERVIÇOS</h5>
+                <ul class="list-links">
+                  <li>
+                    <a href="#">Bilheteira Geral</a>
+                  </li>
+                  <li>
+                    <a href="#">Mega store</a>
+                  </li>
+                  <li>
+                    <a href="#">Conta</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="col-lg-3 col-md-4 col-12">
+                <h5>PRIVACIDADE E TERMOS</h5>
+                <ul class="list-links">
+                  <li>
+                    <a href="#">Termos e condições</a>
+                  </li>
+                  <li>
+                    <a href="#">Política de privacidade</a>
+                  </li>
+                  <li>
+                    <a href="#">Condições de utilização de serviços</a>
+                  </li>
+                  <li>
+                    <a href="#">Política de cookies</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="col-lg-3 col-12">
+                <h5>PAGAMENTOS</h5>
+                <ul class="list-payment">
+                  <li>
+                    <img src="images/meowallet.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/visa.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/mastercard.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/multibanco.png" alt="">
+                  </li>
+                  <li>
+                    <img src="images/mbway.png" alt="">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape">
+        <div class="container">
+          <div class="row">
+            <div class="contato-smv col-lg-6 col-md-6 col-12">
+              <p>SMARTFAN.TICKETS - </p> <a href="mailto:contacto@smartfan.tickets">contacto@smartfan.tickets</a>
+            </div>
+
+            <div class="powered-smv col-lg-6 col-md-6 col-12">
+              <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
+                  src="images/svg/smartmove-logo-white.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- jQuery, Bootstrap JS -->
+    <script src="includes/jquery.min.js"></script>
+    <script src="includes/bootstrap.bundle.min.js"></script>
+    <script src="includes/menu.js"></script>
+    <script src="includes/dropdown.js"></script>
+    <script src="includes/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
