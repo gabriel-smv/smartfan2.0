@@ -1,0 +1,35 @@
+.modal-alerta {
+    .modal {
+
+        &-dialog {
+            max-width: 70%;
+        }
+
+        &-header {
+            border-bottom: none;
+
+            h2 {
+                width: 100%;
+                font-size: 2.4rem;
+                text-align: center;
+                padding-top: 1.6rem;
+            }
+
+            .btn-close {
+                width: auto;
+                height: auto;
+                @include absolute(-5px, -5px, auto, auto);
+                border-radius: 50%;
+                background: none;
+                background-color: $primary-02;
+                opacity: 1;
+                display: inline-block;
+
+                span {
+                    color: $white-01;
+                    font-size: 3.2rem;
+                }
+            }
+        }
+    }
+}
