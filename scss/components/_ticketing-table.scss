@@ -1,0 +1,344 @@
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+
+  th,
+  td {
+    width: auto;
+    padding: 1rem .5rem;
+    text-align: center;
+    @include font(1.4rem, 300, 1.2em);
+    color: $black;
+
+    b,
+    strong {
+      font-weight: 900;
+    }
+  }
+
+  th {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  @include xs {
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    th,
+    td {
+      width: 100%;
+    }
+
+    td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.table-seu-carrinho {
+  margin: 0;
+  margin-bottom: 1.5rem;
+
+  thead {
+    background-color: $secondary-01;
+
+    th {
+      color: $white-01;
+    }
+  }
+
+  td,
+  th {
+    text-align: left;
+    @include font(1.6rem, 400, 1.4em);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &:first-child {
+
+      @include xs {
+        text-align: right;
+        padding-left: 50%;
+      }
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  td {
+    select {
+      background-color: #f3f3f3;
+      @include font(1.4rem, 400, 1em);
+      border-radius: 3px;
+    }
+
+    &:first-child {
+      span {
+        &:nth-child(2) {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .item-delete {
+    a {
+      width: 2rem;
+      display: inline-block;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include xs {
+    margin-bottom: 0;
+    padding: 1.6rem 0;
+
+    tbody {
+      tr {
+        margin-bottom: 4rem;
+        border: none;
+      }
+
+      td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        margin-bottom: 1rem;
+
+        &::before {
+          @include font(1.4rem, 900, 1em);
+          position: absolute;
+          left: .5rem;
+        }
+
+        &:nth-child(1) {
+          &:before {
+            content: 'Produto';
+          }
+        }
+
+        &:nth-child(2) {
+          &:before {
+            content: 'Detalhes';
+          }
+        }
+
+        &:nth-child(3) {
+          &:before {
+            content: 'Valor';
+          }
+        }
+
+        &:last-child {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+
+      .item-delete {
+        width: auto;
+      }
+    }
+
+    tfoot {
+      tr {
+        @include flex(row, center, center, center);
+        margin-bottom: 0;
+        border: none;
+
+        td {
+          border: none;
+
+          &:first-child {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-detalhes-compra {
+  @include flex(row, space-between, center, center);
+
+  tr {
+    @include flex(column, center, flex-start, flex-start);
+
+    th,
+    td {
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  tbody {
+    margin-left: .8rem;
+
+    tr {
+      @include flex(column, center, flex-end, flex-end);
+    }
+  }
+
+  @include xs {
+    thead {
+      display: none
+    }
+
+    tbody {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    td {
+      position: relative;
+      padding-left: 50%;
+
+      &::before {
+        width: 50%;
+        @include font(1.4rem, 900, 1em);
+        position: absolute;
+        left: .5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+      }
+
+      &:nth-child(1) {
+        &:before {
+          content: 'Método de pagamento';
+        }
+      }
+
+      &:nth-child(2) {
+        &:before {
+          content: 'Nome';
+        }
+      }
+
+      &:nth-child(3) {
+        &:before {
+          content: 'E-mail';
+        }
+      }
+
+      &:nth-child(4) {
+        &:before {
+          content: 'País';
+        }
+      }
+
+      &:nth-child(5) {
+        &:before {
+          content: 'Contribuinte nº';
+        }
+      }
+    }
+  }
+}
+
+.table-escolher-cadeira {
+
+  th {
+    font-weight: 400;
+  }
+
+  .item-active {
+    border: 1px solid $secondary-01;
+    background: #FFFFFF;
+
+    td {
+      font-weight: 700;
+    }
+  }
+
+  .item-inactive {
+    opacity: .7;
+  }
+
+  .item-total {
+    border-top: 1px solid $secondary-01;
+
+    td {
+      @include font(2rem, 700, 1.4em);
+
+      @include sm {
+        text-align: right;
+      }
+    }
+  }
+
+  tr {
+    background-color: transparent;
+  }
+
+  th,
+  td {
+    width: auto;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    @include sm {
+      text-align: left;
+    }
+  }
+
+  td {
+
+    font-size: 1.6rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    i {
+      cursor: pointer;
+      width: 1.8rem;
+      height: 1.8rem;
+      display: inline-block;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      font-weight: 700;
+    }
+
+    .txt-escolher-cadeira {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.section-jogos {
+
+    .swiper-container {
+
+        .swiper-slide {
+            position: relative;
+
+            @include md {
+                padding-bottom: 1.6rem;
+            }
+
+            .jornada-title {
+                background-color: $primary-02;
+                padding: 1.6rem 4rem;
+
+                h3 {
+                    @include font(1.6rem, 700, 1.4em);
+                    color: $white-01;
+                    margin-bottom: 0;
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+
+            .game-date {
+                width: 100%;
+                background-color: $white-02;
+                padding: 1.6rem .8rem;
+
+                p {
+                    width: 100%;
+                    @include font(1.6rem, 700, 1.4em);
+                    color: $black;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .game-info {
+                @include flex(row, center, center, center);
+                flex-wrap: wrap;
+                padding: 3.2rem 0;
+                position: relative;
+                overflow: hidden;
+
+                &-team {
+                    @include flex(column, center, center, center);
+
+                    img {
+                        max-height: 5.4rem;
+                        margin-bottom: .8rem;
+                    }
+
+                    span {
+                        @include font(1.4rem, 700, 1.4em);
+                    }
+                }
+
+                &-detail {
+                    @include flex(column, center, center, center);
+                    @include font(1.6rem, 400, 1.4em);
+                    text-align: center;
+
+                    &-hour {
+                        font-weight: 900;
+                    }
+                }
+
+                &-hover {
+                    width: 100%;
+                    height: 100%;
+                    @include absolute(0, auto, auto, 0);
+                    background-color: rgba(112, 112, 112, .5);
+                    @include flex(row, center, center, center);
+                    transform: translate(0, 100%);
+                    transition: $transition-01;
+
+                    @include md {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    .game-info-hover {
+                        transform: translate(0);
+                    }
+                }
+            }
+
+            .btn-mobile {
+                padding: 0 .8rem;
+                display: none;
+
+                @include md {
+                    display: block;
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 2rem;
+            height: 2rem;
+            @include absolute(1.6rem, auto, auto, 1.6rem);
+            z-index: 999;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .swiper-button-next {
+            left: auto;
+            right: 1.6rem;
+        }
+
+        .swiper-button-disabled {
+            opacity: .3;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.tabs-jogos {
+    .nav-tabs {
+        border-bottom: 1px solid $gray-01;
+        flex-wrap: nowrap;
+
+        .nav-link {
+            @include font(1.4rem, 700, 1.4em);
+            color: $gray-02;
+            padding: .8rem 1.6rem;
+            border-top-left-radius: .4rem;
+            border-top-right-radius: .4rem;
+
+            &.active {
+                color: $black;
+                border-color: $gray-01 $gray-01 #fff;
+            }
+        }
+    }
+
+    .tab-pane {
+        background-color: $white-01;
+        border: 1px solid $gray-01;
+        border-top: none;
+
+        h4 {
+            @include font(1.6rem, 700, 1.2em);
+            margin-bottom: 0;
+            padding: 1.6rem 0;
+            text-align: center;
+        }
+    }
+}

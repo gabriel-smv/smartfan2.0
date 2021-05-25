@@ -1,0 +1,87 @@
+.validar-cartao {
+    width: 100%;
+    padding: 8rem 0 12rem;
+    position: relative;
+
+    .row {
+        @include flex(row, center, flex-start, flex-start);
+        flex-wrap: wrap;
+
+        >* {
+            padding: 0 1.5rem;
+        }
+    }
+
+    &-wrapper {
+        @include flex(row, center, center, center);
+
+        .row {
+            width: 100%;
+        }
+
+        .logo-adepto {
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        form {
+            .row {
+                @include flex(row, flex-start, flex-end, flex-end);
+            }
+
+            label {
+                margin-bottom: .4rem;
+                font-weight: 900;
+            }
+
+            .no-adepto {
+                @include font(1.6rem, 400, 1.4em);
+                margin-bottom: .4rem;
+
+                a {
+                    margin: 0;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .btn {
+                max-height: 4rem;
+            }
+
+            .btn-link {
+                margin-left: .8rem;
+            }
+        }
+    }
+
+    @include sm {
+        .validar-cartao-wrapper {
+            .logo-adepto {
+                margin-bottom: 2.4rem;
+
+                img {
+                    max-height: 8rem;
+                }
+            }
+        }
+
+        form {
+            margin-top: 2.4rem;
+
+            .row {
+                @include flex(row, flex-start, flex-end, flex-end);
+            }
+
+            .btn {
+                width: 100%;
+                max-height: auto;
+            }
+
+            .btn-link {
+                margin-left: .8rem;
+            }
+        }
+    }
+}
