@@ -10082,6 +10082,10 @@ body {
   background: #F0F4F6;
 }
 
+.socio .btn-header {
+  --color-clube: #FFF;
+}
+
 .cbx {
   display: none;
 }
@@ -13612,6 +13616,10 @@ header .btn-list .btn-perfil:hover {
 
 .socio header {
   background: transparent;
+}
+
+.socio header .nav {
+  display: none;
 }
 
 .modal-alerta .modal-dialog {

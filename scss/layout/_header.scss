@@ -185,5 +185,9 @@ header {
 .socio {
     header {
         background: transparent;
+
+        .nav {
+            display: none;
+        }
     }
 }
