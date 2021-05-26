@@ -340,3 +340,26 @@
         }
     }
 }
+
+.socio {
+    .modal-alerta {
+        .outros-alertas {
+
+            .criar-alerta-clube {
+                .dropdown-toggle {
+                    pointer-events: none;
+                    justify-content: flex-start;
+
+                    i {
+                        display: none;
+                    }
+                }
+
+                .dropdown-menu {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}

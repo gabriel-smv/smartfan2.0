@@ -10104,6 +10104,7 @@ body {
 
 .cbx-label span {
   margin: 0 .8rem;
+  white-space: nowrap;
 }
 
 .cbx-label span:first-child {
@@ -10717,6 +10718,14 @@ form .container-btn {
 
 .banner-fan .column-01 .img-profile-wrapper a .icone-clube-adepto span {
   font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.banner-fan .column-01 h1 {
+  width: auto;
+  margin-left: 3.2rem;
+  margin-bottom: 0;
+  font-weight: 400;
   color: #ffffff;
 }
 
@@ -14021,6 +14030,19 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+.socio .modal-alerta .outros-alertas .criar-alerta-clube .dropdown-toggle {
+  pointer-events: none;
+  justify-content: flex-start;
+}
+
+.socio .modal-alerta .outros-alertas .criar-alerta-clube .dropdown-toggle i {
+  display: none;
+}
+
+.socio .modal-alerta .outros-alertas .criar-alerta-clube .dropdown-menu {
+  display: none;
+}
+
 .navbar {
   width: 100%;
   position: relative;
@@ -15178,6 +15200,108 @@ header .btn-list .btn-perfil:hover {
     min-width: auto;
     width: 32rem;
   }
+}
+
+.pg-pagar-quotas .cbx-label span.cbx-area-select::before {
+  background: var(--color-clube);
+}
+
+.pg-pagar-quotas .nav-pills .nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: .8rem;
+  padding-right: 2.4rem;
+  margin-right: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+  border: 1px solid #737A83;
+  border-radius: 4rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .area-select {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 1px solid #737A83;
+  margin-right: .8rem;
+  position: relative;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .area-select::before {
+  content: '';
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: var(--color-clube);
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-toggle {
+  margin-left: 1.6rem;
+  height: 1.6rem;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-toggle::after {
+  display: none;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-toggle i {
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-toggle span {
+  font-size: 1.6rem;
+  color: #737A83;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-toggle.show i {
+  transform: rotate(180deg);
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-menu {
+  padding: 1.6rem;
+  border: none;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-menu li {
+  padding: .8rem 0;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-menu li label {
+  font-size: 1.4rem;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-menu li label .cbx-area-select {
+  margin: 0;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link .dropdown-menu .membro-grupo {
+  padding-left: 3.2rem;
+  color: #737A83;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link.active {
+  border-color: var(--color-clube);
+  background-color: #F0F4F6;
+}
+
+.pg-pagar-quotas .nav-pills .nav-link.active .area-select::before {
+  display: block;
 }
 
 .pg-perfil-socio h5 {

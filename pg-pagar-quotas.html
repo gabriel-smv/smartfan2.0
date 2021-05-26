@@ -757,15 +757,15 @@
                             </li>
 
 
-                            <li class="navbar-item active">
-                                <a href="#">
+                            <li class="navbar-item">
+                                <a href="pg-area-socio.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-meus-clubes"></span></i>
                                     Área de Sócio
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item active">
                                 <a href="pg-pagar-quotas.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-quotas"></span></i>
@@ -787,8 +787,8 @@
                                 aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
-                                <i><span class="icon-meus-clubes"></span></i>
-                                Área de sócio
+                                <i><span class="icon-quotas"></span></i>
+                                Pagamento de quotas
                             </h2>
 
                             <ul class="navbar-mobile-dropdown">
@@ -814,7 +814,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item active">
+                                <li class="navbar-item">
                                     <a href="pg-area-socio.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-meus-clubes"></span></i>
@@ -822,7 +822,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
+                                <li class="navbar-item active">
                                     <a href="pg-pagar-quotas.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-quotas"></span></i>
@@ -841,332 +841,216 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-area-fan">
-                        <ul class="cards-fan">
+                    <section class="pg-padrao pg-pagar-quotas">
 
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-meus-clubes"></span></i>
-                                        <h2>Perfil de Sócio</h2>
-                                    </div>
+                        <section class="events-filters col-12">
 
-                                    <div class="cards-content">
-                                        <img src="images/user-placeholder.png" alt="" class="img-user">
+                            <ul class="nav nav-pills" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                        <div class="area-select"></div>
+                                        As minhas quotas
+                                    </button>
+                                </li>
 
-                                        <ul class="dados-user">
-                                            <li class="dados-user-name">Neymar Ninja JR</li>
-                                            <li>Sócio nº: <span>983654.543</span></li>
-                                            <li><span>Categoria:</span> <span>PREMIUM</span></li>
-                                        </ul>
-                                    </div>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                        <div class="area-select"></div>
+                                        Grupos
+                                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i><span class="icon-arrow-down"></span></i>
+                                        </a>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-perfil-socio.html" class="btn btn-secondary no-round">Ver dados de
-                                            perfil</a>
-                                    </div>
-                                </div>
-                            </li>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li>
+                                                <input type="checkbox" class="cbx" name="grupo1" id="grupo1">
+                                                <label for="grupo1" class="cbx-label">
+                                                    <span class="cbx-area-select"></span> <span>Grupo 1</span>
+                                                </label>
+                                            </li>
 
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-quotas">
-                                    <div class="cards-header">
-                                        <i><span class="icon-quotas"></span></i>
-                                        <h2>Quotas</h2>
-                                    </div>
+                                            <li class="membro-grupo">
+                                                <input type="checkbox" class="cbx" name="grupo1-m1" id="grupo1-m1">
+                                                <label for="grupo1-m1" class="cbx-label">
+                                                    <span class="cbx-area-select"></span> <span>António Precatado</span>
+                                                </label>
+                                            </li>
 
-                                    <div class="cards-content">
-                                        <a href="#" class="btn-link">Ver detalhes</a>
-
-                                        <div class="quotas-info">
-                                            <h5>Pagamento atual</h5>
-                                            <h6>Época desportiva <span>2020/2021</span></h6>
-                                        </div>
-
-                                        <div class="quotas-grafico">
-                                            <div class="grafico-wrapper">
-                                                <img src="images/svg/grafico-quotas.svg" alt="">
-                                            </div>
-                                            <div class="quotas-grafico-details">
-                                                <p class="quotas-number"><span class="quotas-pagas">9</span>/12</p>
-                                                <p>Quotas Pagas</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Pagar
-                                            quotas</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-bilhetes">
-                                    <div class="cards-header">
-                                        <i><span class="icon-ticket-outline"></span></i>
-                                        <h2>Comprar bilhetes</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#" class="btn-link">Comprar para este jogo</a>
-
-                                                    <div class="jogo-item">
-                                                        <ul class="jogo-item-clubes">
-                                                            <li>
-                                                                <a href="#"><img src="images/boavista-fc.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="#"><img src="images/sporting-cp.png"
-                                                                        alt=""></a>
-                                                            </li>
-                                                        </ul>
-
-                                                        <ul class="jogo-item-infos">
-                                                            <li class="jogo-item-infos-modalidade">
-                                                                <i><span class="icon-futebol"></span></i> Futebol
-                                                            </li>
-
-                                                            <li class="jogo-item-infos-clubes">
-                                                                <span><strong>Boavista FC</strong></span> vs
-                                                                <span><strong>Sporting CP</strong></span>
-                                                            </li>
-
-                                                            <li class="jogo-item-infos-data">
-                                                                <span>Dom</span>, <span>13/mar 2021</span>,
-                                                                <span>18h00</span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-comprar-bilhetes.html" class="btn btn-secondary no-round">Outros
-                                            jogos</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <!-- GRUPO INATIVO -->
-                                <div class="cards-fan-item item-grupo">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Grupo de sócios</h2>
-                                        <span class="label-state inativo">Inativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Adiciona sócios e gere o pagamento de quotas, a compra de lugares cativos e
-                                            pagamento de bilhetes dos teus amigos e familiares.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-grupo-socio.html" class="btn btn-secondary no-round">Gerir
-                                            grupo(s)</a>
-                                    </div>
-                                </div>
-
-                                <!-- GRUPO ATIVO -->
-                                <div class="cards-fan-item item-grupo" style="display: none;">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Grupo de sócios</h2>
-                                        <span class="label-state ativo">Ativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <ul class="grupos-list">
+                                            <li class="membro-grupo">
+                                                <input type="checkbox" class="cbx" name="grupo1-m2" id="grupo1-m2">
+                                                <label for="grupo1-m2" class="cbx-label">
+                                                    <span class="cbx-area-select"></span> <span>Rui Precatado</span>
+                                                </label>
+                                            </li>
 
                                             <li>
-                                                <a href="pg-grupo-socio.html">
-                                                    <img src="images/svg/grupo-item.svg" alt="">
-                                                    <span>Família</span>
-                                                </a>
+                                                <input type="checkbox" class="cbx" name="grupo-2" id="grupo-2">
+                                                <label for="grupo-2" class="cbx-label">
+                                                    <span class="cbx-area-select"></span> <span>Grupo 2</span>
+                                                </label>
+                                            </li>
+
+                                            <li class="membro-grupo">
+                                                <input type="checkbox" class="cbx" name="grupo2-m1" id="grupo2-m1">
+                                                <label for="grupo2-m1" class="cbx-label">
+                                                    <span class="cbx-area-select"></span> <span>Claudia Patarra</span>
+                                                </label>
+                                            </li>
+
+                                            <li class="membro-grupo">
+                                                <input type="checkbox" class="cbx" name="grupo2-m2" id="grupo2-m2">
+                                                <label for="grupo2-m2" class="cbx-label">
+                                                    <span class="cbx-area-select"></span> <span>Gabriel Vazarin</span>
+                                                </label>
                                             </li>
                                         </ul>
-                                    </div>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-grupo-socio.html" class="btn btn-secondary no-round">Gerir
-                                            grupo(s)</a>
-                                    </div>
-                                </div>
-                            </li>
+                                    </button>
+                                </li>
+                            </ul>
 
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-dados-conta">
-                                    <div class="cards-header">
-                                        <i><span class="icon-cartao-socio"></span></i>
-                                        <h2>Cartão de sócio</h2>
-                                    </div>
+                            <ul class="events-filters-list">
+                                <li>
+                                    <input type="checkbox" class="cbx" name="todas-quotas" id="todas-quotas">
+                                    <label for="todas-quotas" class="cbx-label">
+                                        <span>Todas</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
 
-                                    <div class="cards-content">
-                                        <ul class="dados-user">
-                                            <li>Nome: <span>Neymar Ninja Jr</span></li>
-                                            <li>Número: <span>PREMIUM</span></li>
-                                        </ul>
-                                    </div>
+                                <li>
+                                    <input type="checkbox" class="cbx" name="quotas-atraso" id="quotas-atraso">
+                                    <label for="quotas-atraso" class="cbx-label">
+                                        <span>Em atraso</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-2-via-cartao.html" class="btn btn-secondary no-round">Pedir 2ª via
-                                            do cartão</a>
-                                    </div>
-                                </div>
-                            </li>
+                                <li>
+                                    <input type="checkbox" class="cbx" name="quotas-pagar" id="quotas-pagar">
+                                    <label for="quotas-pagar" class="cbx-label">
+                                        <span>A pagar</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
 
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <!-- LUGAR CATIVO INATIVO -->
-                                <div class="cards-fan-item item-lugar-cativo" style="display: none;">
-                                    <div class="cards-header">
-                                        <i><span class="icon-lugar-cativo"></span></i>
-                                        <h2>Lugar cativo</h2>
-                                        <span class="label-state inativo">Inativo</span>
-                                    </div>
+                                <li>
+                                    <input type="checkbox" class="cbx" name="quotas-fechado" id="quotas-fechado">
+                                    <label for="quotas-fechado" class="cbx-label">
+                                        <span>Pagas</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
 
-                                    <div class="cards-content">
-                                        <div class="lugar-cativo-infos">
-                                            <h5>Época 2021/2022</h5>
-                                            <h6>Compra o teu lugar cativo.</h6>
-                                        </div>
+                                <li>
+                                    <input type="checkbox" class="cbx" name="quotas-processando"
+                                        id="quotas-processando">
+                                    <label for="quotas-processando" class="cbx-label">
+                                        <span>Em pagamento</span> <span class="cbx-area-select"></span>
+                                    </label>
+                                </li>
 
-                                        <div class="lugar-cativo-img">
-                                            <img src="images/placeholder-lugar-cativo.png" alt="">
-                                        </div>
-                                    </div>
+                                <!-- <li class="dropdown" style="display: none;">
+                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Competições <i><span class="icon-arrow-down"></span></i>
+                                    </a>
 
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar lugar
-                                            cativo</a>
-                                    </div>
-                                </div>
-
-                                <!-- LUGAR CATIVO ATIVO -->
-                                <div class="cards-fan-item item-lugar-cativo">
-                                    <div class="cards-header">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <h2>Lugar cativo</h2>
-                                        <span class="label-state ativo">Ativo</span>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="lugar-cativo-infos">
-                                            <h5>Estádio José de Alvalade</h5>
-                                            <h6>Bancada MEO</h6>
-                                            <h6>Zona Norte B Setor 20 Lugar 3B</h6>
-                                        </div>
-
-                                        <div class="lugar-cativo-img">
-                                            <img src="images/placeholder-lugar-cativo.png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar lugar
-                                            cativo</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-registo-atividades">
-                                    <div class="cards-header">
-                                        <i><span class="icon-registo-atividades-outline"></span></i>
-                                        <h2>Registo de actividade</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <p>Guardamos, por ti, o que é importante.</p>
-                                        <p>Consulta aqui o teu histórico.</p>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="pg-registo-atividades.html" class="btn btn-secondary no-round">Ver
-                                            actividade</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-loja">
-                                    <div class="cards-header">
-                                        <i><span class="icon-store"></span></i>
-                                        <h2>Loja</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="swiper-container swiper-area-fan">
-
-                                            <div class="swiper-wrapper">
-
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <ul class="produto-infos">
-                                                            <li>Hoody SPORTING Branca Retro</li>
-                                                            <li class="produto-infos-preco">44,91 €</li>
-                                                        </ul>
-                                                        <div class="produto-img">
-                                                            <img src="images/placeholder-loja.png" alt="">
-                                                        </div>
-                                                    </a>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="swiper-button-next"><span class="icon-next"></span></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="cards-btn">
-                                        <a href="#" class="btn btn-secondary no-round">Comprar na
-                                            loja</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="cards-fan-wrapper col-lg-4">
-                                <div class="cards-fan-item item-alertas">
-                                    <div class="cards-header">
-                                        <i><span class="icon-mensagem"></span></i>
-                                        <h2>Alertas / Notificações</h2>
-                                    </div>
-
-                                    <div class="cards-content">
-                                        <div class="notification-wrapper">
-                                            <input type="checkbox" name="notification" id="notification">
-                                            <label for="notification">
-                                                Pretendo subscrever notificações <div class="switch"></div>
+                                    <ul class="filter-list-dropdown dropdown-menu">
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="todas-ligas" id="todas-ligas">
+                                            <label for="todas-ligas" class="cbx-label">
+                                                <span class="cbx-area-select"></span> <span>Todas</span>
                                             </label>
-                                        </div>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                            </ul>
 
-                                        <div class="alertas-wrapper">
-                                            <p>Os meus alertas (<span>0</span>)</p>
-                                            <a href="pg-alertas-notificacoes.html"><i><span
-                                                        class="icon-config"></span></i></a>
-                                        </div>
-                                    </div>
+                            <a href="#" class="btn btn-primary no-round">
+                                <i><span class="icon-search"></span></i> Procurar
+                            </a>
+                        </section>
 
-                                    <div class="cards-btn">
-                                        <a href="pg-alertas-notificacoes.html"
-                                            class="btn btn-secondary no-round">Ver/gerir alertas</a>
-                                    </div>
+                        <section class="classificar-pesquisa col-12">
+
+                            <ul class="events-filters-list col-lg-6 col-md-4 col-12">
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Mais critérios de pesquisa <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
+
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <ul class="events-filters-list col-lg-6 col-md-8 col-12">
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        Ordenar por: <span class="item-selected">Data mais recente</span>
+                                        <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="mais-recente" id="mais-recente">
+                                            <label for="mais-recente" class="cbx-label">
+                                                <span>Data mais recente</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="mais-antiga" id="mais-antiga">
+                                            <label for="mais-antiga" class="cbx-label">
+                                                <span>Data mais antiga</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="modalidade" id="modalidade">
+                                            <label for="modalidade" class="cbx-label">
+                                                <span>Modalidade</span>
+                                            </label>
+                                        </li>
+
+                                        <li>
+                                            <input type="checkbox" class="cbx" name="competicao" id="competicao">
+                                            <label for="competicao" class="cbx-label">
+                                                <span>Competição</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="content col-12">
+
+                            <div class="row">
+
+                                <div class="tab-content col-lg-8 col-12" id="pill-tabContent">
+
+                                    <ul class="tab-pane fade show active" id="pills-home" role="tabpanel">
+
+                                        AS MINHAS QUOTAS
+                                    </ul>
+
+                                    <ul class="tab-pane fade" id="pills-profile" role="tabpanel">
+
+                                        GRUPOS
+                                    </ul>
                                 </div>
-                            </li>
-                        </ul>
+
+                                <div class="ads-wrapper col-lg-4 col-12">
+                                    <a href="#" target="_blank">
+                                        <img src="images/ads-img.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
                     </section>
                 </div>
             </div>
@@ -1305,12 +1189,692 @@
 
                     <div class="powered-smv col-lg-6 col-md-6 col-12">
                         <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
-                                src="images/svg/smartmove-logo-white.svg" alt=""></a>
+                                src="images/svg/smartmove-powered-white.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Modal Alerta-->
+    <div class="modal-alerta modal fade" id="one-modalAlerta" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Criar alerta</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alerta-jogo">
+                        <div class="alerta-jogo-clubes">
+                            <div class="clube-item">
+                                <img src="images/fc-porto.png" alt="">
+                                <h5>FC Porto</h5>
+                                <i class="posicao-compeonato"><span>2º</span></i>
+                            </div>
+
+                            <span>VS</span>
+
+                            <div class="clube-item">
+                                <img src="images/gilvicente-fc.png" alt="">
+                                <h5>Gil Vicente FC</h5>
+                                <i class="posicao-compeonato"><span>10º</span></i>
+                            </div>
+                        </div>
+
+                        <h4>Liga NOS</h4>
+
+                        <p class="alerta-jogo-infos">
+                            <span>10/mar</span>, <span>18h45</span> -
+                            <span>Estádio José de Alvalade</span>
+                        </p>
+                    </div>
+
+                    <form>
+                        <div class="container-input col-12">
+                            <label for="nome-grupo">Nome do alerta</label>
+                            <input type="text" name="nome-grupo" id="nome-grupo"
+                                value="Jogo à venda Sporting Boavista, liga nos, 10 março, 18h45">
+                            <a href="#" class="apagar-input">
+                                <i><span class="icon-close"></span></i>
+                            </a>
+                        </div>
+                    </form>
+
+                    <div class="outros-alertas">
+                        <h3>Outros alertas</h3>
+
+                        <form>
+                            <div class="criar-alerta-clube col-lg-4 col-12">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                    aria-expanded="false">
+                                    <div class="alerta-clube-img">
+                                        <img src="images/clube-default.png" alt="">
+                                    </div>
+
+                                    <div class="alerta-clube-infos">
+                                        <h4>Clube pretendido</h4>
+                                        <h6>Bilhetes para venda</h6>
+                                    </div>
+
+                                    <i><span class="icon-arrow-down"></span></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/boavista-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Boavista FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/cd-nacional.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>CD Nacional</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/estoril-praia.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Estoril Praia</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/fc-porto.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>FC Porto</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/gd-chaves.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>GD Chaves</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/gilvicente-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Gil Vicente FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/rioave-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Rio Ave FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/sc-braga.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>SC Braga</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/sc-covilha.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>SC Covilhã</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/sporting-cp.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Sporting CP</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/varzim-sc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Varzim SC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/vitoria-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Vitória FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/vitoria-sc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Vitória SC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="item-futebol col-lg-2 col-sm-4 col-12">
+                                <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-futebol">
+                                <label for="alerta-futebol" class="cbx-label">
+                                    <span>Futebol</span>
+                                    <span class="cbx-area-select"></span>
+                                </label>
+                            </div>
+
+                            <div class="dropdown col-lg-3 col-sm-4 col-12">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                    aria-expanded="false">
+                                    Modalidades <i><span class="icon-arrow-down"></span></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="todas-modalidades">
+                                        <label for="todas-modalidades" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Todas</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-futsal">
+                                        <label for="alerta-futsal" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Futsal</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-andebol">
+                                        <label for="alerta-andebol" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Andebol</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="alerta-basquetebol">
+                                        <label for="alerta-basquetebol" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Basquetebol</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-hoquei">
+                                        <label for="alerta-hoquei" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Hoquei
+                                                em patins</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="alerta-voleibol">
+                                        <label for="alerta-voleibol" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Voleibol</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown col-lg-3 col-sm-4 col-12">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                    aria-expanded="false">
+                                    Competição <i><span class="icon-arrow-down"></span></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="todas-competicoes">
+                                        <label for="todas-competicoes" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Todas</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="alerta-liga-nos">
+                                        <label for="alerta-liga-nos" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Liga NOS</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-input col-12">
+                                <label for="nome-alerta">Nome do alerta</label>
+                                <input type="text" name="nome-alerta" id="nome-alerta">
+                                <a href="#" class="apagar-input">
+                                    <i><span class="icon-close"></span></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="container-btn">
+                        <a href="#" class="btn btn-secondary no-round">Criar alerta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Alerta-->
+    <div class="modal-alerta modal fade" id="two-modalAlerta" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Criar alerta</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alerta-jogo">
+                        <div class="alerta-jogo-clubes">
+                            <div class="clube-item">
+                                <img src="images/sporting-cp.png" alt="">
+                                <h5>Sporting CP</h5>
+                                <i class="posicao-compeonato"><span>1º</span></i>
+                            </div>
+
+                            <span>VS</span>
+
+                            <div class="clube-item">
+                                <img src="images/vitoria-sc.png" alt="">
+                                <h5>Vitória SC</h5>
+                                <i class="posicao-compeonato"><span>13º</span></i>
+                            </div>
+                        </div>
+
+                        <h4>Liga NOS</h4>
+
+                        <p class="alerta-jogo-infos">
+                            <span>10/mar</span>, <span>18h45</span> -
+                            <span>Estádio José de Alvalade</span>
+                        </p>
+                    </div>
+
+                    <form>
+                        <div class="container-input col-12">
+                            <label for="nome-grupo">Nome do alerta</label>
+                            <input type="text" name="nome-grupo" id="nome-grupo"
+                                value="Jogo à venda Sporting Boavista, liga nos, 10 março, 18h45">
+                            <a href="#" class="apagar-input">
+                                <i><span class="icon-close"></span></i>
+                            </a>
+                        </div>
+                    </form>
+
+                    <div class="outros-alertas">
+                        <h3>Outros alertas</h3>
+
+                        <form>
+                            <div class="criar-alerta-clube col-lg-4 col-12">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                    aria-expanded="false">
+                                    <div class="alerta-clube-img">
+                                        <img src="images/clube-default.png" alt="">
+                                    </div>
+
+                                    <div class="alerta-clube-infos">
+                                        <h4>Clube pretendido</h4>
+                                        <h6>Bilhetes para venda</h6>
+                                    </div>
+
+                                    <i><span class="icon-arrow-down"></span></i>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/boavista-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Boavista FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/cd-nacional.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>CD Nacional</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/estoril-praia.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Estoril Praia</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/fc-porto.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>FC Porto</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/gd-chaves.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>GD Chaves</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/gilvicente-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Gil Vicente FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/rioave-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Rio Ave FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/sc-braga.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>SC Braga</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/sc-covilha.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>SC Covilhã</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/sporting-cp.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Sporting CP</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/varzim-sc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Varzim SC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/vitoria-fc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Vitória FC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <div class="alerta-clube-img">
+                                                <img src="images/vitoria-sc.png" alt="">
+                                            </div>
+
+                                            <div class="alerta-clube-infos">
+                                                <h4>Vitória SC</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="item-futebol col-lg-2 col-sm-4 col-12">
+                                <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-futebol">
+                                <label for="alerta-futebol" class="cbx-label">
+                                    <span>Futebol</span>
+                                    <span class="cbx-area-select"></span>
+                                </label>
+                            </div>
+
+                            <div class="dropdown col-lg-3 col-sm-4 col-12">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                    aria-expanded="false">
+                                    Modalidades <i><span class="icon-arrow-down"></span></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="todas-modalidades">
+                                        <label for="todas-modalidades" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Todas</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-futsal">
+                                        <label for="alerta-futsal" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Futsal</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-andebol">
+                                        <label for="alerta-andebol" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Andebol</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="alerta-basquetebol">
+                                        <label for="alerta-basquetebol" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Basquetebol</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade" id="alerta-hoquei">
+                                        <label for="alerta-hoquei" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Hoquei
+                                                em patins</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="alerta-voleibol">
+                                        <label for="alerta-voleibol" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Voleibol</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="dropdown col-lg-3 col-sm-4 col-12">
+                                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                    aria-expanded="false">
+                                    Competição <i><span class="icon-arrow-down"></span></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="todas-competicoes">
+                                        <label for="todas-competicoes" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Todas</span>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="alerta-modalidade"
+                                            id="alerta-liga-nos">
+                                        <label for="alerta-liga-nos" class="cbx-label">
+                                            <span class="cbx-area-select"></span>
+                                            <span>Liga NOS</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-input col-12">
+                                <label for="nome-alerta">Nome do alerta</label>
+                                <input type="text" name="nome-alerta" id="nome-alerta">
+                                <a href="#" class="apagar-input">
+                                    <i><span class="icon-close"></span></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="container-btn">
+                        <a href="#" class="btn btn-secondary no-round">Criar alerta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
@@ -1319,7 +1883,6 @@
     <script src="includes/dropdown.js"></script>
 
     <script src="includes/swiper-bundle.min.js"></script>
-    <script src="includes/area-fan-swipers.js"></script>
 
     <script>
         const swiper = new Swiper('.swiper-fan', {
@@ -1338,7 +1901,6 @@
 
         });
     </script>
-
 </body>
 
 </html>
