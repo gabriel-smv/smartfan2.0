@@ -49,3 +49,9 @@
     @content;
   }
 }
+
+@mixin xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}

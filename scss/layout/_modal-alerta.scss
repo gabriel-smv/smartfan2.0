@@ -4,7 +4,21 @@
             max-width: 50%;
             border: none;
 
+            @include xxl {
+                max-width: 70%;
+            }
 
+            @include md {
+                max-width: 80%;
+            }
+
+            @include sm {
+                max-width: 90%;
+            }
+
+            @include xs {
+                max-width: 100%;
+            }
         }
 
         &-content {
@@ -36,6 +50,11 @@
                     color: $white-01;
                     font-size: 3.2rem;
                 }
+
+                @include xs {
+                    top: 0;
+                    right: 0;
+                }
             }
         }
 
@@ -52,6 +71,7 @@
             width: 100%;
             @include flex(row, center, center, center);
             @include font(1.6rem, 400, 1.2em);
+            text-align: center;
             color: $black-02;
             margin-bottom: 1.6rem;
 
@@ -88,6 +108,7 @@
             @include font(1.8rem, 400, 1.2em);
             color: $gray-04;
             margin-top: .4rem;
+            text-align: center;
         }
     }
 
@@ -107,10 +128,13 @@
         form {
             @include flex(row, flex-start, center, center);
             flex-wrap: wrap;
+
+
         }
 
         .criar-alerta-clube {
-            @include flex(row, flex-start, center, center);
+            padding-right: 2.4rem;
+
 
             .alerta-clube {
                 &-img {
@@ -124,6 +148,8 @@
                 }
 
                 &-infos {
+                    width: 65%;
+
                     h4 {
                         @include font(1.6rem, 400, 1.2em);
                         color: $black-02;
@@ -136,13 +162,63 @@
                 }
             }
 
-            @include md {
-                justify-content: center;
-                margin-bottom: 2.4rem;
+            .dropdown-toggle {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+
+
+                @include md {
+                    justify-content: center;
+                    margin-bottom: 2.4rem;
+                }
+
+                @include xs {
+                    margin-bottom: 1.6rem;
+                }
             }
 
-            @include xs {
-                margin-bottom: 1.6rem;
+            .dropdown-menu {
+                padding: 1.6rem 0.8rem;
+                height: auto;
+                max-height: 35rem;
+                overflow-y: auto;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+
+                &::-webkit-scrollbar {
+                    width: .8rem;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: $gray-01;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $gray-04;
+                }
+
+
+                li {
+                    padding: 0;
+
+                    a {
+                        padding: 0.8rem 1.6rem;
+                        @include flex(row, flex-start, center, center);
+
+                        .alerta-clube-img {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                        }
+
+                        .alerta-clube-infos {
+                            width: auto;
+                        }
+
+                        &:hover {
+                            background-color: $gray-01;
+                        }
+                    }
+                }
             }
 
         }
@@ -256,4 +332,11 @@
         }
     }
 
+    form {
+        @include xs {
+            .apagar-input {
+                @include absolute(auto, -2.4rem, 2.2rem, auto);
+            }
+        }
+    }
 }
