@@ -9141,6 +9141,105 @@ progress {
   }
 }
 
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  color: #0d6efd;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-link {
+    transition: none;
+  }
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: #0a58ca;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.page-link:focus {
+  z-index: 3;
+  color: #0a58ca;
+  background-color: #e9ecef;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: -1px;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+.page-link {
+  padding: 0.375rem 0.75rem;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.pagination-lg .page-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page-link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -15301,6 +15400,322 @@ header .btn-list .btn-perfil:hover {
 }
 
 .pg-pagar-quotas .nav-pills .nav-link.active .area-select::before {
+  display: block;
+}
+
+.pg-pagar-quotas .quotas-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  padding: 1.6rem;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+}
+
+.pg-pagar-quotas .quotas-total .icone-clube {
+  position: relative;
+  padding-right: 1.6rem;
+}
+
+.pg-pagar-quotas .quotas-total .icone-clube span {
+  font-size: 4rem;
+  color: #737A83;
+}
+
+.pg-pagar-quotas .quotas-total .icone-clube .notification {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+.pg-pagar-quotas .quotas-total-infos {
+  width: 70%;
+}
+
+.pg-pagar-quotas .quotas-total-infos h4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.pg-pagar-quotas .quotas-total-infos h5 {
+  margin-bottom: 0;
+}
+
+.pg-pagar-quotas .quotas-total .btn i span {
+  margin: 0;
+}
+
+.pg-pagar-quotas .quotas-total .btn span {
+  margin-left: .4rem;
+}
+
+.pg-pagar-quotas .quotas-table {
+  background-color: #ffffff;
+  padding: 1.6rem;
+  margin-top: .8rem;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+}
+
+.pg-pagar-quotas .quotas-table table {
+  margin: 0;
+}
+
+.pg-pagar-quotas .quotas-table table thead {
+  border-bottom: 2px solid #737A83;
+  color: #00122B;
+}
+
+.pg-pagar-quotas .quotas-table table thead th {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.pg-pagar-quotas .quotas-table table tbody tr {
+  padding: .8rem 0;
+  border-bottom: 1px solid #737A83;
+}
+
+.pg-pagar-quotas .quotas-table table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pg-pagar-quotas .quotas-table table tbody td {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.pg-pagar-quotas .quotas-table table tr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-pagar-quotas .quotas-table table td,
+.pg-pagar-quotas .quotas-table table th {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-pagar-quotas .quotas-table table td:first-child,
+.pg-pagar-quotas .quotas-table table th:first-child {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.pg-pagar-quotas .quotas-table table td:last-child,
+.pg-pagar-quotas .quotas-table table th:last-child {
+  width: 50%;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.pg-pagar-quotas .quotas-table table .col-quotas,
+.pg-pagar-quotas .quotas-table table .col-valor,
+.pg-pagar-quotas .quotas-table table .col-status {
+  width: 20%;
+}
+
+.pg-pagar-quotas .quotas-table table .col-btn {
+  width: 40%;
+}
+
+.pg-pagar-quotas .quotas-table table .col-btn .btn span {
+  margin-left: .4rem;
+}
+
+.pg-pagar-quotas .quotas-table table .col-btn .btn i span {
+  margin: 0;
+}
+
+.pg-pagar-quotas .quotas-table table .quota-status {
+  border-radius: 4rem;
+  padding: .4rem;
+  padding-right: .8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-pagar-quotas .quotas-table table .quota-status i {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: .4rem;
+}
+
+.pg-pagar-quotas .quotas-table table .quota-status i img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-pagar-quotas .quotas-table table .quota-status.atraso {
+  background-color: #f37402;
+  color: #ffffff;
+}
+
+.pg-pagar-quotas .quotas-table table .quota-status.aberta i {
+  display: none;
+}
+
+.pg-pagar-quotas .quotas-table table .quota-status.ok {
+  color: #737A83;
+}
+
+.pg-pagar-quotas .quotas-pagination {
+  padding: 3.2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-pagar-quotas .quotas-pagination .pagination .page-link {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #00122B;
+  border-color: #F0F4F6;
+}
+
+.pg-pagar-quotas .quotas-pagination .pagination .page-link:hover {
+  background-color: #F0F4F6;
+}
+
+.pg-pagar-quotas .quotas-pagination .pagination .page-link:focus {
+  box-shadow: none;
+}
+
+.pg-pagar-quotas .quotas-pagination .pagination .active .page-link {
+  color: #ffffff;
+  border-color: var(--color-clube);
+  background-color: var(--color-clube);
+}
+
+.pg-pagar-quotas .member {
+  padding-top: .8rem;
+}
+
+.pg-pagar-quotas .member:first-child {
+  margin-top: 0;
+}
+
+.pg-pagar-quotas .member-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  padding: .8rem 1.6rem;
+  position: relative;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+}
+
+.pg-pagar-quotas .member-item .member-quotas {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-right: 1.6rem;
+  border-right: 2px solid #737A83;
+  width: 30%;
+}
+
+.pg-pagar-quotas .member-item .member-quotas-icon {
+  position: relative;
+  padding-right: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.pg-pagar-quotas .member-item .member-quotas-icon span {
+  font-size: 4rem;
+  color: #737A83;
+}
+
+.pg-pagar-quotas .member-item .member-quotas-icon .quotas-ok {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  border-radius: 50%;
+  background-color: var(--color-clube);
+}
+
+.pg-pagar-quotas .member-item .member-quotas-icon .notification {
+  width: 2.8rem;
+  height: 2.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  display: none;
+}
+
+.pg-pagar-quotas .member-item .member-quotas-infos h4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.pg-pagar-quotas .member-item .member-quotas-infos h5 {
+  margin-bottom: 0;
+}
+
+.pg-pagar-quotas .member-item .member-infos {
+  padding-left: 1.6rem;
+}
+
+.pg-pagar-quotas .member-item .member-infos h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1em;
+  color: #737A83;
+}
+
+.pg-pagar-quotas .member-item .member-infos h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1em;
+  color: #00122B;
+  margin-top: .8rem;
+}
+
+.pg-pagar-quotas .member-item i {
+  position: absolute;
+  right: 1.6rem;
+}
+
+.pg-pagar-quotas .member-item i span {
+  color: #737A83;
+}
+
+.pg-pagar-quotas .quotas-atrasadas .member-quotas-icon .quotas-ok {
+  display: none;
+}
+
+.pg-pagar-quotas .quotas-atrasadas .member-quotas-icon .notification {
   display: block;
 }
 
