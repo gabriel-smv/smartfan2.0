@@ -31,6 +31,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-prev:before {
+    content: "\e93c";
+}
+
+.icon-arrow-next:before {
+    content: "\e93a";
+}
+
+.icon-cancel:before {
+    content: "\e93b";
+}
+
 .icon-pdf-file:before {
     content: "\e939";
 }

@@ -1,0 +1,154 @@
+@import "layout/adesao-socio-carrinho";
+
+.pg-adesao-socio {
+    .swiper-adesao {
+        // width: 100%;
+        margin-top: 3.2rem;
+
+        .swiper-wrapper {
+            height: auto;
+        }
+
+        .swiper-slide {
+            @include flex(column, flex-start, center, center);
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .adesao-item {
+            width: 100%;
+            background-color: $white-01;
+            @include flex(column, flex-start, center, center);
+            padding: 3.2rem 0;
+            margin-bottom: 2.4rem;
+            cursor: pointer;
+
+            transition: $transition-01;
+
+            h2 {
+                color: $primary-02;
+                text-transform: uppercase;
+                margin-bottom: 1.6rem;
+                transition: $transition-01;
+            }
+
+            &-infos {
+                @include flex(column, flex-start, center, center);
+                @include font(1.6rem, 300, 1.2em);
+                color: $primary-02;
+                margin-bottom: 1.6rem;
+
+                height: 16rem;
+                overflow-y: auto;
+                transition: $transition-01;
+
+                li {
+                    margin-bottom: .8rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &-valor {
+                text-align: center;
+
+                h1 {
+                    @include font(8rem, 700, 1em);
+                    color: $secondary-02;
+                    transition: $transition-01;
+                }
+
+                h4 {
+                    font-weight: 400;
+                    transition: $transition-01;
+                }
+            }
+        }
+
+        input[type="radio"]:checked~.adesao-item {
+            background-color: $primary-02;
+
+            h2,
+            h1,
+            .adesao-item-infos {
+                color: $white-01;
+            }
+
+            h4 {
+                color: $gray-01;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        width: 100%;
+        @include flex(row, center, center, center);
+        margin-top: 4.8rem;
+        position: relative;
+
+        &-bullet {
+            display: inline-block;
+            width: 1.2rem;
+            height: 1.2rem;
+            border: 1px solid $primary-02;
+            border-radius: 50%;
+            background-color: $white-01;
+            margin: 0 4px;
+            transition: $transition-01;
+
+            &-active {
+                background-color: $primary-02;
+            }
+        }
+    }
+
+    .swiper-button {
+
+        &-prev,
+        &-next {
+            @include absolute(50%, auto, auto, 2.4rem);
+            color: $primary-02;
+            transform: translateY(-50%);
+            z-index: 9;
+
+            span {
+                font-size: 3.2rem;
+            }
+        }
+
+        &-next {
+            left: auto;
+            right: 2.4rem;
+        }
+
+        &-disabled {
+            color: $gray-04;
+        }
+    }
+
+    .container-btn {
+        width: 100%;
+        background-color: $white-01;
+        @include flex(row, space-between, center, center);
+        padding: 1.6rem 0;
+        margin: 4.8rem 0 3.2rem;
+
+        box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+
+        .btn {
+            margin: 0 1.6rem;
+        }
+
+        .column-01 {
+            @include flex(row, flex-start, center, center);
+        }
+
+        .column-02 {
+            @include flex(row, flex-end, center, center);
+        }
+    }
+}

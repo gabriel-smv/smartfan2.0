@@ -21,10 +21,12 @@
 @import "base/helpers";
 @import "base/typography";
 
+@import "components/breadcrumb";
 @import "components/btn";
 @import "components/checkbox";
 @import "components/forms";
 @import "components/keyframes";
+@import "components/modal-msg";
 
 @import "layout/ads";
 @import "layout/area-exclusiva";
@@ -38,7 +40,7 @@
 @import "layout/modal-alerta";
 @import "layout/navbar";
 
-
+@import "pages/pg-adesao-socio";
 @import "pages/pg-agenda";
 @import "pages/pg-alertas-notificacoes";
 @import "pages/pg-area-fan";
