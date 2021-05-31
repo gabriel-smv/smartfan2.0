@@ -497,7 +497,7 @@
                                 Carrinho de compras
                             </li>
 
-                            <li class="breadcrumb-item active">
+                            <li class="breadcrumb-item complete">
                                 <i>
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>3</span>
@@ -505,7 +505,7 @@
                                 Dados para pagamento
                             </li>
 
-                            <li class="breadcrumb-item disabled">
+                            <li class="breadcrumb-item complete">
                                 <i>
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>4</span>
@@ -515,314 +515,8 @@
                         </ul>
                     </nav>
 
-                    <section class="pg-padrao pg-adesao-socio pagamento">
-                        <div class="dados-pagamento col-lg-7">
-                            <div class="dados-pagamento-heading">
-                                <h2>Método de pagamento</h2>
-                                <h4>Escolhe o método de pagamento</h4>
-                            </div>
+                    <section class="pg-padrao pg-adesao-socio ">
 
-                            <form class="form-metodo-pagamento">
-                                <input type="radio" name="metodo-pagamento" id="meo-wallet">
-                                <label for="meo-wallet" class="dados-pagamento-box">
-                                    <h5>Meo Wallet</h5>
-                                    <p>Ao efetuar a sua encomenda será redirecionado para o portal de pagamentos da Meo
-                                        Wallet.
-                                    </p>
-                                    <a href="#" class="btn-link">Ver detalhes</a>
-
-                                    <img src="images/svg/pay-credit.svg" alt="" class="img-payment">
-                                </label>
-
-                                <input type="radio" name="metodo-pagamento" id="multibanco">
-                                <label for="multibanco" class="dados-pagamento-box">
-                                    <h5>Multibanco</h5>
-                                    <p>Pagamento com necessidade de conta bancária em Portugal. Ao efetuar a sua
-                                        encomenda, ser-lhe-ão apresentados os dados para proceder ao pagamento.
-                                    </p>
-                                    <a href="#" class="btn-link">Ver detalhes</a>
-
-                                    <img src="images/svg/pay-multibanco.svg" alt="" class="img-payment">
-                                </label>
-
-                                <input type="radio" name="metodo-pagamento" id="mbway">
-                                <label for="mbway" class="dados-pagamento-box">
-                                    <h5>MB Way</h5>
-                                    <p>Pagamento com necessidade de conta bancária em Portugal. Após efetuar a sua
-                                        encomenda, consulte a sua aplicação MBWay.
-                                    </p>
-                                    <a href="#" class="btn-link">Ver detalhes</a>
-
-                                    <img src="images/svg/pay-mbway.svg" alt="" class="img-payment">
-                                </label>
-                            </form>
-
-                            <div class="dados-pagamento-heading">
-                                <h2>Dados pessoais</h2>
-                                <h4>Preenche os teus dados pessoais</h4>
-                            </div>
-
-                            <div class="dados-pagamento-box">
-                                <form>
-                                    <div class="container-input col-lg-6 col-md-6 col-12">
-                                        <label for="name">Nome completo</label>
-                                        <input type="text" class="input-validate" id="name">
-                                        <span class="input-validate">Obrigatório!</span>
-                                    </div>
-
-                                    <div class="container-input col-lg-6 col-md-6 col-12">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" class="input-validate" id="email">
-                                        <span class="input-validate">Obrigatório!</span>
-                                    </div>
-
-                                    <div class="container-input col-lg-6 col-md-6 col-12">
-                                        <label for="birthday">Data de nascimento</label>
-                                        <input type="date" class="input-validate" id="birthday">
-                                        <span class="input-validate">Obrigatório!</span>
-                                    </div>
-
-                                    <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label for="pais">País</label>
-                                        <select name="pais" id="pais">
-                                            <option value="">Selecione</option>
-                                            <option value="br">Brasil</option>
-                                            <option value="pt">Portugal</option>
-                                            <option value="outro">Outro</option>
-                                        </select>
-                                        <span class="input-validate">Obrigatório!</span>
-                                    </div>
-
-                                    <div class="container-input col-lg-6 col-md-6 col-12">
-                                        <label for="morada">Morada</label>
-                                        <input type="text" name="morada" id="morada">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="cp">Código Postal</label>
-                                        <input type="text" name="cp" id="cp">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="localidade">Localidade</label>
-                                        <input type="text" value="Localidade" id="localidade">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="telemovel-pais">País telemóvel</label>
-                                        <input type="text" name="telemovel-pais" id="telemovel-pais">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="telemovel">Telemóvel</label>
-                                        <input type="text" name="telemovel" id="telemovel">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="telefone-pais">País telefone</label>
-                                        <input type="text" name="telefone-pais" id="telefone-pais">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="telefone">Telefone</label>
-                                        <input type="text" name="telefone" id="telefone">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="sexo">Sexo</label>
-                                        <select name="sexo" id="sexo">
-                                            <option value="">Selecione</option>
-                                            <option value="br">Masculino</option>
-                                            <option value="pt">Feminino</option>
-                                            <option value="outro">Outro</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="doc-type">Tipo de documento</label>
-                                        <input type="text" name="doc-type" id="doc-type">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="doc-number">Nº de documento</label>
-                                        <input type="text" name="doc-number" id="doc-number">
-                                    </div>
-
-                                    <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                        <label for="contribuinte-number">Nº de contribuinte</label>
-                                        <input type="text" name="contribuinte-number" id="contribuinte-number">
-                                    </div>
-
-                                    <ul class="politicas-dados">
-                                        <li class="container-input">
-                                            <input class="cbx" name="politica-privacidade" id="politica-privacidade"
-                                                type="checkbox" style="display: none;" />
-                                            <label class="cbx-label" for="politica-privacidade">
-                                                <span>Concordo com os <a href="#" target="_blank"
-                                                        class="btn-link">termos e condições</a></span>
-                                                <span class="cbx-area-select"></span>
-                                            </label>
-                                            <span for="smv_PayDataPisco_Privacy" generated="true" class="input-validate"
-                                                style="display:none;">You must accept the Privacy Policy.</span>
-                                        </li>
-
-                                        <li class="container-input">
-                                            <input class="cbx" name="partilhar-dados" id="partilhar-dados"
-                                                type="checkbox" style="display: none;" />
-                                            <label class="cbx-label" for="partilhar-dados">
-                                                <span>Autorizo que o Rio-Ave Futebol Clube envie comunicações comerciais
-                                                    dos Parceiros Oficiais (Mais informações no site oficial do
-                                                    clube)</span>
-                                                <span class="cbx-area-select"></span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </form>
-                            </div>
-
-
-                            <div class="dados-pagamento-heading">
-                                <h2>Dados de facturação</h2>
-                                <h4>Preenche os teus dados de facturação</h4>
-
-                                <a class="btn-dados-faturacao collapsed" data-bs-toggle="collapse"
-                                    href="#dadosFaturacao" role="button" aria-expanded="false"
-                                    aria-controls="dadosFaturacao"></a>
-                            </div>
-
-                            <div class="dados-pagamento-box collapse" id="dadosFaturacao">
-                                <form>
-                                    <div class="container-input col-md-3">
-                                        <label for="inputContribuinte">Nº de Contribuinte</label>
-                                        <input type="text" id="inputContribuinte">
-                                    </div>
-
-                                    <div class="container-input col-md-9">
-                                        <label for="inputNomeEmpresa">Nome/Empresa</label>
-                                        <input type="text" id="inputNomeEmpresa">
-                                    </div>
-
-                                    <div class="container-input col-md-6">
-                                        <label for="inputMorada">Morada de faturação</label>
-                                        <input type="text" id="inputMorada">
-                                    </div>
-
-                                    <div class="container-input col-md-3">
-                                        <label for="inputCodigoPostal">Código Postal</label>
-                                        <input type="text" id="inputCodigoPostal" disabled>
-                                    </div>
-
-                                    <div class="container-input col-md-3">
-                                        <label for="inputLocalidade">Localidade</label>
-                                        <input type="text" id="inputLocalidade" disabled>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-
-                        <div class="resumo-compra col-lg-5">
-                            <div class="dados-pagamento-heading">
-                                <h2>Resumo da compra</h2>
-                                <h4>Confirma os teus itens e o valor</h4>
-                            </div>
-
-                            <div class="dados-pagamento-box">
-                                <ul class="resumo-compra-head">
-                                    <li class="cell-qtd">Quant</li>
-                                    <li class="cell-item">Item</li>
-                                    <li class="cell-detalhes">Detalhes</li>
-                                    <li class="cell-valor">Preço</li>
-                                </ul>
-
-
-                                <ul class="resumo-compra-body">
-                                    <li class="cell-qtd"><span>1</span></li>
-
-                                    <li class="cell-item">Adesão a sócio</li>
-
-                                    <li class="cell-detalhes">Rio-Ave FC <span>Categoria 1</span> - quota jun</li>
-
-                                    <li class="cell-valor"><span>30,00€</span></li>
-                                </ul>
-
-                                <ul class="resumo-compra-total">
-                                    <li>Total a pagar</li>
-                                    <li>30,00€</li>
-                                </ul>
-
-                                <div class="resumo-compra-aviso">
-                                    <p>O pagamento será efectuado directa e integralmente a:</p>
-                                    <p>Rio Ave Futebol Clubes - Futebol Sduq, Lda, NIPC: 123456789</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion resumo-compra-mobile yes-mobile col-md-12" id="accordionExample">
-                            <div class="btn btn-block btn-resumo-compra">
-                                <span>Resumo da Compra</span>
-                                <button type="button" class="btn-dados-faturacao" data-toggle="collapse"
-                                    data-target="#resumoCompra" role="button" aria-expanded="false"
-                                    aria-controls="resumoCompra"></button>
-                            </div>
-
-                            <div id="resumoCompra" class="collapse show dados-pagamento-box"
-                                aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col " smv-langtext="lblqtabrv">Produto</th>
-                                            <th scope="col " smv-langtext="lblticket">Detalhes</th>
-                                            <th scope="col " smv-langtext="lblvalue">Valor</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td><span><strong>VITÓRIA SC x SC BRAGA</strong></span> <span>Adepto</span>
-                                            </td>
-
-                                            <td><span>Setor Sul</span> <span>Lugar 5</span></td>
-
-                                            <td><span>30,00€</span></td>
-                                        </tr>
-                                    </tbody>
-
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"><span smv-langtext="total">Total</span></td>
-                                            <td><span>200,00</span>€</td>
-                                            <td></td>
-                                        </tr>
-                                    </tfoot>
-
-                                </table>
-
-                                <a href="#" class="btn-link">Alterar</a>
-                            </div>
-                        </div>
-
-
-                        <div class="container-btn">
-                            <div class="column-01">
-                                <a href="adesao-socio-carrinho.html" class="btn btn-secondary">
-                                    <i><span class="icon-arrow-prev"></span></i>
-                                    Anterior
-                                </a>
-                            </div>
-
-                            <div class="column-02">
-                                <a href="pg-area-fan.html" class="btn btn-secondary">
-                                    <i><span class="icon-cancel"></span></i>
-                                    Cancelar adesão
-                                </a>
-
-                                <a href="adesao-socio-confirm.html" class="btn btn-secondary">
-                                    <i><span class="icon-arrow-next"></span></i>
-                                    Próximo
-                                </a>
-                            </div>
-                        </div>
                     </section>
                 </div>
             </div>
@@ -968,13 +662,11 @@
         </div>
     </footer>
 
-
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.bundle.min.js"></script>
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
-
 
 </body>
 

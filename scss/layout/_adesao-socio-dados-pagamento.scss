@@ -1,0 +1,223 @@
+.pg-adesao-socio {
+    &.pagamento {
+        @include flex(row, flex-start, flex-start, flex-start);
+        flex-wrap: wrap;
+        padding-top: 2.4rem;
+    }
+
+    .dados-pagamento {
+        padding-right: .8rem;
+
+
+        &-heading {
+            position: relative;
+            margin-bottom: 1.6rem;
+
+            h2 {
+                font-size: 3.2rem;
+                margin-bottom: 0;
+            }
+
+            h4 {
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+    }
+
+    .resumo-compra {
+        padding-left: .8rem;
+
+        ul {
+            width: 100%;
+            @include flex(row, flex-end, center, center);
+            @include font(1.6rem, 400, 1.2em);
+            position: relative;
+        }
+
+        &-head {
+            padding: .8rem 0;
+            border-bottom: 1px solid $gray-04;
+            margin-bottom: 1.6rem;
+
+            li {
+                font-weight: 700;
+            }
+        }
+
+        &-body {
+            margin-bottom: 4rem;
+        }
+
+        &-total {
+
+            li {
+                padding: 0 .8rem;
+                @include font(1.8rem, 700, 1.2em);
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        &-aviso {
+            background: $gray-01;
+            margin-top: 4.8rem;
+            padding: .8rem;
+
+            p {
+                @include font(1.4rem, 400, 1.2em);
+                text-align: right;
+                margin-bottom: 4px;
+            }
+        }
+
+
+        .cell {
+            &-item {
+                width: 20%;
+            }
+
+            &-detalhes {
+                width: 50%;
+            }
+
+            &-qtd {
+                width: 15%;
+            }
+
+            &-valor {
+                width: 15%;
+                @include flex(row, flex-end, center, center);
+            }
+        }
+
+    }
+
+    .dados-pagamento-box {
+        width: 100%;
+        height: auto;
+        background-color: $white-01;
+        padding: 2.4rem;
+        border: 2px solid $gray-01;
+        margin-bottom: 2.4rem;
+
+        box-shadow: 1px 1px 8px 0px rgba(0, 18, 43, 0.15);
+
+        h2 {
+            @include font(2.2rem, 700, 1em);
+            margin: 0;
+        }
+
+        .container-input {
+            padding: 1.6rem .8rem;
+        }
+
+        @include sm {
+            padding: 3rem 1.5rem;
+        }
+    }
+
+    .form-metodo-pagamento {
+        input[type="radio"] {
+            display: none;
+        }
+
+        .dados-pagamento-box {
+            position: relative;
+            padding-right: 24rem;
+            cursor: pointer;
+            margin-bottom: 1.6rem;
+
+            transition: $transition-01;
+
+            h5 {
+                color: $black-02;
+                font-weight: 600;
+            }
+
+            p {
+                color: $gray-04;
+            }
+
+            .btn-link {
+                --color-clube: #f37402;
+            }
+
+            .img-payment {
+                height: 3.2rem;
+                width: auto;
+                max-width: 18rem;
+
+                @include absolute(50%, 2.4rem, auto, auto);
+                transform: translateY(-50%);
+            }
+        }
+
+        input[type="radio"]:checked+label.dados-pagamento-box {
+            border: 2px solid $primary-02;
+        }
+    }
+
+    .politicas-dados {
+        width: 100%;
+        @include flex(column, flex-start, flex-end, flex-end);
+        margin-top: 2.4rem;
+
+        li {
+            width: 75%;
+            @include flex(row, flex-end, center, center);
+        }
+
+        .container-input {
+            padding: .8rem;
+        }
+
+        .cbx-label {
+            span {
+                text-align: right;
+
+                &:first-child {
+                    width: calc(100% - 3.2rem);
+                    white-space: inherit;
+                }
+            }
+        }
+    }
+}
+
+
+.btn-dados-faturacao {
+    width: 5.6rem;
+    height: 3rem;
+    @include absolute(1.6rem, 0, auto, auto);
+    background-color: $white-01;
+    border: 1px solid $gray-04;
+    margin-bottom: 8px;
+    border-radius: 3rem;
+    transition: none;
+
+    &:before {
+        content: '';
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background-color: $gray-02;
+        border: 1px solid $gray-02;
+        @include absolute(50%, auto, auto, 2px);
+        transform: translateY(-50%);
+    }
+
+    &[aria-expanded="true"] {
+        background-color: $primary-01;
+        transition: none;
+
+        &:before {
+            background-color: $white-02;
+            border: 1px solid $primary-02;
+            right: 2px;
+            left: auto;
+        }
+    }
+}
