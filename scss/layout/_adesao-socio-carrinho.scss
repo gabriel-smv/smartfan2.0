@@ -12,6 +12,15 @@
         h4 {
             font-weight: 400;
         }
+
+        @include sm {
+            @include flex(column, space-between, flex-end, flex-end);
+
+            &-text {
+                width: 100%;
+                order: 2;
+            }
+        }
     }
 
     &-table {
@@ -60,7 +69,6 @@
             }
         }
 
-
         .cell {
             &-item {
                 width: 20%;
@@ -92,6 +100,62 @@
 
                 span {
                     color: $gray-04;
+                }
+            }
+        }
+
+        @include xs {
+            ul {
+                @include flex(column, flex-start, center, center);
+
+                li {
+                    margin: .4rem 0;
+                }
+
+                &.carrinho-table-head {
+                    display: none;
+                }
+
+                &.carrinho-table-body {
+                    padding-bottom: .4rem;
+                    margin-bottom: .4rem;
+                    border-bottom: 1px solid $gray-04;
+                }
+
+                &.carrinho-table-total {
+                    @include flex(row, flex-end, center, center);
+                    flex-wrap: wrap;
+                    padding-right: 0;
+
+                    li {
+                        width: auto;
+                        padding: 0 .8rem;
+                    }
+                }
+            }
+
+            .cell {
+
+                &-item,
+                &-detalhes {
+                    width: 100%;
+                }
+
+                &-qtd,
+                &-valor {
+                    width: 100%;
+                    @include flex(row, flex-start, center, center);
+                }
+
+                &-delete {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    position: absolute;
+                    right: 0;
+
+                    span {
+                        color: $gray-04;
+                    }
                 }
             }
         }

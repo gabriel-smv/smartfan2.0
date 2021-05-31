@@ -77,6 +77,10 @@ i {
   }
 }
 
+div[smv-type="widgetcontainer"] {
+  width: 100%;
+}
+
 .pg-padrao {
   width: 100%;
   min-height: 32rem;

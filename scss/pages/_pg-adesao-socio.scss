@@ -1,4 +1,5 @@
 @import "layout/adesao-socio-carrinho";
+@import "layout/adesao-socio-confirm";
 @import "layout/adesao-socio-dados-pagamento";
 
 .pg-adesao-socio {
@@ -6,6 +7,7 @@
     .swiper-adesao {
         // width: 100%;
         margin-top: 3.2rem;
+        position: relative;
 
         .swiper-wrapper {
             height: auto;
@@ -130,6 +132,17 @@
         &-disabled {
             color: $gray-04;
         }
+
+        @include xs {
+
+            &-prev {
+                left: 0;
+            }
+
+            &-next {
+                right: 0;
+            }
+        }
     }
 
     .container-btn {
@@ -151,6 +164,38 @@
 
         .column-02 {
             @include flex(row, flex-end, center, center);
+        }
+
+        @include sm {
+            @include flex(column, flex-start, flex-start, flex-start);
+
+            .column-02 {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+                margin-top: 2.4rem;
+            }
+        }
+
+        @include xs {
+            @include flex(column, flex-start, center, center);
+
+            .column-02 {
+                width: 100%;
+                @include flex(column, flex-start, center, center);
+                margin-top: 0;
+
+                .btn {
+                    margin-top: 2.4rem;
+
+                    &.cancel {
+                        order: 2;
+                    }
+
+                    &.next {
+                        order: 1;
+                    }
+                }
+            }
         }
     }
 }

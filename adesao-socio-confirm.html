@@ -486,7 +486,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>1</span>
                                 </i>
-                                Categoria
+                                <span class="breadcrumb-item-text">Categoria</span>
                             </li>
 
                             <li class="breadcrumb-item complete">
@@ -494,7 +494,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>2</span>
                                 </i>
-                                Carrinho de compras
+                                <span class="breadcrumb-item-text">Carrinho de compras</span>
                             </li>
 
                             <li class="breadcrumb-item complete">
@@ -502,21 +502,58 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>3</span>
                                 </i>
-                                Dados para pagamento
+                                <span class="breadcrumb-item-text">Dados para pagamento</span>
                             </li>
 
-                            <li class="breadcrumb-item complete">
+                            <li class="breadcrumb-item complete active">
                                 <i>
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>4</span>
                                 </i>
-                                Confirmação
+                                <span class="breadcrumb-item-text">Confirmação</span>
                             </li>
                         </ul>
                     </nav>
 
-                    <section class="pg-padrao pg-adesao-socio ">
+                    <section class="pg-padrao pg-adesao-socio confirm">
+                        <img src="images/svg/check-shield.svg" alt="" class="img-confirm">
 
+                        <h2>O teu pedido de sócio foi efetuado com sucesso</h2>
+
+                        <p>O teu cartão provisório digital foi enviado por e-mail.</p>
+                        <p>Após o pagamento da primeira quota, será enviado pelo correio o teu cartão físico</p>
+
+                        <div class="btn-wrapper">
+                            <a href="pg-area-socio.html" class="btn btn-secondary">Voltar ao início</a>
+
+                            <a class="btn btn-primary no-round" data-bs-toggle="collapse" href="#detalhes-compra"
+                                role="button" aria-expanded="false" aria-controls="detalhes-compra">Ver detalhes</a>
+                        </div>
+
+                        <div class="collapse detalhe-compra" id="detalhes-compra">
+                            <ul class="detalhe-compra-head">
+                                <li class="cell-qtd">Quant</li>
+                                <li class="cell-item">Item</li>
+                                <li class="cell-detalhes">Detalhes</li>
+                                <li class="cell-valor">Preço</li>
+                            </ul>
+
+
+                            <ul class="detalhe-compra-body">
+                                <li class="cell-qtd"><span>1</span></li>
+
+                                <li class="cell-item">Adesão a sócio</li>
+
+                                <li class="cell-detalhes">Rio-Ave FC <span>Categoria 1</span> - quota jun</li>
+
+                                <li class="cell-valor"><span>30,00€</span></li>
+                            </ul>
+
+                            <ul class="detalhe-compra-total">
+                                <li>Total a pagar</li>
+                                <li>30,00€</li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </div>

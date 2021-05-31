@@ -486,7 +486,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>1</span>
                                 </i>
-                                Categoria
+                                <span class="breadcrumb-item-text">Categoria</span>
                             </li>
 
                             <li class="breadcrumb-item complete">
@@ -494,7 +494,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>2</span>
                                 </i>
-                                Carrinho de compras
+                                <span class="breadcrumb-item-text">Carrinho de compras</span>
                             </li>
 
                             <li class="breadcrumb-item active">
@@ -502,7 +502,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>3</span>
                                 </i>
-                                Dados para pagamento
+                                <span class="breadcrumb-item-text">Dados para pagamento</span>
                             </li>
 
                             <li class="breadcrumb-item disabled">
@@ -510,13 +510,54 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>4</span>
                                 </i>
-                                Confirmação
+                                <span class="breadcrumb-item-text">Confirmação</span>
                             </li>
                         </ul>
                     </nav>
 
                     <section class="pg-padrao pg-adesao-socio pagamento">
-                        <div class="dados-pagamento col-lg-7">
+                        <div class="resumo-compra yes-mobile col-12">
+                            <div class="dados-pagamento-heading">
+                                <h2>Resumo da compra</h2>
+                                <h4>Confirma os teus itens e o valor</h4>
+
+                                <a class="btn-dados-faturacao collapsed" data-bs-toggle="collapse" href="#resumoCompra"
+                                    role="button" aria-expanded="false" aria-controls="resumoCompra"></a>
+                            </div>
+
+                            <div class="dados-pagamento-box collapse" id="resumoCompra">
+                                <ul class="resumo-compra-head">
+                                    <li class="cell-qtd">Quant</li>
+                                    <li class="cell-item">Item</li>
+                                    <li class="cell-detalhes">Detalhes</li>
+                                    <li class="cell-valor">Preço</li>
+                                </ul>
+
+
+                                <ul class="resumo-compra-body">
+                                    <li class="cell-qtd"><span>1</span></li>
+
+                                    <li class="cell-item">Adesão a sócio</li>
+
+                                    <li class="cell-detalhes">Rio-Ave FC <span>Categoria 1</span> - quota jun</li>
+
+                                    <li class="cell-valor"><span>30,00€</span></li>
+                                </ul>
+
+                                <ul class="resumo-compra-total">
+                                    <li>Total a pagar</li>
+                                    <li>30,00€</li>
+                                </ul>
+
+                                <div class="resumo-compra-aviso">
+                                    <p>O pagamento será efectuado directa e integralmente a:</p>
+                                    <p>Rio Ave Futebol Clubes - Futebol Sduq, Lda, NIPC: 123456789</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="dados-pagamento col-lg-7 col-12">
                             <div class="dados-pagamento-heading">
                                 <h2>Método de pagamento</h2>
                                 <h4>Escolhe o método de pagamento</h4>
@@ -721,7 +762,7 @@
 
                         </div>
 
-                        <div class="resumo-compra col-lg-5">
+                        <div class="resumo-compra col-lg-5 no-mobile">
                             <div class="dados-pagamento-heading">
                                 <h2>Resumo da compra</h2>
                                 <h4>Confirma os teus itens e o valor</h4>
@@ -757,51 +798,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="accordion resumo-compra-mobile yes-mobile col-md-12" id="accordionExample">
-                            <div class="btn btn-block btn-resumo-compra">
-                                <span>Resumo da Compra</span>
-                                <button type="button" class="btn-dados-faturacao" data-toggle="collapse"
-                                    data-target="#resumoCompra" role="button" aria-expanded="false"
-                                    aria-controls="resumoCompra"></button>
-                            </div>
-
-                            <div id="resumoCompra" class="collapse show dados-pagamento-box"
-                                aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <table class="table table-borderless">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col " smv-langtext="lblqtabrv">Produto</th>
-                                            <th scope="col " smv-langtext="lblticket">Detalhes</th>
-                                            <th scope="col " smv-langtext="lblvalue">Valor</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td><span><strong>VITÓRIA SC x SC BRAGA</strong></span> <span>Adepto</span>
-                                            </td>
-
-                                            <td><span>Setor Sul</span> <span>Lugar 5</span></td>
-
-                                            <td><span>30,00€</span></td>
-                                        </tr>
-                                    </tbody>
-
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"><span smv-langtext="total">Total</span></td>
-                                            <td><span>200,00</span>€</td>
-                                            <td></td>
-                                        </tr>
-                                    </tfoot>
-
-                                </table>
-
-                                <a href="#" class="btn-link">Alterar</a>
-                            </div>
-                        </div>
-
 
                         <div class="container-btn">
                             <div class="column-01">

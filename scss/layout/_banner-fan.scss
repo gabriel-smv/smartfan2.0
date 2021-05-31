@@ -344,6 +344,12 @@
         }
     }
 
+    &.banner-adesao {
+        background-image: url("../images/banner-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     &.other-club {
         .column-01 {
             flex-wrap: wrap;

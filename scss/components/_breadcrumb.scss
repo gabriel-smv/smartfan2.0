@@ -83,4 +83,35 @@
             }
         }
     }
+
+    @include md {
+        &-item {
+            &-text {
+                display: none;
+            }
+
+            &.active {
+                .breadcrumb-item-text {
+                    display: block;
+                }
+            }
+        }
+
+
+    }
+
+    @include xs {
+        &-item {
+            display: none;
+            padding-right: 0;
+
+            &:before {
+                display: none;
+            }
+
+            &.active {
+                display: flex;
+            }
+        }
+    }
 }

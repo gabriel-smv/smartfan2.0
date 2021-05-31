@@ -15,12 +15,31 @@
 
             h2 {
                 font-size: 3.2rem;
+                line-height: 1.1em;
                 margin-bottom: 0;
             }
 
             h4 {
                 font-weight: 400;
                 text-align: left;
+            }
+        }
+
+        @include md {
+            padding-right: 0;
+        }
+
+        @include xs {
+            &-heading {
+                h2 {
+                    margin-bottom: .4rem;
+                }
+            }
+        }
+
+        @include xxs {
+            &-heading {
+                padding-right: 6rem;
             }
         }
     }
@@ -73,7 +92,6 @@
             }
         }
 
-
         .cell {
             &-item {
                 width: 20%;
@@ -93,6 +111,73 @@
             }
         }
 
+        @include md {
+            padding-left: 0;
+            margin-bottom: 1.6rem;
+            border-bottom: 1px solid $gray-04;
+        }
+
+        @include xs {
+            ul {
+                @include flex(column, flex-start, center, center);
+
+                li {
+                    margin: .4rem 0;
+                }
+
+                &.resumo-compra-head {
+                    display: none;
+                }
+
+                &.resumo-compra-body {
+                    padding-bottom: .4rem;
+                    margin-bottom: .4rem;
+                    border-bottom: 1px solid $gray-04;
+                }
+
+                &.resumo-compra-total {
+                    @include flex(row, flex-end, center, center);
+                    flex-wrap: wrap;
+                    padding-right: 0;
+
+                    li {
+                        width: auto;
+                        padding: 0 .8rem;
+                    }
+                }
+            }
+
+            .cell {
+
+                &-item,
+                &-detalhes {
+                    width: 100%;
+                }
+
+                &-qtd,
+                &-valor {
+                    width: 100%;
+                    @include flex(row, flex-start, center, center);
+                }
+
+                &-delete {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    position: absolute;
+                    right: 0;
+
+                    span {
+                        color: $gray-04;
+                    }
+                }
+            }
+        }
+
+        @include xxs {
+            .dados-pagamento-heading {
+                padding-right: 6rem;
+            }
+        }
     }
 
     .dados-pagamento-box {
@@ -153,6 +238,17 @@
                 @include absolute(50%, 2.4rem, auto, auto);
                 transform: translateY(-50%);
             }
+
+            @include xs {
+                padding-top: 6.4rem;
+                padding-right: 1.5rem;
+
+                .img-payment {
+
+                    @include absolute(2rem, auto, auto, 50%);
+                    transform: translate(-50%, 0);
+                }
+            }
         }
 
         input[type="radio"]:checked+label.dados-pagamento-box {
@@ -182,6 +278,12 @@
                     width: calc(100% - 3.2rem);
                     white-space: inherit;
                 }
+            }
+        }
+
+        @include sm {
+            li {
+                width: 100%;
             }
         }
     }

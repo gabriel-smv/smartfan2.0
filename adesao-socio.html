@@ -486,7 +486,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>1</span>
                                 </i>
-                                Categoria
+                                <span class="breadcrumb-item-text">Categoria</span>
                             </li>
 
                             <li class="breadcrumb-item disabled">
@@ -494,7 +494,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>2</span>
                                 </i>
-                                Carrinho de compras
+                                <span class="breadcrumb-item-text">Carrinho de compras</span>
                             </li>
 
                             <li class="breadcrumb-item disabled">
@@ -502,7 +502,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>3</span>
                                 </i>
-                                Dados para pagamento
+                                <span class="breadcrumb-item-text">Dados para pagamento</span>
                             </li>
 
                             <li class="breadcrumb-item disabled">
@@ -510,7 +510,7 @@
                                     <img src="images/svg/check-icon.svg" alt="">
                                     <span>4</span>
                                 </i>
-                                Confirmação
+                                <span class="breadcrumb-item-text">Confirmação</span>
                             </li>
                         </ul>
                     </nav>
@@ -519,7 +519,7 @@
                         <h2>Escolhe a categoria</h2>
                         <a href="#" class="btn-link">Tenho um voucher</a>
 
-                        <div class="swiper-container swiper-adesao col-lg-10">
+                        <div class="swiper-container swiper-adesao col-sm-10 col-12">
 
                             <div class="swiper-wrapper">
 
@@ -650,12 +650,12 @@
                             </div>
 
                             <div class="column-02">
-                                <a href="#" class="btn btn-secondary">
+                                <a href="#" class="btn btn-secondary cancel">
                                     <i><span class="icon-cancel"></span></i>
                                     Cancelar adesão
                                 </a>
 
-                                <a href="adesao-socio-carrinho.html" class="btn btn-secondary">
+                                <a href="adesao-socio-carrinho.html" class="btn btn-secondary next">
                                     <i><span class="icon-arrow-next"></span></i>
                                     Próximo
                                 </a>
@@ -836,27 +836,12 @@
     <script src="includes/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper-fan', {
+        const swiperFan = new Swiper('.swiper-adesao', {
             slidesPerView: 1,
             spaceBetween: 0,
-
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            }
-
-        });
-
-        const swiperFan = new Swiper('.swiper-adesao', {
-            slidesPerView: 4,
-            spaceBetween: 16,
             loop: false,
 
+            centeredSlides: false,
             centerInsufficientSlides: true,
 
             pagination: {
@@ -868,6 +853,28 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+
+            breakpoints: {
+                // when window width is >= 575px
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+
+                },
+
+                // when window width is >= 767px
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+
+                },
+
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 16
+                }
+            }
         });
     </script>
 </body>
