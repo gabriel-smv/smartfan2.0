@@ -1,3 +1,7 @@
 .pg-area-fan {
     padding: 1.6rem;
+
+    @include xxs {
+        padding: 1.6rem .4rem;
+    }
 }

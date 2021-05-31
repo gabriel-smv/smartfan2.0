@@ -845,7 +845,8 @@
                                             </ul>
 
                                             <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
+                                                <a href="#compraExpress" class="btn btn-secondary no-round"
+                                                    data-bs-toggle="modal">
                                                     <i><span class="icon-express"></span></i> Compra express
                                                 </a>
 
@@ -1201,6 +1202,52 @@
             </div>
         </div>
     </footer>
+
+    <!-- Compra Express -->
+    <div class="modal-alerta modal fade" id="compraExpress" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Compra Express</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="alerta-jogo">
+                        <div class="alerta-jogo-clubes">
+                            <div class="clube-item">
+                                <img src="images/fc-porto.png" alt="">
+                                <h5>FC Porto</h5>
+                                <i class="posicao-compeonato"><span>2º</span></i>
+                            </div>
+
+                            <span>VS</span>
+
+                            <div class="clube-item">
+                                <img src="images/gilvicente-fc.png" alt="">
+                                <h5>Gil Vicente FC</h5>
+                                <i class="posicao-compeonato"><span>10º</span></i>
+                            </div>
+                        </div>
+
+                        <h4>Liga NOS</h4>
+
+                        <p class="alerta-jogo-infos">
+                            <span>10/mar</span>, <span>18h45</span> -
+                            <span>Estádio José de Alvalade</span>
+                        </p>
+                    </div>
+
+                    <div class="container-btn">
+                        <a href="#" class="btn btn-secondary no-round">Procurar lugar(es)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Alerta-->
     <div class="modal-alerta modal fade" id="one-modalAlerta" tabindex="-1" aria-labelledby="exampleModalLabel"

@@ -11478,6 +11478,15 @@ form .container-btn {
   line-height: 1.2em;
 }
 
+@media (max-width: 992px) {
+  .cards-fan .cards-header i {
+    margin-right: .8rem;
+  }
+  .cards-fan .cards-header i span {
+    font-size: 3.2rem;
+  }
+}
+
 .cards-fan .cards-content {
   width: 100%;
   height: 60%;
@@ -11554,6 +11563,12 @@ form .container-btn {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2em;
+}
+
+@media (max-width: 992px) {
+  .cards-fan .item-dados-conta .cards-content {
+    margin-top: 0;
+  }
 }
 
 .cards-fan .swiper-area-fan {
@@ -11683,6 +11698,16 @@ form .container-btn {
   line-height: 1.2em;
 }
 
+@media (max-width: 425px) {
+  .cards-fan .item-bilhetes .swiper-slide .btn-link {
+    left: 0;
+  }
+  .cards-fan .item-bilhetes .jogo-item-clubes a {
+    height: 5.6rem;
+    width: 5.6rem;
+  }
+}
+
 .cards-fan .item-loja .swiper-slide {
   background: #ffffff;
 }
@@ -11795,6 +11820,18 @@ form .container-btn {
   color: #737A83;
 }
 
+@media (max-width: 425px) {
+  .cards-fan .item-quotas .btn-link {
+    left: 0;
+  }
+  .cards-fan .item-quotas .quotas-info {
+    width: 50%;
+  }
+  .cards-fan .item-quotas .quotas-grafico {
+    width: 50%;
+  }
+}
+
 .cards-fan .item-grupo .cards-content {
   display: flex;
   flex-direction: row;
@@ -11851,6 +11888,12 @@ form .container-btn {
   text-align: center;
   width: 100%;
   padding: 0 .8rem;
+}
+
+@media (max-width: 425px) {
+  .cards-fan .item-grupo .cards-header h2 {
+    width: 50%;
+  }
 }
 
 .cards-fan .item-registo-atividades .cards-content {
@@ -11932,6 +11975,12 @@ form .container-btn {
 .cards-fan .label-state.inativo {
   background: #737A83;
   color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .cards-fan .label-state {
+    padding: .8rem 1.6rem;
+  }
 }
 
 .cards-fan .item-alertas .cards-content {
@@ -12038,6 +12087,12 @@ form .container-btn {
 
 .cards-fan .item-alertas .alertas-wrapper a:hover span {
   opacity: 1;
+}
+
+@media (max-width: 575px) {
+  .cards-fan .item-alertas {
+    padding-right: 0;
+  }
 }
 
 .events-filters {
@@ -16027,6 +16082,12 @@ header .btn-list .btn-perfil:hover {
 
 .pg-area-fan {
   padding: 1.6rem;
+}
+
+@media (max-width: 425px) {
+  .pg-area-fan {
+    padding: 1.6rem .4rem;
+  }
 }
 
 .pg-grupos .modal {

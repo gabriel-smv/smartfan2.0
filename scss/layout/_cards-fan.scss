@@ -39,6 +39,16 @@
         h2 {
             @include font(2rem, 700, 1.2em);
         }
+
+        @include md {
+            i {
+                margin-right: .8rem;
+
+                span {
+                    font-size: 3.2rem;
+                }
+            }
+        }
     }
 
     .cards-content {
@@ -103,6 +113,12 @@
 
             .dados-user-name {
                 @include font(2rem, 700, 1.2em);
+            }
+        }
+
+        @include md {
+            .cards-content {
+                margin-top: 0;
             }
         }
     }
@@ -207,6 +223,23 @@
                 }
             }
         }
+
+        @include xxs {
+            .swiper-slide {
+                .btn-link {
+                    left: 0;
+                }
+            }
+
+            .jogo-item {
+                &-clubes {
+                    a {
+                        height: 5.6rem;
+                        width: 5.6rem;
+                    }
+                }
+            }
+        }
     }
 
     .item-loja {
@@ -301,6 +334,21 @@
             @include font(1.6rem, 400, 1.2em);
             color: $gray-04;
         }
+
+        @include xxs {
+
+            .btn-link {
+                left: 0;
+            }
+
+            .quotas-info {
+                width: 50%;
+            }
+
+            .quotas-grafico {
+                width: 50%;
+            }
+        }
     }
 
     .item-grupo {
@@ -345,6 +393,14 @@
                         width: 100%;
                         padding: 0 .8rem;
                     }
+                }
+            }
+        }
+
+        @include xxs {
+            .cards-header {
+                h2 {
+                    width: 50%;
                 }
             }
         }
@@ -416,6 +472,10 @@
         &.inativo {
             background: $gray-04;
             color: $white-01;
+        }
+
+        @include md {
+            padding: .8rem 1.6rem;
         }
     }
 
@@ -508,6 +568,10 @@
                     }
                 }
             }
+        }
+
+        @include xs {
+            padding-right: 0;
         }
     }
 }
