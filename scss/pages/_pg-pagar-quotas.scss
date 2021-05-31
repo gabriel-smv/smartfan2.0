@@ -394,4 +394,194 @@
             }
         }
     }
+
+    @include md {
+        .events-filters {
+            @include flex(column, flex-start, center, center);
+
+            .btn {
+                margin-top: 1.2rem;
+            }
+        }
+
+        .member-item {
+
+            .member-quotas {
+                width: 40%;
+                border: none;
+            }
+        }
+
+        .ads-wrapper {
+            margin-top: 4rem;
+        }
+    }
+
+    @include xs {
+        .member-item {
+            .member-quotas {
+                border: none;
+                width: 50%;
+
+                &-icon {
+                    padding-right: .8rem;
+
+                    span {
+                        font-size: 4rem;
+                        color: $gray-04;
+                    }
+
+                    .quotas-ok {
+                        width: 2.2rem;
+                        height: 2.2rem;
+                    }
+
+                    .notification {
+                        width: 2.4rem;
+                        height: 2.4rem;
+                    }
+                }
+
+                &-infos {
+                    h4 {
+                        font-size: 2rem;
+                    }
+
+                    h5 {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .member-infos {
+                padding: 0;
+            }
+
+            i {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .quotas-total {
+            @include flex(column, flex-start, center, center);
+
+            .icone-clube {
+                padding-right: 0;
+                margin-bottom: .8rem;
+
+                span {
+                    font-size: 5.6rem;
+                }
+
+                .notification {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    @include absolute(0, -1.6rem, auto, auto);
+                }
+            }
+
+            &-infos {
+                width: 100%;
+
+                h4,
+                h5 {
+                    text-align: center;
+                }
+            }
+
+            .container-btn {
+                margin-top: 1.6rem;
+            }
+        }
+
+        .quotas-table {
+
+            table {
+                thead {
+                    display: none;
+                }
+
+                tbody {
+                    tr {
+                        padding: .8rem 0;
+                        border-bottom: 1px solid $gray-04;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+
+                    td {
+                        @include font(1.6rem, 400, 1.2em);
+                    }
+
+                }
+
+                tr {
+                    width: 100%;
+                    @include flex(column, flex-start, center, center);
+                }
+
+                td {
+                    @include flex(row, center, center, center);
+                    margin-bottom: .8rem;
+
+                    &:first-child {
+                        text-align: center;
+                        justify-content: center;
+                    }
+
+                    &:last-child {
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+
+                .col-quotas,
+                .col-valor,
+                .col-status,
+                .col-btn {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    @include xxs {
+        .nav-pills {
+            @include flex(column, flex-start, center, center);
+
+            .nav-link {
+                margin: .8rem 0;
+            }
+        }
+
+        .events-filters {
+
+            &-list {
+                li {
+                    width: 100%;
+                    margin: .8rem 0;
+
+                    .cbx-label {
+                        justify-content: space-between;
+                    }
+                }
+
+            }
+        }
+
+        .member-item {
+            @include flex(column, flex-start, flex-start, flex-start);
+            padding-top: 1.6rem;
+
+            .member-quotas {
+                width: auto;
+                margin-bottom: .8rem;
+            }
+        }
+    }
 }

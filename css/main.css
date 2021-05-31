@@ -16946,6 +16946,172 @@ header .btn-list .btn-perfil:hover {
   display: block;
 }
 
+@media (max-width: 992px) {
+  .pg-pagar-quotas .events-filters {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-pagar-quotas .events-filters .btn {
+    margin-top: 1.2rem;
+  }
+  .pg-pagar-quotas .member-item .member-quotas {
+    width: 40%;
+    border: none;
+  }
+  .pg-pagar-quotas .ads-wrapper {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-pagar-quotas .member-item .member-quotas {
+    border: none;
+    width: 50%;
+  }
+  .pg-pagar-quotas .member-item .member-quotas-icon {
+    padding-right: .8rem;
+  }
+  .pg-pagar-quotas .member-item .member-quotas-icon span {
+    font-size: 4rem;
+    color: #737A83;
+  }
+  .pg-pagar-quotas .member-item .member-quotas-icon .quotas-ok {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .pg-pagar-quotas .member-item .member-quotas-icon .notification {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .pg-pagar-quotas .member-item .member-quotas-infos h4 {
+    font-size: 2rem;
+  }
+  .pg-pagar-quotas .member-item .member-quotas-infos h5 {
+    font-size: 1.4rem;
+  }
+  .pg-pagar-quotas .member-item .member-infos {
+    padding: 0;
+  }
+  .pg-pagar-quotas .member-item i {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .pg-pagar-quotas .quotas-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-pagar-quotas .quotas-total .icone-clube {
+    padding-right: 0;
+    margin-bottom: .8rem;
+  }
+  .pg-pagar-quotas .quotas-total .icone-clube span {
+    font-size: 5.6rem;
+  }
+  .pg-pagar-quotas .quotas-total .icone-clube .notification {
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    top: 0;
+    right: -1.6rem;
+    bottom: auto;
+    left: auto;
+  }
+  .pg-pagar-quotas .quotas-total-infos {
+    width: 100%;
+  }
+  .pg-pagar-quotas .quotas-total-infos h4,
+  .pg-pagar-quotas .quotas-total-infos h5 {
+    text-align: center;
+  }
+  .pg-pagar-quotas .quotas-total .container-btn {
+    margin-top: 1.6rem;
+  }
+  .pg-pagar-quotas .quotas-table table thead {
+    display: none;
+  }
+  .pg-pagar-quotas .quotas-table table tbody tr {
+    padding: .8rem 0;
+    border-bottom: 1px solid #737A83;
+  }
+  .pg-pagar-quotas .quotas-table table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .pg-pagar-quotas .quotas-table table tbody td {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+  .pg-pagar-quotas .quotas-table table tr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-pagar-quotas .quotas-table table td {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: .8rem;
+  }
+  .pg-pagar-quotas .quotas-table table td:first-child {
+    text-align: center;
+    justify-content: center;
+  }
+  .pg-pagar-quotas .quotas-table table td:last-child {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .pg-pagar-quotas .quotas-table table .col-quotas,
+  .pg-pagar-quotas .quotas-table table .col-valor,
+  .pg-pagar-quotas .quotas-table table .col-status,
+  .pg-pagar-quotas .quotas-table table .col-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .pg-pagar-quotas .nav-pills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-pagar-quotas .nav-pills .nav-link {
+    margin: .8rem 0;
+  }
+  .pg-pagar-quotas .events-filters-list li {
+    width: 100%;
+    margin: .8rem 0;
+  }
+  .pg-pagar-quotas .events-filters-list li .cbx-label {
+    justify-content: space-between;
+  }
+  .pg-pagar-quotas .member-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-top: 1.6rem;
+  }
+  .pg-pagar-quotas .member-item .member-quotas {
+    width: auto;
+    margin-bottom: .8rem;
+  }
+}
+
 .pg-perfil-socio h5 {
   width: 80%;
 }
