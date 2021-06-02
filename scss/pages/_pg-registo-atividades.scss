@@ -383,6 +383,8 @@
                 span {
                     color: $black-02;
                 }
+
+                isolation:auto;
             }
 
             &.active {

@@ -17752,6 +17752,10 @@ header .btn-list .btn-perfil:hover {
   position: relative;
 }
 
+.tabs .nav-tabs .nav-link:hover {
+  isolation: auto;
+}
+
 .tabs .nav-tabs .nav-link:hover span {
   color: #00122B;
 }
