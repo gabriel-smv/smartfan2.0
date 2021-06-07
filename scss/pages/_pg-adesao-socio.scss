@@ -199,3 +199,83 @@
         }
     }
 }
+
+.modal-categorias {
+    .modal-dialog {
+        max-width: 70%;
+
+        @include xxl {
+            max-width: 80%;
+        }
+
+        @include md {
+            max-width: 95%;
+        }
+
+        @include sm {
+            max-width: 90%;
+        }
+
+        @include xs {
+            max-width: 100%;
+        }
+    }
+
+    .modal-body {
+        overflow-x: auto;
+
+        @include sm {
+            @include flex(column, flex-start, flex-start, flex-start);
+        }
+    }
+
+    .table-categorias {
+        width: 100%;
+        @include font(1.6rem, 40, 1.2em);
+        color: $primary-02;
+
+        td,
+        th {
+            padding: .4rem;
+            padding-bottom: 1.6rem;
+            text-align: center;
+            white-space: nowrap;
+
+            &:first-child {
+                text-align: left;
+                padding-left: 0;
+            }
+
+            @include sm {
+                padding: .8rem;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        th {
+            @include font(2rem, 700, 1.2em);
+            color: $gray-04;
+            text-transform: uppercase;
+        }
+
+        i {
+            background: $secondary-02;
+            @include flex(row, center, center, center);
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+            padding: .4rem;
+            margin: auto;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}

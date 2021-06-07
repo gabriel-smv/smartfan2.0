@@ -1,0 +1,63 @@
+.modal {
+    &-dialog {
+        max-width: 50%;
+        border: none;
+
+        @include xxl {
+            max-width: 70%;
+        }
+
+        @include md {
+            max-width: 80%;
+        }
+
+        @include sm {
+            max-width: 90%;
+        }
+
+        @include xs {
+            max-width: 100%;
+        }
+    }
+
+    &-content {
+        border-radius: 3.2rem;
+        padding: 1.6rem 2.4rem;
+        border: none;
+    }
+
+    &-header {
+        border-bottom: none;
+
+        h2 {
+            width: 100%;
+            font-size: 2.4rem;
+            text-align: center;
+        }
+
+        .btn-close {
+            width: auto;
+            height: auto;
+            @include absolute(-5px, -5px, auto, auto);
+            border-radius: 50%;
+            background: none;
+            background-color: $primary-02;
+            opacity: 1;
+            display: inline-block;
+
+            span {
+                color: $white-01;
+                font-size: 3.2rem;
+            }
+
+            @include xs {
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    &-body {
+        @include flex(column, flex-start, center, center);
+    }
+}

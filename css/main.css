@@ -10618,6 +10618,86 @@ form .container-btn {
   }
 }
 
+.modal-dialog {
+  max-width: 50%;
+  border: none;
+}
+
+@media (max-width: 1400px) {
+  .modal-dialog {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-dialog {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+.modal-content {
+  border-radius: 3.2rem;
+  padding: 1.6rem 2.4rem;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-header h2 {
+  width: 100%;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.modal-header .btn-close {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: auto;
+  left: auto;
+  border-radius: 50%;
+  background: none;
+  background-color: #263F62;
+  opacity: 1;
+  display: inline-block;
+}
+
+.modal-header .btn-close span {
+  color: #ffffff;
+  font-size: 3.2rem;
+}
+
+@media (max-width: 575px) {
+  .modal-header .btn-close {
+    top: 0;
+    right: 0;
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
 .modal-login-container {
   width: 100%;
   height: 100%;
@@ -14131,86 +14211,6 @@ header .btn-list .btn-perfil:hover {
   display: none;
 }
 
-.modal-alerta .modal-dialog {
-  max-width: 50%;
-  border: none;
-}
-
-@media (max-width: 1400px) {
-  .modal-alerta .modal-dialog {
-    max-width: 70%;
-  }
-}
-
-@media (max-width: 992px) {
-  .modal-alerta .modal-dialog {
-    max-width: 80%;
-  }
-}
-
-@media (max-width: 767px) {
-  .modal-alerta .modal-dialog {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 575px) {
-  .modal-alerta .modal-dialog {
-    max-width: 100%;
-  }
-}
-
-.modal-alerta .modal-content {
-  border-radius: 3.2rem;
-  padding: 1.6rem 2.4rem;
-  border: none;
-}
-
-.modal-alerta .modal-header {
-  border-bottom: none;
-}
-
-.modal-alerta .modal-header h2 {
-  width: 100%;
-  font-size: 2.4rem;
-  text-align: center;
-}
-
-.modal-alerta .modal-header .btn-close {
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  bottom: auto;
-  left: auto;
-  border-radius: 50%;
-  background: none;
-  background-color: #263F62;
-  opacity: 1;
-  display: inline-block;
-}
-
-.modal-alerta .modal-header .btn-close span {
-  color: #ffffff;
-  font-size: 3.2rem;
-}
-
-@media (max-width: 575px) {
-  .modal-alerta .modal-header .btn-close {
-    top: 0;
-    right: 0;
-  }
-}
-
-.modal-alerta .modal-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-}
-
 .modal-alerta .alerta-jogo {
   width: 100%;
   display: flex;
@@ -15691,6 +15691,110 @@ header .btn-list .btn-perfil:hover {
   .pg-adesao-socio .container-btn .column-02 .btn.next {
     order: 1;
   }
+}
+
+.modal-categorias .modal-dialog {
+  max-width: 70%;
+}
+
+@media (max-width: 1400px) {
+  .modal-categorias .modal-dialog {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-categorias .modal-dialog {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-categorias .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 575px) {
+  .modal-categorias .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+.modal-categorias .modal-body {
+  overflow-x: auto;
+}
+
+@media (max-width: 767px) {
+  .modal-categorias .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+.modal-categorias .table-categorias {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 40;
+  line-height: 1.2em;
+  color: #263F62;
+}
+
+.modal-categorias .table-categorias td,
+.modal-categorias .table-categorias th {
+  padding: .4rem;
+  padding-bottom: 1.6rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.modal-categorias .table-categorias td:first-child,
+.modal-categorias .table-categorias th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .modal-categorias .table-categorias td,
+  .modal-categorias .table-categorias th {
+    padding: .8rem;
+  }
+  .modal-categorias .table-categorias td:first-child,
+  .modal-categorias .table-categorias th:first-child {
+    padding-left: 0;
+  }
+}
+
+.modal-categorias .table-categorias th {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #737A83;
+  text-transform: uppercase;
+}
+
+.modal-categorias .table-categorias i {
+  background: #f37402;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  padding: .4rem;
+  margin: auto;
+}
+
+.modal-categorias .table-categorias i img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .pg-agenda .content {
