@@ -202,6 +202,44 @@
         @include sm {
             padding: 3rem 1.5rem;
         }
+
+        .row-photo {
+            @include flex(row, flex-start, flex-start, flex-start);
+            flex-wrap: wrap;
+        }
+
+        .img-user {
+            @include flex(row, center, center, center);
+            padding: 1.6rem;
+
+            a {
+                width: 16rem;
+                height: 16rem;
+                @include flex(column, center, center, center);
+                background: $gray-01;
+                border-radius: 50%;
+                position: relative;
+
+                span {
+                    color: $primary-02;
+                    font-size: 6.2rem;
+                }
+
+                i {
+                    width: 4rem;
+                    height: 4rem;
+                    @include flex(row, center, center, center);
+                    border-radius: 50%;
+                    @include absolute(auto, 0, 0, auto);
+                    background: $gray-04;
+
+                    span {
+                        color: $white-01;
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
     }
 
     .form-metodo-pagamento {

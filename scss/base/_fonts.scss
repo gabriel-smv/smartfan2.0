@@ -31,6 +31,22 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-photo:before {
+    content: "\e93f";
+}
+
+.icon-user-fill:before {
+    content: "\e940";
+}
+
+.icon-dislike:before {
+    content: "\e93d";
+}
+
+.icon-dislike-fill:before {
+    content: "\e93e";
+}
+
 .icon-arrow-prev:before {
     content: "\e93c";
 }

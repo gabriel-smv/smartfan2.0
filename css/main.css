@@ -9687,6 +9687,22 @@ div[smv-type="widgetcontainer"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-photo:before {
+  content: "\e93f";
+}
+
+.icon-user-fill:before {
+  content: "\e940";
+}
+
+.icon-dislike:before {
+  content: "\e93d";
+}
+
+.icon-dislike-fill:before {
+  content: "\e93e";
+}
+
 .icon-arrow-prev:before {
   content: "\e93c";
 }
@@ -15245,6 +15261,64 @@ header .btn-list .btn-perfil:hover {
   .pg-adesao-socio .dados-pagamento-box {
     padding: 3rem 1.5rem;
   }
+}
+
+.pg-adesao-socio .dados-pagamento-box .row-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.pg-adesao-socio .dados-pagamento-box .img-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 1.6rem;
+}
+
+.pg-adesao-socio .dados-pagamento-box .img-user a {
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #F0F4F6;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pg-adesao-socio .dados-pagamento-box .img-user a span {
+  color: #263F62;
+  font-size: 6.2rem;
+}
+
+.pg-adesao-socio .dados-pagamento-box .img-user a i {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  background: #737A83;
+}
+
+.pg-adesao-socio .dados-pagamento-box .img-user a i span {
+  color: #ffffff;
+  font-size: 2.4rem;
 }
 
 .pg-adesao-socio .form-metodo-pagamento input[type="radio"] {
