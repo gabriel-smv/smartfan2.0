@@ -220,9 +220,17 @@
                 border-radius: 50%;
                 position: relative;
 
+                padding: .8rem;
+
                 span {
                     color: $primary-02;
                     font-size: 6.2rem;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
                 }
 
                 i {
@@ -232,6 +240,7 @@
                     border-radius: 50%;
                     @include absolute(auto, 0, 0, auto);
                     background: $gray-04;
+                    z-index: 99;
 
                     span {
                         color: $white-01;

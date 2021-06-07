@@ -4,6 +4,45 @@
     }
 
     .events {
+        &-filters {
+
+            @include xxs {
+
+                li,
+                label {
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+
+            .column-02 {
+                @include flex(row, flex-end, center, center);
+
+                .container-input {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+
+                @include md {
+                    margin-top: 1.6rem;
+                }
+
+                @include sm {
+                    @include flex(column, flex-start, center, center);
+                }
+
+                @include xs {
+                    form {
+                        @include flex(column, flex-start, center, center);
+
+                        .container-input {
+                            padding: .8rem;
+                        }
+                    }
+                }
+            }
+
+        }
 
         &-item {
             width: 100%;
@@ -14,11 +53,23 @@
 
         &-modalidade {
             height: 100%;
-            border-right: 1px solid $gray-04;
+
+            border: none;
+            position: relative;
 
             img {
                 width: 3.2rem;
                 height: 3.2rem;
+            }
+
+            &::before {
+                content: '';
+                width: 3px;
+                height: 100%;
+                @include absolute(0, 0, auto, auto);
+                background-color: $white-02;
+
+                box-shadow: inset 0px 0px 1px 0px rgba(33, 33, 33, 0.2);
             }
         }
 
@@ -39,8 +90,51 @@
             }
         }
 
+        &-details {
+            img {
+                width: auto;
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+
         &-btn {
             @include flex(row, flex-end, center, center);
+        }
+
+        @include sm {
+            &-item {
+                height: auto;
+                padding: 1.6rem;
+            }
+
+            &-modalidade {
+                order: 1;
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            &-details {
+                order: 2;
+                padding: .8rem 0;
+                align-items: center;
+            }
+
+            &-info {
+                order: 3;
+            }
+
+            &-btn {
+                @include flex(row, center, center, center);
+                flex-wrap: wrap;
+                margin-top: 1.6rem;
+
+                .btn {
+                    margin: .4rem;
+                }
+            }
         }
 
     }
