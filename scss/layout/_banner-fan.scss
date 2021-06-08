@@ -4,7 +4,7 @@
     --bg-color: #263F62;
 
     width: 100%;
-    padding: calc(9.6rem + 3.2rem) 0 12rem;
+    padding: calc(8.8rem + 1.6rem) 0 12rem;
 
 
     background: var(--bg-color);
@@ -17,13 +17,13 @@
 
         .img-profile-wrapper {
 
-            margin-bottom: -5.6rem;
+            margin-bottom: -4rem;
 
             z-index: 111;
 
             a {
-                width: 18rem;
-                height: 18rem;
+                width: 15rem;
+                height: 15rem;
                 background-color: $white-01;
                 border-radius: 50%;
                 padding: .8rem;
@@ -98,8 +98,8 @@
 
 
         .img-club {
-            width: 11.2rem;
-            height: 11.2rem;
+            width: 8.8rem;
+            height: 8.8rem;
 
             img {
                 width: 100%;
