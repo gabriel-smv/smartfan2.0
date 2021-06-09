@@ -1228,8 +1228,7 @@
     </footer>
 
     <!-- Compra Express -->
-    <div class="modal-alerta modal fade" id="compraExpress" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="compraExpress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog ">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1264,6 +1263,39 @@
                             <span>Estádio José de Alvalade</span>
                         </p>
                     </div>
+
+                    <form class="bilhetes-details">
+                        <div class="container-input col-lg-4">
+                            <label for="qtd-bilhetes">Quant. de bilhetes</label>
+                            <div class="input-wrapper">
+                                <select name="qtd-bilhetes" id="qtd-bilhetes">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                </select>
+
+                                <i>
+                                    <span class="icon-ticket-fill"></span>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="container-input col-lg-8">
+                            <label for="qtd-bilhetes">Variação de preço</label>
+                            <div class="input-wrapper">
+                                <div class="valor-bilhete-select">
+                                    <div class="base-select"></div>
+                                </div>
+
+                                <i>
+                                    <span class="icon-euro"></span>
+                                </i>
+                            </div>
+                        </div>
+                    </form>
 
                     <div class="container-btn">
                         <a href="#" class="btn btn-secondary no-round">Procurar lugar(es)</a>
