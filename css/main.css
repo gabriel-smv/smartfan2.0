@@ -10169,11 +10169,6 @@ p strong {
   }
 }
 
-body {
-  --color-clube: #263F62;
-  --color-hover: #F0F4F6;
-}
-
 button {
   background-color: transparent;
 }
@@ -10187,8 +10182,8 @@ button {
   align-items: center;
   align-content: center;
   border-radius: 3.2rem;
-  border: 1px solid var(--color-clube);
-  color: var(--color-clube);
+  border: 1px solid #263F62;
+  color: #263F62;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -10205,7 +10200,7 @@ button {
 .btn i span {
   display: block;
   font-size: 2.4rem;
-  color: var(--color-clube);
+  color: #263F62;
   transition: all 0.3s ease-in-out;
 }
 
@@ -10224,8 +10219,8 @@ button {
 .btn-primary {
   width: auto;
   color: #ffffff;
-  border: 1px solid var(--color-clube);
-  background-color: var(--color-clube);
+  border: 1px solid #263F62;
+  background-color: #263F62;
   transition: all 0.3s ease-in-out;
 }
 
@@ -10235,50 +10230,59 @@ button {
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  background-color: var(--color-hover);
-  color: var(--color-clube);
-  border-color: var(--color-hover);
+  background-color: #F0F4F6;
+  color: #263F62;
+  border-color: #F0F4F6;
   transition: all 0.3s ease-in-out;
   outline: none;
 }
 
 .btn-primary:hover span, .btn-primary:focus span {
-  color: var(--color-clube);
+  color: #263F62;
 }
 
 .btn-primary:hover i span, .btn-primary:focus i span {
-  color: var(--color-clube);
+  color: #263F62;
 }
 
 .btn-secondary {
   width: auto;
-  color: var(--color-clube);
-  border: 1px solid var(--color-clube);
+  color: #263F62;
+  border: 1px solid #263F62;
   transition: all 0.3s ease-in-out;
 }
 
 .btn-secondary i span {
   display: block;
-  color: var(--color-clube);
+  color: #263F62;
 }
 
 .btn-secondary:hover, .btn-secondary:focus {
-  background-color: var(--color-hover);
-  color: var(--color-clube);
+  background-color: #F0F4F6;
+  color: #263F62;
   transition: all 0.3s ease-in-out;
   outline: none;
 }
 
 .btn-secondary:hover span, .btn-secondary:focus span {
-  color: var(--color-clube);
+  color: #263F62;
 }
 
 .btn-secondary:hover i span, .btn-secondary:focus i span {
-  color: var(--color-clube);
+  color: #263F62;
 }
 
 .btn-header {
-  --color-clube: #ACC2D3;
+  border: 1px solid #ACC2D3;
+  color: #ACC2D3;
+}
+
+.btn-header span {
+  color: #ACC2D3;
+}
+
+.btn-header i span {
+  color: #ACC2D3;
 }
 
 .btn-full {
@@ -10290,9 +10294,8 @@ button {
 }
 
 .btn-link {
-  --color-clube: #263F62;
   width: auto;
-  color: var(--color-clube);
+  color: #263F62;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.2em;
@@ -10312,7 +10315,7 @@ button {
   content: '';
   width: 100%;
   height: 2px;
-  background: var(--color-clube);
+  background: #263F62;
   position: absolute;
   top: auto;
   right: auto;
@@ -10324,7 +10327,7 @@ button {
 }
 
 .btn-link:hover {
-  color: var(--color-clube);
+  color: #263F62;
   text-decoration: none;
 }
 
@@ -10334,7 +10337,7 @@ button {
 }
 
 .btn-link:focus {
-  color: var(--color-clube);
+  color: #263F62;
   text-decoration: none;
 }
 
@@ -10349,6 +10352,435 @@ button {
 
 .socio .btn-header {
   --color-clube: #FFF;
+}
+
+.boavista-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+.boavista-fc .btn-primary:hover, .boavista-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.boavista-fc .btn-primary:hover span, .boavista-fc .btn-primary:focus span {
+  color: #000000;
+}
+
+.boavista-fc .btn-primary:hover i span, .boavista-fc .btn-primary:focus i span {
+  color: #000000;
+}
+
+.boavista-fc .btn-secondary {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.boavista-fc .btn-secondary i span {
+  color: #000000;
+}
+
+.boavista-fc .btn-secondary:hover, .boavista-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cd-nacional .btn-primary {
+  color: #ffffff;
+  border: 1px solid #6E3A8D;
+  background-color: #6E3A8D;
+}
+
+.cd-nacional .btn-primary:hover, .cd-nacional .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #6E3A8D;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.cd-nacional .btn-primary:hover span, .cd-nacional .btn-primary:focus span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-primary:hover i span, .cd-nacional .btn-primary:focus i span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-secondary {
+  color: #6E3A8D;
+  border: 1px solid #6E3A8D;
+}
+
+.cd-nacional .btn-secondary i span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-secondary:hover, .cd-nacional .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fc-porto .btn-primary {
+  color: #ffffff;
+  border: 1px solid #0083BD;
+  background-color: #0083BD;
+}
+
+.fc-porto .btn-primary:hover, .fc-porto .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #0083BD;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.fc-porto .btn-primary:hover span, .fc-porto .btn-primary:focus span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-primary:hover i span, .fc-porto .btn-primary:focus i span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-secondary {
+  color: #0083BD;
+  border: 1px solid #0083BD;
+}
+
+.fc-porto .btn-secondary i span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-secondary:hover, .fc-porto .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gilvicente-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #CC0000;
+  background-color: #CC0000;
+}
+
+.gilvicente-fc .btn-primary:hover, .gilvicente-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #CC0000;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.gilvicente-fc .btn-primary:hover span, .gilvicente-fc .btn-primary:focus span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-primary:hover i span, .gilvicente-fc .btn-primary:focus i span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-secondary {
+  color: #CC0000;
+  border: 1px solid #CC0000;
+}
+
+.gilvicente-fc .btn-secondary i span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-secondary:hover, .gilvicente-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.belenenses-sad .btn-primary {
+  color: #ffffff;
+  border: 1px solid #0f2440;
+  background-color: #0f2440;
+}
+
+.belenenses-sad .btn-primary:hover, .belenenses-sad .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #0f2440;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.belenenses-sad .btn-primary:hover span, .belenenses-sad .btn-primary:focus span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-primary:hover i span, .belenenses-sad .btn-primary:focus i span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-secondary {
+  color: #0f2440;
+  border: 1px solid #0f2440;
+}
+
+.belenenses-sad .btn-secondary i span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-secondary:hover, .belenenses-sad .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rioave-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #33a370;
+  background-color: #33a370;
+}
+
+.rioave-fc .btn-primary:hover, .rioave-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #33a370;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.rioave-fc .btn-primary:hover span, .rioave-fc .btn-primary:focus span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-primary:hover i span, .rioave-fc .btn-primary:focus i span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-secondary {
+  color: #33a370;
+  border: 1px solid #33a370;
+}
+
+.rioave-fc .btn-secondary i span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-secondary:hover, .rioave-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-braga .btn-primary {
+  color: #ffffff;
+  border: 1px solid #c00d1e;
+  background-color: #c00d1e;
+}
+
+.sc-braga .btn-primary:hover, .sc-braga .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #c00d1e;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-braga .btn-primary:hover span, .sc-braga .btn-primary:focus span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-primary:hover i span, .sc-braga .btn-primary:focus i span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-secondary {
+  color: #c00d1e;
+  border: 1px solid #c00d1e;
+}
+
+.sc-braga .btn-secondary i span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-secondary:hover, .sc-braga .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sporting-cp .btn-primary {
+  color: #ffffff;
+  border: 1px solid #04b46b;
+  background-color: #04b46b;
+}
+
+.sporting-cp .btn-primary:hover, .sporting-cp .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #04b46b;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sporting-cp .btn-primary:hover span, .sporting-cp .btn-primary:focus span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-primary:hover i span, .sporting-cp .btn-primary:focus i span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-secondary {
+  color: #04b46b;
+  border: 1px solid #04b46b;
+}
+
+.sporting-cp .btn-secondary i span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-secondary:hover, .sporting-cp .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-sc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+.vitoria-sc .btn-primary:hover, .vitoria-sc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-sc .btn-primary:hover span, .vitoria-sc .btn-primary:focus span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-primary:hover i span, .vitoria-sc .btn-primary:focus i span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-secondary {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.vitoria-sc .btn-secondary i span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-secondary:hover, .vitoria-sc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #017e01;
+  background-color: #017e01;
+}
+
+.vitoria-fc .btn-primary:hover, .vitoria-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #017e01;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-fc .btn-primary:hover span, .vitoria-fc .btn-primary:focus span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-primary:hover i span, .vitoria-fc .btn-primary:focus i span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-secondary {
+  color: #017e01;
+  border: 1px solid #017e01;
+}
+
+.vitoria-fc .btn-secondary i span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-secondary:hover, .vitoria-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gd-chaves .btn-primary {
+  color: #ffffff;
+  border: 1px solid #000044;
+  background-color: #000044;
+}
+
+.gd-chaves .btn-primary:hover, .gd-chaves .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000044;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.gd-chaves .btn-primary:hover span, .gd-chaves .btn-primary:focus span {
+  color: #000044;
+}
+
+.gd-chaves .btn-primary:hover i span, .gd-chaves .btn-primary:focus i span {
+  color: #000044;
+}
+
+.gd-chaves .btn-secondary {
+  color: #000044;
+  border: 1px solid #000044;
+}
+
+.gd-chaves .btn-secondary i span {
+  color: #000044;
+}
+
+.gd-chaves .btn-secondary:hover, .gd-chaves .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-covilha .btn-primary {
+  color: #ffffff;
+  border: 1px solid #005B29;
+  background-color: #005B29;
+}
+
+.sc-covilha .btn-primary:hover, .sc-covilha .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #005B29;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-covilha .btn-primary:hover span, .sc-covilha .btn-primary:focus span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-primary:hover i span, .sc-covilha .btn-primary:focus i span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-secondary {
+  color: #005B29;
+  border: 1px solid #005B29;
+}
+
+.sc-covilha .btn-secondary i span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-secondary:hover, .sc-covilha .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.varzim-sc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #212121;
+  background-color: #212121;
+}
+
+.varzim-sc .btn-primary:hover, .varzim-sc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #212121;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.varzim-sc .btn-primary:hover span, .varzim-sc .btn-primary:focus span {
+  color: #212121;
+}
+
+.varzim-sc .btn-primary:hover i span, .varzim-sc .btn-primary:focus i span {
+  color: #212121;
+}
+
+.varzim-sc .btn-secondary {
+  color: #212121;
+  border: 1px solid #212121;
+}
+
+.varzim-sc .btn-secondary i span {
+  color: #212121;
+}
+
+.varzim-sc .btn-secondary:hover, .varzim-sc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .cbx {

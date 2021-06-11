@@ -1,8 +1,3 @@
-body {
-    --color-clube: #263F62;
-    --color-hover: #F0F4F6;
-}
-
 button {
     background-color: transparent;
 }
@@ -12,8 +7,8 @@ button {
     padding: 1.2rem 2.4rem;
     @include flex(row, center, center, center);
     border-radius: 3.2rem;
-    border: 1px solid var(--color-clube);
-    color: var(--color-clube);
+    border: 1px solid #263F62;
+    color: #263F62;
     font-family: $font-01;
     @include font(1.6rem, 400, 1.3em);
     text-align: center;
@@ -26,7 +21,7 @@ button {
         span {
             display: block;
             font-size: 2.4rem;
-            color: var(--color-clube);
+            color: #263F62;
             transition: $transition-01;
         }
     }
@@ -49,8 +44,8 @@ button {
     &-primary {
         width: auto;
         color: $white-01;
-        border: 1px solid var(--color-clube);
-        background-color: var(--color-clube);
+        border: 1px solid #263F62;
+        background-color: #263F62;
         transition: $transition-01;
 
         i {
@@ -62,19 +57,19 @@ button {
 
         &:hover,
         &:focus {
-            background-color: var(--color-hover);
-            color: var(--color-clube);
-            border-color: var(--color-hover);
+            background-color: #F0F4F6;
+            color: #263F62;
+            border-color: #F0F4F6;
             transition: $transition-01;
             outline: none;
 
             span {
-                color: var(--color-clube);
+                color: #263F62;
             }
 
             i {
                 span {
-                    color: var(--color-clube);
+                    color: #263F62;
                 }
             }
         }
@@ -82,38 +77,49 @@ button {
 
     &-secondary {
         width: auto;
-        color: var(--color-clube);
-        border: 1px solid var(--color-clube);
+        color: #263F62;
+        border: 1px solid #263F62;
         transition: $transition-01;
 
         i {
             span {
                 display: block;
-                color: var(--color-clube);
+                color: #263F62;
             }
         }
 
         &:hover,
         &:focus {
-            background-color: var(--color-hover);
-            color: var(--color-clube);
+            background-color: #F0F4F6;
+            color: #263F62;
             transition: $transition-01;
             outline: none;
 
             span {
-                color: var(--color-clube);
+                color: #263F62;
             }
 
             i {
                 span {
-                    color: var(--color-clube);
+                    color: #263F62;
                 }
             }
         }
     }
 
     &-header {
-        --color-clube: #ACC2D3;
+        border: 1px solid #ACC2D3;
+        color: #ACC2D3;
+
+        span {
+            color: #ACC2D3;
+        }
+
+        i {
+            span {
+                color: #ACC2D3;
+            }
+        }
     }
 
     &-full {
@@ -125,10 +131,8 @@ button {
     }
 
     &-link {
-        --color-clube: #263F62;
-
         width: auto;
-        color: var(--color-clube);
+        color: #263F62;
         @include font(1.4rem, 400, 1.2em);
         text-align: center;
         position: relative;
@@ -143,7 +147,7 @@ button {
             content: '';
             width: 100%;
             height: 2px;
-            background: var(--color-clube);
+            background: #263F62;
             @include absolute(auto, auto, 0, 0);
             transform: scale(1, 1);
             transform-origin: 0 0;
@@ -151,7 +155,7 @@ button {
         }
 
         &:hover {
-            color: var(--color-clube);
+            color: #263F62;
             text-decoration: none;
 
             &:before {
@@ -161,7 +165,7 @@ button {
         }
 
         &:focus {
-            color: var(--color-clube);
+            color: #263F62;
             text-decoration: none;
         }
     }
@@ -179,5 +183,564 @@ button {
 .socio {
     .btn-header {
         --color-clube: #FFF;
+    }
+}
+
+.boavista-fc {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #000000;
+            background-color: #000000;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .2);
+                color: #000000;
+                border-color: rgba(0, 0, 0, .2);
+
+                span {
+                    color: #000000;
+                }
+
+                i {
+                    span {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #000000;
+            border: 1px solid #000000;
+
+            i {
+                span {
+                    color: #000000;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .2);
+            }
+        }
+    }
+}
+
+.cd-nacional {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #6E3A8D;
+            background-color: #6E3A8D;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #6E3A8D;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #6E3A8D;
+                }
+
+                i {
+                    span {
+                        color: #6E3A8D;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #6E3A8D;
+            border: 1px solid #6E3A8D;
+
+            i {
+                span {
+                    color: #6E3A8D;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.fc-porto {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #0083BD;
+            background-color: #0083BD;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #0083BD;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #0083BD;
+                }
+
+                i {
+                    span {
+                        color: #0083BD;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #0083BD;
+            border: 1px solid #0083BD;
+
+            i {
+                span {
+                    color: #0083BD;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.gilvicente-fc {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #CC0000;
+            background-color: #CC0000;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #CC0000;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #CC0000;
+                }
+
+                i {
+                    span {
+                        color: #CC0000;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #CC0000;
+            border: 1px solid #CC0000;
+
+            i {
+                span {
+                    color: #CC0000;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.belenenses-sad {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #0f2440;
+            background-color: #0f2440;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #0f2440;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #0f2440;
+                }
+
+                i {
+                    span {
+                        color: #0f2440;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #0f2440;
+            border: 1px solid #0f2440;
+
+            i {
+                span {
+                    color: #0f2440;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.rioave-fc {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #33a370;
+            background-color: #33a370;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #33a370;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #33a370;
+                }
+
+                i {
+                    span {
+                        color: #33a370;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #33a370;
+            border: 1px solid #33a370;
+
+            i {
+                span {
+                    color: #33a370;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.sc-braga {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #c00d1e;
+            background-color: #c00d1e;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #c00d1e;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #c00d1e;
+                }
+
+                i {
+                    span {
+                        color: #c00d1e;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #c00d1e;
+            border: 1px solid #c00d1e;
+
+            i {
+                span {
+                    color: #c00d1e;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.sporting-cp {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #04b46b;
+            background-color: #04b46b;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #04b46b;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #04b46b;
+                }
+
+                i {
+                    span {
+                        color: #04b46b;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #04b46b;
+            border: 1px solid #04b46b;
+
+            i {
+                span {
+                    color: #04b46b;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.vitoria-sc {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #000000;
+            background-color: #000000;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #000000;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #000000;
+                }
+
+                i {
+                    span {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #000000;
+            border: 1px solid #000000;
+
+            i {
+                span {
+                    color: #000000;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.vitoria-fc {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #017e01;
+            background-color: #017e01;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #017e01;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #017e01;
+                }
+
+                i {
+                    span {
+                        color: #017e01;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #017e01;
+            border: 1px solid #017e01;
+
+            i {
+                span {
+                    color: #017e01;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.gd-chaves {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #000044;
+            background-color: #000044;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #000044;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #000044;
+                }
+
+                i {
+                    span {
+                        color: #000044;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #000044;
+            border: 1px solid #000044;
+
+            i {
+                span {
+                    color: #000044;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.sc-covilha {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #005B29;
+            background-color: #005B29;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #005B29;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #005B29;
+                }
+
+                i {
+                    span {
+                        color: #005B29;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #005B29;
+            border: 1px solid #005B29;
+
+            i {
+                span {
+                    color: #005B29;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
+    }
+}
+
+.varzim-sc {
+    .btn {
+        &-primary {
+            color: $white-01;
+            border: 1px solid #212121;
+            background-color: #212121;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+                color: #212121;
+                border-color: rgba(0, 0, 0, .1);
+
+                span {
+                    color: #212121;
+                }
+
+                i {
+                    span {
+                        color: #212121;
+                    }
+                }
+            }
+        }
+
+        &-secondary {
+            color: #212121;
+            border: 1px solid #212121;
+
+            i {
+                span {
+                    color: #212121;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, .1);
+            }
+        }
     }
 }
