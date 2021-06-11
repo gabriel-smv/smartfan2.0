@@ -11466,7 +11466,7 @@ form .container-btn {
 }
 
 .banner-fan.banner-socio {
-  background-image: url("../images/banner-sporting.jpg");
+  background-image: url("../images/banner-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11614,59 +11614,107 @@ form .container-btn {
   background-image: url("../images/banner-fcfamalicao.png");
 }
 
-.rioave-fc .banner-fan.banner-adesao {
-  background-image: url("../images/banner-rioavefc.jpg");
-}
-
-.boavista-fc.banner-socio {
+.boavista-fc .banner-socio {
   background-image: url("../images/banner-boavistafc.jpg");
 }
 
-.cd-nacional.banner-socio {
+.boavista-fc .banner-adesao {
+  background-image: url("../images/banner-boavistafc.jpg");
+}
+
+.cd-nacional .banner-socio {
   background-image: url("../images/banner-nacional.jpg");
 }
 
-.fc-porto.banner-socio {
+.cd-nacional .banner-adesao {
+  background-image: url("../images/banner-nacional.jpg");
+}
+
+.fc-porto .banner-socio {
   background-image: url("../images/banner-fcporto.jpg");
 }
 
-.gilvicente-fc.banner-socio {
+.fc-porto .banner-adesao {
+  background-image: url("../images/banner-fcporto.jpg");
+}
+
+.gilvicente-fc .banner-socio {
   background-image: url("../images/banner-gilvicentefc.jpg");
 }
 
-.belenenses-sad.banner-socio {
+.gilvicente-fc .banner-adesao {
+  background-image: url("../images/banner-gilvicentefc.jpg");
+}
+
+.belenenses-sad .banner-socio {
   background-image: url("../images/banner-osbelenenses.jpg");
 }
 
-.rioave-fc.banner-socio {
+.belenenses-sad .banner-adesao {
+  background-image: url("../images/banner-osbelenenses.jpg");
+}
+
+.rioave-fc .banner-socio {
   background-image: url("../images/banner-rioavefc.jpg");
 }
 
-.sc-braga.banner-socio {
+.rioave-fc .banner-adesao {
+  background-image: url("../images/banner-rioavefc.jpg");
+}
+
+.sc-braga .banner-socio {
   background-image: url("../images/banner-scbraga.jpg");
 }
 
-.sporting-cp.banner-socio {
+.sc-braga .banner-adesao {
+  background-image: url("../images/banner-scbraga.jpg");
+}
+
+.sporting-cp .banner-socio {
   background-image: url("../images/banner-sporting.jpg");
 }
 
-.vitoria-sc.banner-socio {
+.sporting-cp .banner-adesao {
+  background-image: url("../images/banner-sporting.jpg");
+}
+
+.vitoria-sc .banner-socio {
   background-image: url("../images/banner-vitoriasc.jpg");
 }
 
-.vitoria-fc.banner-socio {
+.vitoria-sc .banner-adesao {
+  background-image: url("../images/banner-vitoriasc.jpg");
+}
+
+.vitoria-fc .banner-socio {
   background-image: url("../images/banner-vitoriafc.jpg");
 }
 
-.gd-chaves.banner-socio {
+.vitoria-fc .banner-adesao {
+  background-image: url("../images/banner-vitoriafc.jpg");
+}
+
+.gd-chaves .banner-socio {
   background-image: url("../images/banner-gdchaves.jpg");
 }
 
-.sc-covilha.banner-socio {
+.gd-chaves .banner-adesao {
+  background-image: url("../images/banner-gdchaves.jpg");
+}
+
+.sc-covilha .banner-socio {
   background-image: url("../images/banner-sccovilha.jpg");
 }
 
-.varzim-sc.banner-socio {
+.sc-covilha .banner-adesao {
+  background-image: url("../images/banner-sccovilha.jpg");
+}
+
+.varzim-sc .banner-socio {
+  background-image: url("../images/banner-varzimsc.jpg");
+}
+
+.varzim-sc .banner-adesao {
   background-image: url("../images/banner-varzimsc.jpg");
 }
 
@@ -11797,8 +11845,24 @@ form .container-btn {
   margin-top: 2.4rem;
 }
 
-.cards-fan .item-dados-conta .cards-content .img-user {
+.cards-fan .item-dados-conta .cards-content .img-user-wrapper {
   margin-right: 1.6rem;
+  position: relative;
+}
+
+.cards-fan .item-dados-conta .cards-content .img-user-wrapper .img-user-clube {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+
+.cards-fan .item-dados-conta .cards-content .img-user-wrapper .img-user-clube img {
+  width: 100%;
+  height: 100%;
 }
 
 .cards-fan .item-dados-conta .dados-user {
@@ -12348,6 +12412,79 @@ form .container-btn {
   .cards-fan .item-alertas {
     padding-right: 0;
   }
+}
+
+.dark-mode .main-content {
+  background-color: #121212;
+}
+
+.dark-mode .pg-padrao {
+  background: #222222;
+}
+
+.dark-mode .navbar-item a {
+  color: #F0F4F6;
+}
+
+.dark-mode .navbar-item a:before {
+  background: #F8F8F8;
+}
+
+.dark-mode .navbar-item a i span {
+  color: #F0F4F6;
+}
+
+.dark-mode .navbar-item a:hover span {
+  color: #F0F4F6;
+}
+
+.dark-mode .navbar-item.disabled a {
+  color: #737A83;
+}
+
+.dark-mode .navbar-item.disabled a::before {
+  background-color: #737A83;
+}
+
+.dark-mode .events-filters {
+  border-bottom: 1px solid #737A83;
+}
+
+.dark-mode .events-filters-list li {
+  color: #F8F8F8;
+  border-right: 1px solid #737A83;
+}
+
+.dark-mode .events-filters-list .dropdown-toggle {
+  color: #F8F8F8;
+}
+
+.dark-mode .events-filters-list .dropdown-toggle:hover span {
+  color: #F8F8F8;
+}
+
+.dark-mode .events-filters-list .filter-list-dropdown {
+  background-color: #ffffff;
+}
+
+.dark-mode .events-filters-list .filter-list-dropdown .cbx-label span {
+  color: #737A83;
+}
+
+.dark-mode .events-filters-list .filter-list-dropdown .cbx-label span.cbx-area-select {
+  border-color: #737A83;
+}
+
+.dark-mode .events-filters-list .filter-list-dropdown .cbx-label:hover span {
+  color: #00122B;
+}
+
+.dark-mode .classificar-pesquisa .events-filters-list .guardar-pesquisa i span {
+  color: #F8F8F8;
+}
+
+.dark-mode .pg-agenda .events-filters .container-input label {
+  color: #F8F8F8;
 }
 
 .events-filters {
@@ -14711,7 +14848,7 @@ header .btn-list .btn-perfil:hover {
   align-items: center;
   align-content: center;
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.2em;
   color: #00122B;
   padding: 0.8rem 0.4rem 1.2rem;
@@ -16530,7 +16667,7 @@ header .btn-list .btn-perfil:hover {
 
 .pg-area-fan {
   padding: .8rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5.6rem;
 }
 
 @media (max-width: 425px) {

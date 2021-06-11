@@ -1,0 +1,104 @@
+.dark-mode {
+    .main-content {
+        background-color: #121212;
+    }
+
+    .pg-padrao {
+        background: #222222;
+    }
+
+    .navbar {
+        &-item {
+
+            a {
+
+                color: $gray-01;
+
+                &:before {
+                    background: $white-02;
+                }
+
+                i {
+
+                    span {
+                        color: $gray-01;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        color: $gray-01;
+                    }
+                }
+            }
+
+            &.disabled {
+                a {
+                    color: $gray-04;
+
+                    &::before {
+                        background-color: $gray-04;
+                    }
+                }
+            }
+        }
+    }
+
+    .events-filters {
+        border-bottom: 1px solid $gray-04;
+
+        &-list {
+
+            li {
+                color: $white-02;
+                border-right: 1px solid $gray-04;
+            }
+
+            .dropdown-toggle {
+                color: $white-02;
+
+                &:hover {
+                    span {
+                        color: $white-02;
+                    }
+                }
+            }
+
+            .filter-list-dropdown {
+                background-color: $white-01;
+
+                .cbx-label {
+                    span {
+                        color: $gray-04;
+                    }
+
+                    span.cbx-area-select {
+                        border-color: $gray-04;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $black-02;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .classificar-pesquisa .events-filters-list .guardar-pesquisa i span {
+        color: $white-02;
+    }
+
+
+    .pg-agenda {
+        .events-filters {
+            .container-input {
+                label {
+                    color: $white-02;
+                }
+            }
+        }
+    }
+
+}

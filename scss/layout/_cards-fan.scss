@@ -106,8 +106,20 @@
         .cards-content {
             margin-top: 2.4rem;
 
-            .img-user {
+            .img-user-wrapper {
                 margin-right: 1.6rem;
+                position: relative;
+
+                .img-user-clube {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    @include absolute(auto, 0, 0, auto);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
         }
 
