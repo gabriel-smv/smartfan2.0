@@ -9992,7 +9992,7 @@ h1 {
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
   color: #00122B;
 }
@@ -10000,7 +10000,7 @@ h1 {
 h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
   color: #00122B;
 }
@@ -10008,7 +10008,7 @@ h2 {
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
   color: #00122B;
 }
@@ -10379,6 +10379,10 @@ button {
   border: 1px solid #000000;
 }
 
+.boavista-fc .btn-secondary span {
+  color: #000000;
+}
+
 .boavista-fc .btn-secondary i span {
   color: #000000;
 }
@@ -10410,6 +10414,10 @@ button {
 .cd-nacional .btn-secondary {
   color: #6E3A8D;
   border: 1px solid #6E3A8D;
+}
+
+.cd-nacional .btn-secondary span {
+  color: #6E3A8D;
 }
 
 .cd-nacional .btn-secondary i span {
@@ -10445,6 +10453,10 @@ button {
   border: 1px solid #0083BD;
 }
 
+.fc-porto .btn-secondary span {
+  color: #0083BD;
+}
+
 .fc-porto .btn-secondary i span {
   color: #0083BD;
 }
@@ -10476,6 +10488,10 @@ button {
 .gilvicente-fc .btn-secondary {
   color: #CC0000;
   border: 1px solid #CC0000;
+}
+
+.gilvicente-fc .btn-secondary span {
+  color: #CC0000;
 }
 
 .gilvicente-fc .btn-secondary i span {
@@ -10511,6 +10527,10 @@ button {
   border: 1px solid #0f2440;
 }
 
+.belenenses-sad .btn-secondary span {
+  color: #0f2440;
+}
+
 .belenenses-sad .btn-secondary i span {
   color: #0f2440;
 }
@@ -10542,6 +10562,10 @@ button {
 .rioave-fc .btn-secondary {
   color: #33a370;
   border: 1px solid #33a370;
+}
+
+.rioave-fc .btn-secondary span {
+  color: #33a370;
 }
 
 .rioave-fc .btn-secondary i span {
@@ -10577,6 +10601,10 @@ button {
   border: 1px solid #c00d1e;
 }
 
+.sc-braga .btn-secondary span {
+  color: #c00d1e;
+}
+
 .sc-braga .btn-secondary i span {
   color: #c00d1e;
 }
@@ -10608,6 +10636,10 @@ button {
 .sporting-cp .btn-secondary {
   color: #04b46b;
   border: 1px solid #04b46b;
+}
+
+.sporting-cp .btn-secondary span {
+  color: #04b46b;
 }
 
 .sporting-cp .btn-secondary i span {
@@ -10643,6 +10675,10 @@ button {
   border: 1px solid #000000;
 }
 
+.vitoria-sc .btn-secondary span {
+  color: #000000;
+}
+
 .vitoria-sc .btn-secondary i span {
   color: #000000;
 }
@@ -10674,6 +10710,10 @@ button {
 .vitoria-fc .btn-secondary {
   color: #017e01;
   border: 1px solid #017e01;
+}
+
+.vitoria-fc .btn-secondary span {
+  color: #017e01;
 }
 
 .vitoria-fc .btn-secondary i span {
@@ -10709,6 +10749,10 @@ button {
   border: 1px solid #000044;
 }
 
+.gd-chaves .btn-secondary span {
+  color: #000044;
+}
+
 .gd-chaves .btn-secondary i span {
   color: #000044;
 }
@@ -10742,6 +10786,10 @@ button {
   border: 1px solid #005B29;
 }
 
+.sc-covilha .btn-secondary span {
+  color: #005B29;
+}
+
 .sc-covilha .btn-secondary i span {
   color: #005B29;
 }
@@ -10773,6 +10821,10 @@ button {
 .varzim-sc .btn-secondary {
   color: #212121;
   border: 1px solid #212121;
+}
+
+.varzim-sc .btn-secondary span {
+  color: #212121;
 }
 
 .varzim-sc .btn-secondary i span {
@@ -10853,10 +10905,11 @@ form {
 form .container-input {
   padding: 1.6rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -10867,6 +10920,7 @@ form .container-input {
 }
 
 form label {
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
@@ -10917,6 +10971,12 @@ form span.input-validate {
   bottom: 0;
   left: 1.6rem;
   border: none;
+}
+
+form .input-single {
+  width: 19%;
+  padding: .5rem;
+  text-align: center;
 }
 
 form .input-select {
@@ -11630,8 +11690,12 @@ form .container-btn {
 }
 
 .swiper-fan .swiper-slide .btn {
-  --color-clube: #FFFFFF;
-  --color-hover: #737A83;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.swiper-fan .swiper-slide .btn i span {
+  color: #FFFFFF;
 }
 
 @media (max-width: 575px) {
@@ -11782,8 +11846,12 @@ form .container-btn {
 }
 
 .banner-fan .column-02 .infos-club .btn-secondary {
-  --color-clube: #FFFFFF;
-  --color-hover: #737A83;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.banner-fan .column-02 .infos-club .btn-secondary i span {
+  color: #FFFFFF;
 }
 
 .banner-fan .column-02 .img-club {

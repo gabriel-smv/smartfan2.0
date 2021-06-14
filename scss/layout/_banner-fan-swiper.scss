@@ -12,8 +12,14 @@
         }
 
         .btn {
-            --color-clube: #FFFFFF;
-            --color-hover: #737A83;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+
+            i {
+                span {
+                    color: #FFFFFF;
+                }
+            }
         }
 
         @include xs {
