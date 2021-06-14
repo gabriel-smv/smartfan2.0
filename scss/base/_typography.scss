@@ -6,19 +6,19 @@ body {
 h1 {
   width: 100%;
   font-family: $font-01;
-  @include font(3rem, 900, 1.4em);
+  @include font(3rem, 700, 1.4em);
   color: $black-02;
 }
 
 h2 {
   font-family: $font-01;
-  @include font(2.4rem, 900, 1.4em);
+  @include font(2.4rem, 700, 1.4em);
   color: $black-02;
 }
 
 h3 {
   font-family: $font-01;
-  @include font(1.8rem, 900, 1.4em);
+  @include font(1.8rem, 700, 1.4em);
   color: $black-02;
 }
 

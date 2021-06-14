@@ -12,7 +12,8 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 </head>
 
-<body>
+<body style="--color-club:#04b46b;">
+    <!-- HEADER / USUÁRIO LOGADO -->
     <header>
         <div class="container">
             <div class="row">
@@ -382,7 +383,7 @@
 
                                                 <div class="content-empty">
                                                     <i><span class="icon-andebol"></span></i>
-                                                    <p>Em breve, o teu clube de Andebol aqui!</p>
+                                                    <p>Em breve, o seu clube de Andebol aqui!</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -395,7 +396,7 @@
 
                                                 <div class="content-empty">
                                                     <i><span class="icon-basquetebol"></span></i>
-                                                    <p>Em breve, o teu clube de Basquetebol aqui!</p>
+                                                    <p>Em breve, o seu clube de Basquetebol aqui!</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -437,10 +438,235 @@
                         </a>
                     </li>
 
-                    <li class="btn-item">
-                        <a href="pg-area-fan.html" class="btn btn-header">
-                            <i><span class="icon-login"></span></i> Login
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <i><span class="icon-fan-fill"></span></i>
                         </a>
+
+                        <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown dropdown-menu">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/sporting-cp.png" alt="">
+
+                                    <i><span class="icon-heart"></span></i>
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+                                    <h3>Sporting Clube de Portugal</h3>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-clubs">
+                                <input type="checkbox" name="collapse-bt" id="collapse-clubs" />
+                                <label for="collapse-clubs" class="btn-collapse-clubs">
+                                    <span class="icon-ver-mais"></span>
+                                </label>
+
+                                <div class="user-clubs-content">
+                                    <h4>Outros clubes</h4>
+                                    <ul class="list-outros-clubes">
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/sc-braga.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/vitoria-fc.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-config"></span></i> Gerir os meus clubes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown no-clube dropdown-menu" style="display: none;">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/banner-img.jpg" alt="">
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-heart"></span></i>
+                                        Clube do coração
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <img src="images/user-placeholder.png" alt="">
+                            <span>Usuário</span> <i><span class="icon-dropdown"></span></i>
+                        </a>
+
+                        <div class="user-dropdown dropdown-menu">
+                            <div class="user-img">
+                                <img src="images/user-placeholder.png" alt="">
+                            </div>
+
+                            <div class="user-infos">
+                                <h2>Neymar Jr</h2>
+                                <p>neymar.ninja@gmail.com</p>
+                            </div>
+
+                            <ul class="user-nav">
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-perfil-socio.html">
+                                        <i><span class="icon-user"></span></i>
+                                        <span>Conta</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="">
+                                        <i><span class="icon-heart"></span></i>
+                                        <span>Clubes</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-registo-atividades.html">
+                                        <i><span class="icon-registo-atividades"></span></i>
+                                        <span>Actividade</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-grupo-socio.html">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <span>Criação de grupo</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-mensagem"></span></i>
+                                        <span>Alertas/Notificações</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="">
+                                        <i><span class="icon-config"></span></i>
+                                        <span>Configurações</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-logout">
+                                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -448,7 +674,7 @@
     </header>
 
     <main>
-        <section class="banner-fan" style="--bg-color:#000000">
+        <section class="banner-fan" style="--bg-color:#005039;">
             <div class="container">
                 <div class="row">
                     <div class="column-01 col-lg-7 col-12">
@@ -464,26 +690,23 @@
                             <div class="swiper-wrapper">
 
                                 <div class="swiper-slide">
-                                    <h3>Segue o clube axadrezado</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
+                                    <h3>Segue os leões</h3>
+                                    <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
                                         <i><span class="icon-login"></span></i> Cria a tua conta
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <h3>Segue o clube axadrezado</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
+                                    <h3>Segue os leões</h3>
+                                    <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
+                                        <i><span class="icon-meus-clubes"></span></i> Faz-te sócio
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <h3>Segue o clube axadrezado</h3>
-                                    <a href="pg-area-fan.html" class="btn btn-secondary"
-                                        style="--color-hover: rgba(255,255,255,.3);">
-                                        <i><span class="icon-login"></span></i> Cria a tua conta
+                                    <h3>Segue os leões</h3>
+                                    <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
+                                        <i><span class="icon-like"></span></i> Adicionar clube
                                     </a>
                                 </div>
 
@@ -496,14 +719,14 @@
 
                     <div class="column-02 col-lg-5 col-12">
                         <div class="infos-club">
-                            <h2>Boavista Futebol Clube</h2>
+                            <h2>Sporting Clube de Portugal</h2>
                             <a href="#" class="btn btn-secondary" style="--color-hover: rgba(255,255,255,.3);">
                                 <i><span class="icon-plataformas-digitais"></span></i> Plataformas digitais
                             </a>
                         </div>
 
                         <div class="img-club">
-                            <img src="images/boavista-fc.png" alt="">
+                            <img src="images/sporting-cp.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -530,8 +753,8 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva-fan.html">
+                            <li class="navbar-item active">
+                                <a href="fan-pg-area-fan.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-fan-outline"></span></i>
                                     Área de Fan
@@ -539,15 +762,15 @@
                             </li>
 
                             <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+                                <a href="socio-pg-area-exclusiva.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-agenda"></span></i>
                                     Agenda
                                 </a>
                             </li>
 
-                            <li class="navbar-item disabled active">
-                                <a href="pg-area-exclusiva.html">
+                            <li class="navbar-item disabled">
+                                <a href="socio-pg-area-exclusiva.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-meus-clubes"></span></i>
                                     Área de Sócio
@@ -555,7 +778,7 @@
                             </li>
 
                             <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+                                <a href="socio-pg-area-exclusiva.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-quotas"></span></i>
                                     Pagamento de Quotas
@@ -563,7 +786,7 @@
                             </li>
 
                             <li class="navbar-item disabled">
-                                <a href="pg-area-exclusiva.html">
+                                <a href="socio-pg-area-exclusiva.html">
                                     <i class="disabled-icon"><span class="icon-locked"></span></i>
                                     <i><span class="icon-lugar-cativo"></span></i>
                                     Lugar cativo
@@ -596,7 +819,7 @@
                                 </li>
 
                                 <li class="navbar-item active disabled">
-                                    <a href="pg-area-exclusiva-fan.html">
+                                    <a href="fan-pg-area-fan.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-fan-outline"></span></i>
                                         Área de Fan
@@ -604,7 +827,7 @@
                                 </li>
 
                                 <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                    <a href="socio-pg-area-exclusiva.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-agenda"></span></i>
                                         Agenda
@@ -612,7 +835,7 @@
                                 </li>
 
                                 <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                    <a href="socio-pg-area-exclusiva.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-meus-clubes"></span></i>
                                         Área de Sócio
@@ -620,7 +843,7 @@
                                 </li>
 
                                 <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                    <a href="socio-pg-area-exclusiva.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-quotas"></span></i>
                                         Pagamento de Quotas
@@ -628,7 +851,7 @@
                                 </li>
 
                                 <li class="navbar-item disabled">
-                                    <a href="pg-area-exclusiva.html">
+                                    <a href="socio-pg-area-exclusiva.html">
                                         <i class="disabled-icon"><span class="icon-locked"></span></i>
                                         <i><span class="icon-lugar-cativo"></span></i>
                                         Lugar cativo
@@ -638,114 +861,276 @@
                         </div>
                     </nav>
 
-                    <!-- ÁREA EXCLUSIVA UTILIZADORES REGISTRADOS -->
-                    <section class="pg-padrao area-exclusiva" style="display: none;">
-
-                        <div class="area-exclusiva-message">
-                            <i class="message-icon"><span class="icon-locked"></span></i>
-                            <p>Área exclusiva para utilizadores registados</p>
-                            <a href="pg-area-socio.html" class="btn btn-secondary">
-                                <i><span class="icon-login"></span></i> Cria a tua conta
+                    <section class="pg-padrao pg-grupos">
+                        <div class="content-wrapper">
+                            <a href="fan-pg-area-fan.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Voltar
                             </a>
-                        </div>
 
-                        <div class="area-exclusiva-vantagens">
-                            <h2>Vantagens em teres uma conta de adepto/fan</h2>
-                            <ul>
-                                <li>
-                                    <i><span class="icon-fan-outline"></span></i>
-                                    <span>Área de fan</span>
+                            <h2>Criação de grupo</h2>
+                            <h5>
+                                Nesta área podes adicionar sócios, dado a possibilidade de gerires o pagamento de
+                                quotas, a compra de lugares cativos e pagamento de bilhetes dos teus amigos e
+                                familiares.
+                            </h5>
+
+                            <div class="grupo-list-empty">
+                                <img src="images/svg/folder.svg" alt="">
+                                <p>Não tens grupo criado</p>
+                            </div>
+
+                            <ul class="grupo-list" style="display: none;">
+                                <li class="dropdown">
+                                    <div class="grupo-img">
+                                        <img src="images/svg/grupo-item.svg" alt="">
+                                        <a href="#" class="delete-grupo"><i><span class="icon-trash"></span></i></a>
+                                    </div>
+
+                                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                                        <span>Smartmove</span> <i><span class="icon-arrow-down"></span></i>
+                                    </a>
+
+                                    <div class="grupo-dropdown dropdown-menu">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo1-socio" type="button" role="tab"
+                                                    aria-controls="grupo1-socio" aria-selected="true">
+                                                    <i><span class="icon-grupo"></span></i> Sócios
+                                                </button>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo1-perfil" type="button" role="tab"
+                                                    aria-controls="grupo1-perfil" aria-selected="false">
+                                                    <i><span class="icon-config"></span></i> Perfil
+                                                </button>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="grupo1-socio" role="tabpanel">
+                                                <ul class="socios-grupo">
+                                                    <li>
+                                                        Sócio nº <span>2345434.8</span>,
+                                                        <span>antonio.precatado@smartmove.pt</span>
+                                                    </li>
+                                                    <li>
+                                                        Sócio nº <span> 2743234.2</span>,
+                                                        <span>rui.precatado@smartmove.pt</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="container-btn">
+                                                    <a href="#" class="btn-edit">
+                                                        <i><span class="icon-add"></span></i> Editar grupo
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="grupo1-perfil" role="tabpanel">
+                                                <ul class="perfil-grupo">
+                                                    <li>
+                                                        <i><span class="icon-quotas"></span></i>
+                                                        <span>Pagamento de quotas</span>
+                                                    </li>
+
+                                                    <li>
+                                                        <i><span class="icon-ticket-outline"></span></i>
+                                                        <span>Compra de bilhetes</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="container-btn">
+                                                    <a href="#" class="btn-edit">
+                                                        <i><span class="icon-add"></span></i> Editar grupo
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </li>
 
-                                <li>
-                                    <i><span class="icon-heart"></span></i>
-                                    <span>Clube o coração</span>
-                                </li>
+                                <li class="dropdown">
+                                    <div class="grupo-img">
+                                        <img src="images/svg/grupo-item.svg" alt="">
+                                        <a href="#" class="delete-grupo"><i><span class="icon-trash"></span></i></a>
+                                    </div>
 
-                                <li>
-                                    <i><span class="icon-like"></span></i>
-                                    <span>Seguir outros clubes</span>
-                                </li>
+                                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                                        <span>Amigos do peito</span> <i><span class="icon-arrow-down"></span></i>
+                                    </a>
 
-                                <li>
-                                    <i><span class="icon-grupo"></span></i>
-                                    <span>Criação de grupo</span>
-                                </li>
+                                    <div class="grupo-dropdown dropdown-menu">
 
-                                <li>
-                                    <i><span class="icon-mensagem"></span></i>
-                                    <span>Criar alertas de jogos</span>
-                                </li>
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="nav-item">
+                                                <button class="nav-link active" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo2-socio" type="button" role="tab"
+                                                    aria-controls="grupo2-socio" aria-selected="true">
+                                                    <i><span class="icon-grupo"></span></i> Sócios
+                                                </button>
+                                            </li>
 
-                                <li>
-                                    <i><span class="icon-registo-atividades-outline"></span></i>
-                                    <span>Histórico de encomendas</span>
-                                </li>
+                                            <li class="nav-item">
+                                                <button class="nav-link" data-bs-toggle="tab"
+                                                    data-bs-target="#grupo2-perfil" type="button" role="tab"
+                                                    aria-controls="grupo2-perfil" aria-selected="false">
+                                                    <i><span class="icon-config"></span></i> Perfil
+                                                </button>
+                                            </li>
+                                        </ul>
 
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="grupo2-socio" role="tabpanel">
+                                                <ul class="socios-grupo">
+                                                    <li>
+                                                        Sócio nº <span>2345434.8</span>,
+                                                        <span>antonio.precatado@smartmove.pt</span>
+                                                    </li>
+                                                    <li>
+                                                        Sócio nº <span> 2743234.2</span>,
+                                                        <span>rui.precatado@smartmove.pt</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="container-btn">
+                                                    <a href="#" class="btn-edit">
+                                                        <i><span class="icon-add"></span></i> Editar grupo
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade" id="grupo2-perfil" role="tabpanel">
+                                                <ul class="perfil-grupo">
+                                                    <li>
+                                                        <i><span class="icon-quotas"></span></i>
+                                                        <span>Pagamento de quotas</span>
+                                                    </li>
+
+                                                    <li>
+                                                        <i><span class="icon-ticket-outline"></span></i>
+                                                        <span>Compra de bilhetes</span>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="container-btn">
+                                                    <a href="#" class="btn-edit">
+                                                        <i><span class="icon-add"></span></i> Editar grupo
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
+
+                            <div class="container-btn">
+                                <a class="btn btn-secondary no-round" data-bs-toggle="modal" href="#modal-grupo">
+                                    Criar grupo
+                                </a>
+                            </div>
+
+                            <div class="modal fade" id="modal-grupo" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2>Criação de grupo</h2>
+                                            <button type="button" class="btn-close" data-dismiss="modal"
+                                                aria-label="Close"><span class="icon-close"></span></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <label for="nome-grupo">Qual é o nome do grupo?</label>
+                                                    <input type="text" name="nome-grupo" id="nome-grupo">
+                                                </div>
+
+                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <label for="atividade-grupo">Para que serve o grupo?</label>
+                                                    <a href="#" class="input-select dropdown-toggle"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span>Insere a(s) actividade(s)</span>
+                                                        <i><span class="icon-arrow-down"></span></i>
+                                                    </a>
+
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li>
+                                                            <input type="checkbox" class="cbx" name="pagar-quotas"
+                                                                id="pagar-quotas">
+                                                            <label for="pagar-quotas" class="cbx-label">
+                                                                <span class="cbx-area-select"></span> <span>Pagamento de
+                                                                    quotas</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <input type="checkbox" class="cbx" name="comprar-bilhetes"
+                                                                id="comprar-bilhetes">
+                                                            <label for="comprar-bilhetes" class="cbx-label">
+                                                                <span class="cbx-area-select"></span>
+                                                                <span>Compra de bilhetes</span>
+                                                            </label>
+                                                        </li>
+
+                                                        <li>
+                                                            <input type="checkbox" class="cbx" name="lugar-cativo"
+                                                                id="lugar-cativo">
+                                                            <label for="lugar-cativo" class="cbx-label">
+                                                                <span class="cbx-area-select"></span>
+                                                                <span>Lugar cativo</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </form>
+
+                                            <ul class="grupo-membros">
+                                                <li>
+                                                    <p>
+                                                        <span>antonio.precatado@smartmove.pt</span>, Sócio nº
+                                                        <span>1234567.9</span>
+                                                    </p>
+
+                                                    <a href="#"><i><span class="icon-trash"></span></i></a>
+                                                </li>
+                                            </ul>
+
+                                            <h3>Inserir sócios</h3>
+
+                                            <form class="form-inserir-membro">
+                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
+                                                    <label for="email-socio">E-mail do sócio</label>
+                                                    <input type="email" name="email-socio" id="email-socio">
+                                                </div>
+
+                                                <div class="container-input col-lg-5 col-md-5 col-sm-5 col-9">
+                                                    <label for="number-socio">Nº de sócio</label>
+                                                    <input type="text" name="number-socio" id="number-socio">
+                                                </div>
+
+                                                <div class="btn-add-member col-lg-1 col-md-1 col-sm-1 col-3">
+                                                    <a href="#"><i><span class="icon-add-member"></span></i></a>
+                                                </div>
+                                            </form>
+
+                                            <p class="grupo-aviso">
+                                                Será enviado a todos os sócio um e-mail. O grupo só será activado assim
+                                                que todos os sócios do grupo aceitem via e-mail todas as condições
+                                                inerentes ao grupo criado.
+                                            </p>
+
+                                            <a href="#" class="btn btn-secondary no-round">Save changes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                    </section>
-
-                    <!-- ÁREA EXCLUSIVA SÓCIOS -->
-                    <section class="pg-padrao area-exclusiva area-socio">
-
-                        <div class="area-exclusiva-message">
-                            <i class="message-icon"><span class="icon-locked"></span></i>
-                            <p>Área exclusiva para sócios</p>
-                            <a href="pg-area-socio.html" class="btn btn-secondary">
-                                <i><span class="icon-meus-clubes"></span></i> Faz-te sócio
-                            </a>
-                        </div>
-
-                        <div class="socio-registo">
-                            <h3>Já és sócio?</h3>
-                            <p>
-                                <a href="#" class="btn-link">Regista-te</a> ou <a href="#" class="btn-link">faz
-                                    login</a> no portal e associa o teu cartão e sócio.
-                            </p>
-                        </div>
-
-                        <div class="area-exclusiva-vantagens">
-                            <h2>Vantagens em teres uma conta de sócio:</h2>
-                            <ul>
-                                <li>
-                                    <i><span class="icon-meus-clubes"></span></i>
-                                    <span>Área de sócio</span>
-                                </li>
-
-                                <li>
-                                    <i><span class="icon-quotas"></span></i>
-                                    <span>Pagamento de quotas</span>
-                                </li>
-
-                                <li>
-                                    <i><span class="icon-lugar-cativo"></span></i>
-                                    <span>Lugar cativo</span>
-                                </li>
-
-                                <li>
-                                    <i><span class="icon-grupo"></span></i>
-                                    <span>Criação de grupo</span>
-                                </li>
-
-                                <li>
-                                    <i><span class="icon-dashboard"></span></i>
-                                    <span>Dashboard personalizado</span>
-                                </li>
-
-                                <li>
-                                    <i><span class="icon-mensagem"></span></i>
-                                    <span>Alertas de Notificações</span>
-                                </li>
-
-                                <li>
-                                    <i><span class="icon-registo-atividades-outline"></span></i>
-                                    <span>Histórico de encomendas</span>
-                                </li>
-                            </ul>
-                        </div>
-
                     </section>
                 </div>
             </div>
@@ -896,26 +1281,6 @@
     <script src="includes/bootstrap.bundle.min.js"></script>
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
-
-    <script src="includes/swiper-bundle.min.js"></script>
-
-    <script>
-        const swiper = new Swiper('.swiper-fan', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            }
-
-        });
-    </script>
 
 </body>
 
