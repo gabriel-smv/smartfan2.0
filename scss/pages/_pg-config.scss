@@ -1,0 +1,66 @@
+.config-wrapper {
+    padding-top: 2.4rem;
+    @include flex(column, flex-start, center, center);
+
+    .config-list {
+        width: 100%;
+        @include flex(column, flex-start, center, center);
+
+        li {
+            width: 100%;
+            padding: 1.6rem 0;
+            border-bottom: 1px solid #707070;
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            label {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+                @include font(1.8rem, 400, 1.2em);
+                color: $gray-04;
+
+                cursor: pointer;
+
+                transition: $transition-01;
+
+                .btn-switch {
+                    width: 5.6rem;
+                    height: 2.8rem;
+                    background-color: $white-01;
+                    border: 1px solid $gray-04;
+                    border-radius: 3rem;
+                    transition: $transition-01;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        border-radius: 50%;
+                        background-color: $gray-04;
+                        @include absolute(50%, auto, auto, 2px);
+                        transform: translateY(-50%);
+                        transition: $transition-01;
+                    }
+
+
+                }
+            }
+
+            input[type="checkbox"]:checked+label {
+                color: $black-02;
+
+                .btn-switch {
+                    &:before {
+                        background-color: var(--color-clube);
+                        right: 2px;
+                        left: auto;
+                    }
+
+                }
+            }
+        }
+    }
+}

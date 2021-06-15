@@ -53,6 +53,9 @@
                 color: $gray-04;
 
                 i {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    @include flex(row, center, center, center);
                     border: 1px solid $gray-04;
                     border-radius: 50%;
                     padding: .8rem;
