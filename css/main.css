@@ -17254,6 +17254,80 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+.pg-bilhetica {
+  padding-top: 8.8rem;
+}
+
+.pg-bilhetica .ads-area {
+  width: 100%;
+  position: relative;
+  background-color: #737A83;
+  height: 8rem;
+}
+
+.pg-bilhetica .bilhetes-header {
+  padding-top: 1.6rem;
+  z-index: 99;
+}
+
+.pg-bilhetica .bilhetes-header-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-bilhetica .bilhetes-header-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-bilhetica .bilhetes-header-img {
+  width: 12.8rem;
+  position: relative;
+  margin-top: 4rem;
+}
+
+.pg-bilhetica .bilhetes-header-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.pg-bilhetica .bilhetes-header-img i {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  background-color: #f37402;
+}
+
+.pg-bilhetica .bilhetes-header-img i span {
+  color: #ffffff;
+}
+
+.pg-bilhetica .bilhetes-header-text {
+  padding-left: 2.4rem;
+}
+
+.pg-bilhetica .main-content {
+  margin-top: -4rem;
+}
+
 .config-wrapper {
   padding-top: 2.4rem;
   display: flex;

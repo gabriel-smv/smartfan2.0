@@ -1,0 +1,59 @@
+.pg-bilhetica {
+    padding-top: 8.8rem;
+
+    .ads-area {
+        width: 100%;
+        position: relative;
+        background-color: $gray-04;
+        height: 8rem;
+    }
+
+    .bilhetes-header {
+        padding-top: 1.6rem;
+        z-index: 99;
+
+        &-list {
+            width: 100%;
+            @include flex(row, flex-start, center, center);
+        }
+
+        &-user {
+            @include flex(row, flex-start, center, center);
+        }
+
+        &-img {
+            width: 12.8rem;
+            position: relative;
+            margin-top: 4rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+            i {
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius: 50%;
+                @include flex(row, center, center, center);
+                @include absolute(auto, 0, 0, auto);
+                background-color: $secondary-02;
+
+                span {
+                    color: $white-01;
+                }
+            }
+        }
+
+        &-text {
+            padding-left: 2.4rem;
+        }
+
+
+    }
+
+    .main-content {
+        margin-top: -4rem;
+    }
+}
