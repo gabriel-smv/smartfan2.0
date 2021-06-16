@@ -10170,6 +10170,11 @@ p strong {
   }
 }
 
+.pg-bilhetica .breadcrumb-item i {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
 button {
   background-color: transparent;
 }
@@ -17266,8 +17271,17 @@ header .btn-list .btn-perfil:hover {
 }
 
 .pg-bilhetica .bilhetes-header {
-  padding-top: 1.6rem;
   z-index: 99;
+}
+
+.pg-bilhetica .bilhetes-header h3 {
+  font-size: 2.2rem;
+  line-height: 1em;
+  margin-bottom: .8rem;
+}
+
+.pg-bilhetica .bilhetes-header h5 {
+  line-height: 1em;
 }
 
 .pg-bilhetica .bilhetes-header-list {
@@ -17289,8 +17303,9 @@ header .btn-list .btn-perfil:hover {
 
 .pg-bilhetica .bilhetes-header-img {
   width: 12.8rem;
+  height: 12.8rem;
   position: relative;
-  margin-top: 4rem;
+  margin-top: 1.6rem;
 }
 
 .pg-bilhetica .bilhetes-header-img img {
@@ -17320,12 +17335,143 @@ header .btn-list .btn-perfil:hover {
   color: #ffffff;
 }
 
+.pg-bilhetica .bilhetes-header-img .user-anonimo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: .8rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.pg-bilhetica .bilhetes-header-img .user-anonimo i {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ffffff;
+  border: 2px dashed #737A83;
+}
+
+.pg-bilhetica .bilhetes-header-img .user-anonimo i span {
+  color: #737A83;
+  font-size: 5.6rem;
+}
+
 .pg-bilhetica .bilhetes-header-text {
+  width: calc(100% - 13rem);
   padding-left: 2.4rem;
+}
+
+.pg-bilhetica .bilhetes-header-evento {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-bilhetica .bilhetes-header-infos {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-bilhetica .bilhetes-header-infos h3 {
+  text-align: right;
+}
+
+.pg-bilhetica .bilhetes-header-infos .clube-socio {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.pg-bilhetica .bilhetes-header-infos .clube-socio img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .pg-bilhetica .bilhetes-header-list {
+    flex-wrap: wrap;
+    padding-top: .8rem;
+  }
+  .pg-bilhetica .bilhetes-header-evento {
+    order: 1;
+    height: auto;
+  }
+  .pg-bilhetica .bilhetes-header-user {
+    order: 2;
+    height: auto;
+  }
+  .pg-bilhetica .bilhetes-header-img {
+    height: 8.8rem;
+    width: 8.8rem;
+  }
+  .pg-bilhetica .bilhetes-header-img .user-anonimo i span {
+    font-size: 3.2rem;
+  }
+  .pg-bilhetica .bilhetes-header-infos {
+    order: 3;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .pg-bilhetica .bilhetes-header-evento {
+    order: 3;
+  }
+  .pg-bilhetica .bilhetes-header-user {
+    order: 1;
+  }
+  .pg-bilhetica .bilhetes-header-img {
+    height: 8.8rem;
+    width: 8.8rem;
+    margin-top: 0;
+  }
+  .pg-bilhetica .bilhetes-header-infos {
+    order: 2;
+  }
+  .pg-bilhetica .bilhetes-header-infos h3 {
+    width: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-bilhetica .bilhetes-header-evento {
+    text-align: center;
+  }
+  .pg-bilhetica .bilhetes-header-user {
+    order: 2;
+    justify-content: center;
+    margin: 1.6rem 0;
+  }
+  .pg-bilhetica .bilhetes-header-img {
+    height: 7.2rem;
+    width: 7.2rem;
+    margin-top: 0;
+  }
+  .pg-bilhetica .bilhetes-header-infos {
+    order: 1;
+    justify-content: center;
+  }
+  .pg-bilhetica .bilhetes-header-infos h3 {
+    width: calc(100% - 7.2rem);
+  }
 }
 
 .pg-bilhetica .main-content {
   margin-top: -4rem;
+}
+
+@media (max-width: 767px) {
+  .pg-bilhetica .main-content {
+    margin-top: 0;
+    padding-top: .8rem;
+  }
 }
 
 .config-wrapper {

@@ -452,11 +452,12 @@
 
         </section>
 
-        <section class="bilhetes-header">
+        <!-- HEADER SÓCIO -->
+        <section class="bilhetes-header" style="display: none;">
             <div class="container">
                 <div class="row">
                     <ul class="bilhetes-header-list">
-                        <li class="bilhetes-header-user col-lg-4">
+                        <li class="bilhetes-header-user col-lg-4 col-md-6 col-sm-6 col-12">
                             <div class="bilhetes-header-img">
                                 <img src="images/user-placeholder.png" alt="">
 
@@ -469,6 +470,93 @@
                                 <h5>Desde 2010</h5>
                             </div>
                         </li>
+
+                        <li class="bilhetes-header-evento col-lg-4 col-12">
+                            <h3>Liga NOS</h3>
+                            <h5><span>Sporting CP</span> vs <span>Rio-Ave FC</span></h5>
+                            <h5><span>Estádio José de Alvalade</span> - <span>10 mar / 18H45</span></h5>
+                        </li>
+
+                        <li class="bilhetes-header-infos col-lg-4 col-md-6 col-sm-6 col-12">
+                            <h3>Sporting Clube de Portugal</h3>
+                            <div class="clube-socio">
+                                <img src="images/sporting-cp.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- HEADER FAN -->
+        <section class="bilhetes-header" style="display: none;">
+            <div class="container">
+                <div class="row">
+                    <ul class="bilhetes-header-list">
+                        <li class="bilhetes-header-user col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="bilhetes-header-img">
+                                <img src="images/user-placeholder.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </div>
+
+                            <div class="bilhetes-header-text">
+                                <h3>Neymar Ninja Jr</h3>
+                                <h5>ID nº 165653.9</h5>
+                                <h5>neymarninja@gmail.com</h5>
+                            </div>
+                        </li>
+
+                        <li class="bilhetes-header-evento col-lg-4 col-md-6 col-sm-6 col-12">
+                            <h3>Liga NOS</h3>
+                            <h5><span>Sporting CP</span> vs <span>Rio-Ave FC</span></h5>
+                            <h5><span>Estádio José de Alvalade</span> - <span>10 mar / 18H45</span></h5>
+                        </li>
+
+                        <li class="bilhetes-header-infos col-lg-4 col-md-6 col-sm-6 col-12" style="display:none;">
+                            <h3>Sporting Clube de Portugal</h3>
+                            <div class="clube-socio">
+                                <img src="images/sporting-cp.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- HEADER ANÔNIMO -->
+        <section class="bilhetes-header">
+            <div class="container">
+                <div class="row">
+                    <ul class="bilhetes-header-list">
+                        <li class="bilhetes-header-user col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="bilhetes-header-img">
+                                <a href="#" class="user-anonimo">
+                                    <i>
+                                        <span class="icon-add-club"></span>
+                                    </i>
+                                </a>
+                            </div>
+
+                            <div class="bilhetes-header-text">
+                                <h3>Segue o teu clube do coração</h3>
+                                <h5>Cria a tua conta Smartfan</h5>
+                                <h5><a href="#" class="btn-link">Mais detalhes</a></h5>
+                            </div>
+                        </li>
+
+                        <li class="bilhetes-header-evento col-lg-4 col-md-6 col-sm-6 col-12">
+                            <h3>Liga NOS</h3>
+                            <h5><span>Sporting CP</span> vs <span>Rio-Ave FC</span></h5>
+                            <h5><span>Estádio José de Alvalade</span> - <span>10 mar / 18H45</span></h5>
+                        </li>
+
+                        <li class="bilhetes-header-infos col-lg-4 col-md-6 col-sm-6 col-12" style="display:none;">
+                            <h3>Sporting Clube de Portugal</h3>
+                            <div class="clube-socio">
+                                <img src="images/sporting-cp.png" alt="">
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -479,448 +567,40 @@
             <div class="container">
                 <div class="row">
 
-                    <section class="pg-padrao pg-comprar-bilhetes">
+                    <section class="pg-padrao">
+                        <nav class="col-12">
 
-                        <section class="events-filters col-12">
+                            <ul class="breadcrumb">
 
-                            <ul class="events-filters-list">
-                                <li>
-                                    <input type="checkbox" class="cbx" name="calendario-jogo" id="calendario-jogo">
-                                    <label for="calendario-jogo" class="cbx-label">
-                                        <span>Calendário de jogos</span> <span class="cbx-area-select"></span>
-                                    </label>
+                                <li class="breadcrumb-item">
+                                    <!-- <i><img src="images/svg/check-icon.svg" alt=""></i> -->
+                                    <i><span>1</span></i>
+                                    <span class="breadcrumb-item-text">Bilhetes / setor</span>
                                 </li>
 
-                                <li>
-                                    <input type="checkbox" class="cbx" name="futebol" id="futebol">
-                                    <label for="futebol" class="cbx-label">
-                                        <span>Futebol</span> <span class="cbx-area-select"></span>
-                                    </label>
+                                <li class="breadcrumb-item disabled">
+                                    <i><span>2</span></i>
+                                    <span class="breadcrumb-item-text">Lugares</span>
                                 </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Modalidades <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="todas-modalidades"
-                                                id="todas-modalidades">
-                                            <label for="todas-modalidades" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Todas</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="futsal" id="futsal">
-                                            <label for="futsal" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Futsal</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="andebol" id="andebol">
-                                            <label for="andebol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Andebol</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="basquetebol" id="basquetebol">
-                                            <label for="basquetebol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Basquetebol</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="hoquei" id="hoquei">
-                                            <label for="hoquei" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Hoquei em patins</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="voleibol" id="voleibol">
-                                            <label for="voleibol" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Voleibol</span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                                <li class="breadcrumb-item disabled">
+                                    <i><span>3</span></i>
+                                    <span class="breadcrumb-item-text">Carrinho de compras</span>
                                 </li>
 
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Competições <i><span class="icon-arrow-down"></span></i>
-                                    </a>
+                                <li class="breadcrumb-item disabled">
+                                    <i><span>4</span></i>
+                                    <span class="breadcrumb-item-text">Dados para pagamento</span>
+                                </li>
 
-                                    <ul class="filter-list-dropdown dropdown-menu">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="todas-ligas" id="todas-ligas">
-                                            <label for="todas-ligas" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Todas</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="primeira-liga" id="primeira-liga">
-                                            <label for="primeira-liga" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Primeira Liga</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="segunda-liga" id="segunda-liga">
-                                            <label for="segunda-liga" class="cbx-label">
-                                                <span class="cbx-area-select"></span> <span>Segunda Liga</span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                                <li class="breadcrumb-item disabled">
+                                    <i><span>5</span></i>
+                                    <span class="breadcrumb-item-text">Confirmação</span>
                                 </li>
                             </ul>
 
-                            <a href="#" class="btn btn-primary no-round">
-                                <i><span class="icon-search"></span></i> Procurar
-                            </a>
-                        </section>
+                        </nav>
 
-                        <section class="classificar-pesquisa col-12">
-
-                            <ul class="events-filters-list col-lg-6 col-md-4 col-12">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Mais critérios de pesquisa <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
-
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <ul class="events-filters-list col-lg-6 col-md-8 col-12">
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" role="button"
-                                        aria-expanded="false">
-                                        Ordenar por: <span class="item-selected">Data mais recente</span>
-                                        <i><span class="icon-arrow-down"></span></i>
-                                    </a>
-
-                                    <ul class="filter-list-dropdown dropdown-menu dropdown-menu-end">
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="mais-recente" id="mais-recente">
-                                            <label for="mais-recente" class="cbx-label">
-                                                <span>Data mais recente</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="mais-antiga" id="mais-antiga">
-                                            <label for="mais-antiga" class="cbx-label">
-                                                <span>Data mais antiga</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="modalidade" id="modalidade">
-                                            <label for="modalidade" class="cbx-label">
-                                                <span>Modalidade</span>
-                                            </label>
-                                        </li>
-
-                                        <li>
-                                            <input type="checkbox" class="cbx" name="competicao" id="competicao">
-                                            <label for="competicao" class="cbx-label">
-                                                <span>Competição</span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="guardar-pesquisa">
-                                    <input type="checkbox" class="cbx" name="guardar-pesquisa" id="guardar-pesquisa">
-                                    <label for="guardar-pesquisa" class="cbx-label">
-                                        <i><span class="icon-star"></span></i> <span>Guardar pesquisa</span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <section class="content col-12">
-
-                            <div class="row">
-
-                                <div class="events col-lg-12 col-12">
-
-                                    <ul class="events-list">
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/basquetebol.svg" alt="">
-                                                <span>Basquetebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/boavista-fc.png" alt="">
-                                                    </a>
-                                                    <span>Boavista FC</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/sporting-cp.png" alt="">
-                                                    </a>
-                                                    <span>Sporting CP</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#compraExpress" class="btn btn-secondary no-round"
-                                                    data-bs-toggle="modal">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/voleibol.svg" alt="">
-                                                <span>Voleibol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/rioave-fc.png" alt="">
-                                                    </a>
-                                                    <span>Rio Ave FC</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/vitoria-fc.png" alt="">
-                                                    </a>
-                                                    <span>Vitória FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/andebol.svg" alt="">
-                                                <span>Andebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/sc-braga.png" alt="">
-                                                    </a>
-                                                    <span>SC Braga</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/boavista-fc.png" alt="">
-                                                    </a>
-                                                    <span>Boavista FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/hoquei.svg" alt="">
-                                                <span>Hoquei</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/sporting-cp.png" alt="">
-                                                    </a>
-                                                    <span>Sporting CP</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/boavista-fc.png" alt="">
-                                                    </a>
-                                                    <span>Boavista FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <a href="#" class="btn btn-secondary no-round">
-                                                    <i><span class="icon-express"></span></i> Compra express
-                                                </a>
-
-                                                <a href="#" class="btn btn-primary no-round">
-                                                    <i><span class="icon-ticket-fill"></span></i> Comprar bilhete
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futsal.svg" alt="">
-                                                <span>Futsal</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/fc-porto.png" alt="">
-                                                    </a>
-                                                    <span>FC Porto</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/gilvicente-fc.png" alt="">
-                                                    </a>
-                                                    <span>Gil Vicente FC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <p>
-                                                    Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
-                                                        <span class="icon-information"></span>
-                                                    </a>
-                                                </p>
-
-                                                <a href="#one-modalAlerta" class="btn btn-secondary no-round"
-                                                    data-bs-toggle="modal">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li class="events-item">
-                                            <div class="events-modalidade col-lg-2 col-md-2 col-1">
-                                                <img src="images/svg/futebol.svg" alt="">
-                                                <span>Futebol</span>
-                                            </div>
-
-                                            <div class="events-clubes col-lg-3 col-md-4 col-12">
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/sporting-cp.png" alt="">
-                                                    </a>
-                                                    <span>Sporting CP</span>
-                                                </div>
-
-                                                <span>VS</span>
-
-                                                <div class="clube">
-                                                    <a href="#">
-                                                        <img src="images/vitoria-sc.png" alt="">
-                                                    </a>
-                                                    <span>Vitória SC</span>
-                                                </div>
-                                            </div>
-
-                                            <ul class="events-info col-lg-2 col-md-2 col-11">
-                                                <li>Liga NOS</li>
-                                                <li><span>10/mar</span>, <span>18h45</span></li>
-                                                <li>Estádio José de Alvalade</li>
-                                            </ul>
-
-                                            <div class="events-btn col-lg-5 col-md-4 col-12">
-                                                <p>
-                                                    Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
-                                                        <span class="icon-information"></span>
-                                                    </a>
-                                                </p>
-
-                                                <a href="#two-modalAlerta" class="btn btn-secondary no-round"
-                                                    data-bs-toggle="modal">
-                                                    <i><span class="icon-reminder"></span></i> Criar alerta
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="ads-wrapper col-lg-4 col-12" style="display: none;">
-                                    <a href="#" target="_blank">
-                                        <img src="images/ads-img.jpg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </section>
                     </section>
                 </div>
             </div>
