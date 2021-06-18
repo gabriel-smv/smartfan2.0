@@ -11742,10 +11742,9 @@ form .container-btn {
 }
 
 .banner-fan {
-  --bg-color: #263F62;
   width: 100%;
   padding: calc(8.8rem + 1.6rem) 0 12rem;
-  background: var(--bg-color);
+  background: #263F62;
   position: relative;
 }
 
@@ -12138,115 +12137,255 @@ form .container-btn {
   background-image: url("../images/banner-fcfamalicao.png");
 }
 
-.boavista-fc.banner-socio {
+.boavista-fc {
+  --color-clube: #000000;
+}
+
+.boavista-fc .banner-fan {
+  background: #000000;
+}
+
+.boavista-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boavista-fc .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
 }
 
-.boavista-fc.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
+.cd-nacional {
+  --color-clube: #6E3A8D;
 }
 
-.cd-nacional.banner-socio {
+.cd-nacional .banner-fan {
+  background: #6E3A8D;
+}
+
+.cd-nacional .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cd-nacional .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
 }
 
-.cd-nacional.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
+.fc-porto {
+  --color-clube: #0083BD;
 }
 
-.fc-porto.banner-socio {
+.fc-porto .banner-fan {
+  background: #0083BD;
+}
+
+.fc-porto .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fc-porto .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
 }
 
-.fc-porto.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
+.gilvicente-fc {
+  --color-clube: #CC0000;
 }
 
-.gilvicente-fc.banner-socio {
+.gilvicente-fc .banner-fan {
+  background: #CC0000;
+}
+
+.gilvicente-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gilvicente-fc .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
 }
 
-.gilvicente-fc.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
+.belenenses-sad {
+  --color-clube: #0f2440;
 }
 
-.belenenses-sad.banner-socio {
+.belenenses-sad .banner-fan {
+  background: #0f2440;
+}
+
+.belenenses-sad .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.belenenses-sad .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
 }
 
-.belenenses-sad.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
+.rioave-fc {
+  --color-clube: #33a370;
 }
 
-.rioave-fc.banner-socio {
+.rioave-fc .banner-fan {
+  background: #33a370;
+}
+
+.rioave-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rioave-fc .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
 }
 
-.rioave-fc.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
+.sc-braga {
+  --color-clube: #c00d1e;
 }
 
-.sc-braga.banner-socio {
+.sc-braga .banner-fan {
+  background: #c00d1e;
+}
+
+.sc-braga .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sc-braga .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
 }
 
-.sc-braga.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
+.sporting-cp {
+  --color-clube: #04b46b;
 }
 
-.sporting-cp.banner-socio {
+.sporting-cp .banner-fan {
+  background: #04b46b;
+}
+
+.sporting-cp .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sporting-cp .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
 }
 
-.sporting-cp.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
+.vitoria-sc {
+  --color-clube: #000000;
 }
 
-.vitoria-sc.banner-socio {
+.vitoria-sc .banner-fan {
+  background: #000000;
+}
+
+.vitoria-sc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vitoria-sc .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
 }
 
-.vitoria-sc.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
+.vitoria-fc {
+  --color-clube: #017e01;
 }
 
-.vitoria-fc.banner-socio {
+.vitoria-fc .banner-fan {
+  background: #017e01;
+}
+
+.vitoria-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vitoria-fc .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
 }
 
-.vitoria-fc.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
+.gd-chaves {
+  --color-clube: #000044;
 }
 
-.gd-chaves.banner-socio {
+.gd-chaves .banner-fan {
+  background: #000044;
+}
+
+.gd-chaves .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gd-chaves .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
 }
 
-.gd-chaves.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
+.sc-covilha {
+  --color-clube: #005B29;
 }
 
-.sc-covilha.banner-socio {
+.sc-covilha .banner-fan {
+  background: #005B29;
+}
+
+.sc-covilha .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sc-covilha .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
 }
 
-.sc-covilha.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
+.varzim-sc {
+  --color-clube: #212121;
 }
 
-.varzim-sc.banner-socio {
+.varzim-sc .banner-fan {
+  background: #212121;
+}
+
+.varzim-sc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.varzim-sc .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
 }
 
-.varzim-sc.banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
+.estoril-praia {
+  --color-clube: #0054A6;
 }
 
-.estoril-praia.banner-socio {
+.estoril-praia .banner-fan {
+  background: #0054A6;
+}
+
+.estoril-praia .banner-socio {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_EstorilPraia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.estoril-praia.banner-adesao {
+.estoril-praia .banner-adesao {
   background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_EstorilPraia.jpg");
 }
 
@@ -14905,6 +15044,28 @@ header .nav-mobile .nav .nav-dropdown {
 
 .header-bilhetica .btn-cart .carrinho-icon-wrapper .cart-qtde span {
   color: #ffffff;
+}
+
+.header-bilhetica .cart-timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.header-bilhetica .cart-timer .timer-wrapper {
+  background-color: #f37402;
+}
+
+.header-bilhetica .cart-timer .timer-wrapper i {
+  height: 100%;
+  width: auto;
+}
+
+.header-bilhetica .cart-timer .timer-wrapper i img {
+  width: 100%;
+  height: 100%;
 }
 
 header {
