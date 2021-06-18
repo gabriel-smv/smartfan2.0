@@ -15036,7 +15036,7 @@ header .nav-mobile .nav .nav-dropdown {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #f37402;
+  background-color: #F78946;
   padding: .4rem;
   border-radius: 50%;
   transform: translate(25%, -25%);
@@ -15044,6 +15044,7 @@ header .nav-mobile .nav .nav-dropdown {
 
 .header-bilhetica .btn-cart .carrinho-icon-wrapper .cart-qtde span {
   color: #ffffff;
+  line-height: 1em;
 }
 
 .header-bilhetica .cart-timer {
@@ -15052,20 +15053,97 @@ header .nav-mobile .nav .nav-dropdown {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+  height: 4.8rem;
 }
 
 .header-bilhetica .cart-timer .timer-wrapper {
-  background-color: #f37402;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  border-radius: 4rem;
+  padding-right: 4.8rem;
+  margin-right: -4rem;
+  background-color: #F78946;
 }
 
 .header-bilhetica .cart-timer .timer-wrapper i {
-  height: 100%;
-  width: auto;
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: .8rem;
 }
 
 .header-bilhetica .cart-timer .timer-wrapper i img {
   width: 100%;
   height: 100%;
+}
+
+.header-bilhetica .cart-timer .timer-wrapper span {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .header-bilhetica {
+    height: auto;
+    padding: .8rem 0;
+  }
+  .header-bilhetica .logo {
+    order: 1;
+  }
+  .header-bilhetica .title-bilhetica {
+    order: 3;
+    margin-top: 1.6rem;
+  }
+  .header-bilhetica .btn-list {
+    order: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-bilhetica .logo {
+    justify-content: center;
+    margin-bottom: 1.6rem;
+  }
+  .header-bilhetica .cart-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    height: 4.8rem;
+  }
+  .header-bilhetica .cart-timer .timer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    border-radius: 4rem;
+    padding-right: 4.8rem;
+    margin-right: -4rem;
+    background-color: #F78946;
+  }
+  .header-bilhetica .cart-timer .timer-wrapper i {
+    height: 4.8rem;
+    width: 4.8rem;
+    margin-right: 0.4rem;
+  }
+  .header-bilhetica .cart-timer .timer-wrapper i img {
+    width: 100%;
+    height: 100%;
+  }
+  .header-bilhetica .cart-timer .timer-wrapper span {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1em;
+    color: #ffffff;
+  }
 }
 
 header {
