@@ -31,6 +31,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-loading:before {
+    content: "\e942";
+}
+
 .icon-euro:before {
     content: "\e941";
 }
