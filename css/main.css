@@ -15650,6 +15650,44 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
+.modal-alerta .area-exclusiva-message .divider {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  padding: 2.4rem 0;
+}
+
+.modal-alerta .area-exclusiva-message .divider::before {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: #737A83;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+.modal-alerta .area-exclusiva-message .divider::after {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: #737A83;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
 .socio .modal-alerta .outros-alertas .criar-alerta-clube .dropdown-toggle {
   pointer-events: none;
   justify-content: flex-start;

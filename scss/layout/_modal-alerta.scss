@@ -227,6 +227,32 @@
             }
         }
     }
+
+    .area-exclusiva-message {
+        .divider {
+            width: 100%;
+            @include font(1.8rem, 400, 1.2em);
+            @include flex(row, center, center, center);
+            position: relative;
+            padding: 2.4rem 0;
+
+            &::before {
+                content: '';
+                width: 40%;
+                height: 1px;
+                background-color: $gray-04;
+                @include absolute(50%, auto, auto, 0);
+            }
+
+            &::after {
+                content: '';
+                width: 40%;
+                height: 1px;
+                background-color: $gray-04;
+                @include absolute(50%, 0, auto, auto);
+            }
+        }
+    }
 }
 
 .socio {
