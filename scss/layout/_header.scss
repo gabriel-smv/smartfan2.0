@@ -136,6 +136,20 @@ header {
                 @include absolute(auto, auto, auto, 0);
             }
 
+            .perfil-user-icon {
+                height: 4.8rem;
+                width: 4.8rem;
+                border-radius: 50%;
+                border: 1px solid $gray-01;
+                @include absolute(auto, auto, auto, 0);
+                @include flex(row, center, center, center);
+
+                span {
+                    color: $gray-01;
+                    font-size: 2.4rem
+                }
+            }
+
             i {
                 @include absolute(auto, .8rem, auto, auto);
                 margin: 0;

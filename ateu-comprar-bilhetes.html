@@ -34,7 +34,7 @@
 
                                 <ul class="btn-list col-md-8 col-12">
                                     <li class="btn-item">
-                                        <a href="pg-bilheteira-geral.html" class="btn btn-header">
+                                        <a href="#" class="btn btn-header">
                                             <i><span class="icon-ticket-fill"></span></i> Bilheteira Geral
                                         </a>
                                     </li>
@@ -188,7 +188,7 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-andebol"></span></i>
-                                                                    <p>Em breve, o seu clube de Andebol aqui!</p>
+                                                                    <p>Em breve, o teu clube de Andebol aqui!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -201,7 +201,7 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-basquetebol"></span></i>
-                                                                    <p>Em breve, o seu clube de Basquetebol aqui!</p>
+                                                                    <p>Em breve, o teu clube de Basquetebol aqui!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -426,7 +426,7 @@
 
                 <ul class="btn-list col-lg-6 col-md-8 col-6">
                     <li class="btn-item no-mobile">
-                        <a href="pg-bilheteira-geral.html" class="btn btn-header">
+                        <a href="#" class="btn btn-header">
                             <i><span class="icon-ticket-fill"></span></i> Bilheteira Geral
                         </a>
                     </li>
@@ -437,10 +437,237 @@
                         </a>
                     </li>
 
-                    <li class="btn-item">
-                        <a href="fan-pg-area-fan.html" class="btn btn-header">
-                            <i><span class="icon-login"></span></i> Login
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <i><span class="icon-fan-fill"></span></i>
                         </a>
+
+                        <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown dropdown-menu" style="display: none;">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/sporting-cp.png" alt="">
+
+                                    <i><span class="icon-heart"></span></i>
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+                                    <h3>Sporting Clube de Portugal</h3>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-clubs">
+                                <input type="checkbox" name="collapse-bt" id="collapse-clubs" />
+                                <label for="collapse-clubs" class="btn-collapse-clubs">
+                                    <span class="icon-ver-mais"></span>
+                                </label>
+
+                                <div class="user-clubs-content">
+                                    <h4>Outros clubes</h4>
+                                    <ul class="list-outros-clubes">
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/sc-braga.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/vitoria-fc.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-config"></span></i> Gerir os meus clubes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown no-clube dropdown-menu">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/banner-img.jpg" alt="">
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+
+                                    <a href="#" class="btn btn-secondary">
+                                        <i><span class="icon-heart"></span></i>
+                                        Clube do coração
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="pg-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <!-- <img src="images/svg/user-fill.svg" alt=""> -->
+                            <i class="perfil-user-icon"><span class="icon-user-fill"></span></i>
+                            <span>Neymar</span> <i><span class="icon-dropdown"></span></i>
+                        </a>
+
+                        <div class="user-dropdown dropdown-menu">
+                            <div class="user-img">
+                                <!-- <img src="images/user-placeholder.png" alt=""> -->
+                                <i><span class="icon-user"></span></i>
+                            </div>
+
+                            <div class="user-infos">
+                                <h2>Neymar Jr</h2>
+                                <p>neymar.ninja@gmail.com</p>
+                            </div>
+
+                            <ul class="user-nav">
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-perfil-socio.html">
+                                        <i><span class="icon-user"></span></i>
+                                        <span>Conta</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-heart"></span></i>
+                                        <span>Clubes</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-registo-atividades.html">
+                                        <i><span class="icon-registo-atividades"></span></i>
+                                        <span>Actividade</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-grupo-socio.html">
+                                        <i><span class="icon-grupo"></span></i>
+                                        <span>Criação de grupo</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="pg-alertas-notificacoes.html">
+                                        <i><span class="icon-mensagem"></span></i>
+                                        <span>Alertas/Notificações</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="#">
+                                        <i><span class="icon-config"></span></i>
+                                        <span>Configurações</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-logout">
+                                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -976,7 +1203,10 @@
                                             <div class="events-btn col-lg-5 col-md-4 col-12">
                                                 <p>
                                                     Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
+                                                    <a href="#" class="btn-information tooltip">
+                                                        <span class="tooltiptext">A bilheteria ainda se encontra
+                                                            encerrada.<br> Podes criar um alerta para receber uma
+                                                            notificação quando a bilheteria estiver disponível.</span>
                                                         <span class="icon-information"></span>
                                                     </a>
                                                 </p>
@@ -1021,7 +1251,10 @@
                                             <div class="events-btn col-lg-5 col-md-4 col-12">
                                                 <p>
                                                     Venda de bilhetes ainda não disponível
-                                                    <a href="#" class="btn-information">
+                                                    <a href="#" class="btn-information tooltip">
+                                                        <span class="tooltiptext">A bilheteria ainda se encontra
+                                                            encerrada.<br> Podes criar um alerta para receber uma
+                                                            notificação quando a bilheteria estiver disponível.</span>
                                                         <span class="icon-information"></span>
                                                     </a>
                                                 </p>
