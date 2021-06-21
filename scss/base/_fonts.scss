@@ -31,6 +31,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check-icon:before {
+    content: "\e945";
+}
+
+.icon-view:before {
+    content: "\e943";
+}
+
+.icon-shopping-cart:before {
+    content: "\e944";
+}
+
 .icon-loading:before {
     content: "\e942";
 }
