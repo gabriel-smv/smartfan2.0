@@ -1,11 +1,9 @@
-.pg-carregar-dados {
-
-    .div-wait,
-    .div-error {
-        .row {
-            @include flex(column, flex-start, center, center);
-        }
+.div-wait,
+.div-error {
+    .row {
+        @include flex(column, flex-start, center, center);
     }
+
 
     i {
         width: 6.4rem;

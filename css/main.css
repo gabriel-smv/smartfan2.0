@@ -17949,8 +17949,8 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
-.pg-carregar-dados .div-wait .row,
-.pg-carregar-dados .div-error .row {
+.div-wait .row,
+.div-error .row {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17958,7 +17958,8 @@ header .btn-list .btn-perfil:hover {
   align-content: center;
 }
 
-.pg-carregar-dados i {
+.div-wait i,
+.div-error i {
   width: 6.4rem;
   height: 6.4rem;
   padding: .4rem;
@@ -17969,13 +17970,15 @@ header .btn-list .btn-perfil:hover {
   align-content: center;
 }
 
-.pg-carregar-dados i img {
+.div-wait i img,
+.div-error i img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.pg-carregar-dados i span {
+.div-wait i span,
+.div-error i span {
   font-size: 3.2rem;
   color: #737A83;
   animation: rotateImg 2s infinite ease-in-out;
