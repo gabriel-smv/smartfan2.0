@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartfan.tickets - Carrinho de compras</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+</head>
+
+<body>
+  <div class="load-screen" style="display: none;">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="header-bilhetica">
+    <div class="container">
+      <div class="row">
+
+        <div class="logo col-xxl-4 col-lg-1 col-md-2 col-sm-3 col-sm-3 col-12">
+          <a href="index.html">
+            <img src="images/svg/smartfan-logo-white.svg" alt="Logo Smartfan">
+          </a>
+        </div>
+
+        <div class="title-bilhetica col-xxl-4 col-lg-5 col-12">
+          <i><span class="icon-ticket-fill"></span></i>
+          <h1>Compra de bilhetes</h1>
+        </div>
+
+        <div class="btn-list col-xxl-4 col-lg-6 col-md-8 col-md-10 col-sm-9 col-12">
+          <div class="cart-timer">
+            <div class="timer-wrapper">
+              <i><img src="images/svg/clock-timer.svg" alt=""></i>
+              <span>08:40</span>
+            </div>
+
+            <a href="#" class="btn btn-cart dropdown-toggle" data-bs-toggle="dropdown" role="button"
+              aria-expanded="false">
+              <div class="carrinho-icon-wrapper">
+                <i><span class="icon-store"></span></i>
+
+                <div class="cart-qtde"><span>0</span></div>
+              </div>
+              <span>00,00€</span> <i><span class="icon-dropdown"></span></i>
+            </a>
+
+            <div class="carrinho-dropdown dropdown-menu">
+
+            </div>
+          </div>
+
+          <!-- ITEM ANONIMO -->
+          <div class="btn-item" style="display: none;">
+            <a href="fan-pg-area-fan.html" class="btn btn-header">
+              <i><span class="icon-login"></span></i> Login
+            </a>
+          </div>
+
+          <!-- ITEM FAN -->
+          <div class="btn-item dropdown" style="display: none;">
+            <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown" role="button"
+              aria-expanded="false">
+              <img src="images/user-placeholder.png" alt="">
+              <span>Neymar</span> <i><span class="icon-dropdown"></span></i>
+            </a>
+
+            <div class="user-dropdown dropdown-menu">
+              <div class="user-img">
+                <img src="images/user-placeholder.png" alt="">
+              </div>
+
+              <div class="user-infos">
+                <h2>Neymar Jr</h2>
+                <p>neymar.ninja@gmail.com</p>
+              </div>
+
+              <ul class="user-nav">
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="#">
+                    <i><span class="icon-user"></span></i>
+                    <span>Conta</span>
+                  </a>
+                </li>
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="#">
+                    <i><span class="icon-heart"></span></i>
+                    <span>Clubes</span>
+                  </a>
+                </li>
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="#">
+                    <i><span class="icon-registo-atividades"></span></i>
+                    <span>Actividade</span>
+                  </a>
+                </li>
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="#">
+                    <i><span class="icon-grupo"></span></i>
+                    <span>Grupo de amigos</span>
+                  </a>
+                </li>
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="#">
+                    <i><span class="icon-mensagem"></span></i>
+                    <span>Alertas/Notificações</span>
+                  </a>
+                </li>
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="#">
+                    <i><span class="icon-config"></span></i>
+                    <span>Configurações</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="user-logout">
+                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM SÓCIO -->
+          <div class="btn-item dropdown">
+            <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown" role="button"
+              aria-expanded="false">
+              <img src="images/user-placeholder.png" alt="">
+              <span>Neymar</span> <i><span class="icon-dropdown"></span></i>
+            </a>
+
+            <div class="user-dropdown dropdown-menu">
+              <div class="user-img">
+                <img src="images/user-placeholder.png" alt="">
+              </div>
+
+              <div class="user-infos">
+                <h2>Neymar Jr</h2>
+                <p>neymar.ninja@gmail.com</p>
+              </div>
+
+              <ul class="user-nav">
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="socio-pg-perfil.html">
+                    <i><span class="icon-user"></span></i>
+                    <span>Conta</span>
+                  </a>
+                </li>
+
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="socio-pg-registo-atividades.html">
+                    <i><span class="icon-registo-atividades"></span></i>
+                    <span>Actividade</span>
+                  </a>
+                </li>
+
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="socio-pg-alertas-notificacoes.html">
+                    <i><span class="icon-mensagem"></span></i>
+                    <span>Alertas/Notificações</span>
+                  </a>
+                </li>
+
+                <li class="col-lg-6 col-md-6 col-6">
+                  <a href="socio-pg-config.html">
+                    <i><span class="icon-config"></span></i>
+                    <span>Configurações</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="user-logout">
+                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pg-bilhetica">
+    <section class="ads-area"></section>
+
+    <!-- HEADER SÓCIO -->
+    <section class="bilhetes-header">
+      <div class="container">
+        <div class="row">
+          <ul class="bilhetes-header-list">
+            <li class="bilhetes-header-user col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="bilhetes-header-img">
+                <img src="images/user-placeholder.png" alt="">
+
+                <i><span class="icon-meus-clubes"></span></i>
+              </div>
+
+              <div class="bilhetes-header-text">
+                <h3>Neymar Ninja Jr</h3>
+                <h5>Sócio nº 165653.9</h5>
+                <h5>Desde 2010</h5>
+              </div>
+            </li>
+
+            <li class="bilhetes-header-evento col-lg-4 col-12">
+              <h3>Liga NOS</h3>
+              <h5><span>Sporting CP</span> vs <span>Rio-Ave FC</span></h5>
+              <h5><span>Estádio José de Alvalade</span> - <span>10 mar / 18H45</span></h5>
+            </li>
+
+            <li class="bilhetes-header-infos col-lg-4 col-md-6 col-sm-6 col-12">
+              <h3>Sporting Clube de Portugal</h3>
+              <div class="clube-socio">
+                <img src="images/sporting-cp.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADER FAN -->
+    <section class="bilhetes-header" style="display: none;">
+      <div class="container">
+        <div class="row">
+          <ul class="bilhetes-header-list">
+            <li class="bilhetes-header-user col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="bilhetes-header-img">
+                <img src="images/user-placeholder.png" alt="">
+
+                <i><span class="icon-heart"></span></i>
+              </div>
+
+              <div class="bilhetes-header-text">
+                <h3>Neymar Ninja Jr</h3>
+                <h5>ID nº 165653.9</h5>
+                <h5>neymarninja@gmail.com</h5>
+              </div>
+            </li>
+
+            <li class="bilhetes-header-evento col-lg-4 col-md-6 col-sm-6 col-12">
+              <h3>Liga NOS</h3>
+              <h5><span>Sporting CP</span> vs <span>Rio-Ave FC</span></h5>
+              <h5><span>Estádio José de Alvalade</span> - <span>10 mar / 18H45</span></h5>
+            </li>
+
+            <li class="bilhetes-header-infos col-lg-4 col-md-6 col-sm-6 col-12" style="display:none;">
+              <h3>Sporting Clube de Portugal</h3>
+              <div class="clube-socio">
+                <img src="images/sporting-cp.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEADER ANÔNIMO -->
+    <section class="bilhetes-header" style="display: none;">
+      <div class="container">
+        <div class="row">
+          <ul class="bilhetes-header-list">
+            <li class="bilhetes-header-user col-lg-4 col-md-6 col-sm-6 col-12">
+              <div class="bilhetes-header-img">
+                <a href="#" class="user-anonimo">
+                  <i>
+                    <span class="icon-add-club"></span>
+                  </i>
+                </a>
+              </div>
+
+              <div class="bilhetes-header-text">
+                <h3>Segue o teu clube do coração</h3>
+                <h5>Cria a tua conta Smartfan</h5>
+                <h5><a href="#" class="btn-link">Mais detalhes</a></h5>
+              </div>
+            </li>
+
+            <li class="bilhetes-header-evento col-lg-4 col-md-6 col-sm-6 col-12">
+              <h3>Liga NOS</h3>
+              <h5><span>Sporting CP</span> vs <span>Rio-Ave FC</span></h5>
+              <h5><span>Estádio José de Alvalade</span> - <span>10 mar / 18H45</span></h5>
+            </li>
+
+            <li class="bilhetes-header-infos col-lg-4 col-md-6 col-sm-6 col-12" style="display:none;">
+              <h3>Sporting Clube de Portugal</h3>
+              <div class="clube-socio">
+                <img src="images/sporting-cp.png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-content">
+      <div class="container">
+        <div class="row">
+          <nav class="col-12">
+
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item complete">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <!-- <i><span>1</span></i> -->
+                <span class="breadcrumb-item-text">Bilhetes / setor</span>
+              </li>
+
+              <li class="breadcrumb-item complete">
+                <i><img src="images/svg/check-icon.svg" alt=""></i>
+                <!-- <i><span>2</span></i> -->
+                <span class="breadcrumb-item-text">Lugares</span>
+              </li>
+
+              <li class="breadcrumb-item">
+                <i><span>3</span></i>
+                <span class="breadcrumb-item-text">Carrinho de compras</span>
+              </li>
+
+              <li class="breadcrumb-item disabled">
+                <i><span>4</span></i>
+                <span class="breadcrumb-item-text">Dados para pagamento</span>
+              </li>
+
+              <li class="breadcrumb-item disabled">
+                <i><span>5</span></i>
+                <span class="breadcrumb-item-text">Confirmação</span>
+              </li>
+            </ul>
+
+          </nav>
+
+          <section class="pg-padrao">
+
+            <section class="escolher-ingresso">
+              <div class="checkout-carrinho col-12">
+
+                <div class="bilhetica-heading">
+                  <div class="bilhetica-heading-title">
+                    <h2>Carrinho de compras</h2>
+                    <h4>Confirma os teus itens antes de seguires para pagamento</h4>
+                  </div>
+
+                  <div class="bilhetica-heading-btn">
+                    <a href="# " class="btn-link">Esvaziar carrinho</a>
+                  </div>
+                </div>
+
+                <!-- <div class="container-seu-carrinho "> -->
+                <table class="table table-seu-carrinho">
+                  <thead>
+                    <tr>
+                      <th class="col-lg-4 col-md-4">Item</th>
+                      <th class="col-lg-5 col-md-4">Detalhe</th>
+                      <th class="col-lg-1 col-md-2">Quant.</th>
+                      <th class="col-lg-1 col-md-1">Preço</th>
+                      <th class="col-lg-1 col-md-1"></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="col-lg-4 col-md-4 col-12"><span>Sporting CP</span> vs <span>Rio-Ave FC</span></td>
+
+                      <td class="col-lg-5 col-md-4 col-12"><span> Bancada Sul</span> <span>Zona Poente</span>
+                        <span>setor
+                          B</span>
+                        <span>Lugar
+                          45B</span>
+                      </td>
+
+                      <td class="col-lg-1 col-md-2 col-12">
+                        <select>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </td>
+
+                      <td class="col-lg-1 col-md-1 col-12"><span>00,00€</span></td>
+
+                      <td class="item-delete col-lg-1 col-md-1 col-12">
+                        <a href="# "><span class="icon-trash"></span></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-lg-4 col-md-4 col-12"><span>Sporting CP</span> vs <span>Rio-Ave FC</span></td>
+
+                      <td class="col-lg-5 col-md-4 col-12"><span> Bancada Sul</span> <span>Zona Poente</span>
+                        <span>setor
+                          B</span>
+                        <span>Lugar
+                          45B</span>
+                      </td>
+
+                      <td class="col-lg-1 col-md-2 col-12">
+                        <select>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </td>
+
+                      <td class="col-lg-1 col-md-1 col-12"><span>00,00€</span></td>
+
+                      <td class="item-delete col-lg-1 col-md-1 col-12">
+                        <a href="# "><span class="icon-trash"></span></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-lg-4 col-md-4 col-12"><span>Sporting CP</span> vs <span>Rio-Ave FC</span></td>
+
+                      <td class="col-lg-5 col-md-4 col-12"><span> Bancada Sul</span> <span>Zona Poente</span>
+                        <span>setor
+                          B</span>
+                        <span>Lugar
+                          45B</span>
+                      </td>
+
+                      <td class="col-lg-1 col-md-2 col-12">
+                        <select>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </td>
+
+                      <td class="col-lg-1 col-md-1 col-12"><span>00,00€</span></td>
+
+                      <td class="item-delete col-lg-1 col-md-1 col-12">
+                        <a href="# "><span class="icon-trash"></span></a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="col-lg-4 col-md-4 col-12"><span>Sporting CP</span> vs <span>Rio-Ave FC</span></td>
+
+                      <td class="col-lg-5 col-md-4 col-12"><span> Bancada Sul</span> <span>Zona Poente</span>
+                        <span>setor
+                          B</span> <span>Lugar 45B</span>
+                      </td>
+
+                      <td class="col-lg-1 col-md-2 col-12">
+                        <select>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </td>
+
+                      <td class="col-lg-1 col-md-1 col-12"><span>00,00€</span></td>
+
+                      <td class="item-delete col-lg-1 col-md-1 col-12">
+                        <a href="# "><span class="icon-trash"></span></a>
+                      </td>
+                    </tr>
+
+                    <tr class="item-total">
+                      <td class="col-lg-2 col-md-2"></td>
+                      <td class="col-lg-4 col-md-3"></td>
+                      <td class="col-lg-4 col-md-4">Total:</td>
+                      <td class="col-lg-1 col-md-2"><span>00,00€</span></td>
+                      <td class="col-lg-1 col-md-1"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="container-btn">
+                  <div class="column-01">
+                    <a href="#" class="btn btn-secondary">
+                      <i><span class="icon-ticket-fill"></span></i>
+                      Continuar a comprar
+                    </a>
+                  </div>
+
+                  <div class="column-02">
+                    <a href="#" class="btn btn-secondary">
+                      <i><span class="icon-cancel"></span></i>
+                      Cancelar a compra
+                    </a>
+
+                    <a href="#" class="btn btn-primary no-round" disabled>
+                      <i><span class="icon-arrow-next"></span></i>
+                      Próximo
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout-carrinho-empty col-lg-10" style="display: none;">
+                <i><img src="http://lisboa.smartmove.pt:8088/WOW/Resources/images/svg/shopping-cart-secondary.svg"
+                    alt=""></i>
+                <h3>O seu carrinho está vazio</h3>
+                <a href="index.html" class="btn btn-secondary"><span>Voltar ao início</span></a>
+              </div>
+            </section>
+
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="app-info col-lg-6 col-md-7 col-12">
+            <div class="app-info-text">
+              <h4>SMARTFAN sempre contigo.</h4>
+              <h5>Faz download da app.</h5>
+            </div>
+            <a href="" class="btn btn-primary no-round">
+              <i><span class="icon-android"></span></i>
+              Android
+            </a>
+          </div>
+
+          <ul class="social-media-list col-lg-6 col-md-5 col-12">
+            <li>
+              <a href="#" target="_blank">
+                <span class="icon-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <span class="icon-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <span class="icon-instagram"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <span class="icon-linkedin"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-smv">
+      <img src="images/svg/smartfan-logo-white.svg" alt="">
+    </div>
+
+    <div class="infos-footer">
+      <div class="container">
+        <div class="row">
+          <ul class="infos-footer-wrapper">
+            <li class="col-lg-3 col-md-4 col-12">
+              <h5>SMARTFAN</h5>
+              <ul class="list-links">
+                <li>
+                  <a href="index.html">Homepage</a>
+                </li>
+                <li>
+                  <a href="#">Quem somos</a>
+                </li>
+                <li>
+                  <a href="#">Perguntas frequentes</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="col-lg-3 col-md-4 col-12">
+              <h5>SERVIÇOS</h5>
+              <ul class="list-links">
+                <li>
+                  <a href="#">Bilheteira Geral</a>
+                </li>
+                <li>
+                  <a href="#">Mega store</a>
+                </li>
+                <li>
+                  <a href="#">Conta</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="col-lg-3 col-md-4 col-12">
+              <h5>PRIVACIDADE E TERMOS</h5>
+              <ul class="list-links">
+                <li>
+                  <a href="#">Termos e condições</a>
+                </li>
+                <li>
+                  <a href="#">Política de privacidade</a>
+                </li>
+                <li>
+                  <a href="#">Condições de utilização de serviços</a>
+                </li>
+                <li>
+                  <a href="#">Política de cookies</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="col-lg-3 col-12">
+              <h5>PAGAMENTOS</h5>
+              <ul class="list-payment">
+                <li>
+                  <img src="images/meowallet.png" alt="">
+                </li>
+                <li>
+                  <img src="images/visa.png" alt="">
+                </li>
+                <li>
+                  <img src="images/mastercard.png" alt="">
+                </li>
+                <li>
+                  <img src="images/multibanco.png" alt="">
+                </li>
+                <li>
+                  <img src="images/mbway.png" alt="">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="contato-smv col-lg-6 col-md-6 col-12">
+            <p>SMARTFAN.TICKETS - </p> <a href="mailto:contacto@smartfan.tickets">contacto@smartfan.tickets</a>
+          </div>
+
+          <div class="powered-smv col-lg-6 col-md-6 col-12">
+            <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
+                src="images/svg/smartmove-logo-white.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery, Bootstrap JS -->
+  <script src="includes/jquery.min.js "></script>
+  <script src="includes/bootstrap.min.js "></script>
+
+
+  <!-- Modal Empty Cart -->
+  <div id="smv-modal-confirm" class="modal fade in" tabindex="-1" role="dialog" data-backdrop="static" smv-ismodal="1"
+    smv-onclose="smv_MsgConfirmReset" style="display: none;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 id="smv-modalconfirm-title" smv-langtext="msg_title">Warning</h1>
+        </div>
+
+
+        <div class="modal-body">
+          <h3 id="smv-modalconfirm-t1" smv-langtext="msg_checkdelcart">Empty shopping cart?</h3>
+
+          <h3 id="smv-modalconfirm-t2" style="display: none;"></h3>
+        </div>
+
+        <div class="modal-footer">
+          <button id="smv-modalconfirm-bt-yes" type="button" class="btn btn-primary"
+            onclick="javascript:smv_Msg_Confirm_BtClick('yes')" smv-onclick="smv_paycart_DelCart">
+            <span smv-langtext="btyes">Yes</span>
+          </button>
+          <button id="smv-modalconfirm-bt-no" type="button" class="btn btn-primary"
+            onclick="javascript:smv_Msg_Confirm_BtClick('no')">
+            <span smv-langtext="btno">No</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

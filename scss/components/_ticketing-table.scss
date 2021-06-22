@@ -65,28 +65,42 @@ table {
 .table-seu-carrinho {
   margin: 0;
   margin-bottom: 1.5rem;
+  background-color: $white-01;
+  @include flex(column, flex-start, center, center);
+  padding: .8rem;
+
+  thead,
+  tbody {
+    width: 100%;
+  }
+
+  tr {
+    width: 100%;
+    @include flex(row, space-between, center, center);
+    flex-wrap: wrap;
+  }
 
   thead {
-    background-color: $primary-02;
+    border-bottom: 1px solid $gray-04;
 
     th {
-      color: $white-01;
+      @include font(1.4rem, 700, 1.2em);
+      text-transform: none;
+      padding-top: 2.4rem;
     }
   }
 
   td,
   th {
-    text-align: left;
+    text-align: center;
     @include font(1.6rem, 400, 1.4em);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
 
     &:first-child {
+      text-align: left;
+    }
 
-      @include xs {
-        text-align: right;
-        padding-left: 50%;
-      }
+    &:nth-child(2) {
+      text-align: left;
     }
 
     &:last-child {
@@ -94,29 +108,69 @@ table {
     }
   }
 
+  .item-total {
+    background-color: $gray-01;
+    border: 1px solid $gray-02;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+
+    td {
+      font-weight: 700;
+
+      &:nth-child(3) {
+        text-align: right;
+      }
+    }
+  }
+
   td {
     select {
+      width: 50%;
       background-color: #f3f3f3;
       @include font(1.4rem, 400, 1em);
       border-radius: 3px;
-    }
-
-    &:first-child {
-      span {
-        &:nth-child(2) {
-          text-transform: uppercase;
-        }
-      }
     }
   }
 
   .item-delete {
     a {
-      width: 2rem;
       display: inline-block;
 
-      img {
-        width: 100%;
+      span {
+        color: $gray-04;
+      }
+    }
+  }
+
+  @include sm {
+    thead {
+      display: none;
+    }
+
+    tr {
+      border-bottom: 1px solid $gray-04;
+      padding: .8rem 0;
+    }
+
+    td {
+      padding: .4rem;
+
+      &:first-child {
+        text-align: center;
+      }
+
+      &:nth-child(2) {
+        text-align: center;
+      }
+
+      &:last-child {
+        text-align: center;
+      }
+
+      select {
+        width: auto;
       }
     }
   }
@@ -145,20 +199,34 @@ table {
 
         &:nth-child(1) {
           &:before {
-            content: 'Produto';
+            content: 'Item';
           }
+
+          text-align: right;
         }
 
         &:nth-child(2) {
           &:before {
-            content: 'Detalhes';
+            content: 'Detalhe';
           }
+
+          text-align: right;
         }
 
         &:nth-child(3) {
           &:before {
+            content: 'Quant.';
+          }
+
+          text-align: right;
+        }
+
+        &:nth-child(4) {
+          &:before {
             content: 'Valor';
           }
+
+          text-align: right;
         }
 
         &:last-child {
@@ -166,24 +234,23 @@ table {
         }
       }
 
-      .item-delete {
-        width: auto;
-      }
-    }
-
-    tfoot {
-      tr {
-        @include flex(row, center, center, center);
-        margin-bottom: 0;
-        border: none;
-
+      .item-total {
         td {
-          border: none;
+          padding: 0;
+          text-align: center;
 
-          &:first-child {
-            padding: 0;
+          &:nth-child(3) {
+            text-align: center;
+          }
+
+          &::before {
+            display: none;
           }
         }
+      }
+
+      .item-delete {
+        text-align: right
       }
     }
   }
