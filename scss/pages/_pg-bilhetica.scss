@@ -221,5 +221,41 @@
         h4 {
             @include font(1.8rem, 400, 1.2em);
         }
+
+        &-btn {
+            display: block;
+
+            .btn-dados-faturacao {
+                width: 8rem;
+                height: 3.2rem;
+                position: relative;
+                background-color: $gray-01;
+                margin-bottom: 8px;
+                border-radius: 4rem;
+                transition: none;
+
+                &:before {
+                    content: '';
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    background-color: $white-01;
+                    border: 1px solid $gray-02;
+                    @include absolute(0, auto, auto, 0);
+                    transform: translateY(0);
+                }
+
+                &[aria-expanded="true"] {
+                    background-color: $primary-01;
+                    transition: none;
+
+                    &:before {
+                        background-color: $white-02;
+                        border: 1px solid $primary-02;
+                        @include absolute(0, 0, auto, auto);
+                    }
+                }
+            }
+        }
     }
 }
