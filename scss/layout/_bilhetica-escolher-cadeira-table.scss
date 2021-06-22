@@ -28,8 +28,8 @@
     height: auto;
     // margin-top: .8rem;
     line-height: 40px;
-    border-bottom: 5px solid #090;
-    color: #090;
+    border-bottom: 5px solid #0EB749;
+    color: #0EB749;
     text-align: center;
     text-transform: uppercase;
     @include font(1.6rem, 400, 1.4em);
@@ -77,6 +77,10 @@
             width: 100%;
             object-fit: contain;
         }
+    }
+
+    @include mlg {
+        justify-content: center;
     }
 }
 
@@ -201,7 +205,8 @@
         li {
             height: 20px;
             padding: 2px;
-            font-weight: 900;
+            font-weight: 400;
+            color: $black-02;
             margin-bottom: .4rem;
             list-style: none;
         }
@@ -223,8 +228,8 @@
     width: 20px !important;
     border-radius: 50%;
     cursor: pointer;
-    background: #6488FF;
-    border: #6488FF solid 1px;
+    background: $gray-02;
+    border: $gray-02 solid 1px;
 }
 
 .seat-available div {
@@ -237,23 +242,23 @@
     border: $gray-04 solid 1px;
 }
 
-.seat-badvis div {
-    border-radius: 2px;
-    cursor: pointer;
-    background: linear-gradient(to right, #777 0%, #777 51%, #fff 51%, #fff 100%);
-    border: 1px solid #000;
-}
+// .seat-badvis div {
+//     border-radius: 2px;
+//     cursor: pointer;
+//     background: linear-gradient(to right, #777 0%, #777 51%, #fff 51%, #fff 100%);
+//     border: 1px solid #000;
+// }
 
 .seat-empty div {
     border-radius: 2px;
     cursor: pointer;
 }
 
-.seat-not-applicable div {
-    background: #ccc;
-    border: #000 solid 1px;
-    cursor: not-allowed !important;
-}
+// .seat-not-applicable div {
+//     background: #ccc;
+//     border: #000 solid 1px;
+//     cursor: not-allowed !important;
+// }
 
 .lugares {
     margin: 0;
@@ -268,8 +273,8 @@
     width: 20px !important;
     border-radius: 50%;
     cursor: pointer;
-    background: #465DA9;
-    border: #465DA9 solid 1px;
+    background: $secondary-02;
+    border: $secondary-02 solid 1px;
 }
 
 .seat-selother div {
@@ -297,13 +302,13 @@ tbody>tr:last-child>td {
         white-space: nowrap;
         margin-right: 1.25rem;
         margin-bottom: 5px;
-        font-size: 12px;
+        font-size: 14px;
         white-space: normal;
 
         &:before {
             content: '';
-            width: 12px;
-            height: 12px;
+            width: 20px;
+            height: 20px;
             display: inline-block;
             margin-right: .4rem;
             vertical-align: middle;
@@ -331,9 +336,9 @@ tbody>tr:last-child>td {
 
     .not-available {
         &:before {
-            background: #000;
-            border: #000 solid 1px;
-            border-radius: 2px;
+            background: rgba(115, 122, 131, .5);
+            border: $gray-04 solid 1px;
+
         }
     }
 
@@ -341,63 +346,62 @@ tbody>tr:last-child>td {
         &:before {
             background: #fff;
             border: #000 solid 1px;
-            border-radius: 2px;
         }
     }
 
     .selected {
         &:before {
             border-radius: 50%;
-            background: #465DA9;
-            border: #465DA9 solid 1px;
+            background: $secondary-02;
+            border: $secondary-02 solid 1px;
         }
     }
 
-    .available-poor-visibility {
-        &:before {
-            background: linear-gradient(to right, #777 0%, #777 51%, #fff 51%, #fff 100%);
-            border: 1px solid #000;
-            border-radius: 2px;
-        }
-    }
+    // .available-poor-visibility {
+    //     &:before {
+    //         background: linear-gradient(to right, #777 0%, #777 51%, #fff 51%, #fff 100%);
+    //         border: 1px solid #000;
+    //         border-radius: 2px;
+    //     }
+    // }
 
-    .not-applicable {
-        &:before {
-            background: #ccc;
-            border: #000 solid 1px;
-            border-radius: 2px;
-        }
-    }
+    // .not-applicable {
+    //     &:before {
+    //         background: #ccc;
+    //         border: #000 solid 1px;
+    //         border-radius: 2px;
+    //     }
+    // }
 
     .cursel {
         &:before {
             border-radius: 50%;
-            background: #6488FF;
-            border: #6488FF solid 1px;
+            background: $gray-02;
+            border: $gray-02 solid 1px;
         }
     }
 
-    .seat-selother {
-        &:before {
-            border-radius: 50%;
-            background: #F44336;
-            border: #F44336 solid 1px;
-        }
-    }
+    // .seat-selother {
+    //     &:before {
+    //         border-radius: 50%;
+    //         background: #F44336;
+    //         border: #F44336 solid 1px;
+    //     }
+    // }
 
-    .selected-squares {
-        &:before {
-            background: #ffd201;
-            border: #ffd201 solid 1px;
-        }
-    }
+    // .selected-squares {
+    //     &:before {
+    //         background: #ffd201;
+    //         border: #ffd201 solid 1px;
+    //     }
+    // }
 
-    .cursel-squares {
-        &:before {
-            background: #DA7E55;
-            border: #AE783B solid 1px;
-        }
-    }
+    // .cursel-squares {
+    //     &:before {
+    //         background: #DA7E55;
+    //         border: #AE783B solid 1px;
+    //     }
+    // }
 }
 
 .alert-ticket {

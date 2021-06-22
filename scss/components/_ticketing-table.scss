@@ -272,13 +272,10 @@ table {
     font-weight: 400;
   }
 
+
   .item-active {
     border: 1px solid $secondary-01;
-    background: #FFFFFF;
-
-    td {
-      font-weight: 700;
-    }
+    background: $white-02;
   }
 
   .item-inactive {
@@ -289,10 +286,11 @@ table {
     border-top: 1px solid $secondary-01;
 
     td {
-      @include font(2rem, 700, 1.4em);
+      @include font(1.8rem, 400, 1.4em);
+      color: $black-02;
 
-      @include sm {
-        text-align: right;
+      &:nth-child(2) {
+        color: $black-02;
       }
     }
   }
@@ -304,9 +302,10 @@ table {
   th,
   td {
     width: auto;
+    text-align: left;
 
-    &:first-child {
-      text-align: left;
+    &:last-child {
+      text-align: right;
     }
 
     @include sm {
@@ -334,11 +333,22 @@ table {
     }
 
     &:nth-child(2) {
-      font-weight: 700;
+      font-weight: 400;
+      color: $secondary-02;
     }
 
     .txt-escolher-cadeira {
       font-size: 1.2rem;
+    }
+  }
+
+  @include xs {
+    td {
+      text-align: center;
+
+      &:last-child {
+        text-align: center;
+      }
     }
   }
 }

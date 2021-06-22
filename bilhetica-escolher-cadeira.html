@@ -331,7 +331,7 @@
 
                         <section class="escolher-ingresso">
 
-                            <div class="col-lg-3 escolher-ingresso-resumo">
+                            <div class="col-xl-3 col-lg-6 col-md-10 col-12 escolher-ingresso-resumo">
                                 <h2><b>Estádio:</b> <span>José de Alvalade</span></h2>
 
                                 <div class="escolher-ingresso-box">
@@ -364,7 +364,7 @@
                                                 <td><span>10,00€</span></td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="item-active">
                                                 <td><span>Sócio nº</span> <span>184367-9</span></td>
 
                                                 <td><span>Seleciona o lugar</span></td>
@@ -376,7 +376,7 @@
                                                 <td></td>
 
                                                 <td>
-                                                    <span class="txt-total">Total</span>
+                                                    <span class="txt-total">Total a pagar</span>
                                                 </td>
 
                                                 <td>
@@ -393,7 +393,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-xl-9 col-12">
                                 <div class="table-escolha-lugares">
                                     <div class="wrap">
                                         <div class="setor">
@@ -411,26 +411,26 @@
 
 
                                             <div id="smv_modal_stadium" smv-modalcontainer="smv_wp_tickets"
-                                                smv-ismodal="1" class="modal-login-container modal-setor">
+                                                smv-ismodal="1" class="modal modal-login-container modal-setor">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h2 class="modal-title" id="setorLabel">Setor</h2>
+                                                            <h2 class="modal-title" id="setorLabel">
+                                                                <b>Setor:</b> <span>12B</span>
+                                                            </h2>
 
-                                                            <button type="button" class="close"
-                                                                onclick="javascript:smv_closeModalDiv('smv_modal_stadium')"
-                                                                aria-label="Close">
-                                                                <img src="https://lisboa.smartmove.pt:8083/PlatfAdeptoLigaPT/Portal/Resources/images/svg/close-popUp.svg"
-                                                                    alt="">
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close">
+                                                                <span class="icon-close"></span>
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
                                                             <!-- trocar pelo svg -->
-                                                            <img src="images/estadio-exemplo.jpg">
+                                                            <div class="img-estadio">
+                                                                <img src="images/estadio-resumo.svg" alt="">
+                                                            </div>
 
-                                                            <a href="#setor" class="btn btn-secondary"
-                                                                data-toggle="modal">Alterar
-                                                                setor</a>
+                                                            <a href="#" class="btn btn-secondary">Alterar setor</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -438,7 +438,8 @@
 
                                         </div>
 
-                                        <div class="grama"></div>
+                                        <div class=" grama">
+                                        </div>
 
                                         <div class=" contain clearfix">
                                             <div id="fixed-Left" class="numbers left">
@@ -497,7 +498,7 @@
                                                         <table class="lugares">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td class="seat-not-applicable">
+                                                                    <td class="seat-not-available">
                                                                         <div></div>
                                                                     </td>
                                                                     <td class="seat-available">
@@ -2231,46 +2232,40 @@
                                                                 </tr>
 
                                                                 <tr>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-not-available">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
-                                                                        <div></div>
-                                                                    </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
                                                                     <td class="seat-not-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-not-available">
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
                                                                     <td class="seat-not-available">
@@ -2291,43 +2286,49 @@
                                                                     <td class="seat-not-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-not-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-not-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
-                                                                    <td class="seat-badvis">
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
+                                                                        <div></div>
+                                                                    </td>
+                                                                    <td class="seat-available">
                                                                         <div></div>
                                                                     </td>
                                                                 </tr>
@@ -2339,11 +2340,11 @@
 
                                             <div class="bilheteira-legenda bilheteira-legenda__bancadas">
                                                 <ul class="legendas">
-                                                    <li class="not-applicable">Não aplicável</li>
+                                                    <!-- <li class="not-applicable">Não aplicável</li> -->
                                                     <li class="not-available">Não disponível</li>
                                                     <li class="available">Disponível</li>
-                                                    <li class="available-poor-visibility">Disponível c/ má
-                                                        visibilidade</li>
+                                                    <!-- <li class="available-poor-visibility">Disponível c/ má
+                                                        visibilidade</li> -->
                                                     <li class="selected">Selecionado</li>
                                                     <li class="cursel">Em troca</li>
                                                 </ul>

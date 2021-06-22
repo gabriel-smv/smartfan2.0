@@ -88,11 +88,29 @@
             }
         }
 
+        @include sm {
+            @include flex(column, flex-start, center, center);
+
+            .column-01 {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 2.4rem;
+            }
+
+            .column-02 {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+            }
+        }
+
         @include xs {
-            display: none;
             position: sticky;
             bottom: 0;
-            margin: 0;
+
+            .column-01,
+            .column-02 {
+                @include flex(column, flex-start, center, center);
+            }
 
             .btn {
                 width: 80%;
@@ -101,10 +119,45 @@
         }
     }
 
+    @include mlg {
+        &-resumo {
+            order: 2;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .container-btn {
+            order: 3;
+        }
+    }
+
 }
 
 .modal-setor {
     .modal-content {
         width: 100%;
+
+        h2 {
+            width: 100%;
+            font-size: 2.8rem;
+            justify-content: center;
+            margin-bottom: 0;
+
+            span {
+                margin-left: .4rem;
+            }
+        }
+
+        .img-estadio {
+            height: 32rem;
+            margin-bottom: 4rem;
+
+            img,
+            svg {
+                height: 100%;
+            }
+        }
     }
 }

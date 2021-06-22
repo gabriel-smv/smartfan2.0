@@ -45,7 +45,7 @@
 }
 
 @mixin mlg {
-  @media (max-width: 1150px) {
+  @media (max-width: 1200px) {
     @content;
   }
 }
