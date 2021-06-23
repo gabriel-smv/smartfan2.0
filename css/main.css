@@ -15361,7 +15361,7 @@ header .nav-mobile .nav .nav-dropdown {
 @media (max-width: 992px) {
   .header-checkout {
     height: auto;
-    padding: .8rem 0;
+    padding: 2.4rem 0;
   }
   .header-checkout .logo {
     order: 1;
@@ -19389,6 +19389,54 @@ tbody > tr:last-child > td {
   }
 }
 
+.pg-lugar-cativo .renovar {
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-lugar-cativo .renovar .img-estadio {
+  height: 28rem;
+  margin-bottom: 3.2rem;
+}
+
+.pg-lugar-cativo .renovar .img-estadio img,
+.pg-lugar-cativo .renovar .img-estadio svg {
+  height: 100%;
+}
+
+.pg-lugar-cativo .renovar .lugar-cativo-infos {
+  padding: 2.4rem;
+  margin-bottom: 4rem;
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+}
+
+.pg-lugar-cativo .renovar .lugar-cativo-infos h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #263F62;
+  margin-bottom: .8rem;
+}
+
+.pg-lugar-cativo .renovar .lugar-cativo-infos h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  margin-bottom: .8rem;
+}
+
+.pg-lugar-cativo .renovar .lugar-cativo-infos h2 {
+  margin-top: 2.4rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
 .pg-pagar-quotas .cbx-label span.cbx-area-select::before {
   background: var(--color-clube);
 }
@@ -22474,6 +22522,19 @@ table th {
   right: 0;
   bottom: auto;
   left: auto;
+}
+
+@media (max-width: 767px) {
+  .checkout-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .checkout-heading-btn {
+    margin-top: 1.6rem;
+  }
 }
 
 html {

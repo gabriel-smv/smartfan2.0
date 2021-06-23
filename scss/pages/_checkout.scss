@@ -513,4 +513,12 @@
             }
         }
     }
+
+    @include sm {
+        @include flex(column, flex-start, flex-start, flex-start);
+
+        &-btn {
+            margin-top: 1.6rem;
+        }
+    }
 }

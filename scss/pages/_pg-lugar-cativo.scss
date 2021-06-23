@@ -1,0 +1,39 @@
+.pg-lugar-cativo {
+    .renovar {
+        padding: 2.4rem 0;
+        @include flex(column, flex-start, center, center);
+
+        .img-estadio {
+            height: 28rem;
+            margin-bottom: 3.2rem;
+
+            img,
+            svg {
+                height: 100%;
+            }
+        }
+
+        .lugar-cativo-infos {
+            padding: 2.4rem;
+            margin-bottom: 4rem;
+            box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+
+            h3 {
+                @include font(2.2rem, 400, 1.2em);
+                color: $primary-02;
+                margin-bottom: .8rem;
+            }
+
+            h4 {
+                @include font(1.8rem, 400, 1.2em);
+                color: $gray-04;
+                margin-bottom: .8rem;
+            }
+
+            h2 {
+                margin-top: 2.4rem;
+                @include font(3.2rem, 400, 1.2em);
+            }
+        }
+    }
+}
