@@ -24,13 +24,13 @@
                 </div>
 
                 <div class="title-bilhetica col-xxl-4 col-lg-5 col-12">
-                    <i><span class="icon-ticket-fill"></span></i>
-                    <h1>Compra de bilhetes</h1>
+                    <i><span class="icon-lugar-cativo"></span></i>
+                    <h1>Escolha de lugar anual</h1>
                 </div>
 
                 <div class="btn-list col-xxl-4 col-lg-6 col-md-8 col-md-10 col-sm-9 col-12">
                     <div class="cart-timer">
-                        <div class="timer-wrapper">
+                        <div class="timer-wrapper" style="display: none;">
                             <i><img src="images/svg/clock-timer.svg" alt=""></i>
                             <span>08:40</span>
                         </div>
@@ -174,13 +174,12 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
 
     <main class="pg-bilhetica">
-        <section class="ads-area"></section>
-
         <!-- HEADER SÓCIO -->
         <section class="bilhetes-header">
             <div class="container">
@@ -296,98 +295,172 @@
             <div class="container">
                 <div class="row">
 
-                    <nav class="col-12">
-
-                        <ul class="breadcrumb">
-
+                    <nav class="breadcrumb col-12">
+                        <ul class="breadcrumb-list">
                             <li class="breadcrumb-item">
                                 <!-- <i><img src="images/svg/check-icon.svg" alt=""></i> -->
                                 <i></i>
-                                <span class="breadcrumb-item-text">Bilhetes / setor</span>
+                                <span class="breadcrumb-item-text">Cativo</span>
                             </li>
 
                             <li class="breadcrumb-item disabled">
+                                <!-- <i><img src="images/svg/check-icon.svg" alt=""></i> -->
                                 <i></i>
-                                <span class="breadcrumb-item-text">Lugares</span>
+                                <span class="breadcrumb-item-text">Setor</span>
+                            </li>
+
+                            <li class="breadcrumb-item disabled">
+                                <!-- <i><img src="images/svg/check-icon.svg" alt=""></i> -->
+                                <i></i>
+                                <span class="breadcrumb-item-text">Lugar</span>
                             </li>
                         </ul>
-
                     </nav>
 
-                    <section class="pg-padrao selecionar-setor">
-                        <div class="tipo-bilhetes col-lg-5">
-                            <div class="selecionar-setor-heading">
-                                <h2>Carrinho de compras</h2>
-                                <h4>Confirma os teus itens antes de seguires para pagamento</h4>
-                            </div>
+                    <section class="pg-padrao pg-adesao-socio">
+                        <h2>Escolhe o cativo</h2>
 
-                            <div class="tabs-bilhetes">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item col-4" role="presentation">
-                                        <button class="nav-link active" data-bs-toggle="tab"
-                                            data-bs-target="#bilhetes-socio" type="button" role="tab"
-                                            aria-controls="bilhetes-socio" aria-selected="true">Sócios</button>
-                                    </li>
-                                    <li class="nav-item col-4" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bilhetes-publico"
-                                            type="button" role="tab" aria-controls="bilhetes-publico"
-                                            aria-selected="false">Público</button>
-                                    </li>
-                                    <li class="nav-item col-4" role="presentation">
-                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ticketing-adepto"
-                                            type="button" role="tab" aria-controls="ticketing-adepto"
-                                            aria-selected="false"><span class="icon-ticketing-adepto"></span></button>
-                                    </li>
-                                </ul>
+                        <div class="swiper-container swiper-adesao col-sm-10 col-12">
 
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="bilhetes-socio" role="tabpanel"
-                                        aria-labelledby="bilhetes-socio-tab">
-                                        <ul class="bilhetes-socio-list">
-                                            <li>
-                                                <input type="checkbox" class="cbx" name="publico" id="publico">
-                                                <label for="calendario-jogo" class="cbx-label">
-                                                    <span>Calendário de eventos</span> <span
-                                                        class="cbx-area-select"></span>
-                                                </label>
-                                            </li>
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="cativo" id="cativo-1">
+                                    <label for="cativo-1" class="adesao-item">
+                                        <h2>Cativo A</h2>
+
+                                        <ul class="adesao-item-infos">
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
                                         </ul>
-                                    </div>
 
-                                    <div class="tab-pane" id="bilhetes-publico" role="tabpanel"
-                                        aria-labelledby="bilhetes-publico-tab">
-                                        <ul class="bilhetes-publico-list">
-                                            <li>
-                                                <span>Quantidade de bilhetes</span>
-                                                <select name="qtd-bilhetes">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <div class="adesao-item-valor">
+                                            <h1>65€</h1>
+                                            <h4>Por ano</h4>
+                                        </div>
+                                    </label>
 
-                                    <div class="tab-pane" id="ticketing-adepto" role="tabpanel"
-                                        aria-labelledby="ticketing-adepto-tab">
-                                        ADEPTO
-                                    </div>
+                                    <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#categoria">Ler
+                                        mais</a>
                                 </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="cativo" id="cativo-2">
+                                    <label for="cativo-2" class="adesao-item">
+                                        <h2>Cativo B</h2>
+
+                                        <ul class="adesao-item-infos">
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                        </ul>
+
+                                        <div class="adesao-item-valor">
+                                            <h1>80€</h1>
+                                            <h4>Por ano</h4>
+                                        </div>
+                                    </label>
+
+                                    <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#categoria">Ler
+                                        mais</a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="cativo" id="cativo-3">
+                                    <label for="cativo-3" class="adesao-item">
+                                        <h2>Cativo C</h2>
+
+                                        <ul class="adesao-item-infos">
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                        </ul>
+
+                                        <div class="adesao-item-valor">
+                                            <h1>95€</h1>
+                                            <h4>Por ano</h4>
+                                        </div>
+                                    </label>
+
+                                    <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#categoria">Ler
+                                        mais</a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="cativo" id="cativo-4">
+                                    <label for="cativo-4" class="adesao-item">
+                                        <h2>Cativo D</h2>
+
+                                        <ul class="adesao-item-infos">
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                        </ul>
+
+                                        <div class="adesao-item-valor">
+                                            <h1>110€</h1>
+                                            <h4>Por ano</h4>
+                                        </div>
+                                    </label>
+
+                                    <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#categoria">Ler
+                                        mais</a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <input type="radio" name="cativo" id="cativo-5">
+                                    <label for="cativo-5" class="adesao-item">
+                                        <h2>Cativo E</h2>
+
+                                        <ul class="adesao-item-infos">
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                            <li>Característica da categoria</li>
+                                        </ul>
+
+                                        <div class="adesao-item-valor">
+                                            <h1>150€</h1>
+                                            <h4>Por ano</h4>
+                                        </div>
+                                    </label>
+
+                                    <a href="#" class="btn-link" data-bs-toggle="modal" data-bs-target="#categoria">Ler
+                                        mais</a>
+                                </div>
+
                             </div>
+
+                            <div class="swiper-pagination"></div>
                         </div>
 
-                        <div class="estadio-setor col-lg-5">
-                            <div class="selecionar-setor-heading">
-                                <h2><b>Estádio:</b> José de Alvalade</h2>
-                                <h4>Os Setores ficarão disponíveis após a escolha do tipo de bilhete</h4>
+                        <div class="swiper-control">
+                            <div class="swiper-button-prev"><span class="icon-prev"></span></div>
+                            <div class="swiper-button-next"><span class="icon-next"></span></div>
+                        </div>
+
+                        <div class="container-btn">
+                            <div class="column-01">
+                                <a href="socio-pg-area-socio.html" class="btn btn-secondary">
+                                    <i><span class="icon-arrow-prev"></span></i>
+                                    Anterior
+                                </a>
                             </div>
 
-                            <div class="estadio-setor-wrapper">
-                                <img src="images/estadio-resumo.svg" alt="">
+                            <div class="column-02">
+                                <a href="socio-pg-area-socio.html" class="btn btn-secondary cancel">
+                                    <i><span class="icon-cancel"></span></i>
+                                    Cancelar adesão
+                                </a>
+
+                                <a href="lugar-cativo-escolher-setor.html" class="btn btn-secondary next">
+                                    <i><span class="icon-arrow-next"></span></i>
+                                    Próximo
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -528,27 +601,80 @@
 
                     <div class="powered-smv col-lg-6 col-md-6 col-12">
                         <span>Powered by:</span> <a href="http://www.smartmove.pt/" target="_blank"><img
-                                src="images/svg/smartmove-powered-white.svg" alt=""></a>
+                                src="images/svg/smartmove-logo-white.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Alerta-->
-    <div class="modal-alerta modal fade" id="one-modalAlerta" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <!-- Modal Ler mais-->
+    <div class="modal-categorias modal fade" id="categoria" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog ">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+
                 <div class="modal-header">
-                    <h2>Criar alerta</h2>
+                    <h2>Sporting CP</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <span class="icon-close"></span>
                     </button>
                 </div>
 
                 <div class="modal-body">
+                    <table class="table-categorias">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>CATIVO A</th>
+                                <th>CATIVO B</th>
+                                <th>CATIVO C</th>
+                                <th>CATIVO D</th>
+                            </tr>
+                        </thead>
 
+                        <tbody>
+                            <tr>
+                                <td>Característica</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                            </tr>
+
+                            <tr>
+                                <td>Característica</td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                            </tr>
+
+                            <tr>
+                                <td>Característica</td>
+                                <td></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                            </tr>
+
+                            <tr>
+                                <td>Característica</td>
+                                <td></td>
+                                <td></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                            </tr>
+
+                            <tr>
+                                <td>Característica</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><i><img src="images/svg/check-icon.svg" alt=""></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -560,23 +686,49 @@
     <script src="includes/menu.js"></script>
     <script src="includes/dropdown.js"></script>
 
+
     <script src="includes/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper-fan', {
+        const swiperAdesao = new Swiper('.swiper-adesao', {
             slidesPerView: 1,
             spaceBetween: 0,
+            loop: false,
 
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
+            centeredSlides: false,
+            centerInsufficientSlides: true,
 
-
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
-            }
+            },
 
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                // when window width is >= 575px
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 16,
+
+                },
+
+                // when window width is >= 767px
+                767: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+
+                },
+
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 16
+                }
+            }
         });
     </script>
 </body>

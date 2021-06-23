@@ -391,37 +391,3 @@
         }
     }
 }
-
-// .btn-dados-faturacao {
-//     width: 5.6rem;
-//     height: 3rem;
-//     @include absolute(1.6rem, 0, auto, auto);
-//     background-color: $white-01;
-//     border: 1px solid $gray-04;
-//     margin-bottom: 8px;
-//     border-radius: 3rem;
-//     transition: none;
-
-//     &:before {
-//         content: '';
-//         width: 2.5rem;
-//         height: 2.5rem;
-//         border-radius: 50%;
-//         background-color: $gray-02;
-//         border: 1px solid $gray-02;
-//         @include absolute(50%, auto, auto, 2px);
-//         transform: translateY(-50%);
-//     }
-
-//     &[aria-expanded="true"] {
-//         background-color: $primary-01;
-//         transition: none;
-
-//         &:before {
-//             background-color: $white-02;
-//             border: 1px solid $primary-02;
-//             right: 2px;
-//             left: auto;
-//         }
-//     }
-// }

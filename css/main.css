@@ -9688,6 +9688,10 @@ div[smv-type="widgetcontainer"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ticketing-adepto:before {
+  content: "\e947";
+}
+
 .icon-check-icon:before {
   content: "\e945";
 }
@@ -16879,6 +16883,95 @@ tbody > tr:last-child > td {
 
 .fluid,
 .squares {
+  text-align: center;
+}
+
+.selecionar-setor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.selecionar-setor-heading {
+  margin-bottom: 2.4rem;
+}
+
+.selecionar-setor-heading h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.selecionar-setor-heading h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.selecionar-setor .estadio-setor .selecionar-setor-heading {
+  margin-bottom: 2.4rem;
+}
+
+.selecionar-setor .estadio-setor .selecionar-setor-heading h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.selecionar-setor .estadio-setor .selecionar-setor-heading h2 b {
+  font-weight: 700;
+}
+
+.selecionar-setor .estadio-setor-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.tabs-bilhetes .nav-tabs {
+  border-bottom: 1px solid #F0F4F6;
+  flex-wrap: nowrap;
+}
+
+.tabs-bilhetes .nav-tabs .nav-link {
+  height: 4.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #ACC2D3;
+  padding: .8rem 3.2rem;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+}
+
+.tabs-bilhetes .nav-tabs .nav-link.active {
+  color: #263F62;
+  border-color: #F0F4F6 #F0F4F6 #fff;
+}
+
+.tabs-bilhetes .nav-tabs .nav-link .icon-ticketing-adepto {
+  font-size: 3.2rem;
+}
+
+.tabs-bilhetes .tab-pane {
+  background-color: #ffffff;
+  border: 1px solid #F0F4F6;
+  border-top: none;
+}
+
+.tabs-bilhetes .tab-pane h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  padding: 1.6rem 0;
   text-align: center;
 }
 
