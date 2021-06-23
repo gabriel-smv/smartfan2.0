@@ -1,0 +1,516 @@
+// @import "components/ticketing-tabs";
+// @import "layout/ticketing-banner";
+// @import "layout/checkout";
+// @import "layout/ticketing-swiper-jogos";
+// @import "pages/checkout-comprar-bilhete";
+// @import "pages/ticketing-validar-cartao";
+// @import "layout/checkout-resumo-compra";
+
+@import "components/checkout-table";
+@import "components/checkout-checkbox";
+@import "layout/checkout-dados-pagamento";
+
+.pg-checkout {
+    margin-top: 0;
+    background-color: $primary-01;
+
+    .main-content {
+        margin-top: 0;
+    }
+}
+
+.checkout-content {
+    width: 100%;
+    background-color: $white-02;
+    padding-top: 1.6rem;
+    padding-bottom: 4rem;
+    @include flex(row, flex-start, flex-start, flex-start);
+    flex-wrap: wrap;
+
+    .div-error,
+    .div-wait {
+        .row {
+            @include flex(column, center, center, center);
+        }
+    }
+
+    .checkout-carrinho {
+        h2 {
+            @include font(2.5rem, 900, 1em);
+        }
+
+        &-empty {
+            @include flex(column, flex-start, center, center);
+
+            i {
+                height: 16rem;
+                display: inline-block;
+                margin-bottom: 1.6rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            h3 {
+                font-weight: 900;
+                text-transform: uppercase;
+                color: $gray-01;
+            }
+
+            .btn {
+                padding: 1.6rem .8rem;
+                margin-top: 1.6rem;
+            }
+        }
+    }
+
+    .container-seu-carrinho {
+        background-color: $white-01;
+        border: 1px solid $primary-01;
+        margin: 1.5rem 0;
+        @include flex(column, flex-start, center, center);
+
+        .valor-compra {
+            width: 100%;
+            padding: 0 7rem;
+            margin: 1.5rem 0;
+            @include flex(column, flex-end, flex-end, flex-end);
+
+            @include sm {
+                padding: 0 1.5rem;
+            }
+
+            li {
+                width: 35%;
+                @include flex(row, space-between, center, center);
+                margin: .5rem 0;
+
+                p {
+                    margin: 0 1.5rem 0;
+
+                    &:last-child {
+                        margin-right: 0;
+                        text-align: right;
+                    }
+                }
+
+                @include md {
+                    width: 75%;
+                }
+
+                @include sm {
+                    width: 100%;
+                }
+            }
+
+            &-subtotal {
+                @include font(1.6rem, 700, 1.2em);
+            }
+
+            &-taxas {
+                padding-bottom: .5rem;
+                @include font(1.4rem, 300, 1.2em);
+
+                i {
+                    height: 1.5rem;
+                    display: inline-block;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+
+            &-total {
+                @include font(2rem, 900, 1.2em);
+                text-transform: uppercase;
+                padding-top: 1.5rem;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    width: 120%;
+                    height: 1px;
+                    background-color: $gray-01;
+                    @include absolute(0, 0, auto, auto);
+                }
+
+                @include sm {
+                    &:before {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-btn {
+        width: 100%;
+        background-color: $white-01;
+        padding: 1.5rem;
+        box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+        margin-top: 4rem;
+        @include flex(row, space-between, center, center);
+
+        .btn {
+            padding: 1.6rem;
+            margin: 0 .8rem;
+        }
+
+        .column-01 {
+            @include flex(row, flex-start, center, center);
+        }
+
+        .column-02 {
+            @include flex(row, flex-end, center, center);
+        }
+
+        .column-01,
+        .column-02 {
+            .btn {
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &[disabled] {
+                    background: rgba(115, 122, 131, .5);
+                    color: $gray-04;
+                    border-color: $gray-04;
+
+                    i {
+                        span {
+                            color: $gray-04;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include sm {
+            @include flex(column, flex-start, center, center);
+
+            .column-01 {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 2.4rem;
+            }
+
+            .column-02 {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+            }
+        }
+
+        @include xs {
+            position: sticky;
+            bottom: 0;
+
+            .column-01,
+            .column-02 {
+                @include flex(column, flex-start, center, center);
+            }
+
+            .btn {
+                width: 80%;
+                margin: 8px 0;
+            }
+        }
+    }
+
+    .success,
+    .error,
+    .wait {
+        width: 100%;
+        position: relative;
+        @include flex(column, flex-start, center, center);
+        padding: 0 0 2.4rem;
+
+        div {
+            width: 100%;
+            text-align: center;
+        }
+
+        i {
+            height: 12.4rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+
+            img {
+                height: 100%;
+            }
+
+            @include xs {
+                height: 10rem;
+            }
+        }
+
+        h1 {
+            color: $primary-01;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: $primary-01;
+        }
+
+        h3 {
+            // width: 40%;
+            @include font(2rem, 700, 1.4em);
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h4 {
+            @include font(1.6rem, 400, 1.4em);
+            text-align: center;
+            margin-bottom: 1.6rem;
+        }
+
+        .payreturn__table {
+            @include flex(column, flex-start, center, center);
+            margin: 0 auto;
+            padding: 1.6rem 0;
+
+            img {
+                max-height: 5rem;
+            }
+
+            img {
+                height: 5rem;
+            }
+
+            table {
+                width: auto;
+                margin: 3rem 0;
+
+                td {
+                    margin: 0 1.6rem;
+
+                    &:first-child {
+                        text-align: left;
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+
+            p {
+                width: 70%;
+                @include font(1.6rem, 400, 1.6em);
+                margin-top: 1.5rem;
+            }
+
+            @include sm {
+                width: 100%;
+
+                table {
+                    td {
+                        text-align: center;
+                    }
+                }
+            }
+
+            @include xs {
+                margin-top: 1.5rem;
+
+                table {
+                    tr {
+                        @include flex(row, space-between, center, center);
+                    }
+                }
+
+                p {
+                    width: 90%;
+                }
+            }
+        }
+
+        .valor-compra {
+            padding-bottom: 16px;
+            border-bottom: 1px solid $white-02;
+
+            &:last-child {
+                border-bottom: none;
+
+                @include xs {
+                    li {
+                        display: block;
+
+                        p {
+                            width: 100%;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+
+            li {
+                width: 100%;
+                @include flex(row, flex-end, center, center);
+
+                p {
+                    width: 20%;
+                    text-align: right;
+
+                    &:first-child {
+                        width: 25%;
+                    }
+                }
+            }
+
+            .valor-compra-subtotal {
+                font-weight: 300;
+                @include flex(row, center, center, center);
+
+                p {
+                    width: 50%;
+                    text-align: left;
+
+                    &:first-child {
+                        width: 50%;
+                        font-weight: 900;
+                        margin-left: 0;
+                        text-align: right;
+                    }
+                }
+
+                @include xs {
+                    p {
+                        &:first-child {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            &-total {
+                &:before {
+                    width: 50%;
+                }
+            }
+        }
+
+        @include xs {
+            h3 {
+                width: 100%;
+                font-size: 1.8rem;
+            }
+
+            h4 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .success {
+        h3 {
+            color: $primary-01;
+        }
+    }
+
+    .pagamento_sucesso {
+        text-align: center;
+        padding: 2.4rem 0;
+
+        i {
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+        }
+
+        h1 {
+            color: $primary-01;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: $primary-01;
+        }
+    }
+
+    .error,
+    .wait {
+        h3 {
+            color: $gray-04;
+        }
+    }
+
+    .container-btn-detalhes {
+        @include flex(row, center, center, center);
+        margin-top: 1.5rem;
+
+        .btn {
+            margin: 0 .8rem;
+        }
+
+        @include md {
+            margin-bottom: 1.5rem;
+        }
+
+        @include xs {
+            @include flex(column, center, center, center);
+
+            .btn {
+                margin: .8rem;
+            }
+        }
+    }
+}
+
+.checkout-heading {
+    @include flex(row, space-between, center, center);
+    margin-bottom: 2.4rem;
+
+    h2 {
+        @include font(2.8rem, 700, 1.2em);
+    }
+
+    h4 {
+        @include font(1.8rem, 400, 1.2em);
+    }
+
+    .checkout-heading-btn {
+        display: block;
+
+        .btn-dados-faturacao {
+            width: 8rem;
+            height: 3.2rem;
+            position: relative;
+            background-color: $gray-01;
+            margin-bottom: 8px;
+            border-radius: 4rem;
+            transition: none;
+
+            &:before {
+                content: '';
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                background-color: $white-01;
+                border: 1px solid $gray-02;
+                @include absolute(0, auto, auto, 0);
+                transform: translateY(0);
+            }
+
+            &[aria-expanded="true"] {
+                background-color: $primary-01;
+                transition: none;
+
+                &:before {
+                    background-color: $white-02;
+                    border: 1px solid $primary-02;
+                    @include absolute(0, 0, auto, auto);
+                }
+            }
+        }
+    }
+}
