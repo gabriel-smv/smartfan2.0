@@ -111,6 +111,12 @@
         }
     }
 
+    @include xxl {
+        .title-bilhetica {
+            justify-content: flex-start;
+        }
+    }
+
     @include md {
         height: auto;
         padding: .8rem 0;

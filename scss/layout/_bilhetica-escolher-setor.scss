@@ -34,6 +34,83 @@
             }
         }
     }
+
+    .container-btn {
+        width: 100%;
+        background-color: $white-01;
+        padding: 1.5rem;
+        box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+        margin-top: 8rem;
+        @include flex(row, space-between, center, center);
+
+        .btn {
+            padding: 1.6rem;
+            margin: 0 .8rem;
+        }
+
+        .column-01 {
+            @include flex(row, flex-start, center, center);
+        }
+
+        .column-02 {
+            @include flex(row, flex-end, center, center);
+        }
+
+        .column-01,
+        .column-02 {
+            .btn {
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &[disabled] {
+                    background: rgba(115, 122, 131, .5);
+                    color: $gray-04;
+                    border-color: $gray-04;
+
+                    i {
+                        span {
+                            color: $gray-04;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include sm {
+            @include flex(column, flex-start, center, center);
+
+            .column-01 {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 2.4rem;
+            }
+
+            .column-02 {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+            }
+        }
+
+        @include xs {
+            position: sticky;
+            bottom: 0;
+
+            .column-01,
+            .column-02 {
+                @include flex(column, flex-start, center, center);
+            }
+
+            .btn {
+                width: 80%;
+                margin: 8px 0;
+            }
+        }
+    }
 }
 
 .tabs-bilhetes {
@@ -46,14 +123,17 @@
             width: 100%;
             @include flex(row, center, center, center);
             @include font(1.6rem, 400, 1.4em);
-            color: $gray-02;
+            color: $gray-01;
             padding: .8rem 3.2rem;
-            border-top-left-radius: .4rem;
-            border-top-right-radius: .4rem;
+            border-top-left-radius: 1.6rem;
+            border-top-right-radius: 1.6rem;
+
+            background-color: #AAAEB3;
 
             &.active {
                 color: $primary-02;
-                border-color: $gray-01 $gray-01 #fff;
+                background-color: $white-01;
+                border-color: #fff #fff #fff;
             }
 
             .icon-ticketing-adepto {
@@ -73,6 +153,308 @@
             padding: 1.6rem 0;
             text-align: center;
         }
+
+        .btn-wrapper {
+            padding: 2.4rem;
+            width: 100%;
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.bilhetes-socio-list,
+.bilhetes-publico-list {
+    width: 100%;
+    padding-top: .8rem;
+    position: relative;
+
+    li {
+        width: 100%;
+        padding: 1.6rem 2.4rem;
+        border-bottom: 1px solid $gray-02;
+
+        h5 {
+            @include font(1.8rem, 400, 1.2em);
+            color: $black-02;
+        }
+
+        label {
+            justify-content: space-between;
+
+        }
+
+        &.socio-add {
+            @include flex(row, space-between, center, center);
+
+            a {
+                display: inline-block;
+
+                span {
+                    font-size: 2.4rem;
+                    color: $gray-04;
+                }
+            }
+
+        }
+    }
+}
+
+.bilhetes-publico-list {
+    li {
+        @include flex(row, space-between, center, center);
+
+        select {
+            @include font(1.6rem, 400, 1.2em);
+            padding: 0.2rem 1.2rem;
+        }
+    }
+}
+
+.cartao-adepto {
+    form {
+        padding: .8rem;
+
+        .container-btn {
+            margin: 0;
+            padding-top: 0;
+
+            .btn {
+                width: 100%;
+            }
+        }
     }
 
+    .container-input {
+        width: 100%;
+    }
+}
+
+.setores-disponiveis {
+    padding: 1.6rem 0;
+
+    .btn-collapse {
+        width: 100%;
+        @include font(1.8rem, 400, 1.2em);
+        color: $black-02;
+        @include flex(row, space-between, center, center);
+
+        padding: 0 2.4rem;
+
+        h4 {
+            @include font(1.8rem, 400, 1.2em);
+            color: $black-02;
+        }
+
+        i {
+            transition: $transition-01;
+
+            span {
+                &:hover {
+                    color: $secondary-02;
+                }
+            }
+        }
+
+        &[aria-expanded="true"] {
+            color: $secondary-02;
+
+            h4 {
+                color: $secondary-02;
+            }
+
+            i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+
+    .valor-bilhete-select {
+        width: 85%;
+        height: 100%;
+        padding: 1.6rem 2.4rem 3.2rem;
+        margin: 0 auto;
+        background-color: $gray-01;
+        border: 1px solid $gray-02;
+        @include flex(row, center, center, center);
+        position: relative;
+
+        .base-select {
+            width: 100%;
+            height: .5rem;
+            border-radius: 8rem;
+            background-color: $primary-01;
+        }
+
+        .valor-min-max {
+            @include font(1.6rem, 400, 1.2em);
+            color: $black-02;
+            padding-top: 2.2rem;
+            position: absolute;
+            top: .8rem;
+            cursor: grab;
+
+            &:before {
+                content: '';
+                width: 2rem;
+                height: 2rem;
+                background: $white-01;
+                border: 1px solid $gray-04;
+                border-radius: 50%;
+                @include absolute(0, 50%, auto, auto);
+                transform: translateX(50%);
+            }
+
+            &.minimo {
+                left: 20%;
+            }
+
+            &.maximo {
+                left: 65%;
+            }
+        }
+    }
+
+    .setores-list {
+        border-bottom: 1px solid $gray-02;
+
+        li {
+            input {
+                display: none;
+            }
+
+            label {
+                width: 100%;
+                padding: 1.6rem 2.4rem;
+                @include font(1.8rem, 400, 1.2em);
+                color: $gray-04;
+                @include flex(row, space-between, center, center);
+                cursor: pointer;
+
+                p {
+                    color: $gray-04;
+                    @include font(1.8rem, 400, 1.2em);
+                    margin: 0;
+                }
+            }
+
+            input:checked~label {
+                background: $secondary-01;
+                color: $white-01;
+
+                p {
+                    color: $white-01;
+                }
+            }
+        }
+    }
+}
+
+.modal-add-grupos {
+
+    .add-grupos {
+        width: 100%;
+        @include font(1.6rem, 400, 1.2em);
+        padding: 1.6rem;
+        text-align: left;
+        color: $gray-04;
+
+        .btn-collapse {
+            width: 100%;
+            @include flex(row, flex-start, center, center);
+            cursor: pointer;
+            color: $gray-04;
+
+            .switch {
+                width: 6.4rem;
+                height: 3.2rem;
+                position: relative;
+                border: 1px solid $gray-04;
+                margin-left: 8px;
+                border-radius: 4rem;
+                transition: none;
+
+                &:before {
+                    content: '';
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border-radius: 50%;
+                    background-color: $gray-04;
+                    @include absolute(3px, auto, auto, 4px);
+                    transform: translateY(0);
+                }
+            }
+
+            &[aria-expanded="true"] {
+                .switch {
+                    &:before {
+                        left: auto;
+                        right: 2px;
+                        background-color: $secondary-02;
+                    }
+                }
+            }
+        }
+    }
+
+    .grupos {
+        width: 100%;
+        padding-top: 1.6rem;
+
+        &-item {
+            label {
+                background: $gray-01;
+                padding: 1.6rem;
+                justify-content: space-between;
+                color: $primary-01;
+                border-bottom: 2px solid $gray-02;
+            }
+        }
+
+        &-membros {
+            label {
+                background: $white-01;
+                padding: .8rem 1.6rem;
+                justify-content: space-between;
+                border-bottom: 1px solid $gray-04;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                i {
+                    width: 2rem;
+                    height: 2rem;
+                    @include flex(row, center, center, center);
+                    border: 1px solid $black-02;
+
+                    span {
+                        font-size: 1.6rem;
+                        color: $secondary-02;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: $transition-01;
+                    }
+                }
+            }
+
+            input[name="membro-grupo"]:checked~label {
+                i {
+                    span {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-footer {
+        @include flex(row, center, center, center);
+        border-top: none;
+        padding-top: 1.6rem;
+    }
 }

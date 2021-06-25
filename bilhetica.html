@@ -17,23 +17,23 @@
         <div class="container">
             <div class="row">
 
-                <div class="logo col-xxl-4 col-lg-1 col-md-2 col-sm-3 col-sm-3 col-12">
+                <div class="logo col-xxl-4 col-lg-2 col-md-2 col-sm-3 col-sm-3 col-12">
                     <a href="index.html">
                         <img src="images/svg/smartfan-logo-white.svg" alt="Logo Smartfan">
                     </a>
                 </div>
 
-                <div class="title-bilhetica col-xxl-4 col-lg-5 col-12">
+                <div class="title-bilhetica col-xxl-4 col-lg-4 col-12">
                     <i><span class="icon-ticket-fill"></span></i>
                     <h1>Compra de bilhetes</h1>
                 </div>
 
                 <div class="btn-list col-xxl-4 col-lg-6 col-md-8 col-md-10 col-sm-9 col-12">
                     <div class="cart-timer">
-                        <div class="timer-wrapper">
+                        <!-- <div class="timer-wrapper">
                             <i><img src="images/svg/clock-timer.svg" alt=""></i>
                             <span>08:40</span>
-                        </div>
+                        </div> -->
 
                         <a href="#" class="btn btn-cart dropdown-toggle" data-bs-toggle="dropdown" role="button"
                             aria-expanded="false">
@@ -347,19 +347,209 @@
                                         <ul class="bilhetes-socio-list">
                                             <li>
                                                 <input type="checkbox" class="cbx" name="publico" id="publico">
-                                                <label for="calendario-jogo" class="cbx-label">
-                                                    <span>Calendário de eventos</span> <span
-                                                        class="cbx-area-select"></span>
+                                                <label for="publico" class="cbx-label">
+                                                    <h5><span>Paulo Frutuoso,</span> Sócio n <span>º165653.9</span></h5>
+                                                    <span class="cbx-area-select"></span>
                                                 </label>
                                             </li>
+
+                                            <li class="socio-add">
+                                                <h5><span>António Precatado,</span> Sócio n <span>º134987.2</span></h5>
+                                                <a href="#">
+                                                    <span class="icon-close"></span>
+                                                </a>
+                                            </li>
+
+                                            <li class="socio-add">
+                                                <h5><span>Gustavo Lopes,</span> Sócio n <span>º087443.1</span></h5>
+                                                <a href="#">
+                                                    <span class="icon-close"></span>
+                                                </a>
+                                            </li>
                                         </ul>
+
+                                        <div class="setores-disponiveis" style="display: none;">
+                                            <a href="#setores-collapse" class="btn-collapse" data-bs-toggle="collapse"
+                                                aria-expanded="false" aria-controls="setores-collapse">
+                                                <h4>Setores disponíveis</h4>
+                                                <i><span class="icon-arrow-down"></span></i>
+                                            </a>
+
+                                            <div class="collapse" id="setores-collapse">
+                                                <div class="valor-bilhete-select">
+                                                    <div class="base-select"></div>
+
+                                                    <div class="valor-min-max minimo">
+                                                        <span>20.00€</span>
+                                                    </div>
+
+                                                    <div class="valor-min-max maximo">
+                                                        <span>120.00€</span>
+                                                    </div>
+                                                </div>
+
+                                                <ul class="zonas-list">
+                                                    <li>
+                                                        <a href="#topo-norte" class="btn-collapse"
+                                                            data-bs-toggle="collapse" aria-expanded="false"
+                                                            aria-controls="topo-norte">
+                                                            <h4>Topo Norte</h4>
+                                                            <i><span class="icon-arrow-down"></span></i>
+                                                        </a>
+
+                                                        <ul class="setores-list collapse" id="topo-norte">
+                                                            <li>
+                                                                <input type="checkbox" name="topo-norte-12"
+                                                                    id="topo-norte-12">
+                                                                <label for="topo-norte-12">
+                                                                    <p><span>Setor 12</span> <span>(30.00€)</span></p>
+                                                                    <p><span>30.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-norte-13"
+                                                                    id="topo-norte-13">
+                                                                <label for="topo-norte-13">
+                                                                    <p><span>Setor 13</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-norte-14"
+                                                                    id="topo-norte-14">
+                                                                <label for="topo-norte-14">
+                                                                    <p><span>Setor 14</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#topo-sul" class="btn-collapse"
+                                                            data-bs-toggle="collapse" aria-expanded="false"
+                                                            aria-controls="topo-sul">
+                                                            <h4>Topo Sul</h4>
+                                                            <i><span class="icon-arrow-down"></span></i>
+                                                        </a>
+
+                                                        <ul class="setores-list collapse" id="topo-sul">
+                                                            <li>
+                                                                <input type="checkbox" name="topo-sul-12"
+                                                                    id="topo-sul-12">
+                                                                <label for="topo-sul-12">
+                                                                    <p><span>Setor 12</span> <span>(30.00€)</span></p>
+                                                                    <p><span>30.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-sul-13"
+                                                                    id="topo-sul-13">
+                                                                <label for="topo-sul-13">
+                                                                    <p><span>Setor 13</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-sul-14"
+                                                                    id="topo-sul-14">
+                                                                <label for="topo-sul-14">
+                                                                    <p><span>Setor 14</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#topo-poente" class="btn-collapse"
+                                                            data-bs-toggle="collapse" aria-expanded="false"
+                                                            aria-controls="topo-poente">
+                                                            <h4>Topo Norte</h4>
+                                                            <i><span class="icon-arrow-down"></span></i>
+                                                        </a>
+
+                                                        <ul class="setores-list collapse" id="topo-poente">
+                                                            <li>
+                                                                <input type="checkbox" name="topo-poente-12"
+                                                                    id="topo-poente-12">
+                                                                <label for="topo-poente-12">
+                                                                    <p><span>Setor 12</span> <span>(30.00€)</span></p>
+                                                                    <p><span>30.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-poente-13"
+                                                                    id="topo-poente-13">
+                                                                <label for="topo-poente-13">
+                                                                    <p><span>Setor 13</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-poente-14"
+                                                                    id="topo-poente-14">
+                                                                <label for="topo-poente-14">
+                                                                    <p><span>Setor 14</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#topo-nascente" class="btn-collapse"
+                                                            data-bs-toggle="collapse" aria-expanded="false"
+                                                            aria-controls="topo-nascente">
+                                                            <h4>Topo Norte</h4>
+                                                            <i><span class="icon-arrow-down"></span></i>
+                                                        </a>
+
+                                                        <ul class="setores-list collapse" id="topo-nascente">
+                                                            <li>
+                                                                <input type="checkbox" name="topo-nascente-12"
+                                                                    id="topo-nascente-12">
+                                                                <label for="topo-nascente-12">
+                                                                    <p><span>Setor 12</span> <span>(30.00€)</span></p>
+                                                                    <p><span>30.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-nascente-13"
+                                                                    id="topo-nascente-13">
+                                                                <label for="topo-nascente-13">
+                                                                    <p><span>Setor 13</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="checkbox" name="topo-nascente-14"
+                                                                    id="topo-nascente-14">
+                                                                <label for="setor-14">
+                                                                    <p><span>Setor 14</span> <span>(30.00€)</span></p>
+                                                                    <p><span>00.00</span>€</p>
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-wrapper">
+                                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#add-socio">
+                                                <i><span class="icon-add"></span></i>
+                                                Adicionar sócio
+                                            </a>
+                                        </div>
                                     </div>
 
                                     <div class="tab-pane" id="bilhetes-publico" role="tabpanel"
                                         aria-labelledby="bilhetes-publico-tab">
                                         <ul class="bilhetes-publico-list">
                                             <li>
-                                                <span>Quantidade de bilhetes</span>
+                                                <h5>Quantidade de bilhetes</h5>
                                                 <select name="qtd-bilhetes">
                                                     <option value="0">0</option>
                                                     <option value="1">1</option>
@@ -374,7 +564,19 @@
 
                                     <div class="tab-pane" id="ticketing-adepto" role="tabpanel"
                                         aria-labelledby="ticketing-adepto-tab">
-                                        ADEPTO
+                                        <div class="cartao-adepto">
+                                            <form>
+                                                <div class="container-input">
+                                                    <input type="text" placeholder="Insere nº do cartão">
+                                                </div>
+
+                                                <div class="btn-wrapper">
+                                                    <a href="#" class="btn btn-primary">
+                                                        Validar cartão
+                                                    </a>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -388,6 +590,24 @@
 
                             <div class="estadio-setor-wrapper">
                                 <img src="images/estadio-resumo.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="container-btn">
+                            <div class="column-01">
+
+                            </div>
+
+                            <div class="column-02">
+                                <a href="pg-bilheteira-geral.html" class="btn btn-secondary">
+                                    <i><span class="icon-cancel"></span></i>
+                                    Cancelar a compra
+                                </a>
+
+                                <a href="bilhetica-escolher-cadeira.html" class="btn btn-primary no-round">
+                                    <i><span class="icon-arrow-next"></span></i>
+                                    Próximo
+                                </a>
                             </div>
                         </div>
                     </section>
@@ -535,20 +755,98 @@
         </div>
     </footer>
 
-    <!-- Modal Alerta-->
-    <div class="modal-alerta modal fade" id="one-modalAlerta" tabindex="-1" aria-labelledby="exampleModalLabel"
+
+    <!-- Modal Adicionar Sócio -->
+    <div class="modal modal-add-grupos fade" id="add-socio" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog ">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Criar alerta</h2>
+                    <h2>Adicionar sócios</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <span class="icon-close"></span>
                     </button>
                 </div>
 
                 <div class="modal-body">
+                    <form>
+                        <div class="container-input col-lg-6">
+                            <label for="socio-number">Nº do sócio</label>
+                            <input type="text" id="socio-number">
+                        </div>
 
+                        <div class="container-input col-lg-6">
+                            <label for="last-number">Últimos 5 dígitos do código de barras</label>
+                            <input type="text" id="last-number">
+                        </div>
+                    </form>
+
+                    <div class="add-grupos">
+                        <a class="btn-collapse" href="#grupos-list" data-bs-toggle="collapse" aria-expanded="false"
+                            aria-controls="grupos-list">
+                            Pretendo adicionar grupos <div class="switch"></div>
+                        </a>
+
+                        <div class="grupos collapse" id="grupos-list">
+                            <div class="grupos-item">
+                                <input type="checkbox" class="cbx" name="grupo-smv" id="grupo-smv">
+                                <label for="grupo-smv" class="cbx-label">
+                                    <span>Smartmove</span> <span class="cbx-area-select"></span>
+                                </label>
+
+                                <ul class="grupos-membros">
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="membro-grupo" id="smv-1">
+                                        <label for="smv-1" class="cbx-label">
+                                            <p><span>António Precatado</span>, sócio nº <span></span>123456789</span>
+                                            </p>
+                                            <i class="box-check"><span class="icon-check-icon"></span></i>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="membro-grupo" id="smv-2">
+                                        <label for="smv-2" class="cbx-label">
+                                            <p><span>Rui Precatado</span>, sócio nº <span></span>1222789</span>
+                                            </p>
+                                            <i class="box-check"><span class="icon-check-icon"></span></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="grupos-item">
+                                <input type="checkbox" class="cbx" name="grupo-amigos" id="grupo-amigos">
+                                <label for="grupo-amigos" class="cbx-label">
+                                    <span>Amigos</span> <span class="cbx-area-select"></span>
+                                </label>
+
+                                <ul class="grupos-membros">
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="membro-grupo" id="amigo-1">
+                                        <label for="amigo-1" class="cbx-label">
+                                            <p><span>Paulo Frutuoso</span>, sócio nº <span></span>998321</span>
+                                            </p>
+                                            <i class="box-check"><span class="icon-check-icon"></span></i>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" class="cbx" name="membro-grupo" id="amigo-2">
+                                        <label for="amigo-2" class="cbx-label">
+                                            <p><span>Gustavo Lopes</span>, sócio nº <span></span>445289</span>
+                                            </p>
+                                            <i class="box-check"><span class="icon-check-icon"></span></i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Adicionar sócios</button>
                 </div>
             </div>
         </div>
