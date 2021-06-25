@@ -15765,6 +15765,80 @@ header .cart-timer .btn-cart .carrinho-icon-wrapper .cart-qtde span {
   line-height: 1em;
 }
 
+header .carrinho-dropdown {
+  box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+  border: none;
+}
+
+header .carrinho-dropdown .carrinho-empty {
+  width: 32rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+header .carrinho-dropdown .carrinho-empty i {
+  margin-bottom: 1.6rem;
+}
+
+header .carrinho-dropdown .carrinho-empty i span {
+  font-size: 5.6rem;
+  color: #ACC2D3;
+}
+
+header .carrinho-dropdown .carrinho-empty h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  color: #ACC2D3;
+}
+
+header .carrinho-dropdown .carrinho-itens table {
+  margin-bottom: 0;
+}
+
+header .carrinho-dropdown .carrinho-itens table thead th {
+  padding-top: .8rem;
+}
+
+header .carrinho-dropdown .carrinho-itens table tr {
+  border-bottom: 1px solid #F0F4F6;
+}
+
+header .carrinho-dropdown .carrinho-itens table tr td select {
+  width: auto;
+}
+
+header .carrinho-dropdown .carrinho-itens table .item-total {
+  margin: 0;
+  border: 1px solid #ACC2D3;
+}
+
+header .carrinho-dropdown .carrinho-itens .container-btn {
+  padding: 1.6rem .8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+header .carrinho-dropdown .carrinho-itens .container-btn .btn {
+  margin: 0 .8rem;
+}
+
+header .carrinho-dropdown .carrinho-itens .container-btn .btn:first-child {
+  margin-left: 0;
+}
+
+header .carrinho-dropdown .carrinho-itens .container-btn .btn:last-child {
+  margin-right: 0;
+}
+
 @media (max-width: 1200px) {
   header .btn-list .btn-perfil {
     width: 5rem;
@@ -15793,11 +15867,67 @@ header .cart-timer .btn-cart .carrinho-icon-wrapper .cart-qtde span {
   header .row {
     height: 100%;
   }
+  header .carrinho-dropdown .carrinho-itens {
+    width: 48rem;
+  }
 }
 
 @media (max-width: 767px) {
   header .btn-list .btn-item {
     margin-left: .8rem;
+  }
+  header .carrinho-dropdown {
+    height: 40rem;
+    padding-bottom: 0;
+    overflow-y: auto;
+  }
+  header .carrinho-dropdown .carrinho-itens {
+    width: 32rem;
+  }
+  header .carrinho-dropdown .carrinho-itens table {
+    padding: .8rem 1.6rem;
+    margin-bottom: 0;
+  }
+  header .carrinho-dropdown .carrinho-itens table tr {
+    border-bottom: 2px solid #737A83;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  header .carrinho-dropdown .carrinho-itens table tr:nth-child(even) {
+    background: #F8F8F8;
+  }
+  header .carrinho-dropdown .carrinho-itens table tr td {
+    padding-bottom: 0.8rem;
+  }
+  header .carrinho-dropdown .carrinho-itens table tr td:last-child {
+    margin-bottom: 0;
+  }
+  header .carrinho-dropdown .carrinho-itens table .item-total td {
+    margin: 0;
+    padding: 0;
+  }
+  header .carrinho-dropdown .carrinho-itens table .item-total td:last-child {
+    padding-bottom: .8rem;
+  }
+  header .carrinho-dropdown .carrinho-itens .container-btn {
+    position: sticky;
+    bottom: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+  }
+  header .carrinho-dropdown .carrinho-itens .container-btn .btn {
+    margin: 0 .8rem;
+  }
+  header .carrinho-dropdown .carrinho-itens .container-btn .btn:first-child {
+    margin-left: 0;
+  }
+  header .carrinho-dropdown .carrinho-itens .container-btn .btn:last-child {
+    margin-right: 0;
   }
 }
 
@@ -16373,6 +16503,23 @@ header .cart-timer .btn-cart .carrinho-icon-wrapper .cart-qtde span {
 
 .navbar-item.disabled a::before {
   background-color: #737A83;
+}
+
+.navbar-item .notification-warning {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: auto;
+  left: auto;
+  margin: 0;
+}
+
+.navbar-item .notification-warning img {
+  width: 100%;
+  height: 100%;
 }
 
 .navbar .navbar-mobile {

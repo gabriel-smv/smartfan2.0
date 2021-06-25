@@ -437,10 +437,380 @@
                         </a>
                     </li>
 
-                    <li class="btn-item">
-                        <a href="pg-area-fan.html" class="btn btn-header">
-                            <i><span class="icon-login"></span></i> Login
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <i><span class="icon-fan-fill"></span></i>
                         </a>
+
+                        <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown dropdown-menu">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/sporting-cp.png" alt="">
+
+                                    <i><span class="icon-heart"></span></i>
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+                                    <h3>Sporting Clube de Portugal</h3>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="fan-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="fan-pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-clubs">
+                                <input type="checkbox" name="collapse-bt" id="collapse-clubs" />
+                                <label for="collapse-clubs" class="btn-collapse-clubs">
+                                    <span class="icon-ver-mais"></span>
+                                </label>
+
+                                <div class="user-clubs-content">
+                                    <h4>Outros clubes</h4>
+                                    <ul class="list-outros-clubes">
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/sc-braga.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li class="club-select">
+                                            <a href="#">
+                                                <img src="images/vitoria-fc.png" alt="">
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-add"></span>
+
+                                                <i><span class="icon-like"></span></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a href="../smartfan-net/fan-clube-coracao.html" class="btn btn-secondary">
+                                        <i><span class="icon-config"></span></i> Gerir os meus clubes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
+                        <div class="fan-dropdown no-clube dropdown-menu" style="display: none;">
+                            <div class="clube-coracao-wrapper">
+                                <div class="clube-coracao-img">
+                                    <img src="images/banner-img.jpg" alt="">
+                                </div>
+
+                                <div class="clube-coracao-name">
+                                    <h2>Clube do coração</h2>
+
+                                    <a href="../smartfan-net/fan-clube-coracao.html" class="btn btn-secondary">
+                                        <i><span class="icon-heart"></span></i>
+                                        Clube do coração
+                                    </a>
+                                </div>
+                            </div>
+
+                            <ul class="fan-dropdown-nav">
+                                <li>
+                                    <a href="fan-comprar-bilhetes.html">
+                                        <i><span class="icon-ticket-outline"></span></i>
+                                        <p>Compra de Bilhetes</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="fan-pg-area-fan.html">
+                                        <i><span class="icon-fan-outline"></span></i>
+                                        <p>Área de Fan</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="cart-timer" smv-type="widgetcontainer" smv-widget="popcart">
+                        <div smv-type="widgetpage" id="smv_wp_popcart">
+                            <!-- <div class="timer-wrapper">
+                    <i><img src="images/svg/clock-timer.svg" alt=""></i>
+                    <span>08:40</span>
+                  </div> -->
+
+                            <a href="#" class="btn btn-cart dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="carrinho-icon-wrapper">
+                                    <i><span class="icon-shopping-cart"></span></i>
+
+                                    <div class="cart-qtde"><span>0</span></div>
+                                </div>
+                                <span>00,00€</span> <i><span class="icon-dropdown"></span></i>
+                            </a>
+
+                            <div class="carrinho-dropdown dropdown-menu dropdown-menu-end">
+                                <!-- CARRINHO VAZIO -->
+                                <div class="carrinho-empty">
+                                    <i><span class="icon-shopping-cart"></span></i>
+
+                                    <h3>Seu carrinho está vazio!</h3>
+                                </div>
+
+                                <!-- CARRINHO ATIVO -->
+                                <div class="carrinho-itens" style="display: none;">
+                                    <table class="table table-seu-carrinho">
+                                        <thead>
+                                            <tr>
+                                                <th class="col-lg-4 col-md-4">Item</th>
+                                                <th class="col-lg-4 col-md-4">Detalhe</th>
+                                                <th class="col-lg-1 col-md-2">Quant.</th>
+                                                <th class="col-lg-2 col-md-1">Preço</th>
+                                                <th class="col-lg-1 col-md-1"></th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-lg-4 col-md-4 col-12"><span>Sporting CP</span> vs
+                                                    <span>Rio-Ave FC</span>
+                                                </td>
+
+                                                <td class="col-lg-4 col-md-4 col-12"><span> Bancada Sul</span>
+                                                    <span>Zona
+                                                        Poente</span>
+                                                    <span>setor
+                                                        B</span>
+                                                    <span>Lugar
+                                                        45B</span>
+                                                </td>
+
+                                                <td class="col-lg-1 col-md-2 col-12">
+                                                    <span>01</span>
+                                                    <!-- <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                              </select> -->
+                                                </td>
+
+                                                <td class="col-lg-2 col-md-1 col-12"><span>10,00€</span></td>
+
+                                                <td class="item-delete col-lg-1 col-md-1 col-12">
+                                                    <a href="# "><span class="icon-trash"></span></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="col-lg-4 col-md-4 col-12"><span>Sporting CP</span> vs
+                                                    <span>Rio-Ave FC</span>
+                                                </td>
+
+                                                <td class="col-lg-4 col-md-4 col-12"><span> Bancada Sul</span>
+                                                    <span>Zona
+                                                        Poente</span>
+                                                    <span>setor
+                                                        B</span>
+                                                    <span>Lugar
+                                                        46B</span>
+                                                </td>
+
+                                                <td class="col-lg-1 col-md-2 col-12">
+                                                    <span>01</span>
+                                                    <!-- <select>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                              </select> -->
+                                                </td>
+
+                                                <td class="col-lg-2 col-md-1 col-12"><span>10,00€</span></td>
+
+                                                <td class="item-delete col-lg-1 col-md-1 col-12">
+                                                    <a href="# "><span class="icon-trash"></span></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="col-lg-4 col-md-4 col-12"><span>Camisola Sporting</span>
+                                                </td>
+
+                                                <td class="col-lg-4 col-md-4 col-12"><span>Uniforme Treino</span>
+                                                </td>
+
+                                                <td class="col-lg-1 col-md-2 col-12">
+                                                    <!-- <span>01</span> -->
+                                                    <select>
+                                                        <option value="1" selected>1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </td>
+
+                                                <td class="col-lg-2 col-md-1 col-12"><span>35,00€</span></td>
+
+                                                <td class="item-delete col-lg-1 col-md-1 col-12">
+                                                    <a href="# "><span class="icon-trash"></span></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="item-total">
+                                                <td class="col-lg-2 col-md-2"></td>
+                                                <td class="col-lg-4 col-md-3"></td>
+                                                <td class="col-lg-4 col-md-4">Total:</td>
+                                                <td class="col-lg-1 col-md-2"><span>55,00€</span></td>
+                                                <td class="col-lg-1 col-md-1"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="container-btn">
+                                        <a href="checkout-dados-pagamento.html" class="btn btn-primary">
+                                            Realizar pagamento
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="btn-item dropdown">
+                        <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
+                            <img src="images/user-placeholder.png" alt="">
+                            <span>Neymar</span> <i><span class="icon-dropdown"></span></i>
+                        </a>
+
+                        <div class="user-dropdown dropdown-menu">
+                            <div class="user-img">
+                                <img src="images/user-placeholder.png" alt="">
+                            </div>
+
+                            <div class="user-infos">
+                                <h2>Neymar Jr</h2>
+                                <p>neymar.ninja@gmail.com</p>
+                            </div>
+
+                            <ul class="user-nav">
+                                <li class="col-12">
+                                    <a href="../smartfan-net/fan-dados.html">
+                                        <i><span class="icon-user"></span></i>
+                                        <span>Conta</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="../smartfan-net/fan-clube-coracao.html">
+                                        <i><span class="icon-heart"></span></i>
+                                        <span>Clubes</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="../smartfan-net/fan-pg-registo-atividades.html">
+                                        <i><span class="icon-registo-atividades"></span></i>
+                                        <span>Actividade</span>
+                                    </a>
+                                </li>
+                                <!-- <li class="col-lg-6 col-md-6 col-6">
+                                        <a href="#">
+                                            <i><span class="icon-grupo"></span></i>
+                                            <span>Grupo de amigos</span>
+                                        </a>
+                                    </li> -->
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="../smartfan-net/fan-pg-alertas-notificacoes.html">
+                                        <i><span class="icon-mensagem"></span></i>
+                                        <span>Alertas/Notificações</span>
+                                    </a>
+                                </li>
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="../smartfan-net/fan-config.html">
+                                        <i><span class="icon-config"></span></i>
+                                        <span>Configurações</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="user-logout">
+                                <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -643,19 +1013,16 @@
 
                         <div class="container-btn">
                             <div class="column-01">
-                                <a href="adesao-socio.html" class="btn btn-secondary" style="display: none;">
-                                    <i><span class="icon-arrow-prev"></span></i>
-                                    Anterior
-                                </a>
+
                             </div>
 
                             <div class="column-02">
-                                <a href="#" class="btn btn-secondary cancel">
+                                <a href="fan-pg-area-fan.html" class="btn btn-secondary cancel">
                                     <i><span class="icon-cancel"></span></i>
                                     Cancelar adesão
                                 </a>
 
-                                <a href="checkout-carrinho.html" class="btn btn-secondary next">
+                                <a href="checkout-dados-pagamento.html" class="btn btn-secondary next">
                                     <i><span class="icon-arrow-next"></span></i>
                                     Próximo
                                 </a>

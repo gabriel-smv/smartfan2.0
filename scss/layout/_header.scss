@@ -263,6 +263,76 @@ header {
         }
     }
 
+    .carrinho-dropdown {
+        box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+        border: none;
+
+        .carrinho-empty {
+            width: 32rem;
+            padding: 2.4rem;
+            @include flex(column, flex-start, center, center);
+
+            i {
+                margin-bottom: 1.6rem;
+
+                span {
+                    font-size: 5.6rem;
+                    color: $gray-02;
+                }
+            }
+
+            h3 {
+                @include font(1.8rem, 400, 1.2em);
+                text-align: center;
+                color: $gray-02;
+            }
+        }
+
+        .carrinho-itens {
+            table {
+                margin-bottom: 0;
+
+                thead {
+                    th {
+                        padding-top: .8rem;
+                    }
+                }
+
+                tr {
+                    border-bottom: 1px solid $gray-01;
+
+                    td {
+                        select {
+                            width: auto;
+                        }
+                    }
+                }
+
+                .item-total {
+                    margin: 0;
+                    border: 1px solid $gray-02;
+                }
+            }
+
+            .container-btn {
+                padding: 1.6rem .8rem;
+                @include flex(row, flex-end, center, center);
+
+                .btn {
+                    margin: 0 .8rem;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
     @include mlg {
         .btn-list {
 
@@ -305,12 +375,84 @@ header {
         .row {
             height: 100%;
         }
+
+        .carrinho-dropdown {
+            .carrinho-itens {
+                width: 48rem;
+            }
+        }
     }
 
     @include sm {
         .btn-list {
             .btn-item {
                 margin-left: .8rem;
+            }
+        }
+
+        .carrinho-dropdown {
+            height: 40rem;
+            padding-bottom: 0;
+            overflow-y: auto;
+
+            .carrinho-itens {
+                width: 32rem;
+
+                table {
+                    padding: .8rem 1.6rem;
+                    margin-bottom: 0;
+
+                    tr {
+                        border-bottom: 2px solid $gray-04;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+
+                        &:nth-child(even) {
+                            background: $white-02;
+                        }
+
+                        td {
+                            padding-bottom: 0.8rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .item-total {
+                        td {
+                            margin: 0;
+                            padding: 0;
+
+                            &:last-child {
+                                padding-bottom: .8rem;
+                            }
+                        }
+                    }
+                }
+
+                .container-btn {
+                    position: sticky;
+                    bottom: 0;
+                    background-color: $white-01;
+                    @include flex(row, center, center, center);
+
+
+                    box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+
+                    .btn {
+                        margin: 0 .8rem;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
             }
         }
     }
