@@ -238,14 +238,14 @@
     .btn-collapse {
         width: 100%;
         @include font(1.8rem, 400, 1.2em);
-        color: $black-02;
+        color: $primary-01;
         @include flex(row, space-between, center, center);
 
         padding: 0 2.4rem;
 
         h4 {
             @include font(1.8rem, 400, 1.2em);
-            color: $black-02;
+            color: $primary-01;
         }
 
         i {
@@ -350,6 +350,22 @@
                 }
             }
         }
+    }
+
+    .valor-total {
+        width: 100%;
+        padding: 1.6rem 2.4rem;
+        @include font(2rem, 400, 1.2em);
+        border-top: 1px solid $gray-01;
+        @include flex(row, space-between, center, center);
+        cursor: pointer;
+
+        p {
+            color: $black-02;
+            @include font(2rem, 400, 1.2em);
+            margin: 0;
+        }
+
     }
 }
 

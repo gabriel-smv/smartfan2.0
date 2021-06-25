@@ -28,17 +28,17 @@
                     <h1>Escolha de lugar anual</h1>
                 </div>
 
-                <div class="btn-list col-xxl-4 col-lg-6 col-md-8 col-md-10 col-sm-9 col-12">
-                    <div class="cart-timer">
-                        <div class="timer-wrapper" style="display: none;">
+                <ul class="btn-list col-xxl-4 col-lg-6 col-md-8 col-md-10 col-sm-9 col-12">
+                    <li class="cart-timer">
+                        <!-- <div class="timer-wrapper">
                             <i><img src="images/svg/clock-timer.svg" alt=""></i>
                             <span>08:40</span>
-                        </div>
+                        </div> -->
 
                         <a href="#" class="btn btn-cart dropdown-toggle" data-bs-toggle="dropdown" role="button"
                             aria-expanded="false">
                             <div class="carrinho-icon-wrapper">
-                                <i><span class="icon-store"></span></i>
+                                <i><span class="icon-shopping-cart"></span></i>
 
                                 <div class="cart-qtde"><span>0</span></div>
                             </div>
@@ -48,17 +48,17 @@
                         <div class="carrinho-dropdown dropdown-menu">
 
                         </div>
-                    </div>
+                    </li>
 
                     <!-- ITEM ANONIMO -->
-                    <div class="btn-item" style="display: none;">
-                        <a href="fan-pg-area-fan.html" class="btn btn-header">
+                    <li class="btn-item" style="display: none;">
+                        <a href="../smartfan-net/login.html" class="btn btn-header">
                             <i><span class="icon-login"></span></i> Login
                         </a>
-                    </div>
+                    </li>
 
                     <!-- ITEM FAN -->
-                    <div class="btn-item dropdown" style="display: none;">
+                    <li class="btn-item dropdown" style="display: none;">
                         <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
                             role="button" aria-expanded="false">
                             <img src="images/user-placeholder.png" alt="">
@@ -76,38 +76,32 @@
                             </div>
 
                             <ul class="user-nav">
-                                <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                <li class="col-12">
+                                    <a href="../smartfan-net/fan-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         <span>Conta</span>
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="../smartfan-net/fan-clube-coracao.html">
                                         <i><span class="icon-heart"></span></i>
                                         <span>Clubes</span>
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="../smartfan-net/fan-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         <span>Actividade</span>
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
-                                        <i><span class="icon-grupo"></span></i>
-                                        <span>Grupo de amigos</span>
-                                    </a>
-                                </li>
-                                <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="../smartfan-net/fan-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         <span>Alertas/Notificações</span>
                                     </a>
                                 </li>
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="#">
+                                    <a href="../smartfan-net/fan-config.html">
                                         <i><span class="icon-config"></span></i>
                                         <span>Configurações</span>
                                     </a>
@@ -118,10 +112,10 @@
                                 <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
                             </div>
                         </div>
-                    </div>
+                    </li>
 
                     <!-- ITEM SÓCIO -->
-                    <div class="btn-item dropdown">
+                    <li class="btn-item dropdown">
                         <a href="#" class="btn btn-header btn-perfil dropdown-toggle" data-bs-toggle="dropdown"
                             role="button" aria-expanded="false">
                             <img src="images/user-placeholder.png" alt="">
@@ -138,42 +132,48 @@
                                 <p>neymar.ninja@gmail.com</p>
                             </div>
 
-                            <ul class="user-nav">
+                            <ul class="user-nav" style="display: none;">
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="socio-pg-perfil.html">
+                                    <a href="../smartfan-net/socio-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         <span>Conta</span>
                                     </a>
                                 </li>
 
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="socio-pg-registo-atividades.html">
+                                    <a href="../smartfan-net/socio-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         <span>Actividade</span>
                                     </a>
                                 </li>
 
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="socio-pg-alertas-notificacoes.html">
+                                    <a href="../smartfan-net/socio-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         <span>Alertas/Notificações</span>
                                     </a>
                                 </li>
 
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="socio-pg-config.html">
+                                    <a href="../smartfan-net/socio-pg-config.html">
                                         <i><span class="icon-config"></span></i>
                                         <span>Configurações</span>
                                     </a>
                                 </li>
                             </ul>
 
+                            <div class="btn-wrapper">
+                                <a href="../smartfan-net/socio-dados.html" class="btn btn-primary">
+                                    Gerencia a tua conta Smartfan
+                                </a>
+                            </div>
+
                             <div class="user-logout">
                                 <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
             </div>
         </div>
