@@ -12,8 +12,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 </head>
 
-<body class="socio dark-mode vitoria-sc" style="--color-clube:#000000;">
-    <!-- HEADER / USUÁRIO LOGADO -->
+<body class="socio dark-mode vitoria-sc">
     <header>
         <div class="container">
             <div class="row">
@@ -202,7 +201,8 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-basquetebol"></span></i>
-                                                                    <p>Em breve, o teu clube de Basquetebol aqui!</p>
+                                                                    <p>Em breve, o teu clube de Basquetebol aqui!
+                                                                    </p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -438,12 +438,35 @@
                         </a>
                     </li>
 
-                    <li class="btn-item dropdown">
+                    <li class="btn-item">
                         <a href="socio-pg-area-socio.html" class="btn btn-header btn-fan">
-                            <img src="images/vitoria-sc.png" alt="">
+                            <img src="images/sporting-cp.png" alt="">
 
                             <i><span class="icon-meus-clubes"></span></i>
                         </a>
+                    </li>
+
+                    <li class="cart-timer" smv-type="widgetcontainer" smv-widget="popcart">
+                        <div smv-type="widgetpage" id="smv_wp_popcart">
+                            <!-- <div class="timer-wrapper">
+                    <i><img src="images/svg/clock-timer.svg" alt=""></i>
+                    <span>08:40</span>
+                  </div> -->
+
+                            <a href="#" class="btn btn-cart dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="carrinho-icon-wrapper">
+                                    <i><span class="icon-shopping-cart"></span></i>
+
+                                    <div class="cart-qtde"><span>0</span></div>
+                                </div>
+                                <span>00,00€</span> <i><span class="icon-dropdown"></span></i>
+                            </a>
+
+                            <div class="carrinho-dropdown dropdown-menu">
+
+                            </div>
+                        </div>
                     </li>
 
                     <li class="btn-item dropdown">
@@ -463,35 +486,41 @@
                                 <p>neymar.ninja@gmail.com</p>
                             </div>
 
-                            <ul class="user-nav">
+                            <ul class="user-nav" style="display: none;">
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="../smartfan-net/socio-dados.html">
+                                    <a href="socio-pg-perfil.html">
                                         <i><span class="icon-user"></span></i>
                                         <span>Conta</span>
                                     </a>
                                 </li>
 
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="../smartfan-net/socio-pg-registo-atividades.html">
+                                    <a href="socio-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         <span>Actividade</span>
                                     </a>
                                 </li>
 
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="../smartfan-net/socio-pg-alertas-notificacoes.html">
+                                    <a href="socio-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         <span>Alertas/Notificações</span>
                                     </a>
                                 </li>
 
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="../smartfan-net/socio-pg-config.html">
+                                    <a href="socio-pg-config.html">
                                         <i><span class="icon-config"></span></i>
                                         <span>Configurações</span>
                                     </a>
                                 </li>
                             </ul>
+
+                            <div class="btn-wrapper">
+                                <a href="../smartfan-net/socio-dados.html" class="btn btn-primary">
+                                    Gerencia a tua conta Smartfan
+                                </a>
+                            </div>
 
                             <div class="user-logout">
                                 <a href="#"><i><span class="icon-logout"></span></i> Terminar sessão</a>

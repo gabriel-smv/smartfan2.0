@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- HEADER / USUÁRIO LOGADO -->
     <header>
         <div class="container">
             <div class="row">
@@ -35,7 +34,7 @@
 
                                 <ul class="btn-list col-md-8 col-12">
                                     <li class="btn-item">
-                                        <a href="#" class="btn btn-header">
+                                        <a href="pg-bilheteira-geral.html" class="btn btn-header">
                                             <i><span class="icon-ticket-fill"></span></i> Bilheteira Geral
                                         </a>
                                     </li>
@@ -189,7 +188,7 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-andebol"></span></i>
-                                                                    <p>Em breve, o teu clube de Andebol aqui!</p>
+                                                                    <p>Em breve, o seu clube de Andebol aqui!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -202,7 +201,7 @@
 
                                                                 <div class="content-empty">
                                                                     <i><span class="icon-basquetebol"></span></i>
-                                                                    <p>Em breve, o teu clube de Basquetebol aqui!</p>
+                                                                    <p>Em breve, o seu clube de Basquetebol aqui!</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -445,7 +444,7 @@
                         </a>
 
                         <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
-                        <div class="fan-dropdown dropdown-menu" style="display: none;">
+                        <div class="fan-dropdown dropdown-menu">
                             <div class="clube-coracao-wrapper">
                                 <div class="clube-coracao-img">
                                     <img src="images/sporting-cp.png" alt="">
@@ -461,14 +460,14 @@
 
                             <ul class="fan-dropdown-nav">
                                 <li>
-                                    <a href="pg-comprar-bilhetes.html">
+                                    <a href="fan-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         <p>Compra de Bilhetes</p>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="fan-pg-area.html">
+                                    <a href="fan-pg-area-fan.html">
                                         <i><span class="icon-fan-outline"></span></i>
                                         <p>Área de Fan</p>
                                     </a>
@@ -573,7 +572,7 @@
                         </div>
 
                         <!-- USUÁRIO SEM CLUBE DO CORAÇÃO -->
-                        <div class="fan-dropdown no-clube dropdown-menu">
+                        <div class="fan-dropdown no-clube dropdown-menu" style="display: none;">
                             <div class="clube-coracao-wrapper">
                                 <div class="clube-coracao-img">
                                     <img src="images/banner-img.jpg" alt="">
@@ -591,19 +590,42 @@
 
                             <ul class="fan-dropdown-nav">
                                 <li>
-                                    <a href="pg-comprar-bilhetes.html">
+                                    <a href="fan-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         <p>Compra de Bilhetes</p>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="fan-pg-area.html">
+                                    <a href="fan-pg-area-fan.html">
                                         <i><span class="icon-fan-outline"></span></i>
                                         <p>Área de Fan</p>
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                    </li>
+
+                    <li class="cart-timer" smv-type="widgetcontainer" smv-widget="popcart">
+                        <div smv-type="widgetpage" id="smv_wp_popcart">
+                            <!-- <div class="timer-wrapper">
+                    <i><img src="images/svg/clock-timer.svg" alt=""></i>
+                    <span>08:40</span>
+                  </div> -->
+
+                            <a href="#" class="btn btn-cart dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                                aria-expanded="false">
+                                <div class="carrinho-icon-wrapper">
+                                    <i><span class="icon-shopping-cart"></span></i>
+
+                                    <div class="cart-qtde"><span>0</span></div>
+                                </div>
+                                <span>00,00€</span> <i><span class="icon-dropdown"></span></i>
+                            </a>
+
+                            <div class="carrinho-dropdown dropdown-menu">
+
+                            </div>
                         </div>
                     </li>
 
@@ -643,6 +665,12 @@
                                         <span>Actividade</span>
                                     </a>
                                 </li>
+                                <!-- <li class="col-lg-6 col-md-6 col-6">
+                                        <a href="#">
+                                            <i><span class="icon-grupo"></span></i>
+                                            <span>Grupo de amigos</span>
+                                        </a>
+                                    </li> -->
                                 <li class="col-lg-6 col-md-6 col-6">
                                     <a href="../smartfan-net/fan-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
