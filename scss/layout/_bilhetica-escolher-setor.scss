@@ -33,6 +33,10 @@
                 height: auto;
             }
         }
+
+        @include sm {
+            padding: 2.4rem 0;
+        }
     }
 
     .container-btn {
@@ -413,6 +417,10 @@
                     }
                 }
             }
+        }
+
+        @include sm {
+            padding: 1.6rem 0rem;
         }
     }
 

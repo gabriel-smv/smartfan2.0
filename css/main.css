@@ -16800,6 +16800,10 @@ header .carrinho-dropdown .carrinho-itens .container-btn .btn:last-child {
   height: 100%;
 }
 
+.modal-backdrop {
+  display: none;
+}
+
 .table-escolha-lugares {
   padding: 0rem 3rem;
   margin: 0 auto;
@@ -17289,6 +17293,12 @@ tbody > tr:last-child > td {
   height: auto;
 }
 
+@media (max-width: 767px) {
+  .selecionar-setor .estadio-setor {
+    padding: 2.4rem 0;
+  }
+}
+
 .selecionar-setor .container-btn {
   width: 100%;
   background-color: #ffffff;
@@ -17736,6 +17746,12 @@ tbody > tr:last-child > td {
   left: auto;
   right: 2px;
   background-color: #f37402;
+}
+
+@media (max-width: 767px) {
+  .modal-add-grupos .add-grupos {
+    padding: 1.6rem 0rem;
+  }
 }
 
 .modal-add-grupos .grupos {
