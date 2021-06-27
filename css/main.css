@@ -10376,487 +10376,6 @@ button {
   background: #F0F4F6;
 }
 
-.boavista-fc .btn-primary {
-  color: #ffffff;
-  border: 1px solid #000000;
-  background-color: #000000;
-}
-
-.boavista-fc .btn-primary:hover, .boavista-fc .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #000000;
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-.boavista-fc .btn-primary:hover span, .boavista-fc .btn-primary:focus span {
-  color: #000000;
-}
-
-.boavista-fc .btn-primary:hover i span, .boavista-fc .btn-primary:focus i span {
-  color: #000000;
-}
-
-.boavista-fc .btn-secondary {
-  color: #000000;
-  border: 1px solid #000000;
-}
-
-.boavista-fc .btn-secondary span {
-  color: #000000;
-}
-
-.boavista-fc .btn-secondary i span {
-  color: #000000;
-}
-
-.boavista-fc .btn-secondary:hover, .boavista-fc .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.cd-nacional .btn-primary {
-  color: #ffffff;
-  border: 1px solid #6E3A8D;
-  background-color: #6E3A8D;
-}
-
-.cd-nacional .btn-primary:hover, .cd-nacional .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #6E3A8D;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.cd-nacional .btn-primary:hover span, .cd-nacional .btn-primary:focus span {
-  color: #6E3A8D;
-}
-
-.cd-nacional .btn-primary:hover i span, .cd-nacional .btn-primary:focus i span {
-  color: #6E3A8D;
-}
-
-.cd-nacional .btn-secondary {
-  color: #6E3A8D;
-  border: 1px solid #6E3A8D;
-}
-
-.cd-nacional .btn-secondary span {
-  color: #6E3A8D;
-}
-
-.cd-nacional .btn-secondary i span {
-  color: #6E3A8D;
-}
-
-.cd-nacional .btn-secondary:hover, .cd-nacional .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.fc-porto .btn-primary {
-  color: #ffffff;
-  border: 1px solid #0083BD;
-  background-color: #0083BD;
-}
-
-.fc-porto .btn-primary:hover, .fc-porto .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #0083BD;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.fc-porto .btn-primary:hover span, .fc-porto .btn-primary:focus span {
-  color: #0083BD;
-}
-
-.fc-porto .btn-primary:hover i span, .fc-porto .btn-primary:focus i span {
-  color: #0083BD;
-}
-
-.fc-porto .btn-secondary {
-  color: #0083BD;
-  border: 1px solid #0083BD;
-}
-
-.fc-porto .btn-secondary span {
-  color: #0083BD;
-}
-
-.fc-porto .btn-secondary i span {
-  color: #0083BD;
-}
-
-.fc-porto .btn-secondary:hover, .fc-porto .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.gilvicente-fc .btn-primary {
-  color: #ffffff;
-  border: 1px solid #CC0000;
-  background-color: #CC0000;
-}
-
-.gilvicente-fc .btn-primary:hover, .gilvicente-fc .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #CC0000;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.gilvicente-fc .btn-primary:hover span, .gilvicente-fc .btn-primary:focus span {
-  color: #CC0000;
-}
-
-.gilvicente-fc .btn-primary:hover i span, .gilvicente-fc .btn-primary:focus i span {
-  color: #CC0000;
-}
-
-.gilvicente-fc .btn-secondary {
-  color: #CC0000;
-  border: 1px solid #CC0000;
-}
-
-.gilvicente-fc .btn-secondary span {
-  color: #CC0000;
-}
-
-.gilvicente-fc .btn-secondary i span {
-  color: #CC0000;
-}
-
-.gilvicente-fc .btn-secondary:hover, .gilvicente-fc .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.belenenses-sad .btn-primary {
-  color: #ffffff;
-  border: 1px solid #0f2440;
-  background-color: #0f2440;
-}
-
-.belenenses-sad .btn-primary:hover, .belenenses-sad .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #0f2440;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.belenenses-sad .btn-primary:hover span, .belenenses-sad .btn-primary:focus span {
-  color: #0f2440;
-}
-
-.belenenses-sad .btn-primary:hover i span, .belenenses-sad .btn-primary:focus i span {
-  color: #0f2440;
-}
-
-.belenenses-sad .btn-secondary {
-  color: #0f2440;
-  border: 1px solid #0f2440;
-}
-
-.belenenses-sad .btn-secondary span {
-  color: #0f2440;
-}
-
-.belenenses-sad .btn-secondary i span {
-  color: #0f2440;
-}
-
-.belenenses-sad .btn-secondary:hover, .belenenses-sad .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.rioave-fc .btn-primary {
-  color: #ffffff;
-  border: 1px solid #33a370;
-  background-color: #33a370;
-}
-
-.rioave-fc .btn-primary:hover, .rioave-fc .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #33a370;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.rioave-fc .btn-primary:hover span, .rioave-fc .btn-primary:focus span {
-  color: #33a370;
-}
-
-.rioave-fc .btn-primary:hover i span, .rioave-fc .btn-primary:focus i span {
-  color: #33a370;
-}
-
-.rioave-fc .btn-secondary {
-  color: #33a370;
-  border: 1px solid #33a370;
-}
-
-.rioave-fc .btn-secondary span {
-  color: #33a370;
-}
-
-.rioave-fc .btn-secondary i span {
-  color: #33a370;
-}
-
-.rioave-fc .btn-secondary:hover, .rioave-fc .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.sc-braga .btn-primary {
-  color: #ffffff;
-  border: 1px solid #c00d1e;
-  background-color: #c00d1e;
-}
-
-.sc-braga .btn-primary:hover, .sc-braga .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #c00d1e;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.sc-braga .btn-primary:hover span, .sc-braga .btn-primary:focus span {
-  color: #c00d1e;
-}
-
-.sc-braga .btn-primary:hover i span, .sc-braga .btn-primary:focus i span {
-  color: #c00d1e;
-}
-
-.sc-braga .btn-secondary {
-  color: #c00d1e;
-  border: 1px solid #c00d1e;
-}
-
-.sc-braga .btn-secondary span {
-  color: #c00d1e;
-}
-
-.sc-braga .btn-secondary i span {
-  color: #c00d1e;
-}
-
-.sc-braga .btn-secondary:hover, .sc-braga .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.sporting-cp .btn-primary {
-  color: #ffffff;
-  border: 1px solid #04b46b;
-  background-color: #04b46b;
-}
-
-.sporting-cp .btn-primary:hover, .sporting-cp .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #04b46b;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.sporting-cp .btn-primary:hover span, .sporting-cp .btn-primary:focus span {
-  color: #04b46b;
-}
-
-.sporting-cp .btn-primary:hover i span, .sporting-cp .btn-primary:focus i span {
-  color: #04b46b;
-}
-
-.sporting-cp .btn-secondary {
-  color: #04b46b;
-  border: 1px solid #04b46b;
-}
-
-.sporting-cp .btn-secondary span {
-  color: #04b46b;
-}
-
-.sporting-cp .btn-secondary i span {
-  color: #04b46b;
-}
-
-.sporting-cp .btn-secondary:hover, .sporting-cp .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.vitoria-sc .btn-primary {
-  color: #ffffff;
-  border: 1px solid #000000;
-  background-color: #000000;
-}
-
-.vitoria-sc .btn-primary:hover, .vitoria-sc .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000000;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.vitoria-sc .btn-primary:hover span, .vitoria-sc .btn-primary:focus span {
-  color: #000000;
-}
-
-.vitoria-sc .btn-primary:hover i span, .vitoria-sc .btn-primary:focus i span {
-  color: #000000;
-}
-
-.vitoria-sc .btn-secondary {
-  color: #000000;
-  border: 1px solid #000000;
-}
-
-.vitoria-sc .btn-secondary span {
-  color: #000000;
-}
-
-.vitoria-sc .btn-secondary i span {
-  color: #000000;
-}
-
-.vitoria-sc .btn-secondary:hover, .vitoria-sc .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.vitoria-fc .btn-primary {
-  color: #ffffff;
-  border: 1px solid #017e01;
-  background-color: #017e01;
-}
-
-.vitoria-fc .btn-primary:hover, .vitoria-fc .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #017e01;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.vitoria-fc .btn-primary:hover span, .vitoria-fc .btn-primary:focus span {
-  color: #017e01;
-}
-
-.vitoria-fc .btn-primary:hover i span, .vitoria-fc .btn-primary:focus i span {
-  color: #017e01;
-}
-
-.vitoria-fc .btn-secondary {
-  color: #017e01;
-  border: 1px solid #017e01;
-}
-
-.vitoria-fc .btn-secondary span {
-  color: #017e01;
-}
-
-.vitoria-fc .btn-secondary i span {
-  color: #017e01;
-}
-
-.vitoria-fc .btn-secondary:hover, .vitoria-fc .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.gd-chaves .btn-primary {
-  color: #ffffff;
-  border: 1px solid #000044;
-  background-color: #000044;
-}
-
-.gd-chaves .btn-primary:hover, .gd-chaves .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #000044;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.gd-chaves .btn-primary:hover span, .gd-chaves .btn-primary:focus span {
-  color: #000044;
-}
-
-.gd-chaves .btn-primary:hover i span, .gd-chaves .btn-primary:focus i span {
-  color: #000044;
-}
-
-.gd-chaves .btn-secondary {
-  color: #000044;
-  border: 1px solid #000044;
-}
-
-.gd-chaves .btn-secondary span {
-  color: #000044;
-}
-
-.gd-chaves .btn-secondary i span {
-  color: #000044;
-}
-
-.gd-chaves .btn-secondary:hover, .gd-chaves .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.sc-covilha .btn-primary {
-  color: #ffffff;
-  border: 1px solid #005B29;
-  background-color: #005B29;
-}
-
-.sc-covilha .btn-primary:hover, .sc-covilha .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #005B29;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.sc-covilha .btn-primary:hover span, .sc-covilha .btn-primary:focus span {
-  color: #005B29;
-}
-
-.sc-covilha .btn-primary:hover i span, .sc-covilha .btn-primary:focus i span {
-  color: #005B29;
-}
-
-.sc-covilha .btn-secondary {
-  color: #005B29;
-  border: 1px solid #005B29;
-}
-
-.sc-covilha .btn-secondary span {
-  color: #005B29;
-}
-
-.sc-covilha .btn-secondary i span {
-  color: #005B29;
-}
-
-.sc-covilha .btn-secondary:hover, .sc-covilha .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.varzim-sc .btn-primary {
-  color: #ffffff;
-  border: 1px solid #212121;
-  background-color: #212121;
-}
-
-.varzim-sc .btn-primary:hover, .varzim-sc .btn-primary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #212121;
-  border-color: rgba(0, 0, 0, 0.1);
-}
-
-.varzim-sc .btn-primary:hover span, .varzim-sc .btn-primary:focus span {
-  color: #212121;
-}
-
-.varzim-sc .btn-primary:hover i span, .varzim-sc .btn-primary:focus i span {
-  color: #212121;
-}
-
-.varzim-sc .btn-secondary {
-  color: #212121;
-  border: 1px solid #212121;
-}
-
-.varzim-sc .btn-secondary span {
-  color: #212121;
-}
-
-.varzim-sc .btn-secondary i span {
-  color: #212121;
-}
-
-.varzim-sc .btn-secondary:hover, .varzim-sc .btn-secondary:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .cbx {
   display: none;
 }
@@ -12230,262 +11749,6 @@ form .container-btn {
   font-weight: 300;
   line-height: 1em;
   color: #ffffff;
-}
-
-.fc-famalicao.banner-fan.banner-socio {
-  background-image: url("../images/banner-fcfamalicao.png");
-}
-
-.boavista-fc {
-  --color-clube: #000000;
-}
-
-.boavista-fc .banner-fan {
-  background: #000000;
-}
-
-.boavista-fc .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.boavista-fc .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
-}
-
-.cd-nacional {
-  --color-clube: #6E3A8D;
-}
-
-.cd-nacional .banner-fan {
-  background: #6E3A8D;
-}
-
-.cd-nacional .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.cd-nacional .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
-}
-
-.fc-porto {
-  --color-clube: #0083BD;
-}
-
-.fc-porto .banner-fan {
-  background: #0083BD;
-}
-
-.fc-porto .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.fc-porto .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
-}
-
-.gilvicente-fc {
-  --color-clube: #CC0000;
-}
-
-.gilvicente-fc .banner-fan {
-  background: #CC0000;
-}
-
-.gilvicente-fc .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.gilvicente-fc .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
-}
-
-.belenenses-sad {
-  --color-clube: #0f2440;
-}
-
-.belenenses-sad .banner-fan {
-  background: #0f2440;
-}
-
-.belenenses-sad .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.belenenses-sad .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
-}
-
-.rioave-fc {
-  --color-clube: #33a370;
-}
-
-.rioave-fc .banner-fan {
-  background: #33a370;
-}
-
-.rioave-fc .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.rioave-fc .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
-}
-
-.sc-braga {
-  --color-clube: #c00d1e;
-}
-
-.sc-braga .banner-fan {
-  background: #c00d1e;
-}
-
-.sc-braga .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sc-braga .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
-}
-
-.sporting-cp {
-  --color-clube: #04b46b;
-}
-
-.sporting-cp .banner-fan {
-  background: #04b46b;
-}
-
-.sporting-cp .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sporting-cp .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
-}
-
-.vitoria-sc {
-  --color-clube: #000000;
-}
-
-.vitoria-sc .banner-fan {
-  background: #000000;
-}
-
-.vitoria-sc .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.vitoria-sc .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
-}
-
-.vitoria-fc {
-  --color-clube: #017e01;
-}
-
-.vitoria-fc .banner-fan {
-  background: #017e01;
-}
-
-.vitoria-fc .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.vitoria-fc .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
-}
-
-.gd-chaves {
-  --color-clube: #000044;
-}
-
-.gd-chaves .banner-fan {
-  background: #000044;
-}
-
-.gd-chaves .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.gd-chaves .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
-}
-
-.sc-covilha {
-  --color-clube: #005B29;
-}
-
-.sc-covilha .banner-fan {
-  background: #005B29;
-}
-
-.sc-covilha .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sc-covilha .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
-}
-
-.varzim-sc {
-  --color-clube: #212121;
-}
-
-.varzim-sc .banner-fan {
-  background: #212121;
-}
-
-.varzim-sc .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.varzim-sc .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
-}
-
-.estoril-praia {
-  --color-clube: #0054A6;
-}
-
-.estoril-praia .banner-fan {
-  background: #0054A6;
-}
-
-.estoril-praia .banner-socio {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_EstorilPraia.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.estoril-praia .banner-adesao {
-  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_EstorilPraia.jpg");
 }
 
 .cards-fan {
@@ -16610,6 +15873,831 @@ header .carrinho-dropdown .carrinho-itens .container-btn .btn:last-child {
 .navbar .navbar-mobile.open .navbar-mobile-dropdown {
   display: flex;
   animation: open-navbar-mobile .3s ease-out;
+}
+
+.boavista-fc {
+  --color-clube: #000000;
+}
+
+.boavista-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+.boavista-fc .btn-primary:hover, .boavista-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.boavista-fc .btn-primary:hover span, .boavista-fc .btn-primary:focus span {
+  color: #000000;
+}
+
+.boavista-fc .btn-primary:hover i span, .boavista-fc .btn-primary:focus i span {
+  color: #000000;
+}
+
+.boavista-fc .btn-secondary {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.boavista-fc .btn-secondary span {
+  color: #000000;
+}
+
+.boavista-fc .btn-secondary i span {
+  color: #000000;
+}
+
+.boavista-fc .btn-secondary:hover, .boavista-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.boavista-fc .banner-fan {
+  background: #000000;
+}
+
+.boavista-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boavista-fc .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_boaVistaFC.jpg");
+}
+
+.cd-nacional {
+  --color-clube: #6E3A8D;
+}
+
+.cd-nacional .btn-primary {
+  color: #ffffff;
+  border: 1px solid #6E3A8D;
+  background-color: #6E3A8D;
+}
+
+.cd-nacional .btn-primary:hover, .cd-nacional .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #6E3A8D;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.cd-nacional .btn-primary:hover span, .cd-nacional .btn-primary:focus span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-primary:hover i span, .cd-nacional .btn-primary:focus i span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-secondary {
+  color: #6E3A8D;
+  border: 1px solid #6E3A8D;
+}
+
+.cd-nacional .btn-secondary span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-secondary i span {
+  color: #6E3A8D;
+}
+
+.cd-nacional .btn-secondary:hover, .cd-nacional .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cd-nacional .banner-fan {
+  background: #6E3A8D;
+}
+
+.cd-nacional .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cd-nacional .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_CDNMadeira.jpg");
+}
+
+.fc-porto {
+  --color-clube: #0083BD;
+}
+
+.fc-porto .btn-primary {
+  color: #ffffff;
+  border: 1px solid #0083BD;
+  background-color: #0083BD;
+}
+
+.fc-porto .btn-primary:hover, .fc-porto .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #0083BD;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.fc-porto .btn-primary:hover span, .fc-porto .btn-primary:focus span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-primary:hover i span, .fc-porto .btn-primary:focus i span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-secondary {
+  color: #0083BD;
+  border: 1px solid #0083BD;
+}
+
+.fc-porto .btn-secondary span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-secondary i span {
+  color: #0083BD;
+}
+
+.fc-porto .btn-secondary:hover, .fc-porto .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fc-porto .banner-fan {
+  background: #0083BD;
+}
+
+.fc-porto .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fc-porto .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_FCPorto.jpg");
+}
+
+.fc-famalicao {
+  --color-clube: #132740;
+}
+
+.fc-famalicao .btn-primary {
+  color: #ffffff;
+  border: 1px solid #132740;
+  background-color: #132740;
+}
+
+.fc-famalicao .btn-primary:hover, .fc-famalicao .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #132740;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.fc-famalicao .btn-primary:hover span, .fc-famalicao .btn-primary:focus span {
+  color: #132740;
+}
+
+.fc-famalicao .btn-primary:hover i span, .fc-famalicao .btn-primary:focus i span {
+  color: #132740;
+}
+
+.fc-famalicao .btn-secondary {
+  color: #132740;
+  border: 1px solid #132740;
+}
+
+.fc-famalicao .btn-secondary span {
+  color: #132740;
+}
+
+.fc-famalicao .btn-secondary i span {
+  color: #132740;
+}
+
+.fc-famalicao .btn-secondary:hover, .fc-famalicao .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fc-famalicao .banner-fan {
+  background: #132740;
+}
+
+.fc-famalicao .banner-socio {
+  background-image: url("../images/banner-fcfamalicao.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fc-famalicao .banner-adesao {
+  background-image: url("../images/banner-fcfamalicao.png");
+}
+
+.gilvicente-fc {
+  --color-clube: #CC0000;
+}
+
+.gilvicente-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #CC0000;
+  background-color: #CC0000;
+}
+
+.gilvicente-fc .btn-primary:hover, .gilvicente-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #CC0000;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.gilvicente-fc .btn-primary:hover span, .gilvicente-fc .btn-primary:focus span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-primary:hover i span, .gilvicente-fc .btn-primary:focus i span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-secondary {
+  color: #CC0000;
+  border: 1px solid #CC0000;
+}
+
+.gilvicente-fc .btn-secondary span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-secondary i span {
+  color: #CC0000;
+}
+
+.gilvicente-fc .btn-secondary:hover, .gilvicente-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gilvicente-fc .banner-fan {
+  background: #CC0000;
+}
+
+.gilvicente-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gilvicente-fc .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GilVicenteFC.jpg");
+}
+
+.belenenses-sad {
+  --color-clube: #0f2440;
+}
+
+.belenenses-sad .btn-primary {
+  color: #ffffff;
+  border: 1px solid #0f2440;
+  background-color: #0f2440;
+}
+
+.belenenses-sad .btn-primary:hover, .belenenses-sad .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #0f2440;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.belenenses-sad .btn-primary:hover span, .belenenses-sad .btn-primary:focus span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-primary:hover i span, .belenenses-sad .btn-primary:focus i span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-secondary {
+  color: #0f2440;
+  border: 1px solid #0f2440;
+}
+
+.belenenses-sad .btn-secondary span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-secondary i span {
+  color: #0f2440;
+}
+
+.belenenses-sad .btn-secondary:hover, .belenenses-sad .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.belenenses-sad .banner-fan {
+  background: #0f2440;
+}
+
+.belenenses-sad .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.belenenses-sad .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_OsBelenenses.jpg");
+}
+
+.rioave-fc {
+  --color-clube: #33a370;
+}
+
+.rioave-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #33a370;
+  background-color: #33a370;
+}
+
+.rioave-fc .btn-primary:hover, .rioave-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #33a370;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.rioave-fc .btn-primary:hover span, .rioave-fc .btn-primary:focus span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-primary:hover i span, .rioave-fc .btn-primary:focus i span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-secondary {
+  color: #33a370;
+  border: 1px solid #33a370;
+}
+
+.rioave-fc .btn-secondary span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-secondary i span {
+  color: #33a370;
+}
+
+.rioave-fc .btn-secondary:hover, .rioave-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rioave-fc .banner-fan {
+  background: #33a370;
+}
+
+.rioave-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rioave-fc .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_RioAveFC.jpg");
+}
+
+.sc-braga {
+  --color-clube: #c00d1e;
+}
+
+.sc-braga .btn-primary {
+  color: #ffffff;
+  border: 1px solid #c00d1e;
+  background-color: #c00d1e;
+}
+
+.sc-braga .btn-primary:hover, .sc-braga .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #c00d1e;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-braga .btn-primary:hover span, .sc-braga .btn-primary:focus span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-primary:hover i span, .sc-braga .btn-primary:focus i span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-secondary {
+  color: #c00d1e;
+  border: 1px solid #c00d1e;
+}
+
+.sc-braga .btn-secondary span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-secondary i span {
+  color: #c00d1e;
+}
+
+.sc-braga .btn-secondary:hover, .sc-braga .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-braga .banner-fan {
+  background: #c00d1e;
+}
+
+.sc-braga .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sc-braga .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCBraga.jpg");
+}
+
+.sporting-cp {
+  --color-clube: #04b46b;
+}
+
+.sporting-cp .btn-primary {
+  color: #ffffff;
+  border: 1px solid #04b46b;
+  background-color: #04b46b;
+}
+
+.sporting-cp .btn-primary:hover, .sporting-cp .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #04b46b;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sporting-cp .btn-primary:hover span, .sporting-cp .btn-primary:focus span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-primary:hover i span, .sporting-cp .btn-primary:focus i span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-secondary {
+  color: #04b46b;
+  border: 1px solid #04b46b;
+}
+
+.sporting-cp .btn-secondary span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-secondary i span {
+  color: #04b46b;
+}
+
+.sporting-cp .btn-secondary:hover, .sporting-cp .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sporting-cp .banner-fan {
+  background: #04b46b;
+}
+
+.sporting-cp .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sporting-cp .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SportingCP.jpg");
+}
+
+.vitoria-sc {
+  --color-clube: #000000;
+}
+
+.vitoria-sc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+.vitoria-sc .btn-primary:hover, .vitoria-sc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000000;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-sc .btn-primary:hover span, .vitoria-sc .btn-primary:focus span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-primary:hover i span, .vitoria-sc .btn-primary:focus i span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-secondary {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.vitoria-sc .btn-secondary span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-secondary i span {
+  color: #000000;
+}
+
+.vitoria-sc .btn-secondary:hover, .vitoria-sc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-sc .banner-fan {
+  background: #000000;
+}
+
+.vitoria-sc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vitoria-sc .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaSC.jpg");
+}
+
+.vitoria-fc {
+  --color-clube: #017e01;
+}
+
+.vitoria-fc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #017e01;
+  background-color: #017e01;
+}
+
+.vitoria-fc .btn-primary:hover, .vitoria-fc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #017e01;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-fc .btn-primary:hover span, .vitoria-fc .btn-primary:focus span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-primary:hover i span, .vitoria-fc .btn-primary:focus i span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-secondary {
+  color: #017e01;
+  border: 1px solid #017e01;
+}
+
+.vitoria-fc .btn-secondary span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-secondary i span {
+  color: #017e01;
+}
+
+.vitoria-fc .btn-secondary:hover, .vitoria-fc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.vitoria-fc .banner-fan {
+  background: #017e01;
+}
+
+.vitoria-fc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vitoria-fc .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VitoriaFC.jpg");
+}
+
+.estoril-praia {
+  --color-clube: #0054A6;
+}
+
+.estoril-praia .btn-primary {
+  color: #ffffff;
+  border: 1px solid #0054A6;
+  background-color: #0054A6;
+}
+
+.estoril-praia .btn-primary:hover, .estoril-praia .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #0054A6;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.estoril-praia .btn-primary:hover span, .estoril-praia .btn-primary:focus span {
+  color: #0054A6;
+}
+
+.estoril-praia .btn-primary:hover i span, .estoril-praia .btn-primary:focus i span {
+  color: #0054A6;
+}
+
+.estoril-praia .btn-secondary {
+  color: #0054A6;
+  border: 1px solid #0054A6;
+}
+
+.estoril-praia .btn-secondary span {
+  color: #0054A6;
+}
+
+.estoril-praia .btn-secondary i span {
+  color: #0054A6;
+}
+
+.estoril-praia .btn-secondary:hover, .estoril-praia .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.estoril-praia .banner-fan {
+  background: #0054A6;
+}
+
+.estoril-praia .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_EstorilPraia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.estoril-praia .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_EstorilPraia.jpg");
+}
+
+.gd-chaves {
+  --color-clube: #000044;
+}
+
+.gd-chaves .btn-primary {
+  color: #ffffff;
+  border: 1px solid #000044;
+  background-color: #000044;
+}
+
+.gd-chaves .btn-primary:hover, .gd-chaves .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000044;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.gd-chaves .btn-primary:hover span, .gd-chaves .btn-primary:focus span {
+  color: #000044;
+}
+
+.gd-chaves .btn-primary:hover i span, .gd-chaves .btn-primary:focus i span {
+  color: #000044;
+}
+
+.gd-chaves .btn-secondary {
+  color: #000044;
+  border: 1px solid #000044;
+}
+
+.gd-chaves .btn-secondary span {
+  color: #000044;
+}
+
+.gd-chaves .btn-secondary i span {
+  color: #000044;
+}
+
+.gd-chaves .btn-secondary:hover, .gd-chaves .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gd-chaves .banner-fan {
+  background: #000044;
+}
+
+.gd-chaves .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gd-chaves .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_GDChaves.jpg");
+}
+
+.sc-covilha {
+  --color-clube: #005B29;
+}
+
+.sc-covilha .btn-primary {
+  color: #ffffff;
+  border: 1px solid #005B29;
+  background-color: #005B29;
+}
+
+.sc-covilha .btn-primary:hover, .sc-covilha .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #005B29;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-covilha .btn-primary:hover span, .sc-covilha .btn-primary:focus span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-primary:hover i span, .sc-covilha .btn-primary:focus i span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-secondary {
+  color: #005B29;
+  border: 1px solid #005B29;
+}
+
+.sc-covilha .btn-secondary span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-secondary i span {
+  color: #005B29;
+}
+
+.sc-covilha .btn-secondary:hover, .sc-covilha .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sc-covilha .banner-fan {
+  background: #005B29;
+}
+
+.sc-covilha .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sc-covilha .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_SCCovilha.jpg");
+}
+
+.varzim-sc {
+  --color-clube: #212121;
+}
+
+.varzim-sc .btn-primary {
+  color: #ffffff;
+  border: 1px solid #212121;
+  background-color: #212121;
+}
+
+.varzim-sc .btn-primary:hover, .varzim-sc .btn-primary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #212121;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.varzim-sc .btn-primary:hover span, .varzim-sc .btn-primary:focus span {
+  color: #212121;
+}
+
+.varzim-sc .btn-primary:hover i span, .varzim-sc .btn-primary:focus i span {
+  color: #212121;
+}
+
+.varzim-sc .btn-secondary {
+  color: #212121;
+  border: 1px solid #212121;
+}
+
+.varzim-sc .btn-secondary span {
+  color: #212121;
+}
+
+.varzim-sc .btn-secondary i span {
+  color: #212121;
+}
+
+.varzim-sc .btn-secondary:hover, .varzim-sc .btn-secondary:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.varzim-sc .banner-fan {
+  background: #212121;
+}
+
+.varzim-sc .banner-socio {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.varzim-sc .banner-adesao {
+  background-image: url("https://smartfan.tickets/wp-content/themes/smv-smartfan/images/banner_VarzimSC.jpg");
 }
 
 .escolher-ingresso {
